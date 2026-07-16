@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-5: Степени сравнения прилагательных (Komparativ, Superlativ)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-4.html" class="nav-link">&larr; Урок A2-4</a>
+        <span class="nav-title">Урок A2-5</span>
+        <a href="a2-6.html" class="nav-link">Урок A2-6 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим сильное и смешанное склонение из урока A2-4. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Сильное склонение (12)</h3>
+            <p><em>Вставь правильное окончание прилагательного (без артикля):</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich sehe _________ schön Mann. (Nominativ)<span class="answer-inline">schönen</span></li>
+                <li>Ich sehe _________ schön Frau. (Nominativ)<span class="answer-inline">schöne</span></li>
+                <li>Ich sehe _________ schön Kind. (Nominativ)<span class="answer-inline">schönes</span></li>
+                <li>Ich sehe _________ groß Mann. (Akkusativ)<span class="answer-inline">großen</span></li>
+                <li>Ich sehe _________ klein Frau. (Akkusativ)<span class="answer-inline">kleine</span></li>
+                <li>Ich sehe _________ jung Kind. (Akkusativ)<span class="answer-inline">junges</span></li>
+                <li>Ich helfe _________ alt Mann. (Dativ)<span class="answer-inline">altem</span></li>
+                <li>Ich helfe _________ jung Frau. (Dativ)<span class="answer-inline">junger</span></li>
+                <li>Ich helfe _________ klein Kind. (Dativ)<span class="answer-inline">kleinem</span></li>
+                <li>Ich sehe _________ alt Leute. (Akkusativ)<span class="answer-inline">alte</span></li>
+                <li>Ich helfe _________ gut Freund. (Dativ)<span class="answer-inline">guten</span></li>
+                <li>Ich sehe _________ schnell Zug. (Akkusativ)<span class="answer-inline">schnellen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Смешанное склонение (12)</h3>
+            <p><em>Вставь правильное окончание после ein/eine:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich sehe _________ schön Mann. (ein)<span class="answer-inline">einen schönen</span></li>
+                <li>Ich sehe _________ schön Frau. (eine)<span class="answer-inline">eine schöne</span></li>
+                <li>Ich sehe _________ schön Kind. (ein)<span class="answer-inline">ein schönes</span></li>
+                <li>Ich habe _________ groß Haus. (ein)<span class="answer-inline">ein großes</span></li>
+                <li>Ich habe _________ klein Wohnung. (eine)<span class="answer-inline">eine kleine</span></li>
+                <li>Ich habe _________ neu Auto. (ein)<span class="answer-inline">ein neues</span></li>
+                <li>Ich kaufe _________ teuer Kleid. (ein)<span class="answer-inline">ein teures</span></li>
+                <li>Ich trinke _________ heiß Kaffee. (einen)<span class="answer-inline">einen heißen</span></li>
+                <li>Ich trinke _________ kalt Wasser. (ein)<span class="answer-inline">ein kaltes</span></li>
+                <li>Ich sehe _________ interessant Buch. (ein)<span class="answer-inline">ein interessantes</span></li>
+                <li>Ich habe _________ warm Zimmer. (ein)<span class="answer-inline">ein warmes</span></li>
+                <li>Ich sehe _________ dunkel Nacht. (eine)<span class="answer-inline">eine dunkle</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-5: Степени сравнения прилагательных (Komparativ, Superlativ)</h1>
+            <p class="subtitle">Учимся сравнивать предметы и обосновывать, что лучше.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Умею образовывать степени сравнения: <strong>positiv</strong> (красивый), <strong>komparativ</strong> (красивее), <strong>superlativ</strong> (самый красивый).</li>
+                <li>Могу сравнивать предметы, используя союзы <strong>als</strong> (чем) и <strong>wie</strong> (как).</li>
+                <li>Могу обосновать, почему один город/продукт лучше другого.</li>
+            </ul>
+
+            <h2>1. Три степени сравнения</h2>
+            <p>В немецком языке прилагательные имеют три степени сравнения:</p>
+
+            <table>
+                <thead><tr><th>Степень</th><th>Немецкий</th><th>Образование</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Positive</strong></td><td>Полная форма</td><td>—</td><td><em>schön</em> (красивый)</td></tr>
+                    <tr><td><strong>Komparativ</strong></td><td>Сравнительная</td><td>-er (или mehr + Adj.)</td><td><em>schöner</em> (красивее)</td></tr>
+                    <tr><td><strong>Superlativ</strong></td><td>Превосходная</td><td>am + -sten</td><td><em>am schönsten</em> (самый красивый)</td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Правила образования Komparativ</h2>
+            <p>Для образования сравнительной степени добавь <strong>-er</strong> к прилагательному:</p>
+
+            <table>
+                <thead><tr><th>Positive</th><th>Komparativ</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>schön</td><td>schöner</td><td>красивее</td></tr>
+                    <tr><td>groß</td><td>größer</td><td>больше</td></tr>
+                    <tr><td>klein</td><td>kleiner</td><td>меньше</td></tr>
+                    <tr><td>jung</td><td>jünger</td><td>моложе</td></tr>
+                    <tr><td>alt</td><td>älter</td><td>старше</td></tr>
+                    <tr><td>gut</td><td>besser</td><td>лучше</td></tr>
+                    <tr><td>schlecht</td><td>schlechter</td><td>хуже</td></tr>
+                    <tr><td>schnell</td><td>schneller</td><td>быстрее</td></tr>
+                    <tr><td>langsam</td><td>langsamer</td><td>медленнее</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Исключения (неправильные формы):</strong><br>
+                <strong>gut → besser</strong> (хороший → лучше)<br>
+                <strong>schlecht → schlechter</strong> (плохой → хуже)<br>
+                <strong>hoch → höher</strong> (высокий → выше)
+            </div>
+
+            <h2>3. Правила образования Superlativ</h2>
+            <p>Для образования превосходной степени используй <strong>am + -sten</strong>:</p>
+
+            <table>
+                <thead><tr><th>Positive</th><th>Superlativ</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>schön</td><td>am schönsten</td><td>самый красивый</td></tr>
+                    <tr><td>groß</td><td>am größten</td><td>самый большой</td></tr>
+                    <tr><td>klein</td><td>am kleinsten</td><td>самый маленький</td></tr>
+                    <tr><td>jung</td><td>am jüngsten</td><td>самый молодой</td></tr>
+                    <tr><td>alt</td><td>am ältesten</td><td>самый старый</td></tr>
+                    <tr><td>gut</td><td>am besten</td><td>самый лучший</td></tr>
+                    <tr><td>schlecht</td><td>am schlechtesten</td><td>самый плохой</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Союзы als и wie</h2>
+            <p>При сравнении используй союзы:</p>
+            <ul>
+                <li><strong>als</strong> — чем (сравнительная степень)</li>
+                <li><strong>wie</strong> — как (равенство)</li>
+            </ul>
+
+            <table>
+                <thead><tr><th>Союз</th><th>Значение</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>als</strong></td><td>чем</td><td><em>Berlin ist <strong>größer als</strong> München.</em> — Берлин больше, чем Мюнхен.</td></tr>
+                    <tr><td><strong>wie</strong></td><td>как</td><td><em>Berlin ist <strong>so groß wie</strong> München.</em> — Берлин такой же большой, как Мюнхен.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>5. Примеры сравнения</h2>
+            <ul>
+                <li><em>Mein Bruder ist <strong>größer als</strong> ich.</em> — Мой брат выше, чем я.</li>
+                <li><em>Das Auto ist <strong>schneller als</strong> der Bus.</em> — Машина быстрее, чем автобус.</li>
+                <li><em>Berlin ist <strong>am größten</strong> in Deutschland.</em> — Берлин самый большой в Германии.</li>
+                <li><em>Das ist <strong>am besten</strong>!</em> — Это самое лучшее!</li>
+                <li><em>Meine Schwester ist <strong>jünger als</strong> ich.</em> — Моя сестра младше, чем я.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для сравнения.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>schön</strong> — красивый</div>
+                <div class="vocabulary-item"><strong>groß</strong> — большой</div>
+                <div class="vocabulary-item"><strong>klein</strong> — маленький</div>
+                <div class="vocabulary-item"><strong>jung</strong> — молодой</div>
+                <div class="vocabulary-item"><strong>alt</strong> — старый</div>
+                <div class="vocabulary-item"><strong>gut</strong> — хороший</div>
+                <div class="vocabulary-item"><strong>schlecht</strong> — плохой</div>
+                <div class="vocabulary-item"><strong>schnell</strong> — быстрый</div>
+                <div class="vocabulary-item"><strong>langsam</strong> — медленный</div>
+                <div class="vocabulary-item"><strong>teuer</strong> — дорогой</div>
+                <div class="vocabulary-item"><strong>billig</strong> — дешёвый</div>
+                <div class="vocabulary-item"><strong>interessant</strong> — интересный</div>
+                <div class="vocabulary-item"><strong>wichtig</strong> — важный</div>
+                <div class="vocabulary-item"><strong>einfach</strong> — простой</div>
+                <div class="vocabulary-item"><strong>schwer</strong> — сложный</div>
+                <div class="vocabulary-item"><strong>hell</strong> — светлый</div>
+                <div class="vocabulary-item"><strong>dunkel</strong> — тёмный</div>
+                <div class="vocabulary-item"><strong>warm</strong> — тёплый</div>
+                <div class="vocabulary-item"><strong>kalt</strong> — холодный</div>
+                <div class="vocabulary-item"><strong>hoch</strong> — высокий</div>
+                <div class="vocabulary-item"><strong>niedrig</strong> — низкий</div>
+                <div class="vocabulary-item"><strong>reich</strong> — богатый</div>
+                <div class="vocabulary-item"><strong>arm</strong> — бедный</div>
+                <div class="vocabulary-item"><strong>stark</strong> — сильный</div>
+                <div class="vocabulary-item"><strong>schwach</strong> — слабый</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем степени сравнения!</p>
+
+            <h3>Упражнение 30.1: Komparativ — образование (12)</h3>
+            <p><em>Образуй сравнительную степень:</em></p>
+            <ol class="exercise-list" id="ex-301">
+                <li>schön &rarr; _________<span class="answer-inline">schöner</span></li>
+                <li>groß &rarr; _________<span class="answer-inline">größer</span></li>
+                <li>klein &rarr; _________<span class="answer-inline">kleiner</span></li>
+                <li>jung &rarr; _________<span class="answer-inline">jünger</span></li>
+                <li>alt &rarr; _________<span class="answer-inline">älter</span></li>
+                <li>schnell &rarr; _________<span class="answer-inline">schneller</span></li>
+                <li>langsam &rarr; _________<span class="answer-inline">langsamer</span></li>
+                <li>teuer &rarr; _________<span class="answer-inline">teurer</span></li>
+                <li>billig &rarr; _________<span class="answer-inline">billiger</span></li>
+                <li>interessant &rarr; _________<span class="answer-inline">interessanter</span></li>
+                <li>wichtig &rarr; _________<span class="answer-inline">wichtiger</span></li>
+                <li>hoch &rarr; _________<span class="answer-inline">höher</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-301')">Показать ответы</button>
+
+            <h3>Упражнение 30.2: Superlativ — образование (12)</h3>
+            <p><em>Образуй превосходную степень (am + -sten):</em></p>
+            <ol class="exercise-list" id="ex-302">
+                <li>schön &rarr; am _________<span class="answer-inline">schönsten</span></li>
+                <li>groß &rarr; am _________<span class="answer-inline">größten</span></li>
+                <li>klein &rarr; am _________<span class="answer-inline">kleinsten</span></li>
+                <li>jung &rarr; am _________<span class="answer-inline">jüngsten</span></li>
+                <li>alt &rarr; am _________<span class="answer-inline">ältesten</span></li>
+                <li>schnell &rarr; am _________<span class="answer-inline">schnellsten</span></li>
+                <li>langsam &rarr; am _________<span class="answer-inline">langsamsten</span></li>
+                <li>teuer &rarr; am _________<span class="answer-inline">teuersten</span></li>
+                <li>billig &rarr; am _________<span class="answer-inline">billigsten</span></li>
+                <li>interessant &rarr; am _________<span class="answer-inline">interessantesten</span></li>
+                <li>wichtig &rarr; am _________<span class="answer-inline">wichtigsten</span></li>
+                <li>hoch &rarr; am _________<span class="answer-inline">höchsten</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-302')">Показать ответы</button>
+
+            <h3>Упражнение 30.3: als или wie (12)</h3>
+            <p><em>Вставь als или wie:</em></p>
+            <ol class="exercise-list" id="ex-303">
+                <li>Berlin ist größer _________ München.<span class="answer-inline">als</span></li>
+                <li>Berlin ist so groß _________ München.<span class="answer-inline">wie</span></li>
+                <li>Mein Bruder ist älter _________ ich.<span class="answer-inline">als</span></li>
+                <li>Mein Bruder ist so alt _________ ich.<span class="answer-inline">wie</span></li>
+                <li>Das Auto ist schneller _________ der Bus.<span class="answer-inline">als</span></li>
+                <li>Das Auto ist so schnell _________ der Bus.<span class="answer-inline">wie</span></li>
+                <li>Berlin ist am größten _________ in Deutschland.<span class="answer-inline">—</span></li>
+                <li>Das ist am besten _________ alles.<span class="answer-inline">—</span></li>
+                <li>Meine Schwester ist jünger _________ ich.<span class="answer-inline">als</span></li>
+                <li>Meine Schwester ist so jung _________ ich.<span class="answer-inline">wie</span></li>
+                <li>Das Buch ist interessanter _________ der Film.<span class="answer-inline">als</span></li>
+                <li>Das Buch ist so interessant _________ der Film.<span class="answer-inline">wie</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-303')">Показать ответы</button>
+
+            <h3>Упражнение 30.4: Сравни предложения (12)</h3>
+            <p><em>Построй предложения с als/wie:</em></p>
+            <ol class="exercise-list" id="ex-304">
+                <li>Berlin / groß / München sein &rarr; Berlin ist größer _________ München.<span class="answer-inline">als</span></li>
+                <li>mein Bruder / jung / ich sein &rarr; Mein Bruder ist jünger _________ ich.<span class="answer-inline">als</span></li>
+                <li>das Auto / schnell / der Bus sein &rarr; Das Auto ist schneller _________ der Bus.<span class="answer-inline">als</span></li>
+                <li>Berlin / so groß / München sein &rarr; Berlin ist so groß _________ München.<span class="answer-inline">wie</span></li>
+                <li>mein Bruder / so alt / ich sein &rarr; Mein Bruder ist so alt _________ ich.<span class="answer-inline">wie</span></li>
+                <li>das Buch / interessant / der Film sein &rarr; Das Buch ist interessanter _________ der Film.<span class="answer-inline">als</span></li>
+                <li>der Zug / schnell / das Auto sein &rarr; Der Zug ist schneller _________ das Auto.<span class="answer-inline">als</span></li>
+                <li>die Katze / klein / der Hund sein &rarr; Die Katze ist kleiner _________ der Hund.<span class="answer-inline">als</span></li>
+                <li>das Haus / groß / die Wohnung sein &rarr; Das Haus ist größer _________ die Wohnung.<span class="answer-inline">als</span></li>
+                <li>der Sommer / warm / der Winter sein &rarr; Der Sommer ist wärmer _________ der Winter.<span class="answer-inline">als</span></li>
+                <li>der Film / so gut / das Buch sein &rarr; Der Film ist so gut _________ das Buch.<span class="answer-inline">wie</span></li>
+                <li>die Stadt / so alt / das Dorf sein &rarr; Die Stadt ist so alt _________ das Dorf.<span class="answer-inline">wie</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-304')">Показать ответы</button>
+
+            <h3>Упражнение 30.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения. Используй степени сравнения!</em></p>
+            <ol class="exercise-list" id="ex-305">
+                <li>Берлин больше, чем Мюнхен.<span class="answer-inline">Berlin ist größer als München.</span></li>
+                <li>Мой брат выше, чем я.<span class="answer-inline">Mein Bruder ist größer als ich.</span></li>
+                <li>Машина быстрее, чем автобус.<span class="answer-inline">Das Auto ist schneller als der Bus.</span></li>
+                <li>Берлин такой же большой, как Мюнхен.<span class="answer-inline">Berlin ist so groß wie München.</span></li>
+                <li>Моя сестра младше, чем я.<span class="answer-inline">Meine Schwester ist jünger als ich.</span></li>
+                <li>Книга интереснее, чем фильм.<span class="answer-inline">Das Buch ist interessanter als der Film.</span></li>
+                <li>Это самое лучшее!<span class="answer-inline">Das ist am besten!</span></li>
+                <li>Она самая красивая.<span class="answer-inline">Sie ist am schönsten.</span></li>
+                <li>Поезд быстрее, чем машина.<span class="answer-inline">Der Zug ist schneller als das Auto.</span></li>
+                <li>Летом теплее, чем зимой.<span class="answer-inline">Im Sommer ist es wärmer als im Winter.</span></li>
+                <li>Этот дом самый большой.<span class="answer-inline">Das Haus ist am größten.</span></li>
+                <li>Он такой же умный, как она.<span class="answer-inline">Er ist so klug wie sie.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-305')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-4.html" class="nav-link">&larr; Предыдущий урок (A2-4)</a>
+        <span class="nav-title">Конец урока A2-5</span>
+        <a href="a2-6.html" class="nav-link">Следующий урок (A2-6) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

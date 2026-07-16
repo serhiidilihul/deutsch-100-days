@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-18: Путешествия, бронирование отелей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-17.html" class="nav-link">&larr; Урок A2-17</a>
+        <span class="nav-title">Урок A2-18</span>
+        <a href="a2-19.html" class="nav-link">Урок A2-19 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим конструкцию um... zu из урока A2-17. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: um... zu — образование (12)</h3>
+            <p><em>Построй предложения с um... zu:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>ich / Deutsch lernen / ich / in Deutschland arbeiten können &rarr; Ich ___________________.<span class="answer-inline">lerne Deutsch, um in Deutschland zu arbeiten</span></li>
+                <li>ich / Geld sparen / ich / ein Auto kaufen können &rarr; Ich ___________________.<span class="answer-inline">spare Geld, um ein Auto zu kaufen</span></li>
+                <li>ich / das Fenster öffnen / es / frische Luft geben &rarr; Ich ___________________.<span class="answer-inline">öffne das Fenster, um frische Luft zu haben</span></li>
+                <li>wir / lernen / wir / die Prüfung bestehen können &rarr; Wir ___________________.<span class="answer-inline">lernen, um die Prüfung zu bestehen</span></li>
+                <li>du / üben / du / besser werden können &rarr; Du ___________________.<span class="answer-inline">übst, um besser zu werden</span></li>
+                <li>er / trainieren / er / gesund bleiben können &rarr; Er ___________________.<span class="answer-inline">trainiert, um gesund zu bleiben</span></li>
+                <li>ich / früh aufstehen / ich / pünktlich sein können &rarr; Ich ___________________.<span class="answer-inline">stehe früh auf, um pünktlich zu sein</span></li>
+                <li>wir / sparen / wir / reisen können &rarr; Wir ___________________.<span class="answer-inline">sparen, um zu reisen</span></li>
+                <li>ich / arbeiten / ich / Geld verdienen können &rarr; Ich ___________________.<span class="answer-inline">arbeite, um Geld zu verdienen</span></li>
+                <li>du / lesen / du / lernen können &rarr; Du ___________________.<span class="answer-inline">liest, um zu lernen</span></li>
+                <li>sie / kochen / sie / die Gäste verwöhnen können &rarr; Sie ___________________.<span class="answer-inline">kocht, um die Gäste zu verwöhnen</span></li>
+                <li>ich / üben / ich / das schaffen können &rarr; Ich ___________________.<span class="answer-inline">übe, um das zu schaffen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: damit или um... zu (12)</h3>
+            <p><em>Выбери damit или um... zu:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich lerne Deutsch, _________ ich in Deutschland arbeiten kann.<span class="answer-inline">damit</span></li>
+                <li>Ich lerne Deutsch, _________ in Deutschland zu arbeiten.<span class="answer-inline">um</span></li>
+                <li>Ich spare Geld, _________ ich ein Auto kaufen kann.<span class="answer-inline">damit</span></li>
+                <li>Ich spare Geld, _________ ein Auto zu kaufen.<span class="answer-inline">um</span></li>
+                <li>Wir lernen, _________ wir die Prüfung bestehen können.<span class="answer-inline">damit</span></li>
+                <li>Wir lernen, _________ die Prüfung zu bestehen.<span class="answer-inline">um</span></li>
+                <li>Ich übe, _________ ich besser werden kann.<span class="answer-inline">damit</span></li>
+                <li>Ich übe, _________ besser zu werden.<span class="answer-inline">um</span></li>
+                <li>Er trainiert, _________ er gesund bleiben kann.<span class="answer-inline">damit</span></li>
+                <li>Er trainiert, _________ gesund zu bleiben.<span class="answer-inline">um</span></li>
+                <li>Ich arbeite, _________ ich Geld verdienen kann.<span class="answer-inline">damit</span></li>
+                <li>Ich arbeite, _________ Geld zu verdienen.<span class="answer-inline">um</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-18: Путешествия, бронирование отелей</h1>
+            <p class="subtitle">Учимся бронировать отели и вести переписку.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Могу вести переписку с отелем.</li>
+                <li>Умею забронировать номер, попросить определённые условия (вид на море, завтрак включён).</li>
+                <li>Могу решить проблему на ресепшене.</li>
+            </ul>
+
+            <h2>1. Бронирование отеля</h2>
+            <p>Для бронирования отеля нужно знать основные фразы:</p>
+
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Ich möchte ein Zimmer buchen.</strong></td><td>Я хочу забронировать номер.</td><td><em>Ich möchte ein Zimmer buchen.</em></td></tr>
+                    <tr><td><strong>Ich suche ein Hotel.</strong></td><td>Я ищу отель.</td><td><em>Ich suche ein Hotel in Berlin.</em></td></tr>
+                    <tr><td><strong>Wie viel kostet das Zimmer?</strong></td><td>Сколько стоит номер?</td><td><em>Wie viel kostet das Zimmer pro Nacht?</em></td></tr>
+                    <tr><td><strong>Ich bleibe vom... bis...</strong></td><td>Я остаюсь с... до...</td><td><em>Ich bleibe vom 1. bis 5. Mai.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Типы номеров</h2>
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>das Einzelzimmer</strong></td><td>одноместный номер</td></tr>
+                    <tr><td><strong>das Doppelzimmer</strong></td><td>двухместный номер</td></tr>
+                    <tr><td><strong>die Suite</strong></td><td>люкс</td></tr>
+                    <tr><td><strong>die Etage</strong></td><td>этаж</td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Особые пожелания</h2>
+            <p>Можно попросить особые условия:</p>
+
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Ich möchte ein Zimmer mit Meerblick.</strong></td><td>Я хочу номер с видом на море.</td></tr>
+                    <tr><td><strong>Ich möchte ein Zimmer mit Balkon.</strong></td><td>Я хочу номер с балконом.</td></tr>
+                    <tr><td><strong>Ist das Frühstück inklusive?</strong></td><td>Завтрак включён?</td></tr>
+                    <tr><td><strong>Ich möchte ein ruhiges Zimmer.</strong></td><td>Я хочу тихий номер.</td></tr>
+                    <tr><td><strong>Ich möchte ein Zimmer auf der 5. Etage.</strong></td><td>Я хочу номер на 5 этаже.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Проблемы на ресепшене</h2>
+            <p>Если возникла проблема:</p>
+
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Das Zimmer ist nicht sauber.</strong></td><td>Номер не чистый.</td></tr>
+                    <tr><td><strong>Die Klimaanlage funktioniert nicht.</strong></td><td>Кондиционер не работает.</td></tr>
+                    <tr><td><strong>Ich habe kein Wasser.</strong></td><td>У меня нет воды.</td></tr>
+                    <tr><td><strong>Können Sie mir helfen?</strong></td><td>Вы можете мне помочь?</td></tr>
+                    <tr><td><strong>Ich möchte auschecken.</strong></td><td>Я хочу выехать (оформить выезд).</td></tr>
+                </tbody>
+            </table>
+
+            <h2>5. Пример диалога</h2>
+            <ul>
+                <li><em>Rezeptionist: Guten Tag! Wie kann ich Ihnen helfen?</em></li>
+                <li><em>Gast: Ich habe ein Zimmer reserviert auf den Namen Müller.</em></li>
+                <li><em>Rezeptionist: Ja, ich habe es. Ein Doppelzimmer für 3 Nächte, richtig?</em></li>
+                <li><em>Gast: Ja, richtig. Haben Sie ein Zimmer mit Meerblick?</em></li>
+                <li><em>Rezeptionist: Ja, auf der 4. Etage. Das Frühstück ist inklusive.</em></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">50 слов для путешествий и бронирования.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>das Hotel, -s</strong> — отель</div>
+                <div class="vocabulary-item"><strong>das Zimmer, -</strong> — номер</div>
+                <div class="vocabulary-item"><strong>buchen</strong> — бронировать</div>
+                <div class="vocabulary-item"><strong>die Reservierung, -en</strong> — бронь</div>
+                <div class="vocabulary-item"><strong>die Rezeption (Sg.)</strong> — ресепшн</div>
+                <div class="vocabulary-item"><strong>der Gast, -äe</strong> — гость</div>
+                <div class="vocabulary-item"><strong>der Pass, -äe</strong> — паспорт</div>
+                <div class="vocabulary-item"><strong>der Koffer, -</strong> — чемодан</div>
+                <div class="vocabulary-item"><strong>die Kreditkarte (Sg.)</strong> — кредитная карта</div>
+                <div class="vocabulary-item"><strong>bar</strong> — наличные</div>
+                <div class="vocabulary-item"><strong>die Nacht, -äe</strong> — ночь</div>
+                <div class="vocabulary-item"><strong>die Woche (Sg.)</strong> — неделя</div>
+                <div class="vocabulary-item"><strong>der Urlaub, -e</strong> — отпуск</div>
+                <div class="vocabulary-item"><strong>die Reise, -n</strong> — поездка</div>
+                <div class="vocabulary-item"><strong>der Flughafen, -</strong> — аэропорт</div>
+                <div class="vocabulary-item"><strong>der Bahnhof, -äe</strong> — вокзал</div>
+                <div class="vocabulary-item"><strong>der Strand, -äe</strong> — пляж</div>
+                <div class="vocabulary-item"><strong>das Meer (Sg.)</strong> — море</div>
+                <div class="vocabulary-item"><strong>der Berg, -e</strong> — гора</div>
+                <div class="vocabulary-item"><strong>die Stadt, -äe</strong> — город</div>
+                <div class="vocabulary-item"><strong>das Restaurant, -s</strong> — ресторан</div>
+                <div class="vocabulary-item"><strong>das Frühstück, -e</strong> — завтрак</div>
+                <div class="vocabulary-item"><strong>das Abendessen, -</strong> — ужин</div>
+                <div class="vocabulary-item"><strong>inklusive</strong> — включённый</div>
+                <div class="vocabulary-item"><strong>der Meerblick, -e</strong> — вид на море</div>
+                <div class="vocabulary-item"><strong>der Balkon, -e</strong> — балкон</div>
+                <div class="vocabulary-item"><strong>die Klimaanlage, -n</strong> — кондиционер</div>
+                <div class="vocabulary-item"><strong>sauber</strong> — чистый</div>
+                <div class="vocabulary-item"><strong>ruhig</strong> — тихий</div>
+                <div class="vocabulary-item"><strong>auschecken</strong> — выехать (оформить)</div>
+                <div class="vocabulary-item"><strong>die Rechnung, -en</strong> — счёт</div>
+                <div class="vocabulary-item"><strong>bar / mit Karte</strong> — наличные / картой</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем путешествия!</p>
+
+            <h3>Упражнение 43.1: Типы номеров (12)</h3>
+            <p><em>Выбери правильный тип номера:</em></p>
+            <ol class="exercise-list" id="ex-431">
+                <li>Ich möchte _________ für eine Person buchen. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Einzelzimmer</span></li>
+                <li>Ich möchte _________ für zwei Personen buchen. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Doppelzimmer</span></li>
+                <li>Wir möchten eine _________ für 4 Personen. (Suite/Zimmer)<span class="answer-inline">Suite</span></li>
+                <li>Das _________ ist sehr schön. (Zimmer/Etage)<span class="answer-inline">Zimmer</span></li>
+                <li>Wir wohnen im _________ Stock. (Etage/Zimmer)<span class="answer-inline">Etage</span></li>
+                <li>Ich möchte ein Zimmer auf der 3. _________. (Etage/Zimmer)<span class="answer-inline">Etage</span></li>
+                <li>Das _________ hat einen Balkon. (Zimmer/Suite)<span class="answer-inline">Zimmer</span></li>
+                <li>Die _________ ist sehr luxuriös. (Suite/Zimmer)<span class="answer-inline">Suite</span></li>
+                <li>Ich buche ein _________ für eine Nacht. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Einzelzimmer</span></li>
+                <li>Wir buche ein _________ für eine Woche. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Doppelzimmer</span></li>
+                <li>Auf welcher _________ ist das Zimmer? (Etage/Zimmer)<span class="answer-inline">Etage</span></li>
+                <li>Das _________ ist sehr klein. (Zimmer/Etage)<span class="answer-inline">Zimmer</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-431')">Показать ответы</button>
+
+            <h3>Упражнение 43.2: Особые пожелания (12)</h3>
+            <p><em>Выбери правильное пожелание:</em></p>
+            <ol class="exercise-list" id="ex-432">
+                <li>Ich möchte ein Zimmer mit _________ (Meerblick/Balkon).<span class="answer-inline">Meerblick</span></li>
+                <li>Ich möchte ein Zimmer mit _________ (Meerblick/Balkon).<span class="answer-inline">Balkon</span></li>
+                <li>Ist das _________ inklusive? (Frühstück/Abendessen)<span class="answer-inline">Frühstück</span></li>
+                <li>Ich möchte ein _________ Zimmer. (ruhig/laut)<span class="answer-inline">ruhig</span></li>
+                <li>Ich möchte ein Zimmer auf der 5. _________. (Etage/Zimmer)<span class="answer-inline">Etage</span></li>
+                <li>Ich möchte ein Zimmer _________ dem Meer. (mit/ohne)<span class="answer-inline">mit</span></li>
+                <li>Ich möchte ein Zimmer _________ Balkon. (mit/ohne)<span class="answer-inline">mit</span></li>
+                <li>Ist der _________ inklusive? (Frühstück/Meerblick)<span class="answer-inline">Frühstück</span></li>
+                <li>Ich möchte ein _________ Zimmer. (ruhig/laut)<span class="answer-inline">ruhig</span></li>
+                <li>Ich möchte ein Zimmer _________ der 3. Etage. (auf/in)<span class="answer-inline">auf</span></li>
+                <li>Ich möchte ein Zimmer _________ Badewanne. (mit/ohne)<span class="answer-inline">mit</span></li>
+                <li>Ist das _________ inklusive? (Frühstück/Zimmer)<span class="answer-inline">Frühstück</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-432')">Показать ответы</button>
+
+            <h3>Упражнение 43.3: Проблемы на ресепшене (12)</h3>
+            <p><em>Опиши проблему:</em></p>
+            <ol class="exercise-list" id="ex-433">
+                <li>Das Zimmer / nicht sauber sein &rarr; Das ___________________.<span class="answer-inline">Zimmer ist nicht sauber</span></li>
+                <li>die Klimaanlage / nicht funktionieren &rarr; Die ___________________.<span class="answer-inline">Klimaanlage funktioniert nicht</span></li>
+                <li>ich / kein Wasser haben &rarr; Ich ___________________.<span class="answer-inline">habe kein Wasser</span></li>
+                <li>der Fernseher / nicht funktionieren &rarr; Der ___________________.<span class="answer-inline">Fernseher funktioniert nicht</span></li>
+                <li>das WLAN / nicht funktionieren &rarr; Das ___________________.<span class="answer-inline">WLAN funktioniert nicht</span></li>
+                <li>ich / kein Handtuch haben &rarr; Ich ___________________.<span class="answer-inline">habe kein Handtuch</span></li>
+                <li>die Tür / nicht öffnen &rarr; Die ___________________.<span class="answer-inline">Tür öffnet nicht</span></li>
+                <li>der Schlüssel / nicht funktionieren &rarr; Der ___________________.<span class="answer-inline">Schlüssel funktioniert nicht</span></li>
+                <li>es / zu kalt sein &rarr; Es ___________________.<span class="answer-inline">ist zu kalt</span></li>
+                <li>es / zu laut sein &rarr; Es ___________________.<span class="answer-inline">ist zu laut</span></li>
+                <li>ich / die Rechnung / nicht verstehen &rarr; Ich ___________________.<span class="answer-inline">verstehe die Rechnung nicht</span></li>
+                <li>das Frühstück / zu früh sein &rarr; Das ___________________.<span class="answer-inline">Frühstück ist zu früh</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-433')">Показать ответы</button>
+
+            <h3>Упражнение 43.4: Диалог на ресепшене (12)</h3>
+            <p><em>Построй диалог:</em></p>
+            <ol class="exercise-list" id="ex-434">
+                <li>Guten Tag! / ich / ein Zimmer buchen &rarr; Guten Tag! Ich möchte ___________________.<span class="answer-inline">ein Zimmer buchen</span></li>
+                <li>Ich / ein Zimmer reservieren / auf den Namen Müller &rarr; Ich ___________________.<span class="answer-inline">habe ein Zimmer reserviert auf den Namen Müller</span></li>
+                <li>Wie viel / das Zimmer / kosten? &rarr; Wie viel ___________________.<span class="answer-inline">kostet das Zimmer</span></li>
+                <li>Ich / vom 1. bis 5. Mai / bleiben &rarr; Ich ___________________.<span class="answer-inline">bleibe vom 1. bis 5. Mai</span></li>
+                <li>Ich / ein Zimmer mit Meerblick / wollen &rarr; Ich ___________________.<span class="answer-inline">möchte ein Zimmer mit Meerblick</span></li>
+                <li>Ist / das Frühstück / inklusive? &rarr; Ist ___________________.<span class="answer-inline">das Frühstück inklusive</span></li>
+                <li>Ich / auschecken / wollen &rarr; Ich ___________________.<span class="answer-inline">möchte auschecken</span></li>
+                <li>Die Rechnung / bitte! &rarr; ___________________.<span class="answer-inline">Die Rechnung, bitte!</span></li>
+                <li>Ich / mit Karte / zahlen &rarr; Ich ___________________.<span class="answer-inline">zahle mit Karte</span></li>
+                <li>Ich / bar / zahlen &rarr; Ich ___________________.<span class="answer-inline">zahle bar</span></li>
+                <li>Das Zimmer / ist nicht sauber &rarr; Das ___________________.<span class="answer-inline">Zimmer ist nicht sauber</span></li>
+                <li>Können Sie / mir / helfen? &rarr; Können Sie ___________________.<span class="answer-inline">mir helfen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-434')">Показать ответы</button>
+
+            <h3>Упражнение 43.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-435">
+                <li>Я хочу забронировать номер.<span class="answer-inline">Ich möchte ein Zimmer buchen.</span></li>
+                <li>Я ищу отель в Берлине.<span class="answer-inline">Ich suche ein Hotel in Berlin.</span></li>
+                <li>Сколько стоит номер за ночь?<span class="answer-inline">Wie viel kostet das Zimmer pro Nacht?</span></li>
+                <li>Я остаюсь с 1 по 5 мая.<span class="answer-inline">Ich bleibe vom 1. bis 5. Mai.</span></li>
+                <li>Я хочу номер с видом на море.<span class="answer-inline">Ich möchte ein Zimmer mit Meerblick.</span></li>
+                <li>Завтрак включён?<span class="answer-inline">Ist das Frühstück inklusive?</span></li>
+                <li>Я хочу тихий номер.<span class="answer-inline">Ich möchte ein ruhiges Zimmer.</span></li>
+                <li>Номер не чистый.<span class="answer-inline">Das Zimmer ist nicht sauber.</span></li>
+                <li>Кондиционер не работает.<span class="answer-inline">Die Klimaanlage funktioniert nicht.</span></li>
+                <li>Я хочу выехать.<span class="answer-inline">Ich möchte auschecken.</span></li>
+                <li>Счёт, пожалуйста.<span class="answer-inline">Die Rechnung, bitte.</span></li>
+                <li>Я плачу наличными.<span class="answer-inline">Ich zahle bar.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-435')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-17.html" class="nav-link">&larr; Предыдущий урок (A2-17)</a>
+        <span class="nav-title">Конец урока A2-18</span>
+        <a href="a2-19.html" class="nav-link">Следующий урок (A2-19) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

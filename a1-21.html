@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-21: Погода, времена года, свободное время</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a1-20.html" class="nav-link">&larr; Урок А1-20</a>
+        <span class="nav-title">Урок А1-21</span>
+        <a href="a1-22.html" class="nav-link">Урок А1-22 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим ориентацию в городе и транспорт из урока 20. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Глаголы движения и направления (12)</h3>
+            <p><em>Вставь правильный глагол движения:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>_________ Sie geradeaus!<span class="answer-inline">Gehen</span></li>
+                <li>_________ Sie links ab!<span class="answer-inline">Biegen</span></li>
+                <li>_________ Sie die Straße!<span class="answer-inline">Überqueren</span></li>
+                <li>_________ Sie hier!<span class="answer-inline">Halten</span></li>
+                <li>_________ Sie bis zur Ampel!<span class="answer-inline">Laufen</span></li>
+                <li>_________ Sie rechts!<span class="answer-inline">Gehen</span></li>
+                <li>_________ Sie über die Brücke!<span class="answer-inline">Gehen</span></li>
+                <li>_________ Sie am Park vorbei!<span class="answer-inline">Gehen</span></li>
+                <li>_________ Sie in die erste Straße!<span class="answer-inline">Biegen</span></li>
+                <li>_________ Sie geradeaus bis zum Ende!<span class="answer-inline">Gehen</span></li>
+                <li>_________ Sie hier ein!<span class="answer-inline">Biegen</span></li>
+                <li>_________ Sie bis zum Bahnhof!<span class="answer-inline">Laufen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Направления и городские объекты (12)</h3>
+            <p><em>Вставь направление или название объекта:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Gehen Sie _________! (прямо)<span class="answer-inline">geradeaus</span></li>
+                <li>Biegen Sie _________ ab. (налево)<span class="answer-inline">links</span></li>
+                <li>Biegen Sie _________ ab. (направо)<span class="answer-inline">rechts</span></li>
+                <li>Das Café ist _________ dem Bahnhof. (напротив)<span class="answer-inline">gegenüber</span></li>
+                <li>Die Apotheke ist _________ dem Park. (рядом)<span class="answer-inline">neben</span></li>
+                <li>Die Bank ist _________ der Post und dem Café. (между)<span class="answer-inline">zwischen</span></li>
+                <li>Der Supermarkt ist _________ der Schule. (рядом)<span class="answer-inline">neben</span></li>
+                <li>Das Krankenhaus ist _________ dem Bahnhof. (напротив)<span class="answer-inline">gegenüber</span></li>
+                <li>Gehen Sie _________ bis zur Ampel! (прямо)<span class="answer-inline">geradeaus</span></li>
+                <li>Biegen Sie _________ in die Albertstraße. (направо)<span class="answer-inline">rechts</span></li>
+                <li>Die Kirche ist _________ dem Park und dem Museum. (между)<span class="answer-inline">zwischen</span></li>
+                <li>Das Restaurant ist _________ der Apotheke. (напротив)<span class="answer-inline">gegenüber</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок А1-21: Погода, времена года, свободное время</h1>
+            <p class="subtitle">Учимся говорить о погоде и планировать выходные.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Умею использовать безличное <strong>es</strong> (Es regnet, es ist kalt).</li>
+                <li>Могу поддержать светскую беседу о погоде и планах на выходные.</li>
+                <li>Знаю названия времен года и месяцев.</li>
+            </ul>
+
+            <h2>1. Безличное es ( impersonal es )</h2>
+            <p>В немецком языке для описания погоды используется <strong>безличное es</strong> — оно не переводится на русский и не имеет смысла "оно".</p>
+
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Es regnet.</strong></td><td>Дождь.</td> / <td>Идёт дождь.</td></tr>
+                    <tr><td><strong>Es schneit.</strong></td><td>Снег.</td> / <td>Идёт снег.</td></tr>
+                    <tr><td><strong>Es ist kalt.</strong></td><td>Холодно.</td></tr>
+                    <tr><td><strong>Es ist warm.</strong></td><td>Тепло.</td></tr>
+                    <tr><td><strong>Es ist sonnig.</strong></td><td>Солнечно.</td></tr>
+                    <tr><td><strong>Es ist windig.</strong></td><td>Ветрено.</td></tr>
+                    <tr><td><strong>Es ist bewölkt.</strong></td><td>Облачно.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Времена года (Jahreszeiten)</h2>
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>der Fr&uuml;hling</strong></td><td>весна</td><td><em>Im Fr&uuml;hling blühen die Blumen.</em></td></tr>
+                    <tr><td><strong>der Sommer</strong></td><td>лето</td><td><em>Im Sommer ist es warm.</em></td></tr>
+                    <tr><td><strong>der Herbst</strong></td><td>осень</td><td><em>Im Herbst fallen die Blätter.</em></td></tr>
+                    <tr><td><strong>der Winter</strong></td><td>зима</td><td><em>Im Winter schneit es.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Месяцы (Monate)</h2>
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>der Januar</strong></td><td>январь</td></tr>
+                    <tr><td><strong>der Februar</strong></td><td>февраль</td></tr>
+                    <tr><td><strong>der M&auml;rz</strong></td><td>март</td></tr>
+                    <tr><td><strong>der April</strong></td><td>апрель</td></tr>
+                    <tr><td><strong>der Mai</strong></td><td>май</td></tr>
+                    <tr><td><strong>der Juni</strong></td><td>июнь</td></tr>
+                    <tr><td><strong>der Juli</strong></td><td>июль</td></tr>
+                    <tr><td><strong>der August</strong></td><td>август</td></tr>
+                    <tr><td><strong>der September</strong></td><td>сентябрь</td></tr>
+                    <tr><td><strong>der Oktober</strong></td><td>октябрь</td></tr>
+                    <tr><td><strong>der November</strong></td><td>ноябрь</td></tr>
+                    <tr><td><strong>der Dezember</strong></td><td>декабрь</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Свободное время (Freizeit)</h2>
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>spazieren gehen</strong></td><td>гулять</td><td><em>Ich gehe spazieren.</em></td></tr>
+                    <tr><td><strong>wandern</strong></td><td>ходить в поход</td><td><em>Wir wandern im Wald.</em></td></tr>
+                    <tr><td><strong>radfahren</strong></td><td>ездить на велосипеде</td><td><em>Er fährt Rad.</em></td></tr>
+                    <tr><td><strong>schwimmen</strong></td><td>плавать</td><td><em>Sie schwimmt im See.</em></td></tr>
+                    <tr><td><strong>lesen</strong></td><td>читать</td><td><em>Ich lese ein Buch.</em></td></tr>
+                    <tr><td><strong>fernsehen</strong></td><td>смотреть ТВ</td><td><em>Wir sehen fern.</em></td></tr>
+                    <tr><td><strong>musizieren</strong></td><td>заниматься музыкой</td><td><em>Er spielt Gitarre.</em></td></tr>
+                    <tr><td><strong>malen</strong></td><td>рисовать</td><td><em>Sie malt ein Bild.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>5. Светская беседа о погоде</h2>
+            <ul>
+                <li><em>Wie ist das Wetter heute?</em> — Какая сегодня погода?</li>
+                <li><em>Es ist sch&ouml;n heute, nicht wahr?</em> — Сегодня красиво, не правда ли?</li>
+                <li><em>Ich hoffe, es wird am Wochenende sch&ouml;n.</em> — Надеюсь, на выходных будет красиво.</li>
+                <li><em>Was machst du am Wochenende?</em> — Что ты делаешь на выходных?</li>
+                <li><em>Ich gehe spazieren, wenn das Wetter gut ist.</em> — Я иду гулять, если погода хорошая.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">30 слов о погоде, временах года и свободном времени.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>das Wetter (Sg.)</strong> — погода</div>
+                <div class="vocabulary-item"><strong>es regnet</strong> — идёт дождь</div>
+                <div class="vocabulary-item"><strong>es schneit</strong> — идёт снег</div>
+                <div class="vocabulary-item"><strong>es ist kalt</strong> — холодно</div>
+                <div class="vocabulary-item"><strong>es ist warm</strong> — тепло</div>
+                <div class="vocabulary-item"><strong>es ist sonnig</strong> — солнечно</div>
+                <div class="vocabulary-item"><strong>es ist windig</strong> — ветрено</div>
+                <div class="vocabulary-item"><strong>es ist bewölkt</strong> — облачно</div>
+                <div class="vocabulary-item"><strong>der Fr&uuml;hling</strong> — весна</div>
+                <div class="vocabulary-item"><strong>der Sommer</strong> — лето</div>
+                <div class="vocabulary-item"><strong>der Herbst</strong> — осень</div>
+                <div class="vocabulary-item"><strong>der Winter</strong> — зима</div>
+                <div class="vocabulary-item"><strong>der Januar</strong> — январь</div>
+                <div class="vocabulary-item"><strong>der Februar</strong> — февраль</div>
+                <div class="vocabulary-item"><strong>der M&auml;rz</strong> — март</div>
+                <div class="vocabulary-item"><strong>der April</strong> — апрель</div>
+                <div class="vocabulary-item"><strong>der Mai</strong> — май</div>
+                <div class="vocabulary-item"><strong>der Juni</strong> — июнь</div>
+                <div class="vocabulary-item"><strong>der Juli</strong> — июль</div>
+                <div class="vocabulary-item"><strong>der August</strong> — август</div>
+                <div class="vocabulary-item"><strong>der September</strong> — сентябрь</div>
+                <div class="vocabulary-item"><strong>der Oktober</strong> — октябрь</div>
+                <div class="vocabulary-item"><strong>der November</strong> — ноябрь</div>
+                <div class="vocabulary-item"><strong>der Dezember</strong> — декабрь</div>
+                <div class="vocabulary-item"><strong>spazieren gehen</strong> — гулять</div>
+                <div class="vocabulary-item"><strong>wandern</strong> — ходить в поход</div>
+                <div class="vocabulary-item"><strong>radfahren</strong> — ездить на велосипеде</div>
+                <div class="vocabulary-item"><strong>schwimmen</strong> — плавать</div>
+                <div class="vocabulary-item"><strong>lesen</strong> — читать</div>
+                <div class="vocabulary-item"><strong>fernsehen</strong> — смотреть ТВ</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем погоду и свободное время!</p>
+
+            <h3>Упражнение 21.1: Безличное es (12)</h3>
+            <p><em>Вставь es + глагол или прилагательное:</em></p>
+            <ol class="exercise-list" id="ex-211">
+                <li>_________ regnet heute.<span class="answer-inline">Es</span></li>
+                <li>_________ schneit im Winter.<span class="answer-inline">Es</span></li>
+                <li>_________ ist kalt heute.<span class="answer-inline">Es</span></li>
+                <li>_________ ist warm im Sommer.<span class="answer-inline">Es</span></li>
+                <li>_________ ist sonnig.<span class="answer-inline">Es</span></li>
+                <li>_________ ist windig.<span class="answer-inline">Es</span></li>
+                <li>_________ ist bewölkt.<span class="answer-inline">Es</span></li>
+                <li>_________ regnet oft im Herbst.<span class="answer-inline">Es</span></li>
+                <li>_________ ist heiß im Juli.<span class="answer-inline">Es</span></li>
+                <li>_________ schneit im Dezember.<span class="answer-inline">Es</span></li>
+                <li>_________ ist frisch am Morgen.<span class="answer-inline">Es</span></li>
+                <li>_________ ist schön heute, nicht wahr?<span class="answer-inline">Es</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-211')">Показать ответы</button>
+
+            <h3>Упражнение 21.2: Времена года и месяцы (12)</h3>
+            <p><em>Вставь название времени года или месяца:</em></p>
+            <ol class="exercise-list" id="ex-212">
+                <li>Im _________ blühen die Blumen. (весна)<span class="answer-inline">Frühling</span></li>
+                <li>Im _________ ist es warm. (лето)<span class="answer-inline">Sommer</span></li>
+                <li>Im _________ fallen die Blätter. (осень)<span class="answer-inline">Herbst</span></li>
+                <li>Im _________ schneit es. (зима)<span class="answer-inline">Winter</span></li>
+                <li>Der _________ ist der erste Monat. (январь)<span class="answer-inline">Januar</span></li>
+                <li>Der _________ ist der fünfte Monat. (май)<span class="answer-inline">Mai</span></li>
+                <li>Der _________ ist der siebte Monat. (июль)<span class="answer-inline">Juli</span></li>
+                <li>Der _________ ist der zehnte Monat. (октябрь)<span class="answer-inline">Oktober</span></li>
+                <li>Im _________ haben wir Ferien. (лето)<span class="answer-inline">Sommer</span></li>
+                <li>Der _________ ist der zwölfte Monat. (декабрь)<span class="answer-inline">Dezember</span></li>
+                <li>Im _________ ist es oft kalt. (зима)<span class="answer-inline">Winter</span></li>
+                <li>Der _________ ist der dritte Monat. (март)<span class="answer-inline">März</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-212')">Показать ответы</button>
+
+            <h3>Упражнение 21.3: Свободное время — что делаешь? (12)</h3>
+            <p><em>Вставь правильный глагол:</em></p>
+            <ol class="exercise-list" id="ex-213">
+                <li>Ich _________ gern spazieren. (spazieren gehen)<span class="answer-inline">gehe</span></li>
+                <li>Er _________ im Wald. (wandern)<span class="answer-inline">wandert</span></li>
+                <li>Sie _________ Rad. (radfahren)<span class="answer-inline">fährt</span></li>
+                <li>Wir _________ im See. (schwimmen)<span class="answer-inline">schwimmen</span></li>
+                <li>Ich _________ ein Buch. (lesen)<span class="answer-inline">lese</span></li>
+                <li>Du _________ fern. (fernsehen)<span class="answer-inline">siehst</span></li>
+                <li>Er _________ Gitarre. (musizieren)<span class="answer-inline">spielt</span></li>
+                <li>Sie _________ ein Bild. (malen)<span class="answer-inline">malt</span></li>
+                <li>Wir _________ am Wochenende. (spazieren gehen)<span class="answer-inline">gehen</span></li>
+                <li>Ich _________ gern. (wandern)<span class="answer-inline">wandere</span></li>
+                <li>Du _________ im Sommer. (radfahren)<span class="answer-inline">fährst</span></li>
+                <li>Sie _________ im Urlaub. (schwimmen)<span class="answer-inline">schwimmt</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-213')">Показать ответы</button>
+
+            <h3>Упражнение 21.4: Светская беседа — вопросы (12)</h3>
+            <p><em>Составь вопрос:</em></p>
+            <ol class="exercise-list" id="ex-214">
+                <li>(wie / das Wetter) &rarr; _________________________?<span class="answer-inline">Wie ist das Wetter?</span></li>
+                <li>(was / du / am Wochenende) &rarr; _________________________?<span class="answer-inline">Was machst du am Wochenende?</span></li>
+                <li>(wie / der Sommer) &rarr; _________________________?<span class="answer-inline">Wie ist der Sommer?</span></li>
+                <li>(was / du / im Sommer) &rarr; _________________________?<span class="answer-inline">Was machst du im Sommer?</span></li>
+                <li>(es / regnen / heute) &rarr; _________________________?<span class="answer-inline">Regnet es heute?</span></li>
+                <li>(wie / die Temperatur) &rarr; _________________________?<span class="answer-inline">Wie ist die Temperatur?</span></li>
+                <li>(was / ihr / am Samstag) &rarr; _________________________?<span class="answer-inline">Was macht ihr am Samstag?</span></li>
+                <li>(es / schneien / im Winter) &rarr; _________________________?<span class="answer-inline">Schneit es im Winter?</span></li>
+                <li>(wie / der Winter) &rarr; _________________________?<span class="answer-inline">Wie ist der Winter?</span></li>
+                <li>(was / Sie / im Urlaub) &rarr; _________________________?<span class="answer-inline">Was machen Sie im Urlaub?</span></li>
+                <li>(es / sein / warm / heute) &rarr; _________________________?<span class="answer-inline">Ist es warm heute?</span></li>
+                <li>(wie / der Fr&uuml;hling) &rarr; _________________________?<span class="answer-inline">Wie ist der Frühling?</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-214')">Показать ответы</button>
+
+            <h3>Упражнение 21.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-215">
+                <li>Сегодня идёт дождь.<span class="answer-inline">Es regnet heute.</span></li>
+                <li>Зимой идёт снег.<span class="answer-inline">Im Winter schneit es.</span></li>
+                <li>Сегодня тепло.<span class="answer-inline">Es ist warm heute.</span></li>
+                <li>Летом солнечно.<span class="answer-inline">Im Sommer ist es sonnig.</span></li>
+                <li>Осенью ветрено.<span class="answer-inline">Im Herbst ist es windig.</span></li>
+                <li>Я иду гулять, если погода хорошая.<span class="answer-inline">Ich gehe spazieren, wenn das Wetter gut ist.</span></li>
+                <li>Что ты делаешь на выходных?<span class="answer-inline">Was machst du am Wochenende?</span></li>
+                <li>Я езжу на велосипеде летом.<span class="answer-inline">Im Sommer fahre ich Rad.</span></li>
+                <li>Она плавает в озере.<span class="answer-inline">Sie schwimmt im See.</span></li>
+                <li>Мы читаем книги вечером.<span class="answer-inline">Wir lesen am Abend Bücher.</span></li>
+                <li>Он смотрит телевизор.<span class="answer-inline">Er sieht fern.</span></li>
+                <li>Я надеюсь, на выходных будет хорошо.<span class="answer-inline">Ich hoffe, am Wochenende ist es schön.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-215')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a1-20.html" class="nav-link">&larr; Предыдущий урок (А1-20)</a>
+        <span class="nav-title">Конец урока А1-21</span>
+        <a href="a1-22.html" class="nav-link">Следующий урок (А1-22) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

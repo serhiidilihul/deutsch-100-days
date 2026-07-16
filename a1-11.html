@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-11: Модальные глаголы — k&ouml;nnen, m&uuml;ssen, wollen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <!-- Верхняя навигация -->
+    <nav class="nav">
+        <a href="a1-10.html" class="nav-link">&larr; Урок А1-10</a>
+        <span class="nav-title">Урок А1-11</span>
+        <a href="a1-12.html" class="nav-link">Урок А1-12 &rarr;</a>
+    </nav>
+
+    <main>
+        <!-- БЛОК ПОВТОРЕНИЯ (Wiederholung) -->
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим лексику еды и глагол m&ouml;chten из уроков 9-10. Вас ждут 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Глагол m&ouml;chten и Akkusativ (12 вопросов)</h3>
+            <p><em>Вставь правильную форму глагола <strong>m&ouml;chten</strong> и правильный артикль в Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich _________ (m&ouml;chten) _________ (ein) Kaffee.<span class="answer-inline">m&ouml;chte / einen</span></li>
+                <li>_________ (m&ouml;chten) du _________ (ein) Tee?<span class="answer-inline">M&ouml;chtest / einen</span></li>
+                <li>Er _________ (m&ouml;chten) _________ (ein) Bier.<span class="answer-inline">m&ouml;chte / ein</span></li>
+                <li>Wir _________ (m&ouml;chten) _________ (die) Rechnung.<span class="answer-inline">m&ouml;chten / die</span></li>
+                <li>_________ (m&ouml;chten) ihr _________ (ein) Salat?<span class="answer-inline">M&ouml;chtet / einen</span></li>
+                <li>Sie (они) _________ (m&ouml;chten) _________ (ein) Wasser.<span class="answer-inline">m&ouml;chten / ein</span></li>
+                <li>Was _________ (m&ouml;chten) Sie trinken?<span class="answer-inline">m&ouml;chten</span></li>
+                <li>Ich _________ (m&ouml;chten) _________ (ein) St&uuml;ck Kuchen.<span class="answer-inline">m&ouml;chte / ein</span></li>
+                <li>Sie (она) _________ (m&ouml;chten) _________ (eine) Cola.<span class="answer-inline">m&ouml;chte / eine</span></li>
+                <li>_________ (m&ouml;chten) du _________ (ein) Saft?<span class="answer-inline">M&ouml;chtest / einen</span></li>
+                <li>Wir _________ (m&ouml;chten) _________ (ein) Kilo &Auml;pfel.<span class="answer-inline">m&ouml;chten / ein</span></li>
+                <li>_________ (m&ouml;chten) ihr auch etwas bestellen?<span class="answer-inline">M&ouml;chtet</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <hr>
+
+            <h3>Упражнение Р2: Продукты и артикли (12 вопросов)</h3>
+            <p><em>Определи правильный артикль <strong>der, die, das</strong> для каждого продукта:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>_________ Kaffee<span class="answer-inline">der</span></li>
+                <li>_________ Milch<span class="answer-inline">die</span></li>
+                <li>_________ Brot<span class="answer-inline">das</span></li>
+                <li>_________ Butter<span class="answer-inline">die</span></li>
+                <li>_________ K&auml;se<span class="answer-inline">der</span></li>
+                <li>_________ Wurst<span class="answer-inline">die</span></li>
+                <li>_________ Fleisch<span class="answer-inline">das</span></li>
+                <li>_________ Fisch<span class="answer-inline">der</span></li>
+                <li>_________ Reis<span class="answer-inline">der</span></li>
+                <li>_________ Nudeln (Plural)<span class="answer-inline">die</span></li>
+                <li>_________ Apfel<span class="answer-inline">der</span></li>
+                <li>_________ Tomate<span class="answer-inline">die</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <!-- ТЕОРИЯ: МОДАЛЬНЫЕ ГЛАГОЛЫ -->
+        <div class="card">
+            <h1>Урок А1-11: Модальные глаголы — k&ouml;nnen, m&uuml;ssen, wollen</h1>
+            <p class="subtitle">Учимся говорить "Я могу", "Я должен" и "Я хочу" — основа любого диалога!</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю специфику спряжения модальных глаголов (без окончания в 1-м и 3-м лице ед.ч.).</li>
+                <li>Понимаю рамочную конструкцию (второй глагол идёт в конец предложения).</li>
+                <li>Могу сказать, что я должен и что умею делать.</li>
+            </ul>
+
+            <h2>1. Что такое модальные глаголы?</h2>
+            <p><strong>Модальные глаголы</strong> — это особые глаголы, которые изменяют смысл основного глагола. Они показывают <strong>возможность</strong>, <strong>необходимость</strong> или <strong>желание</strong> что-то сделать.</p>
+
+            <p>В немецком языке есть три главных модальных глагола, которые нужно знать на уровне A1:</p>
+
+            <table>
+                <thead>
+                    <tr><th>Глагол</th><th>Перевод</th><th>Значение</th><th>Пример</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>k&ouml;nnen</strong></td><td>мочь, уметь</td><td>возможность, способность</td><td><em>Ich kann Deutsch sprechen.</em> (Я умею говорить по-немецки.)</td></tr>
+                    <tr><td><strong>m&uuml;ssen</strong></td><td>быть должным</td><td>необходимость, обязанность</td><td><em>Ich muss arbeiten.</em> (Я должен работать.)</td></tr>
+                    <tr><td><strong>wollen</strong></td><td>хотеть</td><td>твердое желание, намерение</td><td><em>Ich will lernen.</em> (Я хочу учиться.)</td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Спряжение модальных глаголов</h2>
+            <p>Главная особенность модальных глаголов — в единственном числе <strong>меняется корневая гласная</strong> (кроме wir, ihr, sie/Sie), и в 1-м и 3-м лице единственного числа <strong>нет окончания</strong>.</p>
+
+            <table>
+                <thead>
+                    <tr><th>Лицо</th><th>k&ouml;nnen (мочь)</th><th>m&uuml;ssen (должен)</th><th>wollen (хотеть)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>ich</td><td><strong>kann</strong></td><td><strong>muss</strong></td><td><strong>will</strong></td></tr>
+                    <tr><td>du</td><td><strong>kannst</strong></td><td><strong>musst</strong></td><td><strong>willst</strong></td></tr>
+                    <tr><td>er / sie / es</td><td><strong>kann</strong></td><td><strong>muss</strong></td><td><strong>will</strong></td></tr>
+                    <tr><td>wir</td><td><strong>k&ouml;nnen</strong></td><td><strong>m&uuml;ssen</strong></td><td><strong>wollen</strong></td></tr>
+                    <tr><td>ihr</td><td><strong>k&ouml;nnt</strong></td><td><strong>m&uuml;sst</strong></td><td><strong>wollt</strong></td></tr>
+                    <tr><td>sie (они) / Sie</td><td><strong>k&ouml;nnen</strong></td><td><strong>m&uuml;ssen</strong></td><td><strong>wollen</strong></td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Запомни!</strong> У модальных глаголов в <strong>ich</strong>, <strong>er</strong>, <strong>sie</strong> (она), <strong>es</strong> — <strong>нет окончания</strong>! Нельзя сказать "ich kanne" или "er musst". Только: ich <strong>kann</strong>, er <strong>muss</strong>, sie <strong>will</strong>.
+            </div>
+
+            <h2>3. Рамочная конструкция (Satzklammer)</h2>
+            <p>В немецком языке модальные глаголы создают <strong>рамочную конструкцию</strong>: модальный глагол (спрягаемая часть) стоит на <strong>2-м месте</strong>, а смысловой глагол (в инфинитиве) уходит в <strong>самый конец предложения</strong>.</p>
+
+            <blockquote>
+                <strong>Формула:</strong> <br>
+                <strong>[Подлежащее] + [Модальный глагол] + ... (дополнения) ... + [Инфинитив смыслового глагола]</strong>
+            </blockquote>
+
+            <table>
+                <thead>
+                    <tr><th>Подлежащее</th><th>Модальный глагол</th><th>Дополнение</th><th>Инфинитив</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ich</td><td><strong>kann</strong></td><td>Deutsch</td><td><strong>sprechen</strong>.</td></tr>
+                    <tr><td>Er</td><td><strong>muss</strong></td><td>heute</td><td><strong>arbeiten</strong>.</td></tr>
+                    <tr><td>Wir</td><td><strong>wollen</strong></td><td>nach Berlin</td><td><strong>fahren</strong>.</td></tr>
+                    <tr><td>Sie (она)</td><td><strong>kann</strong></td><td>gut</td><td><strong>kochen</strong>.</td></tr>
+                    <tr><td>Du</td><td><strong>musst</strong></td><td>viel</td><td><strong>lernen</strong>.</td></tr>
+                    <tr><td>Ihr</td><td><strong>wollt</strong></td><td>etwas</td><td><strong>trinken</strong>.</td></tr>
+                </tbody>
+            </table>
+
+            <p>Обрати внимание: смысловой глагол стоит <strong>в самом конце</strong> предложения в форме <strong>Infinitiv</strong> (неопределённая форма).</p>
+
+            <h2>4. Разница между wollen и m&ouml;chten</h2>
+            <p>Мы уже знаем <strong>m&ouml;chten</strong> (хотел бы — вежливая форма) из урока 10. Теперь сравним с <strong>wollen</strong>:</p>
+
+            <table>
+                <thead>
+                    <tr><th>Глагол</th><th>Когда использовать</th><th>Пример</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>wollen</strong></td><td>Твёрдое намерение, план, решение</td><td><em>Ich will Arzt werden.</em> (Я хочу стать врачом.)</td></tr>
+                    <tr><td><strong>m&ouml;chten</strong></td><td>Вежливое желание, просьба</td><td><em>Ich m&ouml;chte bitte zahlen.</em> (Я хотел бы заплатить.)</td></tr>
+                </tbody>
+            </table>
+
+            <blockquote>
+                <strong>Совет:</strong> <strong>Wollen</strong> — это решительное "хочу". <strong>M&ouml;chten</strong> — вежливое "хотел бы".<br>
+                В кафе говори <strong>m&ouml;chten</strong>. О планах на жизнь — <strong>wollen</strong>.
+            </blockquote>
+
+            <h2>5. Ещё примеры с модальными глаголами</h2>
+
+            <h3>k&ouml;nnen (мочь, уметь):</h3>
+            <ul>
+                <li><em>Ich kann gut singen.</em> — Я умею хорошо петь.</li>
+                <li><em>Kannst du mir helfen?</em> — Ты можешь мне помочь?</li>
+                <li><em>Wir k&ouml;nnen am Samstag kommen.</em> — Мы можем прийти в субботу.</li>
+                <li><em>Hier kann man Deutsch lernen.</em> — Здесь можно учить немецкий.</li>
+            </ul>
+
+            <h3>m&uuml;ssen (быть должным):</h3>
+            <ul>
+                <li><em>Ich muss fr&uuml;h aufstehen.</em> — Я должен рано вставать.</li>
+                <li><em>Musst du heute arbeiten?</em> — Ты должен сегодня работать?</li>
+                <li><em>Wir m&uuml;ssen die Hausaufgaben machen.</em> — Мы должны делать домашнее задание.</li>
+                <li><em>Er muss zum Arzt gehen.</em> — Он должен пойти к врачу.</li>
+            </ul>
+
+            <h3>wollen (хотеть):</h3>
+            <ul>
+                <li><em>Ich will Deutsch lernen.</em> — Я хочу учить немецкий.</li>
+                <li><em>Was willst du essen?</em> — Что ты хочешь есть?</li>
+                <li><em>Sie will Ingenieurin werden.</em> — Она хочет стать инженером.</li>
+                <li><em>Wollt ihr mitkommen?</em> — Вы хотите пойти с нами?</li>
+            </ul>
+
+            <div class="note">
+                <strong>Вопросы с модальными глаголами:</strong><br>
+                В вопросах модальный глагол стоит на 1-м месте:<br>
+                <em><strong>Kann</strong> ich Ihnen helfen?</em> — Могу я Вам помочь?<br>
+                <em><strong>Musst</strong> du jetzt gehen?</em> — Ты должен сейчас идти?<br>
+                <em><strong>Willst</strong> du tanzen?</em> — Ты хочешь танцевать?
+            </div>
+        </div>
+
+        <!-- СЛОВАРЬ -->
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">28 ключевых слов для модальных глаголов и повседневных действий.</p>
+
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>k&ouml;nnen (kann)</strong> — мочь, уметь</div>
+                <div class="vocabulary-item"><strong>m&uuml;ssen (muss)</strong> — быть должным</div>
+                <div class="vocabulary-item"><strong>wollen (will)</strong> — хотеть</div>
+                <div class="vocabulary-item"><strong>m&ouml;chten (m&ouml;chte)</strong> — хотел бы</div>
+                <div class="vocabulary-item"><strong>k&ouml;nnen + Infinitiv</strong> — мочь сделать</div>
+                <div class="vocabulary-item"><strong>m&uuml;ssen + Infinitiv</strong> — должен сделать</div>
+                <div class="vocabulary-item"><strong>wollen + Infinitiv</strong> — хотеть сделать</div>
+                <div class="vocabulary-item"><strong>sprechen (spricht)</strong> — говорить</div>
+                <div class="vocabulary-item"><strong>arbeiten</strong> — работать</div>
+                <div class="vocabulary-item"><strong>lernen</strong> — учить</div>
+                <div class="vocabulary-item"><strong>helfen (hilft)</strong> — помогать</div>
+                <div class="vocabulary-item"><strong>kommen</strong> — приходить</div>
+                <div class="vocabulary-item"><strong>gehen</strong> — идти</div>
+                <div class="vocabulary-item"><strong>fahren (f&auml;hrt)</strong> — ехать</div>
+                <div class="vocabulary-item"><strong>machen</strong> — делать</div>
+                <div class="vocabulary-item"><strong>kochen</strong> — готовить</div>
+                <div class="vocabulary-item"><strong>singen</strong> — петь</div>
+                <div class="vocabulary-item"><strong>tanzen</strong> — танцевать</div>
+                <div class="vocabulary-item"><strong>aufstehen (steht auf)</strong> — вставать</div>
+                <div class="vocabulary-item"><strong>mitkommen</strong> — идти с кем-то</div>
+                <div class="vocabulary-item"><strong>die Hausaufgaben (Pl.)</strong> — домашнее задание</div>
+                <div class="vocabulary-item"><strong>der Arzt, -&auml;e</strong> — врач</div>
+                <div class="vocabulary-item"><strong>die Arbeit (Sg.)</strong> — работа</div>
+                <div class="vocabulary-item"><strong>das Deutsch (Sg.)</strong> — немецкий язык</div>
+                <div class="vocabulary-item"><strong>gut</strong> — хорошо</div>
+                <div class="vocabulary-item"><strong>viel</strong> — много</div>
+                <div class="vocabulary-item"><strong>fr&uuml;h</strong> — рано</div>
+                <div class="vocabulary-item"><strong>jetzt</strong> — сейчас</div>
+            </div>
+        </div>
+
+        <!-- ПРАКТИКА (5 УПРАЖНЕНИЙ ПО 12 ПРИМЕРОВ) -->
+        <div class="card">
+            <h2>Практика (&Uuml;bungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем модальные глаголы!</p>
+
+            <h3>Упражнение 11.1: Вставь правильную форму k&ouml;nnen (12 примеров)</h3>
+            <p><em>Вставь <strong>kann, kannst, k&ouml;nnen, k&ouml;nnt</strong>:</em></p>
+            <ol class="exercise-list" id="ex-111">
+                <li>Ich _________ Deutsch sprechen.<span class="answer-inline">kann</span></li>
+                <li>_________ du mir helfen?<span class="answer-inline">Kannst</span></li>
+                <li>Er _________ gut singen.<span class="answer-inline">kann</span></li>
+                <li>Wir _________ am Samstag kommen.<span class="answer-inline">k&ouml;nnen</span></li>
+                <li>_________ ihr tanzen?<span class="answer-inline">K&ouml;nnt</span></li>
+                <li>Sie (они) _________ gut kochen.<span class="answer-inline">k&ouml;nnen</span></li>
+                <li>Was _________ ich f&uuml;r Sie tun?<span class="answer-inline">kann</span></li>
+                <li>_________ Sie mir bitte helfen?<span class="answer-inline">K&ouml;nnen</span></li>
+                <li>Meine Schwester _________ Klavier spielen.<span class="answer-inline">kann</span></li>
+                <li>_________ du mich anrufen?<span class="answer-inline">Kannst</span></li>
+                <li>Wir _________ heute nicht kommen.<span class="answer-inline">k&ouml;nnen</span></li>
+                <li>Ihr _________ hier bleiben.<span class="answer-inline">k&ouml;nnt</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-111')">Показать ответы</button>
+
+            <hr>
+
+            <h3>Упражнение 11.2: Вставь правильную форму m&uuml;ssen (12 примеров)</h3>
+            <p><em>Вставь <strong>muss, musst, m&uuml;ssen, m&uuml;sst</strong>:</em></p>
+            <ol class="exercise-list" id="ex-112">
+                <li>Ich _________ fr&uuml;h aufstehen.<span class="answer-inline">muss</span></li>
+                <li>_________ du heute arbeiten?<span class="answer-inline">Musst</span></li>
+                <li>Er _________ zum Arzt gehen.<span class="answer-inline">muss</span></li>
+                <li>Wir _________ die Hausaufgaben machen.<span class="answer-inline">m&uuml;ssen</span></li>
+                <li>_________ ihr jetzt gehen?<span class="answer-inline">M&uuml;sst</span></li>
+                <li>Sie (они) _________ viel lernen.<span class="answer-inline">m&uuml;ssen</span></li>
+                <li>_________ ich das machen?<span class="answer-inline">Muss</span></li>
+                <li>Du _________ mehr Deutsch sprechen.<span class="answer-inline">musst</span></li>
+                <li>Mein Bruder _________ nach Berlin fahren.<span class="answer-inline">muss</span></li>
+                <li>_________ Sie morgen fr&uuml;h kommen?<span class="answer-inline">M&uuml;ssen</span></li>
+                <li>Wir _________ einkaufen gehen.<span class="answer-inline">m&uuml;ssen</span></li>
+                <li>Ihr _________ leise sein.<span class="answer-inline">m&uuml;sst</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-112')">Показать ответы</button>
+
+            <hr>
+
+            <h3>Упражнение 11.3: Вставь правильную форму wollen (12 примеров)</h3>
+            <p><em>Вставь <strong>will, willst, wollen, wollt</strong>:</em></p>
+            <ol class="exercise-list" id="ex-113">
+                <li>Ich _________ Deutsch lernen.<span class="answer-inline">will</span></li>
+                <li>Was _________ du essen?<span class="answer-inline">willst</span></li>
+                <li>Er _________ Arzt werden.<span class="answer-inline">will</span></li>
+                <li>Wir _________ nach Hause gehen.<span class="answer-inline">wollen</span></li>
+                <li>_________ ihr mitkommen?<span class="answer-inline">Wollt</span></li>
+                <li>Sie (они) _________ ein neues Auto kaufen.<span class="answer-inline">wollen</span></li>
+                <li>_________ du einen Kaffee trinken?<span class="answer-inline">Willst</span></li>
+                <li>Ich _________ schlafen.<span class="answer-inline">will</span></li>
+                <li>Meine Freundin _________ tanzen gehen.<span class="answer-inline">will</span></li>
+                <li>_________ Sie etwas bestellen?<span class="answer-inline">Wollen</span></li>
+                <li>Wir _________ am Wochenende verreisen.<span class="answer-inline">wollen</span></li>
+                <li>_________ ihr etwas trinken?<span class="answer-inline">Wollt</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-113')">Показать ответы</button>
+
+            <hr>
+
+            <h3>Упражнение 11.4: Поставь глагол в правильную форму (12 примеров)</h3>
+            <p><em>Раскрой скобки, поставив модальный и основной глагол в правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-114">
+                <li>Ich (k&ouml;nnen) gut (singen).<span class="answer-inline">kann singen</span></li>
+                <li>Du (m&uuml;ssen) heute (arbeiten).<span class="answer-inline">musst arbeiten</span></li>
+                <li>Er (wollen) Arzt (werden).<span class="answer-inline">will werden</span></li>
+                <li>Wir (k&ouml;nnen) am Samstag (kommen).<span class="answer-inline">k&ouml;nnen kommen</span></li>
+                <li>Ihr (m&uuml;ssen) die Hausaufgaben (machen).<span class="answer-inline">m&uuml;sst machen</span></li>
+                <li>Sie (они) (wollen) nach Berlin (fahren).<span class="answer-inline">wollen fahren</span></li>
+                <li>Ich (m&uuml;ssen) fr&uuml;h (aufstehen).<span class="answer-inline">muss aufstehen</span></li>
+                <li>Du (k&ouml;nnen) mir (helfen)?<span class="answer-inline">Kannst helfen</span></li>
+                <li>Er (wollen) Deutsch (lernen).<span class="answer-inline">will lernen</span></li>
+                <li>Wir (m&uuml;ssen) einkaufen (gehen).<span class="answer-inline">m&uuml;ssen gehen</span></li>
+                <li>Sie (она) (k&ouml;nnen) gut (kochen).<span class="answer-inline">kann kochen</span></li>
+                <li>Ihr (wollen) mit (kommen)?<span class="answer-inline">Wollt kommen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-114')">Показать ответы</button>
+
+            <hr>
+
+            <h3>Упражнение 11.5: Переведи на немецкий (12 предложений)</h3>
+            <p><em>Переведи предложения на немецкий язык. Используй рамочную конструкцию!</em></p>
+            <ol class="exercise-list" id="ex-115">
+                <li>Я умею говорить по-немецки.<span class="answer-inline">Ich kann Deutsch sprechen.</span></li>
+                <li>Ты можешь мне помочь?<span class="answer-inline">Kannst du mir helfen?</span></li>
+                <li>Он должен работать сегодня.<span class="answer-inline">Er muss heute arbeiten.</span></li>
+                <li>Мы хотим учить немецкий.<span class="answer-inline">Wir wollen Deutsch lernen.</span></li>
+                <li>Вы (ihr) должны делать домашнее задание.<span class="answer-inline">Ihr m&uuml;sst die Hausaufgaben machen.</span></li>
+                <li>Я хочу стать врачом.<span class="answer-inline">Ich will Arzt werden.</span></li>
+                <li>Она умеет хорошо готовить.<span class="answer-inline">Sie kann gut kochen.</span></li>
+                <li>Мы должны рано вставать.<span class="answer-inline">Wir m&uuml;ssen fr&uuml;h aufstehen.</span></li>
+                <li>Что ты хочешь есть?<span class="answer-inline">Was willst du essen?</span></li>
+                <li>Они могут прийти в субботу.<span class="answer-inline">Sie k&ouml;nnen am Samstag kommen.</span></li>
+                <li>Я должен идти к врачу.<span class="answer-inline">Ich muss zum Arzt gehen.</span></li>
+                <li>Вы (Sie) хотите заказать кофе?<span class="answer-inline">Wollen Sie einen Kaffee bestellen?</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-115')">Показать ответы</button>
+        </div>
+    </main>
+
+    <!-- Нижняя навигация -->
+    <nav class="nav nav-bottom">
+        <a href="a1-10.html" class="nav-link">&larr; Предыдущий урок (А1-10)</a>
+        <span class="nav-title">Конец урока А1-11</span>
+        <a href="a1-12.html" class="nav-link">Следующий урок (А1-12) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

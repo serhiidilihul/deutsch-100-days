@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-6: Артикли и род существительных</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Верхняя навигация -->
+        <nav class="nav">
+            <a href="a1-5.html" class="nav-link">&larr; Урок А1-5</a>
+            <span class="nav-title">Урок А1-6</span>
+            <a href="a1-7.html" class="nav-link">Урок А1-7 &rarr;</a>
+        </nav>
+
+        <main>
+            <!-- БЛОК ПОВТОРЕНИЯ (Wiederholung) -->
+            <div class="card">
+                <h2>Разминка и повторение (Wiederholung)</h2>
+                <p class="subtitle">Перед тем как штурмовать немецкие артикли, давай разомнемся на материале прошлых уроков. Здесь ровно 24 примера для тренировки!</p>
+
+                <h3>Упражнение Р1: Грамматический коктейль (12 вопросов)</h3>
+                <p><em>Раскрой скобки, поставив глагол в правильную форму, или выбери подходящее по смыслу слово:</em></p>
+                <ol class="exercise-list" id="ex-6r1">
+                    <li>Ich _________ (sein) jetzt in Berlin.<span class="answer-inline">bin</span></li>
+                    <li>_________ (kommen) du aus der Ukraine?<span class="answer-inline">Kommst</span></li>
+                    <li>Er _________ (haben) heute ein Buch.<span class="answer-inline">hat</span></li>
+                    <li>Wir _________ (wohnen) in Deutschland.<span class="answer-inline">wohnen</span></li>
+                    <li>_________ (sein) ihr bereit f&uuml;r den Unterricht?<span class="answer-inline">Seid</span></li>
+                    <li>Sie (они) _________ (haben) viel Zeit.<span class="answer-inline">haben</span></li>
+                    <li>Wie _________ (hei&szlig;en) du?<span class="answer-inline">hei&szlig;t</span></li>
+                    <li>(Guten / Gute) _________ Morgen, mein Freund!<span class="answer-inline">Guten</span></li>
+                    <li>Tsch&uuml;ss! Bis _________ (bald / heute).<span class="answer-inline">bald</span></li>
+                    <li>Ich _________ (trinken) gerne Kaffee.<span class="answer-inline">trinke</span></li>
+                    <li>Ihr _________ (kommen) heute sehr sp&auml;t.<span class="answer-inline">kommt</span></li>
+                    <li>Es _________ (sein) heute kalt.<span class="answer-inline">ist</span></li>
+                </ol>
+                <button class="btn-toggle" onclick="toggleExercise('ex-6r1')">Показать ответы</button>
+
+                <h3>Упражнение Р2: Фонетика и перевод (12 вопросов)</h3>
+                <p><em>Вспомни правила чтения и базовые слова. Ответь на вопросы или переведи:</em></p>
+                <ol>
+                    <li>Как читается буквосочетание <strong>eu</strong> в слове <em>deutsch</em>?</li>
+                    <li>Как читается буквосочетание <strong>sch</strong> в слове <em>schreiben</em>?</li>
+                    <li>Какой звук дает буква <strong>ß</strong> в глаголе <em>heißen</em>?</li>
+                    <li>Читается ли буква <strong>h</strong> в слове <em>wohnen</em>?</li>
+                    <li>Как читается буквосочетание <strong>st</strong> в слове <em>stehen</em>?</li>
+                    <li>Как читается сочетание <strong>ei</strong> в слове <em>mein</em>?</li>
+                    <li>Как читается сочетание <strong>ie</strong> в слове <em>vier</em>?</li>
+                    <li>Какой звук дает буква <strong>v</strong> в слове <em>Vater</em>?</li>
+                    <li>Какой звук дает буква <strong>w</strong> в слове <em>wir</em>?</li>
+                    <li>Переведи на русский: <strong>heute</strong>.</li>
+                    <li>Переведи на русский: <strong>müde</strong>.</li>
+                    <li>Переведи на русский: <strong>spät</strong>.</li>
+                </ol>
+
+                <!-- КНОПКА С ПРОВЕРКОЙ РАЗМИНКИ -->
+                <button class="btn-toggle" id="btn-answers-r" onclick="toggleAnswers('answers-r')">Показать ответы разминки</button>
+                
+                <div class="answers-block" id="answers-r">
+                    <p><strong>Ответы на Упражнение Р1:</strong> 1. bin, 2. Kommst, 3. hat, 4. wohnen, 5. Seid, 6. haben, 7. heißt, 8. Guten, 9. bald, 10. trinke, 11. kommt, 12. ist.</p>
+                    <p><strong>Ответы на Упражнение Р2:</strong> 1. как [ой], 2. как твердая [ш], 3. как глухая [с], 4. нет, она не читается (только удлиняет гласную "о"), 5. как [шт] (так как стоит в начале корня), 6. как [ай], 7. как долгий звук [и], 8. как [ф], 9. как русская [в], 10. сегодня, 11. уставший, 12. поздно.</p>
+                </div>
+            </div>
+
+            <!-- ТЕОРИЯ: РОД СУЩЕСТВИТЕЛЬНЫХ -->
+            <div class="card">
+                <h1>Урок А1-6: Род существительных и артикли</h1>
+                <p class="subtitle">Разбираемся, почему ложка — это "он", девочка — "оно", и как суффиксы помогают угадать род без словаря.</p>
+                
+                <h2>1. Концепция рода (Maskulin, Feminin, Neutral)</h2>
+                <p>В немецком языке, как и в русском, есть три рода существительных. Но есть <strong>две огромные проблемы</strong>, к которым нужно привыкнуть сразу:</p>
+                <ol>
+                    <li><strong>Род в русском и немецком языках часто НЕ совпадает!</strong> Например: <em>der Löffel</em> (ложка — мужской род), <em>die Sonne</em> (солнце — женский род), <em>das Mädchen</em> (девочка — средний род). Поэтому учить немецкие слова нужно <strong>строго вместе с их артиклями</strong>.</li>
+                    <li>Все существительные в немецком пишутся <strong>с большой буквы</strong>. Всегда!</li>
+                </ol>
+
+                <div class="note">
+                    <strong>Артикль</strong> — это маленький спутник существительного, который показывает его род, число и падеж.
+                </div>
+
+                <h3>Супер-подсказка: Как определить род по суффиксам?</h3>
+                <p>Тебе не придется зубрить род каждого слова, если ты запомнишь "железные" суффиксы-маркеры:</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Род</th>
+                            <th>Артикль</th>
+                            <th>Главные суффиксы-маркеры</th>
+                            <th>Примеры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Мужской (Maskulin)</strong></td>
+                            <td><strong>der</strong></td>
+                            <td>
+                                <strong>-er</strong> (деятели, профессии)<br>
+                                <strong>-ismus</strong> (направления, теории)
+                            </td>
+                            <td>
+                                <strong>der</strong> Lehr<strong>er</strong> (учитель)<br>
+                                <strong>der</strong> Bäck<strong>er</strong> (пекарь)<br>
+                                <strong>der</strong> Optimismus (оптимизм)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Женский (Feminin)</strong></td>
+                            <td><strong>die</strong></td>
+                            <td>
+                                <strong>-ung</strong> (процессы, абстракции — 100%)<br>
+                                <strong>-heit</strong> / <strong>-keit</strong> (качества — 100%)<br>
+                                <strong>-ei</strong> (места, заведения)
+                            </td>
+                            <td>
+                                <strong>die</strong> Wohn<strong>ung</strong> (квартира)<br>
+                                <strong>die</strong> Üb<strong>ung</strong> (упражнение)<br>
+                                <strong>die</strong> Frei<strong>heit</strong> (свобода)<br>
+                                <strong>die</strong> Bäcker<strong>ei</strong> (пекарня)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Средний (Neutral)</strong></td>
+                            <td><strong>das</strong></td>
+                            <td>
+                                <strong>-chen</strong> (уменьшительно-ласкательные)<br>
+                                <strong>-um</strong> (заимствования)
+                            </td>
+                            <td>
+                                <strong>das</strong> Mäd<strong>chen</strong> (девочка)<br>
+                                <strong>das</strong> Muse<strong>um</strong> (музей)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ТЕОРИЯ: ТИПЫ АРТИКЛЕЙ -->
+            <div class="card">
+                <h2>2. Определенный, неопределенный и нулевой артикли</h2>
+                <p>В немецком языке есть три состояния артикля. Давай разберем, когда какое нужно использовать.</p>
+
+                <h3>А. Неопределенный артикль (ein / eine / ein)</h3>
+                <p>Используется, когда мы говорим о предмете <strong>впервые</strong>, или когда нам <strong>не важно</strong>, какой именно это предмет из множества подобных (какой-то один, любой).</p>
+                <ul>
+                    <li>Мужской род (der) &rarr; <strong>ein</strong> (<em>Das ist <strong>ein</strong> Mann.</em>)</li>
+                    <li>Женский род (die) &rarr; <strong>eine</strong> (<em>Das ist <strong>eine</strong> Frau.</em>)</li>
+                    <li>Средний род (das) &rarr; <strong>ein</strong> (<em>Das ist <strong>ein</strong> Kind.</em>)</li>
+                    <li>Множественное число &rarr; <strong>артикль отсутствует!</strong> (<em>Das sind ___ Kinder.</em>)</li>
+                </ul>
+
+                <h3>Б. Определенный артикль (der / die / das / die)</h3>
+                <p>Используется, когда предмет нам уже <strong>знаком</strong> (упоминался ранее), уникален в своем роде (<em>die Sonne</em> — солнце) или понятен из контекста.</p>
+                <ul>
+                    <li>Мужской род &rarr; <strong>der</strong> (<em><strong>Der</strong> Mann ist nett.</em>)</li>
+                    <li>Женский род &rarr; <strong>die</strong> (<em><strong>Die</strong> Frau ist Ärztin.</em>)</li>
+                    <li>Средний род &rarr; <strong>das</strong> (<em><strong>Das</strong> Kind schläft.</em>)</li>
+                    <li>Множественное число &rarr; <strong>die</strong> (<em><strong>Die</strong> Kinder spielen.</em>)</li>
+                </ul>
+
+                <blockquote>
+                    <strong>Золотое правило первого упоминания:</strong> <br>
+                    При первом знакомстве с предметом мы говорим: <em>Das ist <strong>ein</strong> Buch.</em> (Это [какая-то] книга). <br>
+                    Но когда продолжаем говорить о ней, она становится конкретной: <em><strong>Das</strong> Buch ist gut.</em> (Эта [конкретная] книга хорошая).
+                </blockquote>
+
+                <h3>В. Нулевой артикль (Nullartikel) — когда артикль вообще НЕ нужен?</h3>
+                <p>Артикль опускается в следующих случаях:</p>
+                <ol>
+                    <li><strong>Профессии и гражданство</strong> (после глаголов <em>sein</em> и <em>werden</em>): <br><em>Ich bin Arzt.</em> (Я врач). / <em>Sie ist Ukrainerin.</em> (Она украинка).</li>
+                    <li><strong>Города и большинство стран:</strong> <br><em>Ich wohne in Berlin.</em> (Я живу в Берлине). / <em>Er kommt aus Deutschland.</em> (Он из Германии). <br><em>*Исключение:</em> из стран с артиклем, например: <strong>aus der Ukraine</strong>.</li>
+                    <li><strong>Неисчисляемые вещества, жидкости, материалы:</strong> <br><em>Ich trinke Wasser.</em> (Я пью воду). / <em>Hier ist Kaffee.</em> (Здесь кофе).</li>
+                    <li><strong>Абстрактные понятия и чувства:</strong> <br><em>Ich habe Zeit.</em> (У меня есть время). / <em>Wir haben Hunger.</em> (Мы голодны).</li>
+                    <li><strong>Множественное число</strong> (если в единственном числе стоял бы неопределенный артикль): <br><em>Das ist ein Auto. &rarr; Das sind ___ Autos.</em></li>
+                </ol>
+            </div>
+
+            <!-- ПРАКТИКА (5 УПРАЖНЕНИЙ ПО 12 ПРИМЕРОВ) -->
+            <div class="card">
+                <h2>Практика (Упражнения)</h2>
+                <p class="subtitle">Впереди 5 упражнений, в каждом ровно по 12 примеров. Прорабатывай их очень внимательно!</p>
+
+                <!-- УПРАЖНЕНИЕ 1 -->
+                <h3>Упражнение 6.1: Определи род по суффиксу или значению (12 примеров)</h3>
+                <p><em>Напиши правильный определенный артикль (<strong>der</strong>, <strong>die</strong>, <strong>das</strong>), опираясь на маркеры-суффиксы:</em></p>
+                <ol>
+                    <li>_________ Lehr<strong>er</strong> (учитель)</li>
+                    <li>_________ Wohn<strong>ung</strong> (квартира)</li>
+                    <li>_________ Frei<strong>heit</strong> (свобода)</li>
+                    <li>_________ Bäck<strong>er</strong> (пекарь)</li>
+                    <li>_________ Üb<strong>ung</strong> (упражнение)</li>
+                    <li>_________ Schön<strong>heit</strong> (красота)</li>
+                    <li>_________ Comput<strong>er</strong> (компьютер)</li>
+                    <li>_________ Bäcker<strong>ei</strong> (пекарня)</li>
+                    <li>_________ Mäd<strong>chen</strong> (девочка)</li>
+                    <li>_________ Zeit<strong>ung</strong> (газета)</li>
+                    <li>_________ Gesund<strong>heit</strong> (здоровье)</li>
+                    <li>_________ Muse<strong>um</strong> (музей)</li>
+                </ol>
+
+                <hr>
+
+                <!-- УПРАЖНЕНИЕ 2 -->
+                <h3>Упражнение 6.2: Неопределенный артикль или ничего? (12 примеров)</h3>
+                <p><em>Вставь неопределенный артикль (<strong>ein</strong>, <strong>eine</strong>) или знак прочерка (<strong>-</strong>), если артикль не нужен:</em></p>
+                <ol>
+                    <li>Das ist _________ Schule (die).</li>
+                    <li>Das ist _________ Mann (der).</li>
+                    <li>Das ist _________ Kind (das).</li>
+                    <li>Das sind _________ Kinder (plural).</li>
+                    <li>Hier ist _________ Bäckerei (die).</li>
+                    <li>Das ist _________ Computer (der).</li>
+                    <li>Er ist _________ Arzt (профессия).</li>
+                    <li>Das ist _________ Auto (das).</li>
+                    <li>Das sind _________ Autos (plural).</li>
+                    <li>Sie ist _________ Lehrerin (профессия).</li>
+                    <li>Das ist _________ Haus (das).</li>
+                    <li>Das ist _________ Wohnung (die).</li>
+                </ol>
+
+                <hr>
+
+                <!-- УПРАЖНЕНИЕ 3 -->
+                <h3>Упражнение 6.3: Логика первого и второго упоминания (12 пар)</h3>
+                <p><em>Заполни пропуски. На первом месте должен быть неопределенный артикль, на втором — определенный:</em></p>
+                <ol>
+                    <li>Das ist _________ Buch. _________ Buch ist sehr gut.</li>
+                    <li>Hier steht _________ Tisch. _________ Tisch ist alt.</li>
+                    <li>Das ist _________ Wohnung. _________ Wohnung ist groß.</li>
+                    <li>Da ist _________ Kind. _________ Kind spielt hier.</li>
+                    <li>Das ist _________ Lampe. _________ Lampe ist neu.</li>
+                    <li>Hier arbeitet _________ Lehrer. _________ Lehrer ist nett.</li>
+                    <li>Das ist _________ Tasche. _________ Tasche ist schwarz.</li>
+                    <li>Dort läuft _________ Hund. _________ Hund schläft.</li>
+                    <li>Das ist _________ Haus. _________ Haus ist schön.</li>
+                    <li>Das ist _________ Übung. _________ Übung ist leicht.</li>
+                    <li>Da steht _________ Mann. _________ Mann heißt Max.</li>
+                    <li>Hier liegt _________ Zeitung. _________ Zeitung ist interessant.</li>
+                </ol>
+
+                <hr>
+
+                <!-- УПРАЖНЕНИЕ 4 -->
+                <h3>Упражнение 6.4: Артикль или "Nullartikel" (12 примеров)</h3>
+                <p><em>Вставь подходящий артикль (<strong>der, die, das, ein, eine</strong>) или напиши <strong>X</strong>, если артикль не нужен:</em></p>
+                <ol>
+                    <li>Ich komme aus _________ Deutschland.</li>
+                    <li>Meine Schwester ist _________ Ärztin.</li>
+                    <li>Ich trinke gerne _________ Wasser.</li>
+                    <li>Ich liebe _________ Musik.</li>
+                    <li>Das sind _________ Bücher.</li>
+                    <li>Er wohnt heute in _________ Berlin.</li>
+                    <li>Ich lerne _________ Deutsch.</li>
+                    <li>Das ist _________ Buch.</li>
+                    <li>Wir haben _________ Hunger.</li>
+                    <li>Ich komme aus _________ Ukraine.</li>
+                    <li>Sie sind _________ Studenten.</li>
+                    <li>_________ Sonne ist heute sehr warm.</li>
+                </ol>
+
+                <hr>
+
+                <!-- УПРАЖНЕНИЕ 5 -->
+                <h3>Упражнение 6.5: Перевод на немецкий язык (12 предложений)</h3>
+                <p><em>Переведи предложения на немецкий, строго контролируя артикли и помня, что существительные пишутся с заглавной буквы:</em></p>
+                <ol>
+                    <li>Это мужчина. Мужчина — учитель.</li>
+                    <li>Я родом из Германии, а она из Украины.</li>
+                    <li>Это книга. Книга интересная.</li>
+                    <li>Мы — студенты.</li>
+                    <li>Это газета. Газета новая.</li>
+                    <li>Она — врач.</li>
+                    <li>Здесь компьютер. Компьютер старый.</li>
+                    <li>Это упражнение. Упражнение легкое.</li>
+                    <li>У меня есть время.</li>
+                    <li>Это дети.</li>
+                    <li>Как Вас зовут? Я — господин Вебер.</li>
+                    <li>Привет! Ты уставший?</li>
+                </ol>
+
+                <!-- КНОПКА С ПРОВЕРКОЙ ОСНОВНЫХ УПРАЖНЕНИЙ -->
+                <button class="btn-toggle" id="btn-answers-main" onclick="toggleAnswers('answers-main')">Показать ответы урока 6</button>
+                
+                <div class="answers-block" id="answers-main">
+                    <h4>Ответы на Упражнение 6.1 (Род по суффиксу):</h4>
+                    <p>1. der (суффикс -er), 2. die (суффикс -ung), 3. die (суффикс -heit), 4. der (-er), 5. die (-ung), 6. die (-heit), 7. der (-er), 8. die (-ei), 9. das (-chen), 10. die (-ung), 11. die (-heit), 12. das (-um).</p>
+
+                    <h4>Ответы на Упражнение 6.2 (Неопределенный артикль):</h4>
+                    <p>1. eine, 2. ein, 3. ein, 4. - (множественное число), 5. eine, 6. ein, 7. - (профессия), 8. ein, 9. - (множественное число), 10. - (профессия), 11. ein, 12. eine.</p>
+
+                    <h4>Ответы на Упражнение 6.3 (Первое/второе упоминание):</h4>
+                    <p>1. ein / das, 2. ein / der, 3. eine / die, 4. ein / das, 5. eine / die, 6. ein / der, 7. eine / die, 8. ein / der, 9. ein / das, 10. eine / die, 11. ein / der, 12. eine / die.</p>
+
+                    <h4>Ответы на Упражнение 6.4 (Артикль или Nullartikel):</h4>
+                    <p>1. X (страна без артикля), 2. X (профессия), 3. X (вещество), 4. X (абстрактное понятие), 5. X (мн. число, неопределенные), 6. X (город), 7. X (язык), 8. ein (или das), 9. X (устойчивое выражение "Hunger haben"), 10. der (страна-исключение), 11. X (статус/профессия во мн. числе), 12. Die (уникальное явление природы).</p>
+
+                    <h4>Ответы на Упражнение 6.5 (Перевод):</h4>
+                    <ol>
+                        <li>Das ist ein Mann. Der Mann ist Lehrer.</li>
+                        <li>Ich komme aus Deutschland, und sie kommt aus der Ukraine.</li>
+                        <li>Das ist ein Buch. Das Buch ist interessant.</li>
+                        <li>Wir sind Studenten.</li>
+                        <li>Das ist eine Zeitung. Die Zeitung ist neu.</li>
+                        <li>Sie ist Ärztin.</li>
+                        <li>Hier ist ein Computer. Der Computer ist alt.</li>
+                        <li>Das ist eine Übung. Die Übung ist leicht.</li>
+                        <li>Ich habe Zeit.</li>
+                        <li>Das sind Kinder.</li>
+                        <li>Wie heißen Sie? Ich bin Herr Weber.</li>
+                        <li>Hallo! Bist du müde?</li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+
+        <!-- Нижня навигация -->
+        <nav class="nav nav-bottom">
+            <a href="a1-5.html" class="nav-link">&larr; Предыдущий урок (А1-5)</a>
+            <span class="nav-title">Конец урока А1-6</span>
+            <a href="a1-7.html" class="nav-link">Следующий урок (А1-7) &rarr;</a>
+        </nav>
+    </div>
+
+    <script>
+        function toggleExercise(id) {
+            const list = document.getElementById(id);
+            const btn = list.nextElementSibling;
+            if (list.classList.contains('show-answers')) {
+                list.classList.remove('show-answers');
+                btn.textContent = 'Показать ответы';
+                btn.classList.remove('active');
+            } else {
+                list.classList.add('show-answers');
+                btn.textContent = 'Скрыть ответы';
+                btn.classList.add('active');
+            }
+        }
+        function toggleAnswers(id) {
+            const block = document.getElementById(id);
+            const btn = document.getElementById('btn-' + id);
+            if (block.style.display === "none" || !block.style.display) {
+                block.style.display = "block";
+                btn.textContent = "Скрыть ответы";
+                btn.classList.add("active");
+            } else {
+                block.style.display = "none";
+                btn.textContent = btn.id.includes('r') ? "Показать ответы разминки" : "Показать ответы урока 6";
+                btn.classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>

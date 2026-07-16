@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-10: Глаголы с управлением — Часть 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-9.html" class="nav-link">&larr; Урок A2-9</a>
+        <span class="nav-title">Урок A2-10</span>
+        <a href="a2-11.html" class="nav-link">Урок A2-11 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим местоименные наречия из урока A2-9. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Местоименные наречия (12)</h3>
+            <p><em>Вставь местоименное наречие:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Worüber sprichst du? — Ich spreche ___________.<span class="answer-inline">darüber</span></li>
+                <li>Wovon träumst du? — Ich träume ___________.<span class="answer-inline">davon</span></li>
+                <li>Womit schreibst du? — Ich schreibe ___________.<span class="answer-inline">damit</span></li>
+                <li>Wofür arbeitest du? — Ich arbeite ___________.<span class="answer-inline">dafür</span></li>
+                <li>Wogegen bist du? — Ich bin ___________.<span class="answer-inline">dagegen</span></li>
+                <li>Wodurch gehst du? — Ich gehe ___________.<span class="answer-inline">dadurch</span></li>
+                <li>Worum geht es? — Es geht ___________.<span class="answer-inline">darum</span></li>
+                <li>Woran denkst du? — Ich denke ___________.<span class="answer-inline">daran</span></li>
+                <li>Womit fährst du? — Ich fahre ___________.<span class="answer-inline">damit</span></li>
+                <li>Wovon sprichst du? — Ich spreche ___________.<span class="answer-inline">davon</span></li>
+                <li>Worüber liest du? — Ich lese ___________.<span class="answer-inline">darüber</span></li>
+                <li>Woran erkennst du das? — Ich erkenne ___________.<span class="answer-inline">daran</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Вопросы о людях (12)</h3>
+            <p><em>Задай вопрос о человеке:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>du / über / dein Freund / sprechen &rarr; Über wen ___________________?<span class="answer-inline">sprichst du</span></li>
+                <li>du / mit / dein Lehrer / sprechen &rarr; Mit wem ___________________?<span class="answer-inline">sprichst du</span></li>
+                <li>du / für / dein Kind / arbeiten &rarr; Für wen ___________________?<span class="answer-inline">arbeitest du</span></li>
+                <li>du / von / dein Vater / sprechen &rarr; Von wem ___________________?<span class="answer-inline">sprichst du</span></li>
+                <li>du / mit / dein Schwester / gehen &rarr; Mit wem ___________________?<span class="answer-inline">gehst du</span></li>
+                <li>du / über / dein Kollege / sprechen &rarr; Über wen ___________________?<span class="answer-inline">sprichst du</span></li>
+                <li>du / für / dein Eltern / arbeiten &rarr; Für wen ___________________?<span class="answer-inline">arbeitest du</span></li>
+                <li>du / von / dein Freundin / sprechen &rarr; Von wem ___________________?<span class="answer-inline">sprichst du</span></li>
+                <li>du / mit / dein Chef / sprechen &rarr; Mit wem ___________________?<span class="answer-inline">sprichst du</span></li>
+                <li>du / über / dein Nachbar / sprechen &rarr; Über wen ___________________?<span class="answer-inline">sprichst du</span></li>
+                <li>du / für / dein Bruder / kochen &rarr; Für wen ___________________?<span class="answer-inline">kochst du</span></li>
+                <li>du / von / dein Lehrer / sprechen &rarr; Von wem ___________________?<span class="answer-inline">sprichst du</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-10: Глаголы с управлением — Часть 1</h1>
+            <p class="subtitle">Учимся использовать глаголы с предлогами и правильными падежами.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю глаголы строго с их предлогами и падежами: <strong>warten auf + A, denken an + A, sich freuen auf/über + A</strong>.</li>
+                <li>Могу составить с ними правильные примеры.</li>
+                <li>Понимаю, почему важен правильный падеж после глагола.</li>
+            </ul>
+
+            <h2>1. Что такое глаголы с управлением?</h2>
+            <p><strong>Глаголы с управлением</strong> (Verben mit Präposition) — это глаголы, которые требуют определённый предлог с определённым падежом. Их нужно учить вместе с предлогом!</p>
+
+            <div class="note">
+                <strong>Важно:</strong> Нельзя сказать "Ich warte die Bus" — нужно "Ich warte <strong>auf den</strong> Bus" (Akkusativ)!
+            </div>
+
+            <h2>2. Глагол warten (ждать)</h2>
+            <p><strong>warten auf + Akkusativ</strong> — ждать чего-то/кого-то</p>
+
+            <table>
+                <thead><tr><th>Глагол + предлог</th><th>Падеж</th><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>warten <strong>auf</strong> + Akkusativ</td><td>Akkusativ</td><td>Ich warte <strong>auf den</strong> Bus.</td><td>Я жду автобус.</td></tr>
+                    <tr><td>warten <strong>auf</strong> + Akkusativ</td><td>Akkusativ</td><td>Ich warte <strong>auf dich</strong>.</td><td>Я жду тебя.</td></tr>
+                    <tr><td>warten <strong>auf</strong> + Akkusativ</td><td>Akkusativ</td><td>Wir warten <strong>auf das</strong> Ergebnis.</td><td>Мы ждём результат.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Глагол denken (думать)</h2>
+            <p><strong>denken an + Akkusativ</strong> — думать о чём-то/ком-то</p>
+
+            <table>
+                <thead><tr><th>Глагол + предлог</th><th>Падеж</th><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>denken <strong>an</strong> + Akkusativ</td><td>Akkusativ</td><td>Ich denke <strong>an dich</strong>.</td><td>Я думаю о тебе.</td></tr>
+                    <tr><td>denken <strong>an</strong> + Akkusativ</td><td>Akkusativ</td><td>Ich denke <strong>an die</strong> Prüfung.</td><td>Я думаю об экзамене.</td></tr>
+                    <tr><td>denken <strong>an</strong> + Akkusativ</td><td>Akkusativ</td><td>Er denkt <strong>an sein</strong> Haus.</td><td>Он думает о своём доме.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Глагол sich freuen (радоваться)</h2>
+            <p><strong>sich freuen auf + Akkusativ</strong> — радоваться чему-то (будущее)<br>
+            <strong>sich freuen über + Akkusativ</strong> — радоваться чему-то (прошедшее/настоящее)</p>
+
+            <table>
+                <thead><tr><th>Глагол + предлог</th><th>Падеж</th><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>sich freuen <strong>auf</strong> + Akkusativ</td><td>Akkusativ</td><td>Ich freue mich <strong>auf das</strong> Wochenende.</td><td>Я радуюсь выходным.</td></tr>
+                    <tr><td>sich freuen <strong>auf</strong> + Akkusativ</td><td>Akkusativ</td><td>Ich freue mich <strong>auf dich</strong>.</td><td>Я радуюсь тебе (жду с нетерпением).</td></tr>
+                    <tr><td>sich freuen <strong>über</strong> + Akkusativ</td><td>Akkusativ</td><td>Ich freue mich <strong>über das</strong> Geschenk.</td><td>Я радуюсь подарку.</td></tr>
+                    <tr><td>sich freuen <strong>über</strong> + Akkusativ</td><td>Akkusativ</td><td>Wir freuen uns <strong>über die</strong> Nachricht.</td><td>Мы рады новости.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>5. Разница между auf и über</h2>
+            <ul>
+                <li><strong>sich freuen auf</strong> — радоваться <strong>будущему</strong> событию (Wochenende, Urlaub, Geburtstag)</li>
+                <li><strong>sich freuen über</strong> — радоваться <strong>прошёлому/настоящему</strong> событию (Geschenk, Nachricht, Ergebnis)</li>
+            </ul>
+
+            <h2>6. Примеры всех трёх глаголов</h2>
+            <ul>
+                <li><em>Ich warte <strong>auf den</strong> Bus.</em> — Я жду автобус.</li>
+                <li><em>Ich denke <strong>an dich</strong>.</em> — Я думаю о тебе.</li>
+                <li><em>Ich freue mich <strong>auf das</strong> Wochenende.</em> — Я радуюсь выходным.</li>
+                <li><em>Ich freue mich <strong>über das</strong> Geschenk.</em> — Я радуюсь подарку.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов с глаголами с управлением.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>warten</strong> — ждать</div>
+                <div class="vocabulary-item"><strong>denken</strong> — думать</div>
+                <div class="vocabulary-item"><strong>sich freuen</strong> — радоваться</div>
+                <div class="vocabulary-item"><strong>auf</strong> — на (Akkusativ)</div>
+                <div class="vocabulary-item"><strong>an</strong> — о (Akkusativ)</div>
+                <div class="vocabulary-item"><strong>über</strong> — о, над (Akkusativ)</div>
+                <div class="vocabulary-item"><strong>der Bus, -se</strong> — автобус</div>
+                <div class="vocabulary-item"><strong>die Prüfung, -en</strong> — экзамен</div>
+                <div class="vocabulary-item"><strong>das Ergebnis, -se</strong> — результат</div>
+                <div class="vocabulary-item"><strong>das Wochenende, -n</strong> — выходные</div>
+                <div class="vocabulary-item"><strong>der Urlaub, -e</strong> — отпуск</div>
+                <div class="vocabulary-item"><strong>der Geburtstag, -e</strong> — день рождения</div>
+                <div class="vocabulary-item"><strong>das Geschenk, -e</strong> — подарок</div>
+                <div class="vocabulary-item"><strong>die Nachricht, -en</strong> — новость</div>
+                <div class="vocabulary-item"><strong>die Zukunft (Sg.)</strong> — будущее</div>
+                <div class="vocabulary-item"><strong>die Vergangenheit (Sg.)</strong> — прошлое</div>
+                <div class="vocabulary-item"><strong>die Gegenwart (Sg.)</strong> — настоящее</div>
+                <div class="vocabulary-item"><strong>hoffen</strong> — надеяться</div>
+                <div class="vocabulary-item"><strong>wünschen</strong> — желать</div>
+                <div class="vocabulary-item"><strong>vergleichen</strong> — сравнивать</div>
+                <div class="vocabulary-item"><strong>sprechen</strong> — говорить</div>
+                <div class="vocabulary-item"><strong>schreiben</strong> — писать</div>
+                <div class="vocabulary-item"><strong>lesen</strong> — читать</div>
+                <div class="vocabulary-item"><strong>hören</strong> — слышать</div>
+                <div class="vocabulary-item"><strong>sehen</strong> — видеть</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем глаголы с управлением!</p>
+
+            <h3>Упражнение 35.1: warten auf + Akkusativ (12)</h3>
+            <p><em>Вставь правильный артикль Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-351">
+                <li>Ich warte auf _________ Bus. (der)<span class="answer-inline">den</span></li>
+                <li>Ich warte auf _________ dich. (—)<span class="answer-inline">dich</span></li>
+                <li>Ich warte auf _________ Ergebnis. (das)<span class="answer-inline">das</span></li>
+                <li>Ich warte auf _________ Prüfung. (die)<span class="answer-inline">die</span></li>
+                <li>Ich warte auf _________ Zug. (der)<span class="answer-inline">den</span></li>
+                <li>Ich warte auf _________ dich. (—)<span class="answer-inline">dich</span></li>
+                <li>Ich warte auf _________ Freund. (der)<span class="answer-inline">den</span></li>
+                <li>Ich warte auf _________ Antwort. (die)<span class="answer-inline">die</span></li>
+                <li>Ich warte auf _________ Taxi. (das)<span class="answer-inline">das</span></li>
+                <li>Ich warte auf _________ Gelegenheit. (die)<span class="answer-inline">die</span></li>
+                <li>Ich warte auf _________ dich. (—)<span class="answer-inline">dich</span></li>
+                <li>Ich warte auf _________ Brief. (der)<span class="answer-inline">den</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-351')">Показать ответы</button>
+
+            <h3>Упражнение 35.2: denken an + Akkusativ (12)</h3>
+            <p><em>Вставь правильный артикль Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-352">
+                <li>Ich denke an _________ dich. (—)<span class="answer-inline">dich</span></li>
+                <li>Ich denke an _________ Prüfung. (die)<span class="answer-inline">die</span></li>
+                <li>Ich denke an _________ Haus. (das)<span class="answer-inline">das</span></li>
+                <li>Ich denke an _________ Freund. (der)<span class="answer-inline">den</span></li>
+                <li>Ich denke an _________ Vergangenheit. (die)<span class="answer-inline">die</span></li>
+                <li>Ich denke an _________ Zukunft. (die)<span class="answer-inline">die</span></li>
+                <li>Ich denke an _________ dich. (—)<span class="answer-inline">dich</span></li>
+                <li>Ich denke an _________ Urlaub. (der)<span class="answer-inline">den</span></li>
+                <li>Ich denke an _________ Problem. (das)<span class="answer-inline">das</span></li>
+                <li>Ich denke an _________ Lösung. (die)<span class="answer-inline">die</span></li>
+                <li>Ich denke an _________ dich. (—)<span class="answer-inline">dich</span></li>
+                <li>Ich denke an _________ Traum. (der)<span class="answer-inline">den</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-352')">Показать ответы</button>
+
+            <h3>Упражнение 35.3: sich freuen auf/über + Akkusativ (12)</h3>
+            <p><em>Выбери auf или über:</em></p>
+            <ol class="exercise-list" id="ex-353">
+                <li>Ich freue mich _________ das Wochenende. (Zukunft)<span class="answer-inline">auf</span></li>
+                <li>Ich freue mich _________ das Geschenk. (Geschenk)<span class="answer-inline">über</span></li>
+                <li>Ich freue mich _________ den Urlaub. (Zukunft)<span class="answer-inline">auf</span></li>
+                <li>Ich freue mich _________ die Nachricht. (Nachricht)<span class="answer-inline">über</span></li>
+                <li>Ich freue mich _________ den Geburtstag. (Zukunft)<span class="answer-inline">auf</span></li>
+                <li>Ich freue mich _________ das Ergebnis. (Ergebnis)<span class="answer-inline">über</span></li>
+                <li>Ich freue mich _________ dich. (Zukunft)<span class="answer-inline">auf</span></li>
+                <li>Ich freue mich _________ den Besuch. (Besuch)<span class="answer-inline">über</span></li>
+                <li>Ich freue mich _________ das Konzert. (Zukunft)<span class="answer-inline">auf</span></li>
+                <li>Ich freue mich _________ die Einladung. (Einladung)<span class="answer-inline">über</span></li>
+                <li>Ich freue mich _________ den Abend. (Zukunft)<span class="answer-inline">auf</span></li>
+                <li>Ich freue mich _________ die Überraschung. (Überraschung)<span class="answer-inline">über</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-353')">Показать ответы</button>
+
+            <h3>Упражнение 35.4: Выбери правильный глагол (12)</h3>
+            <p><em>Вставь warten, denken или sich freuen:</em></p>
+            <ol class="exercise-list" id="ex-354">
+                <li>Ich _________ auf den Bus.<span class="answer-inline">warte</span></li>
+                <li>Ich _________ an dich.<span class="answer-inline">denke</span></li>
+                <li>Ich _________ mich auf das Wochenende.<span class="answer-inline">freue</span></li>
+                <li>Ich _________ auf das Ergebnis.<span class="answer-inline">warte</span></li>
+                <li>Ich _________ an die Prüfung.<span class="answer-inline">denke</span></li>
+                <li>Ich _________ mich über das Geschenk.<span class="answer-inline">freue</span></li>
+                <li>Ich _________ auf dich.<span class="answer-inline">warte</span></li>
+                <li>Ich _________ an meine Zukunft.<span class="answer-inline">denke</span></li>
+                <li>Ich _________ mich auf den Urlaub.<span class="answer-inline">freue</span></li>
+                <li>Ich _________ auf die Antwort.<span class="answer-inline">warte</span></li>
+                <li>Ich _________ an mein Haus.<span class="answer-inline">denke</span></li>
+                <li>Ich _________ mich über die Nachricht.<span class="answer-inline">freue</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-354')">Показать ответы</button>
+
+            <h3>Упражнение 35.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-355">
+                <li>Я жду автобус.<span class="answer-inline">Ich warte auf den Bus.</span></li>
+                <li>Я думаю о тебе.<span class="answer-inline">Ich denke an dich.</span></li>
+                <li>Я радуюсь выходным.<span class="answer-inline">Ich freue mich auf das Wochenende.</span></li>
+                <li>Я жду тебя.<span class="answer-inline">Ich warte auf dich.</span></li>
+                <li>Я думаю об экзамене.<span class="answer-inline">Ich denke an die Prüfung.</span></li>
+                <li>Я радуюсь подарку.<span class="answer-inline">Ich freue mich über das Geschenk.</span></li>
+                <li>Мы ждём результат.<span class="answer-inline">Wir warten auf das Ergebnis.</span></li>
+                <li>Он думает о своём доме.<span class="answer-inline">Er denkt an sein Haus.</span></li>
+                <li>Я радуюсь отпуску.<span class="answer-inline">Ich freue mich auf den Urlaub.</span></li>
+                <li>Они ждут новости.<span class="answer-inline">Sie warten auf die Nachricht.</span></li>
+                <li>Я думаю о своей будущем.<span class="answer-inline">Ich denke an meine Zukunft.</span></li>
+                <li>Мы рады визиту.<span class="answer-inline">Wir freuen uns über den Besuch.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-355')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-9.html" class="nav-link">&larr; Предыдущий урок (A2-9)</a>
+        <span class="nav-title">Конец урока A2-10</span>
+        <a href="a2-11.html" class="nav-link">Следующий урок (A2-11) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

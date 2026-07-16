@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-9: Семья и притяжательные местоимения</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a1-8.html" class="nav-link">&larr; Урок А1-8</a>
+        <span class="nav-title">Урок А1-9</span>
+        <a href="a1-10.html" class="nav-link">Урок А1-10 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим Akkusativ и отрицание из уроков 7-8. Вас ждут 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Akkusativ и артикли (12 вопросов)</h3>
+            <p><em>Вставь правильную форму артикля в Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich sehe _________ (der) Mann.<span class="answer-inline">den</span></li>
+                <li>Sie hat _________ (ein) Schwester.<span class="answer-inline">eine</span></li>
+                <li>Er sucht _________ (das) Buch.<span class="answer-inline">das</span></li>
+                <li>Wir brauchen _________ (ein) Auto.<span class="answer-inline">ein</span></li>
+                <li>Ich kaufe _________ (der) Apfel.<span class="answer-inline">einen</span></li>
+                <li>Sie liebt _________ (die) Katze.<span class="answer-inline">die</span></li>
+                <li>Er trinkt _________ (der) Tee.<span class="answer-inline">den</span></li>
+                <li>Ich h&ouml;re _________ (die) Musik.<span class="answer-inline">die</span></li>
+                <li>Wir sehen _________ (plural) Kinder.<span class="answer-inline">-</span></li>
+                <li>Sie sucht _________ (eine) Wohnung.<span class="answer-inline">eine</span></li>
+                <li>Ich habe _________ (ein) Hund.<span class="answer-inline">einen</span></li>
+                <li>Er nimmt _________ (der) Stuhl.<span class="answer-inline">den</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Отрицание (kein/nicht) (12 вопросов)</h3>
+            <p><em>Выбери <strong>kein</strong>, <strong>keine</strong> или <strong>nicht</strong>:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Das ist _________ Buch.<span class="answer-inline">kein</span></li>
+                <li>Sie ist _________ m&uuml;de.<span class="answer-inline">nicht</span></li>
+                <li>Ich habe _________ Zeit.<span class="answer-inline">keine</span></li>
+                <li>Er arbeitet heute _________.<span class="answer-inline">nicht</span></li>
+                <li>Das ist _________ Auto.<span class="answer-inline">kein</span></li>
+                <li>Die Aufgabe ist _________ schwer.<span class="answer-inline">nicht</span></li>
+                <li>Wir sind _________ Studenten.<span class="answer-inline">keine</span></li>
+                <li>Das Wetter ist _________ sch&ouml;n.<span class="answer-inline">nicht</span></li>
+                <li>Ich bin _________ Arzt.<span class="answer-inline">kein</span></li>
+                <li>Das sind _________ Fehler.<span class="answer-inline">keine</span></li>
+                <li>Sie kommt _________ aus Berlin.<span class="answer-inline">nicht</span></li>
+                <li>Ich habe _________ Hunger.<span class="answer-inline">keinen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок А1-9: Семья и притяжательные местоимения</h1>
+            <p class="subtitle">Учимся рассказывать о своей семье и говорить "мой", "твой", "его", "её" по-немецки.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Могу описать свою семью.</li>
+                <li>Правильно склоняю притяжательные местоимения в Nominativ и Akkusativ.</li>
+                <li>Знаю названия членов семьи.</li>
+            </ul>
+
+            <h2>1. Члены семьи (Familienmitglieder)</h2>
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Артикль</th></tr></thead>
+                <tbody>
+                    <tr><td>der Vater, -</td><td>отец</td><td>der</td></tr>
+                    <tr><td>die Mutter, -</td><td>мать</td><td>die</td></tr>
+                    <tr><td>der Sohn, -&uml;e</td><td>сын</td><td>der</td></tr>
+                    <tr><td>die Tochter, -</td><td>дочь</td><td>die</td></tr>
+                    <tr><td>der Bruder, -</td><td>брат</td><td>der</td></tr>
+                    <tr><td>die Schwester, -n</td><td>сестра</td><td>die</td></tr>
+                    <tr><td>der Gro&szlig;vater, -</td><td>дедушка</td><td>der</td></tr>
+                    <tr><td>die Gro&szlig;mutter, -</td><td>бабушка</td><td>die</td></tr>
+                    <tr><td>der Onkel, -</td><td>дядя</td><td>der</td></tr>
+                    <tr><td>die Tante, -n</td><td>тётя</td><td>die</td></tr>
+                    <tr><td>der Cousin, -s</td><td>кузен</td><td>der</td></tr>
+                    <tr><td>die Cousine, -n</td><td>кузина</td><td>die</td></tr>
+                    <tr><td>das Kind, -er</td><td>ребёнок</td><td>das</td></tr>
+                    <tr><td>die Eltern (Pl.)</td><td>родители</td><td>die</td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Притяжательные местоимения (Possessivpronomen)</h2>
+            <table>
+                <thead><tr><th>Лицо</th><th>Притяжательное</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td>ich</td><td><strong>mein</strong></td><td>мой</td><td><em>mein Vater</em></td></tr>
+                    <tr><td>du</td><td><strong>dein</strong></td><td>твой</td><td><em>deine Mutter</em></td></tr>
+                    <tr><td>er</td><td><strong>sein</strong></td><td>его</td><td><em>sein Bruder</em></td></tr>
+                    <tr><td>sie</td><td><strong>ihr</strong></td><td>её</td><td><em>ihre Schwester</em></td></tr>
+                    <tr><td>es</td><td><strong>sein</strong></td><td>его</td><td><em>sein Kind</em></td></tr>
+                    <tr><td>wir</td><td><strong>unser</strong></td><td>наш</td><td><em>unser Haus</em></td></tr>
+                    <tr><td>ihr</td><td><strong>euer</strong></td><td>ваш</td><td><em>eure Tochter</em></td></tr>
+                    <tr><td>sie (они)</td><td><strong>ihr</strong></td><td>их</td><td><em>ihr Kind</em></td></tr>
+                    <tr><td>Sie</td><td><strong>Ihr</strong></td><td>Ваш</td><td><em>Ihr Auto</em></td></tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead><tr><th>Род</th><th>Nominativ</th><th>Akkusativ</th></tr></thead>
+                <tbody>
+                    <tr><td>Мужской</td><td>mein (Vater)</td><td><strong>meinen</strong> (Vater)</td></tr>
+                    <tr><td>Женский</td><td><strong>meine</strong> (Mutter)</td><td><strong>meine</strong> (Mutter)</td></tr>
+                    <tr><td>Средний</td><td>mein (Kind)</td><td>mein (Kind)</td></tr>
+                    <tr><td>Множ.</td><td><strong>meine</strong> (Eltern)</td><td><strong>meine</strong> (Eltern)</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">28 слов по теме "Семья".</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>der Vater, -</strong> - отец</div>
+                <div class="vocabulary-item"><strong>die Mutter, -</strong> - мать</div>
+                <div class="vocabulary-item"><strong>der Sohn, -&uml;e</strong> - сын</div>
+                <div class="vocabulary-item"><strong>die Tochter, -</strong> - дочь</div>
+                <div class="vocabulary-item"><strong>der Bruder, -</strong> - брат</div>
+                <div class="vocabulary-item"><strong>die Schwester, -n</strong> - сестра</div>
+                <div class="vocabulary-item"><strong>der Gro&szlig;vater, -</strong> - дедушка</div>
+                <div class="vocabulary-item"><strong>die Gro&szlig;mutter, -</strong> - бабушка</div>
+                <div class="vocabulary-item"><strong>der Onkel, -</strong> - дядя</div>
+                <div class="vocabulary-item"><strong>die Tante, -n</strong> - тётя</div>
+                <div class="vocabulary-item"><strong>der Cousin, -s</strong> - кузен</div>
+                <div class="vocabulary-item"><strong>die Cousine, -n</strong> - кузина</div>
+                <div class="vocabulary-item"><strong>das Kind, -er</strong> - ребёнок</div>
+                <div class="vocabulary-item"><strong>die Eltern (Pl.)</strong> - родители</div>
+                <div class="vocabulary-item"><strong>der Freund, -e</strong> - друг</div>
+                <div class="vocabulary-item"><strong>die Freundin, -nen</strong> - подруга</div>
+                <div class="vocabulary-item"><strong>die Familie, -n</strong> - семья</div>
+                <div class="vocabulary-item"><strong>die Verwandten (Pl.)</strong> - родственники</div>
+                <div class="vocabulary-item"><strong>mein / meine</strong> - мой / моя</div>
+                <div class="vocabulary-item"><strong>dein / deine</strong> - твой / твоя</div>
+                <div class="vocabulary-item"><strong>sein / seine</strong> - его</div>
+                <div class="vocabulary-item"><strong>ihr / ihre</strong> - её / их</div>
+                <div class="vocabulary-item"><strong>unser / unsere</strong> - наш / наша</div>
+                <div class="vocabulary-item"><strong>euer / eure</strong> - ваш / ваша</div>
+                <div class="vocabulary-item"><strong>hei&szlig;en</strong> - называться</div>
+                <div class="vocabulary-item"><strong>besuchen</strong> - навещать</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (&Uuml;bungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров.</p>
+
+            <h3>Упражнение 9.1: Притяжательные в Nominativ (12)</h3>
+            <p><em>Вставь правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-91">
+                <li>_________ (ich) Vater ist Lehrer.<span class="answer-inline">Mein</span></li>
+                <li>_________ (du) Mutter arbeitet in Berlin.<span class="answer-inline">Deine</span></li>
+                <li>_________ (er) Bruder hei&szlig;t Max.<span class="answer-inline">Sein</span></li>
+                <li>_________ (sie - она) Schwester ist nett.<span class="answer-inline">Ihre</span></li>
+                <li>_________ (wir) Haus ist gro&szlig;.<span class="answer-inline">Unser</span></li>
+                <li>_________ (ihr) Tochter spielt hier.<span class="answer-inline">Eure</span></li>
+                <li>_________ (sie - они) Kinder sind klein.<span class="answer-inline">Ihre</span></li>
+                <li>_________ (Sie) Name ist M&uuml;ller.<span class="answer-inline">Ihr</span></li>
+                <li>_________ (ich) Familie kommt aus Deutschland.<span class="answer-inline">Meine</span></li>
+                <li>_________ (du) Onkel wohnt in M&uuml;nchen.<span class="answer-inline">Dein</span></li>
+                <li>_________ (er) Tante ist &Auml;rztin.<span class="answer-inline">Seine</span></li>
+                <li>_________ (wir) Eltern sind zu Hause.<span class="answer-inline">Unsere</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-91')">Показать ответы</button>
+
+            <h3>Упражнение 9.2: Притяжательные в Akkusativ (12)</h3>
+            <p><em>Поставь в Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-92">
+                <li>Ich sehe _________ (mein) Vater.<span class="answer-inline">meinen</span></li>
+                <li>Sie liebt _________ (ihr - её) Bruder.<span class="answer-inline">ihren</span></li>
+                <li>Ich besuche _________ (mein) Mutter.<span class="answer-inline">meine</span></li>
+                <li>Er sucht _________ (sein) Kind.<span class="answer-inline">sein</span></li>
+                <li>Wir treffen _________ (unser) Freund.<span class="answer-inline">unseren</span></li>
+                <li>Ich habe _________ (mein) Schl&uuml;ssel nicht gefunden.<span class="answer-inline">meinen</span></li>
+                <li>Sie kauft _________ (ihr - её) Buch.<span class="answer-inline">ihr</span></li>
+                <li>Ich brauche _________ (dein) Hilfe.<span class="answer-inline">deine</span></li>
+                <li>Er sieht _________ (sein) Hund.<span class="answer-inline">seinen</span></li>
+                <li>Wir besuchen _________ (unser) Oma.<span class="answer-inline">unsere</span></li>
+                <li>Sie liebt _________ (ihr - её) Katze.<span class="answer-inline">ihre</span></li>
+                <li>Ich finde _________ (mein) Heft nicht.<span class="answer-inline">mein</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-92')">Показать ответы</button>
+
+            <h3>Упражнение 9.3: Члены семьи (12)</h3>
+            <p><em>Переведи на немецкий:</em></p>
+            <ol class="exercise-list" id="ex-93">
+                <li>мой отец<span class="answer-inline">mein Vater</span></li>
+                <li>твоя мать<span class="answer-inline">deine Mutter</span></li>
+                <li>его сестра<span class="answer-inline">seine Schwester</span></li>
+                <li>её брат<span class="answer-inline">ihr Bruder</span></li>
+                <li>наш дедушка<span class="answer-inline">unser Gro&szlig;vater</span></li>
+                <li>ваша (ihr) бабушка<span class="answer-inline">eure Gro&szlig;mutter</span></li>
+                <li>их дети<span class="answer-inline">ihre Kinder</span></li>
+                <li>мои родители<span class="answer-inline">meine Eltern</span></li>
+                <li>твой дядя<span class="answer-inline">dein Onkel</span></li>
+                <li>её тётя<span class="answer-inline">ihre Tante</span></li>
+                <li>наш друг<span class="answer-inline">unser Freund</span></li>
+                <li>Ваша (Sie) семья<span class="answer-inline">Ihre Familie</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-93')">Показать ответы</button>
+
+            <h3>Упражнение 9.4: Заполни пропуски (12)</h3>
+            <p><em>Вставь пропущенное слово:</em></p>
+            <ol class="exercise-list" id="ex-94">
+                <li>Mein _________ (отец) ist Arzt.<span class="answer-inline">Vater</span></li>
+                <li>Deine _________ (мать) arbeitet hier.<span class="answer-inline">Mutter</span></li>
+                <li>Sein _________ (брат) hei&szlig;t Paul.<span class="answer-inline">Bruder</span></li>
+                <li>Ihre _________ (сестра) ist Lehrerin.<span class="answer-inline">Schwester</span></li>
+                <li>Unser _________ (дом) ist sch&ouml;n.<span class="answer-inline">Haus</span></li>
+                <li>Eure _________ (дочь) spielt gern.<span class="answer-inline">Tochter</span></li>
+                <li>Ihre _________ (дети) sind klein.<span class="answer-inline">Kinder</span></li>
+                <li>Mein _________ (дедушка) wohnt in Berlin.<span class="answer-inline">Gro&szlig;vater / Opa</span></li>
+                <li>Deine _________ (бабушка) kocht gut.<span class="answer-inline">Gro&szlig;mutter / Oma</span></li>
+                <li>Sein _________ (друг) kommt aus M&uuml;nchen.<span class="answer-inline">Freund</span></li>
+                <li>Ihre (её) _________ (семья) ist gro&szlig;.<span class="answer-inline">Familie</span></li>
+                <li>Unser _________ (дядя) arbeitet in der Stadt.<span class="answer-inline">Onkel</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-94')">Показать ответы</button>
+
+            <h3>Упражнение 9.5: Переведи предложения (12)</h3>
+            <p><em>Переведи. Следи за падежом!</em></p>
+            <ol class="exercise-list" id="ex-95">
+                <li>Мой отец - врач.<span class="answer-inline">Mein Vater ist Arzt.</span></li>
+                <li>Я вижу моего отца.<span class="answer-inline">Ich sehe meinen Vater.</span></li>
+                <li>Твоя мама работает здесь.<span class="answer-inline">Deine Mutter arbeitet hier.</span></li>
+                <li>Я навещаю мою бабушку.<span class="answer-inline">Ich besuche meine Oma.</span></li>
+                <li>Его брат - студент.<span class="answer-inline">Sein Bruder ist Student.</span></li>
+                <li>Она любит своего брата.<span class="answer-inline">Sie liebt ihren Bruder.</span></li>
+                <li>Наш дом большой.<span class="answer-inline">Unser Haus ist gro&szlig;.</span></li>
+                <li>Я ищу наш ключ.<span class="answer-inline">Ich suche unseren Schl&uuml;ssel.</span></li>
+                <li>Их дети играют здесь.<span class="answer-inline">Ihre Kinder spielen hier.</span></li>
+                <li>Я вижу их детей.<span class="answer-inline">Ich sehe ihre Kinder.</span></li>
+                <li>Ваша (ihr) семья живёт в Берлине.<span class="answer-inline">Eure Familie wohnt in Berlin.</span></li>
+                <li>Я люблю свою семью.<span class="answer-inline">Ich liebe meine Familie.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-95')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a1-8.html" class="nav-link">&larr; Предыдущий урок (А1-8)</a>
+        <span class="nav-title">Конец урока А1-9</span>
+        <a href="a1-10.html" class="nav-link">Следующий урок (А1-10) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-8: Падеж Akkusativ (Винительный)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a1-7.html" class="nav-link">&larr; Урок А1-7</a>
+        <span class="nav-title">Урок А1-8</span>
+        <a href="a1-9.html" class="nav-link">Урок А1-9 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим артикли, род и отрицание из уроков 6-7. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Артикли, род и kein/nicht (12)</h3>
+            <p><em>Вставь артикль или выбери kein/keine/nicht:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>_________ Lehrer (учитель)<span class="answer-inline">der</span></li>
+                <li>_________ Freiheit (свобода)<span class="answer-inline">die</span></li>
+                <li>_________ M&auml;dchen (девочка)<span class="answer-inline">das</span></li>
+                <li>Das ist _________ Buch. (не книга)<span class="answer-inline">kein</span></li>
+                <li>Sie ist _________ nett.<span class="answer-inline">nicht</span></li>
+                <li>Ich habe _________ Zeit.<span class="answer-inline">keine</span></li>
+                <li>_________ &Uuml;bung (упражнение)<span class="answer-inline">die</span></li>
+                <li>Er arbeitet heute _________.<span class="answer-inline">nicht</span></li>
+                <li>Das ist _________ Auto.<span class="answer-inline">kein</span></li>
+                <li>Die Aufgabe ist _________ schwer.<span class="answer-inline">nicht</span></li>
+                <li>_________ Computer<span class="answer-inline">der</span></li>
+                <li>Wir sind _________ Studenten.<span class="answer-inline">keine</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Грамматический микс (12)</h3>
+            <p><em>Раскрой скобки:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich _________ (wohnen) in Berlin.<span class="answer-inline">wohne</span></li>
+                <li>_________ (haben) du ein Auto?<span class="answer-inline">Hast</span></li>
+                <li>Das ist _________ (ein) Frau. _________ (die) Frau ist &Auml;rztin.<span class="answer-inline">eine / Die</span></li>
+                <li>Wir _________ (sein) jetzt in Deutschland.<span class="answer-inline">sind</span></li>
+                <li>_________ (kommen) ihr aus der Ukraine?<span class="answer-inline">Kommt</span></li>
+                <li>Sie (они) _________ (lernen) Deutsch.<span class="answer-inline">lernen</span></li>
+                <li>Ich _________ (hei&szlig;en) Max.<span class="answer-inline">hei&szlig;e</span></li>
+                <li>Er _________ (haben) heute viel Zeit.<span class="answer-inline">hat</span></li>
+                <li>Das ist _________ (ein) Kind. _________ (das) Kind spielt.<span class="answer-inline">ein / Das</span></li>
+                <li>_________ (sein) du bereit?<span class="answer-inline">Bist</span></li>
+                <li>Das Wetter ist _________ (nicht/kein) sch&ouml;n.<span class="answer-inline">nicht</span></li>
+                <li>Das sind _________ (nicht/keine) B&uuml;cher.<span class="answer-inline">keine</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок А1-8: Падеж Akkusativ (Винительный)</h1>
+            <p class="subtitle">Учимся отвечать на вопросы "кого?" и "что?" - меняем артикли мужского рода.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю, как меняются артикли в Akkusativ (der &rarr; den, ein &rarr; einen).</li>
+                <li>Умею использовать глаголы haben, brauchen, suchen с Akkusativ.</li>
+                <li>Могу задавать вопросы Wen? (кого?) и Was? (что?).</li>
+            </ul>
+
+            <h2>1. Что такое Akkusativ?</h2>
+            <p><strong>Akkusativ</strong> отвечает на вопросы <strong>wen?</strong> (кого?) и <strong>was?</strong> (что?).</p>
+            <table>
+                <thead><tr><th>Русский</th><th>Вопрос</th><th>Немецкий (Akkusativ)</th></tr></thead>
+                <tbody>
+                    <tr><td>Я вижу стол.</td><td>что?</td><td>Ich sehe <strong>den Tisch</strong>.</td></tr>
+                    <tr><td>Он ищет книгу.</td><td>что?</td><td>Er sucht <strong>das Buch</strong>.</td></tr>
+                    <tr><td>Мы любим учителя.</td><td>кого?</td><td>Wir lieben <strong>den Lehrer</strong>.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Изменение артиклей в Akkusativ</h2>
+            <table>
+                <thead><tr><th>Род</th><th>Nominativ</th><th>Akkusativ</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td>Мужской</td><td>der / ein</td><td><strong>den / einen</strong></td><td>Ich sehe <strong>den</strong> Mann.</td></tr>
+                    <tr><td>Женский</td><td>die / eine</td><td>die / eine</td><td>Ich sehe <strong>die</strong> Frau.</td></tr>
+                    <tr><td>Средний</td><td>das / ein</td><td>das / ein</td><td>Ich sehe <strong>das</strong> Kind.</td></tr>
+                    <tr><td>Множ.</td><td>die / -</td><td>die / -</td><td>Ich sehe <strong>die</strong> Kinder.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Глаголы с Akkusativ</h2>
+            <p>haben, brauchen, suchen, sehen, h&ouml;ren, essen, trinken, kaufen, lieben, nehmen</p>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для Akkusativ.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>der Bruder, -</strong> - брат</div>
+                <div class="vocabulary-item"><strong>die Schwester, -n</strong> - сестра</div>
+                <div class="vocabulary-item"><strong>der Hund, -e</strong> - собака</div>
+                <div class="vocabulary-item"><strong>die Katze, -n</strong> - кошка</div>
+                <div class="vocabulary-item"><strong>der Tisch, -e</strong> - стол</div>
+                <div class="vocabulary-item"><strong>der Stuhl, -&uml;e</strong> - стул</div>
+                <div class="vocabulary-item"><strong>der Schl&uuml;ssel, -</strong> - ключ</div>
+                <div class="vocabulary-item"><strong>der Bleistift, -e</strong> - карандаш</div>
+                <div class="vocabulary-item"><strong>der Kaffee (Sg.)</strong> - кофе</div>
+                <div class="vocabulary-item"><strong>der Tee (Sg.)</strong> - чай</div>
+                <div class="vocabulary-item"><strong>der Apfel, -</strong> - яблоко</div>
+                <div class="vocabulary-item"><strong>der Saft, -&auml;e</strong> - сок</div>
+                <div class="vocabulary-item"><strong>die Milch (Sg.)</strong> - молоко</div>
+                <div class="vocabulary-item"><strong>das Brot, -e</strong> - хлеб</div>
+                <div class="vocabulary-item"><strong>das Ticket, -s</strong> - билет</div>
+                <div class="vocabulary-item"><strong>das Buch, -&uuml;er</strong> - книга</div>
+                <div class="vocabulary-item"><strong>das Heft, -e</strong> - тетрадь</div>
+                <div class="vocabulary-item"><strong>das Haus, -&auml;er</strong> - дом</div>
+                <div class="vocabulary-item"><strong>das Auto, -s</strong> - машина</div>
+                <div class="vocabulary-item"><strong>brauchen</strong> - нуждаться</div>
+                <div class="vocabulary-item"><strong>suchen</strong> - искать</div>
+                <div class="vocabulary-item"><strong>sehen (sieht, sah)</strong> - видеть</div>
+                <div class="vocabulary-item"><strong>h&ouml;ren</strong> - слышать</div>
+                <div class="vocabulary-item"><strong>kaufen</strong> - покупать</div>
+                <div class="vocabulary-item"><strong>nehmen (nimmt, nahm)</strong> - брать</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (&Uuml;bungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров.</p>
+
+            <h3>Упражнение 8.1: Артикль в Akkusativ (12)</h3>
+            <p><em>Выбери den/einen, die/eine, das/ein или -:</em></p>
+            <ol class="exercise-list" id="ex-81">
+                <li>Ich sehe _________ Mann (der).<span class="answer-inline">den</span></li>
+                <li>Sie hat _________ Schwester (die).<span class="answer-inline">eine</span></li>
+                <li>Er sucht _________ Buch (das).<span class="answer-inline">das</span></li>
+                <li>Wir brauchen _________ Auto (das).<span class="answer-inline">ein</span></li>
+                <li>Ich kaufe _________ Apfel (der).<span class="answer-inline">einen</span></li>
+                <li>Sie liebt _________ Katze (die).<span class="answer-inline">die</span></li>
+                <li>Er trinkt _________ Tee (der).<span class="answer-inline">den</span></li>
+                <li>Ich h&ouml;re _________ Musik (die).<span class="answer-inline">die</span></li>
+                <li>Wir sehen _________ Kinder (plural).<span class="answer-inline">-</span></li>
+                <li>Sie sucht _________ Wohnung (die).<span class="answer-inline">eine</span></li>
+                <li>Ich habe _________ Hund (der).<span class="answer-inline">einen</span></li>
+                <li>Er nimmt _________ Stuhl (der).<span class="answer-inline">den</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-81')">Показать ответы</button>
+
+            <h3>Упражнение 8.2: Раскрой скобки (12)</h3>
+            <p><em>Поставь в Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-82">
+                <li>Ich habe (ein Bruder).<span class="answer-inline">einen Bruder</span></li>
+                <li>Er sucht (der Schl&uuml;ssel).<span class="answer-inline">den Schl&uuml;ssel</span></li>
+                <li>Wir brauchen (eine Idee).<span class="answer-inline">eine Idee</span></li>
+                <li>Sie kauft (das Haus).<span class="answer-inline">das Haus</span></li>
+                <li>Ich sehe (der Lehrer).<span class="answer-inline">den Lehrer</span></li>
+                <li>Er isst (ein Apfel).<span class="answer-inline">einen Apfel</span></li>
+                <li>Wir trinken (der Saft).<span class="answer-inline">den Saft</span></li>
+                <li>Ich liebe (die Natur).<span class="answer-inline">die Natur</span></li>
+                <li>Sie nimmt (ein Heft).<span class="answer-inline">ein Heft</span></li>
+                <li>Ich h&ouml;re (der Vogel).<span class="answer-inline">den Vogel</span></li>
+                <li>Er braucht (ein Bleistift).<span class="answer-inline">einen Bleistift</span></li>
+                <li>Wir haben (die Tickets).<span class="answer-inline">die Tickets</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-82')">Показать ответы</button>
+
+            <h3>Упражнение 8.3: Nominativ &rarr; Akkusativ (12)</h3>
+            <p><em>Преобразуй:</em></p>
+            <ol class="exercise-list" id="ex-83">
+                <li>Das ist ein Hund. &rarr; Ich sehe __________________.<span class="answer-inline">einen Hund</span></li>
+                <li>Das ist eine Blume. &rarr; Ich sehe __________________.<span class="answer-inline">eine Blume</span></li>
+                <li>Das ist das Bett. &rarr; Ich sehe __________________.<span class="answer-inline">das Bett</span></li>
+                <li>Das ist der Computer. &rarr; Ich kaufe __________________.<span class="answer-inline">den Computer</span></li>
+                <li>Das ist eine Lampe. &rarr; Ich brauche __________________.<span class="answer-inline">eine Lampe</span></li>
+                <li>Das ist das Fenster. &rarr; Ich sehe __________________.<span class="answer-inline">das Fenster</span></li>
+                <li>Das ist der Kuchen. &rarr; Ich esse __________________.<span class="answer-inline">den Kuchen</span></li>
+                <li>Das ist die Tasche. &rarr; Ich suche __________________.<span class="answer-inline">die Tasche</span></li>
+                <li>Das ist der Film. &rarr; Ich sehe __________________.<span class="answer-inline">den Film</span></li>
+                <li>Das ist das Telefon. &rarr; Ich habe __________________.<span class="answer-inline">das Telefon</span></li>
+                <li>Das ist der Baum. &rarr; Ich sehe __________________.<span class="answer-inline">den Baum</span></li>
+                <li>Das ist die Zeitung. &rarr; Ich lese __________________.<span class="answer-inline">die Zeitung</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-83')">Показать ответы</button>
+
+            <h3>Упражнение 8.4: Ответы на вопросы (12)</h3>
+            <p><em>Ответь, используя подсказку:</em></p>
+            <ol class="exercise-list" id="ex-84">
+                <li>Was suchst du? (der Schl&uuml;ssel) &rarr; Ich suche __________________.<span class="answer-inline">den Schl&uuml;ssel</span></li>
+                <li>Wen siehst du? (der Arzt) &rarr; Ich sehe __________________.<span class="answer-inline">den Arzt</span></li>
+                <li>Was brauchst du? (ein Kaffee) &rarr; Ich brauche __________________.<span class="answer-inline">einen Kaffee</span></li>
+                <li>Was kaufst du? (das Brot) &rarr; Ich kaufe __________________.<span class="answer-inline">das Brot</span></li>
+                <li>Wen liebst du? (die Mutter) &rarr; Ich liebe __________________.<span class="answer-inline">die Mutter</span></li>
+                <li>Was isst du? (ein Apfel) &rarr; Ich esse __________________.<span class="answer-inline">einen Apfel</span></li>
+                <li>Was trinkst du? (der Tee) &rarr; Ich trinke __________________.<span class="answer-inline">den Tee</span></li>
+                <li>Wen suchst du? (der Freund) &rarr; Ich suche __________________.<span class="answer-inline">den Freund</span></li>
+                <li>Was hast du? (ein Ticket) &rarr; Ich habe __________________.<span class="answer-inline">ein Ticket</span></li>
+                <li>Was nimmst du? (der Salat) &rarr; Ich nehme __________________.<span class="answer-inline">den Salat</span></li>
+                <li>Was h&ouml;rst du? (die Musik) &rarr; Ich h&ouml;re __________________.<span class="answer-inline">die Musik</span></li>
+                <li>Wen siehst du? (die Lehrerin) &rarr; Ich sehe __________________.<span class="answer-inline">die Lehrerin</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-84')">Показать ответы</button>
+
+            <h3>Упражнение 8.5: Перевод (12)</h3>
+            <p><em>Переведи на немецкий:</em></p>
+            <ol class="exercise-list" id="ex-85">
+                <li>Я вижу учителя.<span class="answer-inline">Ich sehe den Lehrer.</span></li>
+                <li>У меня есть собака.<span class="answer-inline">Ich habe einen Hund.</span></li>
+                <li>Она ищет квартиру.<span class="answer-inline">Sie sucht eine Wohnung.</span></li>
+                <li>Мне нужен кофе.<span class="answer-inline">Ich brauche einen Kaffee.</span></li>
+                <li>Я покупаю билет.<span class="answer-inline">Ich kaufe ein Ticket.</span></li>
+                <li>Он ест яблоко.<span class="answer-inline">Er isst einen Apfel.</span></li>
+                <li>Мы пьем чай.<span class="answer-inline">Wir trinken den Tee.</span></li>
+                <li>Я люблю свою семью.<span class="answer-inline">Ich liebe meine Familie.</span></li>
+                <li>Она берет книгу.<span class="answer-inline">Sie nimmt ein Buch.</span></li>
+                <li>Я слышу музыку.<span class="answer-inline">Ich h&ouml;re die Musik.</span></li>
+                <li>Мы ищем ключ.<span class="answer-inline">Wir suchen den Schl&uuml;ssel.</span></li>
+                <li>Ты видишь дом?<span class="answer-inline">Siehst du das Haus?</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-85')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a1-7.html" class="nav-link">&larr; Предыдущий урок (А1-7)</a>
+        <span class="nav-title">Конец урока А1-8</span>
+        <a href="a1-9.html" class="nav-link">Следующий урок (А1-9) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

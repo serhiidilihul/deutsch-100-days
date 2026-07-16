@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-19: Профессии, резюме (Lebenslauf)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-18.html" class="nav-link">&larr; Урок A2-18</a>
+        <span class="nav-title">Урок A2-19</span>
+        <a href="a2-20.html" class="nav-link">Урок A2-20 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторung (Wiederholung)</h2>
+            <p class="subtitle">Повторим путешествия и бронирование из урока A2-18. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Типы номеров (12)</h3>
+            <p><em>Выбери правильный тип номера:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich möchte _________ für eine Person buchen. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Einzelzimmer</span></li>
+                <li>Ich möchte _________ für zwei Personen buchen. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Doppelzimmer</span></li>
+                <li>Wir möchten eine _________ für 4 Personen. (Suite/Zimmer)<span class="answer-inline">Suite</span></li>
+                <li>Das _________ ist sehr schön. (Zimmer/Etage)<span class="answer-inline">Zimmer</span></li>
+                <li>Wir wohnen im _________ Stock. (Etage/Zimmer)<span class="answer-inline">Etage</span></li>
+                <li>Ich möchte ein Zimmer auf der 3. _________. (Etage/Zimmer)<span class="answer-inline">Etage</span></li>
+                <li>Das _________ hat einen Balkon. (Zimmer/Suite)<span class="answer-inline">Zimmer</span></li>
+                <li>Die _________ ist sehr luxuriös. (Suite/Zimmer)<span class="answer-inline">Suite</span></li>
+                <li>Ich buche ein _________ für eine Nacht. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Einzelzimmer</span></li>
+                <li>Wir buche ein _________ für eine Woche. (Einzelzimmer/Doppelzimmer)<span class="answer-inline">Doppelzimmer</span></li>
+                <li>Auf welcher _________ ist das Zimmer? (Etage/Zimmer)<span class="answer-inline">Etage</span></li>
+                <li>Das _________ ist sehr klein. (Zimmer/Etage)<span class="answer-inline">Zimmer</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Проблемы на ресепшене (12)</h3>
+            <p><em>Опиши проблему:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Das Zimmer / nicht sauber sein &rarr; Das ___________________.<span class="answer-inline">Zimmer ist nicht sauber</span></li>
+                <li>die Klimaanlage / nicht funktionieren &rarr; Die ___________________.<span class="answer-inline">Klimaanlage funktioniert nicht</span></li>
+                <li>ich / kein Wasser haben &rarr; Ich ___________________.<span class="answer-inline">habe kein Wasser</span></li>
+                <li>der Fernseher / nicht funktionieren &rarr; Der ___________________.<span class="answer-inline">Fernseher funktioniert nicht</span></li>
+                <li>das WLAN / nicht funktionieren &rarr; Das ___________________.<span class="answer-inline">WLAN funktioniert nicht</span></li>
+                <li>ich / kein Handtuch haben &rarr; Ich ___________________.<span class="answer-inline">habe kein Handtuch</span></li>
+                <li>die Tür / nicht öffnen &rarr; Die ___________________.<span class="answer-inline">Tür öffnet nicht</span></li>
+                <li>der Schlüssel / nicht funktionieren &rarr; Der ___________________.<span class="answer-inline">Schlüssel funktioniert nicht</span></li>
+                <li>es / zu kalt sein &rarr; Es ___________________.<span class="answer-inline">ist zu kalt</span></li>
+                <li>es / zu laut sein &rarr; Es ___________________.<span class="answer-inline">ist zu laut</span></li>
+                <li>ich / die Rechnung / nicht verstehen &rarr; Ich ___________________.<span class="answer-inline">verstehe die Rechnung nicht</span></li>
+                <li>das Frühstück / zu früh sein &rarr; Das ___________________.<span class="answer-inline">Frühstück ist zu früh</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-19: Профессии, резюме (Lebenslauf)</h1>
+            <p class="subtitle">Учимся описывать карьерный путь и составлять резюме.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю названия основных профессий (мужской/женский род).</li>
+                <li>Могу устно описать свой карьерный путь и основные обязанности.</li>
+                <li>Умею составить простое резюме (Lebenslauf).</li>
+            </ul>
+
+            <h2>1. Профессии: мужской и женский род</h2>
+            <p>Большинство профессий имеют мужской и женский вариант:</p>
+
+            <table>
+                <thead><tr><th>Мужской род</th><th>Женский род</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>der Arzt</strong></td><td><strong>die Ärztin</strong></td><td>врач</td></tr>
+                    <tr><td><strong>der Lehrer</strong></td><td><strong>die Lehrerin</strong></td><td>учитель</td></tr>
+                    <tr><td><strong>der Ingenieur</strong></td><td><strong>die Ingenieurin</strong></td><td>инженер</td></tr>
+                    <tr><td><strong>der Programmierer</strong></td><td><strong>die Programmiererin</strong></td><td>программист</td></tr>
+                    <tr><td><strong>der Manager</strong></td><td><strong>die Managerin</strong></td><td>менеджер</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Запомни!</strong><br>
+                Женский вариант часто образуется добавлением <strong>-in</strong>.<br>
+                <strong>der Lehrer</strong> → <strong>die Lehrerin</strong>
+            </div>
+
+            <h2>2. Обязанности (Tätigkeiten)</h2>
+            <p>Для описания работы используй глаголы:</p>
+
+            <table>
+                <thead><tr><th>Глагол</th><th>Значение</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>arbeiten</strong></td><td>работать</td><td><em>Ich arbeite als Lehrer.</em></td></tr>
+                    <tr><td><strong>betreuen</strong></td><td>консультировать</td><td><em>Ich betreue Kunden.</em></td></tr>
+                    <tr><td><strong>verwalten</strong></td><td>управлять</td><td><em>Ich verwalte Projekte.</em></td></tr>
+                    <tr><td><strong>entwickeln</strong></td><td>разрабатывать</td><td><em>Ich entwickle Software.</em></td></tr>
+                    <tr><td><strong>koordinieren</strong></td><td>координировать</td><td><em>Ich koordiniere Teams.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Структура резюме (Lebenslauf)</h2>
+            <p>Простое резюме содержит:</p>
+            <ul>
+                <li><strong>Persönliche Daten</strong> — личные данные</li>
+                <li><strong>Berufserfahrung</strong> — опыт работы</li>
+                <li><strong>Ausbildung</strong> — образование</li>
+                <li><strong>Fähigkeiten</strong> — навыки</li>
+            </ul>
+
+            <h2>4. Пример резюме</h2>
+            <ul>
+                <li><em><strong>Name:</strong> Anna Müller</em></li>
+                <li><em><strong>Beruf:</strong> Ärztin</em></li>
+                <li><em><strong>Erfahrung:</strong> 5 Jahre im Krankenhaus</em></li>
+                <li><em><strong>Ausbildung:</strong> Medizin studiert</em></li>
+                <li><em><strong>Fähigkeiten:</strong> Deutsch, Englisch, Patientenbetreuung</em></li>
+            </ul>
+
+            <h2>5. Фразы для собеседования</h2>
+            <ul>
+                <li><em>Ich habe 5 Jahre Erfahrung als...</em> — У меня 5 лет опыта как...</li>
+                <li><em>Ich bin zuständig für...</em> — Я отвечаю за...</li>
+                <li><em>Ich arbeite gerne im Team.</em> — Мне нравится работать в команде.</li>
+                <li><em>Ich bin flexibel und motiviert.</em> — Я гибкий и мотивированный.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">50 слов для профессий и резюме.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>der Beruf, -e</strong> — профессия</div>
+                <div class="vocabulary-item"><strong>der Lebenslauf, -äe</strong> — резюме</div>
+                <div class="vocabulary-item"><strong>die Erfahrung, -en</strong> — опыт</div>
+                <div class="vocabulary-item"><strong>die Ausbildung, -en</strong> — образование</div>
+                <div class="vocabulary-item"><strong>die Fähigkeit, -en</strong> — навык</div>
+                <div class="vocabulary-item"><strong>der Arzt, -äe</strong> — врач</div>
+                <div class="vocabulary-item"><strong>die Ärztin, -nen</strong> — врач (женщ.)</div>
+                <div class="vocabulary-item"><strong>der Lehrer, -</strong> — учитель</div>
+                <div class="vocabulary-item"><strong>die Lehrerin, -nen</strong> — учительница</div>
+                <div class="vocabulary-item"><strong>der Ingenieur, -e</strong> — инженер</div>
+                <div class="vocabulary-item"><strong>die Ingenieurin, -nen</strong> — инженер (женщ.)</div>
+                <div class="vocabulary-item"><strong>der Programmierer, -</strong> — программист</div>
+                <div class="vocabulary-item"><strong>die Programmiererin, -nen</strong> — программистка</div>
+                <div class="vocabulary-item"><strong>der Manager, -</strong> — менеджер</div>
+                <div class="vocabulary-item"><strong>die Managerin, -nen</strong> — менеджер (женщ.)</div>
+                <div class="vocabulary-item"><strong>der Verkäufer, -</strong> — продавец</div>
+                <div class="vocabulary-item"><strong>die Verkäuferin, -nen</strong> — продавщица</div>
+                <div class="vocabulary-item"><strong>der Koch, -äe</strong> — повар</div>
+                <div class="vocabulary-item"><strong>die Köchin, -nen</strong> — повариха</div>
+                <div class="vocabulary-item"><strong>der Fahrer, -</strong> — водитель</div>
+                <div class="vocabulary-item"><strong>die Fahrerin, -nen</strong> — водитель (женщ.)</div>
+                <div class="vocabulary-item"><strong>der Sekretär, -e</strong> — секретарь</div>
+                <div class="vocabulary-item"><strong>die Sekretärin, -nen</strong> — секретарша</div>
+                <div class="vocabulary-item"><strong>der Architekt, -en</strong> — архитектор</div>
+                <div class="vocabulary-item"><strong>die Architektin, -nen</strong> — архитектор (женщ.)</div>
+                <div class="vocabulary-item"><strong>der Assistent, -en</strong> — ассистент</div>
+                <div class="vocabulary-item"><strong>die Assistentin, -nen</strong> — ассистентка</div>
+                <div class="vocabulary-item"><strong>arbeiten</strong> — работать</div>
+                <div class="vocabulary-item"><strong>betreuen</strong> — консультировать</div>
+                <div class="vocabulary-item"><strong>verwalten</strong> — управлять</div>
+                <div class="vocabulary-item"><strong>entwickeln</strong> — разрабатывать</div>
+                <div class="vocabulary-item"><strong>koordinieren</strong> — координировать</div>
+                <div class="vocabulary-item"><strong>verantwortlich</strong> — ответственный</div>
+                <div class="vocabulary-item"><strong>flexibel</strong> — гибкий</div>
+                <div class="vocabulary-item"><strong>motiviert</strong> — мотивированный</div>
+                <div class="vocabulary-item"><strong>zuverlässig</strong> — надёжный</div>
+                <div class="vocabulary-item"><strong>das Krankenhaus, -äer</strong> — больница</div>
+                <div class="vocabulary-item"><strong>die Firma, -en</strong> — фирма</div>
+                <div class="vocabulary-item"><strong>die Abteilung, -en</strong> — отдел</div>
+                <div class="vocabulary-item"><strong>der Kollege, -n</strong> — коллега</div>
+                <div class="vocabulary-item"><strong>der Chef, -s</strong> — начальник</div>
+                <div class="vocabulary-item"><strong>das Team, -s</strong> — команда</div>
+                <div class="vocabulary-item"><strong>das Projekt, -e</strong> — проект</div>
+                <div class="vocabulary-item"><strong>die Aufgabe, -n</strong> — задача</div>
+                <div class="vocabulary-item"><strong>der Kunde, -n</strong> — клиент</div>
+                <div class="vocabulary-item"><strong>die Bewerbung, -en</strong> — заявка на работу</div>
+                <div class="vocabulary-item"><strong>das Vorstellungsgespräch, -e</strong> — собеседование</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем профессии!</p>
+
+            <h3>Упражнение 44.1: Мужской/женский род (12)</h3>
+            <p><em>Напиши мужской и женский вариант профессии:</em></p>
+            <ol class="exercise-list" id="ex-441">
+                <li>der Arzt / die ___________________.<span class="answer-inline">Ärztin</span></li>
+                <li>der Lehrer / die ___________________.<span class="answer-inline">Lehrerin</span></li>
+                <li>der Ingenieur / die ___________________.<span class="answer-inline">Ingenieurin</span></li>
+                <li>der Programmierer / die ___________________.<span class="answer-inline">Programmiererin</span></li>
+                <li>der Manager / die ___________________.<span class="answer-inline">Managerin</span></li>
+                <li>der Verkäufer / die ___________________.<span class="answer-inline">Verkäuferin</span></li>
+                <li>der Koch / die ___________________.<span class="answer-inline">Köchin</span></li>
+                <li>der Fahrer / die ___________________.<span class="answer-inline">Fahrerin</span></li>
+                <li>der Sekretär / die ___________________.<span class="answer-inline">Sekretärin</span></li>
+                <li>der Architekt / die ___________________.<span class="answer-inline">Architektin</span></li>
+                <li>der Assistent / die ___________________.<span class="answer-inline">Assistentin</span></li>
+                <li>der Arzt / die ___________________.<span class="answer-inline">Ärztin</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-441')">Показать ответы</button>
+
+            <h3>Упражнение 44.2: Обязанности (12)</h3>
+            <p><em>Выбери правильный глагол:</em></p>
+            <ol class="exercise-list" id="ex-442">
+                <li>Ich _________ Kunden. (arbeiten/betreuen)<span class="answer-inline">betreue</span></li>
+                <li>Ich _________ Software. (arbeiten/entwickeln)<span class="answer-inline">entwickle</span></li>
+                <li>Ich _________ Projekte. (verwalten/arbeiten)<span class="answer-inline">verwalte</span></li>
+                <li>Ich _________ Teams. (koordinieren/betreuen)<span class="answer-inline">koordiniere</span></li>
+                <li>Ich _________ als Lehrer. (arbeiten/betreuen)<span class="answer-inline">arbeite</span></li>
+                <li>Ich _________ Patienten. (betreuen/entwickeln)<span class="answer-inline">betreue</span></li>
+                <li>Ich _________ Programme. (entwickeln/verwalten)<span class="answer-inline">entwickle</span></li>
+                <li>Ich _________ Abteilungen. (verwalten/koordinieren)<span class="answer-inline">verwalte</span></li>
+                <li>Ich _________ Meetings. (koordinieren/betreuen)<span class="answer-inline">koordiniere</span></li>
+                <li>Ich _________ im Krankenhaus. (arbeiten/betreuen)<span class="answer-inline">arbeite</span></li>
+                <li>Ich _________ Kundenanfragen. (betreuen/entwickeln)<span class="answer-inline">betreue</span></li>
+                <li>Ich _________ neue Produkte. (entwickeln/verwalten)<span class="answer-inline">entwickle</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-442')">Показать ответы</button>
+
+            <h3>Упражнение 44.3: Карьерный путь (12)</h3>
+            <p><em>Опиши свой карьерный путь:</em></p>
+            <ol class="exercise-list" id="ex-443">
+                <li>Ich bin _________ (Arzt/Ärztin).<span class="answer-inline">Arzt</span></li>
+                <li>Ich habe _________ (die Erfahrung/5 Jahre).<span class="answer-inline">5 Jahre Erfahrung</span></li>
+                <li>Ich arbeite als _________ (Lehrer/Lehrerin).<span class="answer-inline">Lehrer</span></li>
+                <li>Ich bin _________ (verantwortlich/flexibel).<span class="answer-inline">verantwortlich</span></li>
+                <li>Ich habe _________ (die Ausbildung/Medizin studiert).<span class="answer-inline">Medizin studiert</span></li>
+                <li>Ich bin _________ (motiviert/zuverlässig).<span class="answer-inline">motiviert</span></li>
+                <li>Ich arbeite im _________ (Krankenhaus/Büro).<span class="answer-inline">Krankenhaus</span></li>
+                <li>Ich _________ (arbeiten/betreue) Patienten.<span class="answer-inline">betreue</span></li>
+                <li>Ich habe _________ (die Fähigkeit/Sprachen).<span class="answer-inline">Sprachen</span></li>
+                <li>Ich bin _________ (flexibel/verantwortlich).<span class="answer-inline">flexibel</span></li>
+                <li>Ich _________ (arbeiten/koordiniere) im Team.<span class="answer-inline">arbeite</span></li>
+                <li>Ich bin _________ (zuverlässig/motiviert).<span class="answer-inline">zuverlässig</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-443')">Показать ответы</button>
+
+            <h3>Упражнение 44.4: Составь резюме (12)</h3>
+            <p><em>Составь простое резюме:</em></p>
+            <ol class="exercise-list" id="ex-444">
+                <li>Name: Anna Müller / Beruf: _________ (Ärztin/Lehrerin)<span class="answer-inline">Ärztin</span></li>
+                <li>Erfahrung: _________ (3 Jahre/5 Jahre) im Krankenhaus<span class="answer-inline">5 Jahre</span></li>
+                <li>Ausbildung: _________ (Medizin/Informatik) studiert<span class="answer-inline">Medizin</span></li>
+                <li>Fähigkeiten: _________ (Deutsch, Englisch, Patientenbetreuung)<span class="answer-inline">Deutsch, Englisch, Patientenbetreuung</span></li>
+                <li>Ich bin _________ (verantwortlich/flexibel).<span class="answer-inline">verantwortlich</span></li>
+                <li>Ich _________ (arbeite/betreue) gerne im Team.<span class="answer-inline">arbeite</span></li>
+                <li>Name: Thomas Schmidt / Beruf: _________ (Ingenieur/Manager)<span class="answer-inline">Ingenieur</span></li>
+                <li>Erfahrung: _________ (10 Jahre/2 Jahre) in der Firma<span class="answer-inline">10 Jahre</span></li>
+                <li>Ausbildung: _________ (Technik/Wirtschaft) studiert<span class="answer-inline">Technik</span></li>
+                <li>Fähigkeiten: _________ (Programmierung, Projektleitung)<span class="answer-inline">Programmierung, Projektleitung</span></li>
+                <li>Ich bin _________ (motiviert/zuverlässig).<span class="answer-inline">motiviert</span></li>
+                <li>Ich _________ (verwalte/entwickle) Projekte.<span class="answer-inline">verwalte</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-444')">Показать ответы</button>
+
+            <h3>Упражнение 44.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-445">
+                <li>Я врач. У меня 5 лет опыта.<span class="answer-inline">Ich bin Arzt. Ich habe 5 Jahre Erfahrung.</span></li>
+                <li>Я работаю учителем в школе.<span class="answer-inline">Ich arbeite als Lehrer in der Schule.</span></li>
+                <li>Я отвечаю за проекты.<span class="answer-inline">Ich bin verantwortlich für Projekte.</span></li>
+                <li>Я изучал медицину.<span class="answer-inline">Ich habe Medizin studiert.</span></li>
+                <li>Я гибкий и мотивированный.<span class="answer-inline">Ich bin flexibel und motiviert.</span></li>
+                <li>Я работаю в больнице.<span class="answer-inline">Ich arbeite im Krankenhaus.</span></li>
+                <li>Я консультирую клиентов.<span class="answer-inline">Ich betreue Kunden.</span></li>
+                <li>Я разрабатываю программное обеспечение.<span class="answer-inline">Ich entwickle Software.</span></li>
+                <li>Я координирую команды.<span class="answer-inline">Ich koordiniere Teams.</span></li>
+                <li>Я надёжный и трудолюбивый.<span class="answer-inline">Ich bin zuverlässig und fleißig.</span></li>
+                <li>Я ищу работу как инженер.<span class="answer-inline">Ich suche Arbeit als Ingenieur.</span></li>
+                <li>У меня есть опыт управления.<span class="answer-inline">Ich habe Erfahrung in der Verwaltung.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-445')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-18.html" class="nav-link">&larr; Предыдущий урок (A2-18)</a>
+        <span class="nav-title">Конец урока A2-19</span>
+        <a href="a2-20.html" class="nav-link">Следующий урок (A2-20) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

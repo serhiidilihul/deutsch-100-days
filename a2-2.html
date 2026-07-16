@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-2: Предлоги Akkusativ (durch, für, gegen, ohne, um)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-1.html" class="nav-link">&larr; Урок A2-1</a>
+        <span class="nav-title">Урок A2-2</span>
+        <a href="a2-3.html" class="nav-link">Урок A2-3 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим союзы weil и dass из урока A2-1. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: weil или dass (12)</h3>
+            <p><em>Выбери правильный союз:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich bleibe zu Hause, _________ ich krank bin.<span class="answer-inline">weil</span></li>
+                <li>Ich weiß, _________ du Deutsch lernst.<span class="answer-inline">dass</span></li>
+                <li>Er kommt nicht, _________ er keine Zeit hat.<span class="answer-inline">weil</span></li>
+                <li>Sie sagt, _________ sie müde ist.<span class="answer-inline">dass</span></li>
+                <li>Wir gehen, _________ das Wetter schön ist.<span class="answer-inline">weil</span></li>
+                <li>Ich denke, _________ das gut ist.<span class="answer-inline">dass</span></li>
+                <li>Sie freut sich, _________ ihr Freund kommt.<span class="answer-inline">weil</span></li>
+                <li>Er hofft, _________ er besteht.<span class="answer-inline">dass</span></li>
+                <li>Ich helfe dir, _________ ich dich mag.<span class="answer-inline">weil</span></li>
+                <li>Sie weiß, _________ ich recht habe.<span class="answer-inline">dass</span></li>
+                <li>Wir essen nicht, _________ wir satt sind.<span class="answer-inline">weil</span></li>
+                <li>Er glaubt, _________ das wahr ist.<span class="answer-inline">dass</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Поставь глагол в конец (12)</h3>
+            <p><em>Построй предложение с weil/dass. Глагол в конце!</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich bleibe zu Hause / ich krank sein &rarr; Ich bleibe zu Hause, weil ___________________.<span class="answer-inline">ich krank bin</span></li>
+                <li>Ich weiß / du Deutsch lernen &rarr; Ich weiß, dass ___________________.<span class="answer-inline">du Deutsch lernst</span></li>
+                <li>Er lernt Deutsch / er in Deutschland arbeiten &rarr; Er lernt Deutsch, weil ___________________.<span class="answer-inline">er in Deutschland arbeitet</span></li>
+                <li>Sie sagt / sie müde sein &rarr; Sie sagt, dass ___________________.<span class="answer-inline">sie müde ist</span></li>
+                <li>Wir gehen nicht / es regnen &rarr; Wir gehen nicht, weil ___________________.<span class="answer-inline">es regnet</span></li>
+                <li>Ich denke / das gut sein &rarr; Ich denke, dass ___________________.<span class="answer-inline">das gut ist</span></li>
+                <li>Sie freut sich / ihr Freund kommen &rarr; Sie freut sich, weil ___________________.<span class="answer-inline">ihr Freund kommt</span></li>
+                <li>Er hofft / er bestehen &rarr; Er hofft, dass ___________________.<span class="answer-inline">er besteht</span></li>
+                <li>Ich helfe dir / ich Zeit haben &rarr; Ich helfe dir, weil ___________________.<span class="answer-inline">ich Zeit habe</span></li>
+                <li>Sie weiß / ich krank sein &rarr; Sie weiß, dass ___________________.<span class="answer-inline">ich krank bin</span></li>
+                <li>Wir essen nicht / wir satt sein &rarr; Wir essen nicht, weil ___________________.<span class="answer-inline">wir satt sind</span></li>
+                <li>Er glaubt / das wahr sein &rarr; Er glaubt, dass ___________________.<span class="answer-inline">das wahr ist</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-2: Предлоги Akkusativ (durch, für, gegen, ohne, um)</h1>
+            <p class="subtitle">Учимся использовать предлоги, которые всегда требуют Akkusativ.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю 5 предлогов, которые <strong>всегда</strong> требуют Akkusativ: <strong>durch, für, gegen, ohne, um</strong>.</li>
+                <li>Могу правильно употреблять эти предлоги с артиклями Akkusativ.</li>
+                <li>Понимаю разницу между значением предлогов.</li>
+            </ul>
+
+            <h2>1. Предлоги Akkusativ</h2>
+            <p>Эти 5 предлогов <strong>всегда</strong> требуют Akkusativ, независимо от значения:</p>
+
+            <table>
+                <thead><tr><th>Предлог</th><th>Значение</th><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>durch</strong></td><td>через, сквозь</td><td><em>Ich gehe durch den Park.</em></td><td>Я иду через парк.</td></tr>
+                    <tr><td><strong>für</strong></td><td>для, за (цена)</td><td><em>Das ist für dich.</em></td><td>Это для тебя.</td></tr>
+                    <tr><td><strong>gegen</strong></td><td>против, на</td><td><em>Ich bin gegen das Gesetz.</em></td><td>Я против закона.</td></tr>
+                    <tr><td><strong>ohne</strong></td><td>без</td><td><em>Ich gehe ohne dich.</em></td><td>Я иду без тебя.</td></tr>
+                    <tr><td><strong>um</strong></td><td>вокруг, около (время)</td><td><em>Ich stehe um das Haus.</em></td><td>Я стою вокруг дома.</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Запомни!</strong><br>
+                Эти предлоги <strong>всегда</strong> используют Akkusativ:<br>
+                <strong>durch</strong> (через), <strong>für</strong> (для), <strong>gegen</strong> (против), <strong>ohne</strong> (без), <strong>um</strong> (вокруг)<br><br>
+                <strong>D</strong>urch <strong>F</strong>enster <strong>G</strong>eht <strong>O</strong>hne <strong>U</strong>mweg → <strong>DFGOU</strong>
+            </div>
+
+            <h2>2. Артикли Akkusativ</h2>
+            <table>
+                <thead><tr><th>Род</th><th>Определённый артикль (Akkusativ)</th><th>Неопределённый артикль (Akkusativ)</th></tr></thead>
+                <tbody>
+                    <tr><td>Masculinum</td><td><strong>den</strong></td><td><strong>einen</strong></td></tr>
+                    <tr><td>Femininum</td><td><strong>die</strong></td><td><strong>eine</strong></td></tr>
+                    <tr><td>Neutrum</td><td><strong>das</strong></td><td><strong>ein</strong></td></tr>
+                    <tr><td>Plural</td><td><strong>die</strong></td><td>—</td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Примеры с предлогами Akkusativ</h2>
+            <ul>
+                <li><em>Ich gehe <strong>durch den</strong> Park.</em> — Я иду через парк. (den = Akkusativ maskulin)</li>
+                <li><em>Das Buch ist <strong>für dich</strong>.</em> — Книга для тебя. (dich = Akkusativ)</li>
+                <li><em>Ich bin <strong>gegen das</strong> Gesetz.</em> — Я против закона. (das = Akkusativ neutrum)</li>
+                <li><em>Ich komme <strong>ohne meinen</strong> Freund.</em> — Я прихожу без моего друга. (meinen = Akkusativ maskulin)</li>
+                <li><em>Ich stehe <strong>um die</strong> Ecke.</em> — Я стою за углом. (die = Akkusativ feminin)</li>
+            </ul>
+
+            <h2>4. Дополнительные примеры</h2>
+            <ul>
+                <li><em>Ich gehe <strong>durch die</strong> Stadt.</em> — Я иду через город.</li>
+                <li><em>Das Geschenk ist <strong>für meine</strong> Mutter.</em> — Подарок для моей мамы.</li>
+                <li><em>Er kämpft <strong>gegen den</strong> Krebs.</em> — Он борется против рака.</li>
+                <li><em>Wir fahren <strong>ohne das</strong> Auto.</em> — Мы едем без машины.</li>
+                <li><em>Ich warte <strong>um die</strong> Tür.</em> — Я жду у двери.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов с предлогами Akkusativ.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>durch</strong> — через, сквозь</div>
+                <div class="vocabulary-item"><strong>für</strong> — для, за (цена)</div>
+                <div class="vocabulary-item"><strong>gegen</strong> — против, на</div>
+                <div class="vocabulary-item"><strong>ohne</strong> — без</div>
+                <div class="vocabulary-item"><strong>um</strong> — вокруг, около</div>
+                <div class="vocabulary-item"><strong>der Park, -s</strong> — парк</div>
+                <div class="vocabulary-item"><strong>die Stadt, -äe</strong> — город</div>
+                <div class="vocabulary-item"><strong>das Gesetz, -e</strong> — закон</div>
+                <div class="vocabulary-item"><strong>der Freund, -e</strong> — друг</div>
+                <div class="vocabulary-item"><strong>die Ecke, -n</strong> — угол</div>
+                <div class="vocabulary-item"><strong>die Tür, -en</strong> — дверь</div>
+                <div class="vocabulary-item"><strong>das Geschenk, -e</strong> — подарок</div>
+                <div class="vocabulary-item"><strong>die Mutter, -</strong> — мама</div>
+                <div class="vocabulary-item"><strong>der Krebs, -e</strong> — рак (болезнь)</div>
+                <div class="vocabulary-item"><strong>das Auto, -s</strong> — машина</div>
+                <div class="vocabulary-item"><strong>der Weg, -e</strong> — путь</div>
+                <div class="vocabulary-item"><strong>die Zeit (Sg.)</strong> — время</div>
+                <div class="vocabulary-item"><strong>der Preis, -e</strong> — цена</div>
+                <div class="vocabulary-item"><strong>das Geld (Sg.)</strong> — деньги</div>
+                <div class="vocabulary-item"><strong>der Kampf, -äe</strong> — борьба</div>
+                <div class="vocabulary-item"><strong>gegenüber</strong> — напротив</div>
+                <div class="vocabulary-item"><strong>dazwischen</strong> — между</div>
+                <div class="vocabulary-item"><strong>darüber</strong> — над</div>
+                <div class="vocabulary-item"><strong>darunter</strong> — под</div>
+                <div class="vocabulary-item"><strong>herum</strong> — вокруг</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем предлоги Akkusativ!</p>
+
+            <h3>Упражнение 27.1: Выбери правильный предлог (12)</h3>
+            <p><em>Вставь durch, für, gegen, ohne или um:</em></p>
+            <ol class="exercise-list" id="ex-271">
+                <li>Ich gehe _________ den Park. (через)<span class="answer-inline">durch</span></li>
+                <li>Das Buch ist _________ dich. (для)<span class="answer-inline">für</span></li>
+                <li>Ich bin _________ das Gesetz. (против)<span class="answer-inline">gegen</span></li>
+                <li>Ich komme _________ dich. (без)<span class="answer-inline">ohne</span></li>
+                <li>Ich stehe _________ die Ecke. (вокруг)<span class="answer-inline">um</span></li>
+                <li>Wir fahren _________ die Stadt. (через)<span class="answer-inline">durch</span></li>
+                <li>Das Geschenk ist _________ meine Mutter. (для)<span class="answer-inline">für</span></li>
+                <li>Er kämpft _________ den Krebs. (против)<span class="answer-inline">gegen</span></li>
+                <li>Wir gehen _________ das Auto. (без)<span class="answer-inline">ohne</span></li>
+                <li>Ich warte _________ die Tür. (вокруг)<span class="answer-inline">um</span></li>
+                <li>Sie läuft _________ den Wald. (через)<span class="answer-inline">durch</span></li>
+                <li>Das ist _________ dich. (для)<span class="answer-inline">für</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-271')">Показать ответы</button>
+
+            <h3>Упражнение 27.2: Артикли Akkusativ (12)</h3>
+            <p><em>Вставь правильный артикль Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-272">
+                <li>Ich sehe _________ Mann. (der)<span class="answer-inline">den</span></li>
+                <li>Ich sehe _________ Frau. (die)<span class="answer-inline">die</span></li>
+                <li>Ich sehe _________ Kind. (das)<span class="answer-inline">das</span></li>
+                <li>Ich sehe _________ Freunde. (die)<span class="answer-inline">die</span></li>
+                <li>Ich habe _________ Hund. (ein)<span class="answer-inline">einen</span></li>
+                <li>Ich habe _________ Katze. (eine)<span class="answer-inline">eine</span></li>
+                <li>Ich habe _________ Buch. (ein)<span class="answer-inline">ein</span></li>
+                <li>Ich habe _________ Stühle. (keine)<span class="answer-inline">keine</span></li>
+                <li>Ich kaufe _________ Auto. (das)<span class="answer-inline">das</span></li>
+                <li>Ich kaufe _________ Bluse. (die)<span class="answer-inline">die</span></li>
+                <li>Ich kaufe _________ Hemd. (das)<span class="answer-inline">das</span></li>
+                <li>Ich kaufe _________ Schuhe. (die)<span class="answer-inline">die</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-272')">Показать ответы</button>
+
+            <h3>Упражнение 27.3: Предлоги + артикли (12)</h3>
+            <p><em>Вставь предлог и правильный артикль Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-273">
+                <li>Ich gehe _________ Park. (durch / der)<span class="answer-inline">durch den</span></li>
+                <li>Das Geschenk ist _________ Mutter. (für / meine)<span class="answer-inline">für meine</span></li>
+                <li>Ich bin _________ Gesetz. (gegen / das)<span class="answer-inline">gegen das</span></li>
+                <li>Ich komme _________ Freund. (ohne / mein)<span class="answer-inline">ohne meinen</span></li>
+                <li>Ich stehe _________ Ecke. (um / die)<span class="answer-inline">um die</span></li>
+                <li>Wir fahren _________ Stadt. (durch / die)<span class="answer-inline">durch die</span></li>
+                <li>Das ist _________ dich. (für / —)<span class="answer-inline">für dich</span></li>
+                <li>Er kämpft _________ Krebs. (gegen / der)<span class="answer-inline">gegen den</span></li>
+                <li>Wir gehen _________ Auto. (ohne / das)<span class="answer-inline">ohne das</span></li>
+                <li>Ich warte _________ Tür. (um / die)<span class="answer-inline">um die</span></li>
+                <li>Sie läuft _________ Wald. (durch / der)<span class="answer-inline">durch den</span></li>
+                <li>Ich arbeite _________ dich. (für / —)<span class="answer-inline">für dich</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-273')">Показать ответы</button>
+
+            <h3>Упражнение 27.4: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-274">
+                <li>Я иду через парк.<span class="answer-inline">Ich gehe durch den Park.</span></li>
+                <li>Это для тебя.<span class="answer-inline">Das ist für dich.</span></li>
+                <li>Я против этого закона.<span class="answer-inline">Ich bin gegen das Gesetz.</span></li>
+                <li>Я иду без тебя.<span class="answer-inline">Ich gehe ohne dich.</span></li>
+                <li>Я стою за углом.<span class="answer-inline">Ich stehe um die Ecke.</span></li>
+                <li>Мы едем через город.<span class="answer-inline">Wir fahren durch die Stadt.</span></li>
+                <li>Подарок для моей мамы.<span class="answer-inline">Das Geschenk ist für meine Mutter.</span></li>
+                <li>Он борется против рака.<span class="answer-inline">Er kämpft gegen den Krebs.</span></li>
+                <li>Мы идём без машины.<span class="answer-inline">Wir gehen ohne das Auto.</span></li>
+                <li>Я жду у двери.<span class="answer-inline">Ich warte um die Tür.</span></li>
+                <li>Она работает для тебя.<span class="answer-inline">Sie arbeitet für dich.</span></li>
+                <li>Я купил это без денег. (шутка)<span class="answer-inline">Ich habe das ohne Geld gekauft.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-274')">Показать ответы</button>
+
+            <h3>Упражнение 27.5: Составь предложения (12)</h3>
+            <p><em>Построй предложения, используя подсказки:</em></p>
+            <ol class="exercise-list" id="ex-275">
+                <li>ich / durch / den Park / gehen &rarr; Ich ___________________.<span class="answer-inline">gehe durch den Park</span></li>
+                <li>das Buch / für / dich / sein &rarr; Das Buch ___________________.<span class="answer-inline">ist für dich</span></li>
+                <li>ich / gegen / das Gesetz / sein &rarr; Ich ___________________.<span class="answer-inline">bin gegen das Gesetz</span></li>
+                <li>ich / ohne / meinen Freund / kommen &rarr; Ich ___________________.<span class="answer-inline">komme ohne meinen Freund</span></li>
+                <li>ich / um / die Ecke / stehen &rarr; Ich ___________________.<span class="answer-inline">stehe um die Ecke</span></li>
+                <li>wir / durch / die Stadt / fahren &rarr; Wir ___________________.<span class="answer-inline">fahren durch die Stadt</span></li>
+                <li>das Geschenk / für / meine Mutter / sein &rarr; Das Geschenk ___________________.<span class="answer-inline">ist für meine Mutter</span></li>
+                <li>er / gegen / den Krebs / kämpfen &rarr; Er ___________________.<span class="answer-inline">kämpft gegen den Krebs</span></li>
+                <li>wir / ohne / das Auto / gehen &rarr; Wir ___________________.<span class="answer-inline">gehen ohne das Auto</span></li>
+                <li>ich / um / die Tür / warten &rarr; Ich ___________________.<span class="answer-inline">warte um die Tür</span></li>
+                <li>sie / für / dich / arbeiten &rarr; Sie ___________________.<span class="answer-inline">arbeitet für dich</span></li>
+                <li>ich / ohne / Geld / sein &rarr; Ich ___________________.<span class="answer-inline">bin ohne Geld</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-275')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-1.html" class="nav-link">&larr; Предыдущий урок (A2-1)</a>
+        <span class="nav-title">Конец урока A2-2</span>
+        <a href="a2-3.html" class="nav-link">Следующий урок (A2-3) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-12: Падеж Genitiv (Родительный падеж)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-11.html" class="nav-link">&larr; Урок A2-11</a>
+        <span class="nav-title">Урок A2-12</span>
+        <a href="a2-13.html" class="nav-link">Урок A2-13 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим глаголы с управлением из урока A2-11. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: sich interessieren für + träumen von (12)</h3>
+            <p><em>Вставь правильный артикль:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich interessiere mich für _________ Kunst. (die)<span class="answer-inline">die</span></li>
+                <li>Ich interessiere mich für _________ Sport. (der)<span class="answer-inline">den</span></li>
+                <li>Ich träume von _________ der Reise. (die)<span class="answer-inline">der</span></li>
+                <li>Ich träume von _________ meinem Haus. (—)<span class="answer-inline">meinem</span></li>
+                <li>Ich interessiere mich für _________ Musik. (die)<span class="answer-inline">die</span></li>
+                <li>Ich träume von _________ der Zukunft. (die)<span class="answer-inline">der</span></li>
+                <li>Ich interessiere mich für _________ den Film. (der)<span class="answer-inline">den</span></li>
+                <li>Ich träume von _________ dem Urlaub. (der)<span class="answer-inline">dem</span></li>
+                <li>Ich interessiere mich für _________ die Sprache. (die)<span class="answer-inline">die</span></li>
+                <li>Ich träume von _________ meinem Erfolg. (—)<span class="answer-inline">meinem</span></li>
+                <li>Ich interessiere mich für _________ die Kultur. (die)<span class="answer-inline">die</span></li>
+                <li>Ich träume von _________ der Liebe. (die)<span class="answer-inline">der</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: sprechen mit/über (12)</h3>
+            <p><em>Выбери mit (Dativ) oder über (Akkusativ):</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich spreche _________ meinem Freund. (Dativ)<span class="answer-inline">mit</span></li>
+                <li>Ich spreche _________ das Buch. (Akkusativ)<span class="answer-inline">über</span></li>
+                <li>Ich spreche _________ der Lehrerin. (Dativ)<span class="answer-inline">mit</span></li>
+                <li>Ich spreche _________ die Politik. (Akkusativ)<span class="answer-inline">über</span></li>
+                <li>Ich spreche _________ meinem Kollegen. (Dativ)<span class="answer-inline">mit</span></li>
+                <li>Ich spreche _________ das Problem. (Akkusativ)<span class="answer-inline">über</span></li>
+                <li>Ich spreche _________ meiner Mutter. (Dativ)<span class="answer-inline">mit</span></li>
+                <li>Ich spreche _________ die Zukunft. (Akkusativ)<span class="answer-inline">über</span></li>
+                <li>Ich spreche _________ dem Chef. (Dativ)<span class="answer-inline">mit</span></li>
+                <li>Ich spreche _________ das Thema. (Akkusativ)<span class="answer-inline">über</span></li>
+                <li>Ich spreche _________ meinem Bruder. (Dativ)<span class="answer-inline">mit</span></li>
+                <li>Ich spreche _________ die Idee. (Akkusativ)<span class="answer-inline">über</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-12: Падеж Genitiv (Родительный падеж)</h1>
+            <p class="subtitle">Учимся выражать принадлежность с помощью Genitiv.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю окончания существительных мужского/среднего рода (-s/-es) и артикли (des, der, des, der).</li>
+                <li>Могу выразить принадлежность (<em>Das Auto meines Vaters</em>).</li>
+                <li>Понимаю разницу между Nominativ и Genitiv.</li>
+            </ul>
+
+            <h2>1. Что такое Genitiv?</h2>
+            <p><strong>Genitiv</strong> (родительный падеж) используется для выражения:</p>
+            <ul>
+                <li><strong>Принадлежности:</strong> <em>Das Auto meines Vaters</em> — Машина моего отца</li>
+                <li><strong>После определённых предлогов:</strong> <em>während, trotz, wegen</em></li>
+                <li><strong>После определённых глаголов:</strong> <em>bedürfen, gedenken</em></li>
+            </ul>
+
+            <h2>2. Артикли Genitiv</h2>
+            <table>
+                <thead><tr><th>Род</th><th>Определённый артикль</th><th>Неопределённый артикль</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td>Maskulin</td><td><strong>des</strong></td><td><strong>eines</strong></td><td>des Mannes, eines Mannes</td></tr>
+                    <tr><td>Femininum</td><td><strong>der</strong></td><td><strong>einer</strong></td><td>der Frau, einer Frau</td></tr>
+                    <tr><td>Neutrum</td><td><strong>des</strong></td><td><strong>eines</strong></td><td>des Kindes, eines Kindes</td></tr>
+                    <tr><td>Plural</td><td><strong>der</strong></td><td>—</td><td>der Kinder</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Запомни!</strong><br>
+                В Genitiv у существительных мужского и среднего рода появляется окончание <strong>-s или -es</strong>!<br>
+                <strong>des Mannes</strong> (муж. род), <strong>des Kindes</strong> (ср. род)
+            </div>
+
+            <h2>3. Принадлежность без артикля</h2>
+            <p>Для выражения принадлежности можно использовать:</p>
+            <ul>
+                <li><strong>Genitiv:</strong> <em>Das Auto meines Vaters</em> — машина моего отца</li>
+                <li><strong>von + Dativ:</strong> <em>Das Auto von meinem Vater</em> — машина моего отца (простой вариант)</li>
+            </ul>
+
+            <table>
+                <thead><tr><th>Genitiv (формальный)</th><th>von + Dativ (простой)</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>Das Auto <strong>meines Vaters</strong></td><td>Das Auto <strong>von meinem Vater</strong></td><td>Машина моего отца</td></tr>
+                    <tr><td>Das Buch <strong>meiner Schwester</strong></td><td>Das Buch <strong>von meiner Schwester</strong></td><td>Книга моей сестры</td></tr>
+                    <tr><td>Das Haus <strong>meines Onkels</strong></td><td>Das Haus <strong>von meinem Onkel</strong></td><td>Дом моего дяди</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Окончания прилагательных в Genitiv</h2>
+            <p>После определённого артикля в Genitiv прилагательные получают окончание <strong>-en</strong>:</p>
+            <ul>
+                <li><em>Das Auto <strong>meines reichen</strong> Vaters.</em> — Машина моего богатого отца.</li>
+                <li><em>Das Buch <strong>meiner klugen</strong> Schwester.</em> — Книга моей умной сестры.</li>
+            </ul>
+
+            <h2>5. Примеры Genitiv</h2>
+            <ul>
+                <li><em>Das ist das Auto <strong>meines Vaters</strong>.</em> — Это машина моего отца.</li>
+                <li><em>Die Tür <strong>des Hauses</strong> ist rot.</em> — Дверь дома красная.</li>
+                <li><em>Das ist die Stadt <strong>meiner Kindheit</strong>.</em> — Это город моего детства.</li>
+                <li><em>Wegen <strong>des schlechten Wetters</strong> bleiben wir zu Hause.</em> — Из-за плохой погоды мы остаёмся дома.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для Genitiv и выражения принадлежности.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>der Genitiv (Sg.)</strong> — родительный падеж</div>
+                <div class="vocabulary-item"><strong>die Possession (Sg.)</strong> — принадлежность</div>
+                <div class="vocabulary-item"><strong>des</strong> — артикль Genitiv (муж./ср. род)</div>
+                <div class="vocabulary-item"><strong>der</strong> — артикль Genitiv (жен. род/plural)</div>
+                <div class="vocabulary-item"><strong>meines Vaters</strong> — моего отца</div>
+                <div class="vocabulary-item"><strong>meiner Mutter</strong> — моей матери</div>
+                <div class="vocabulary-item"><strong>meines Bruders</strong> — моего брата</div>
+                <div class="vocabulary-item"><strong>meiner Schwester</strong> — моей сестры</div>
+                <div class="vocabulary-item"><strong>des Mannes</strong> — мужчины (Genitiv)</div>
+                <div class="vocabulary-item"><strong>der Frau</strong> — женщины (Genitiv)</div>
+                <div class="vocabulary-item"><strong>des Kindes</strong> — ребёнка (Genitiv)</div>
+                <div class="vocabulary-item"><strong>wegen</strong> — из-за (+ Genitiv)</div>
+                <div class="vocabulary-item"><strong>während</strong> — во время (+ Genitiv)</div>
+                <div class="vocabulary-item"><strong>trotz</strong> — несмотря на (+ Genitiv)</div>
+                <div class="vocabulary-item"><strong>der Vater, -</strong> — отец</div>
+                <div class="vocabulary-item"><strong>die Mutter, -</strong> — мать</div>
+                <div class="vocabulary-item"><strong>der Bruder, -</strong> — брат</div>
+                <div class="vocabulary-item"><strong>die Schwester, -n</strong> — сестра</div>
+                <div class="vocabulary-item"><strong>der Onkel, -</strong> — дядя</div>
+                <div class="vocabulary-item"><strong>die Tante, -n</strong> — тётя</div>
+                <div class="vocabulary-item"><strong>das Haus, -äer</strong> — дом</div>
+                <div class="vocabulary-item"><strong>das Auto, -s</strong> — машина</div>
+                <div class="vocabulary-item"><strong>das Buch, -er</strong> — книга</div>
+                <div class="vocabulary-item"><strong>die Tür, -en</strong> — дверь</div>
+                <div class="vocabulary-item"><strong>die Stadt, -äe</strong> — город</div>
+                <div class="vocabulary-item"><strong>die Kindheit (Sg.)</strong> — детство</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем Genitiv!</p>
+
+            <h3>Упражнение 37.1: Окончания Genitiv (12)</h3>
+            <p><em>Вставь правильное окончание Genitiv:</em></p>
+            <ol class="exercise-list" id="ex-371">
+                <li>Das Auto _________ (mein Vater)<span class="answer-inline">meines Vaters</span></li>
+                <li>Das Buch _________ (meine Mutter)<span class="answer-inline">meiner Mutter</span></li>
+                <li>Das Haus _________ (mein Bruder)<span class="answer-inline">meines Bruders</span></li>
+                <li>Die Tür _________ (meine Schwester)<span class="answer-inline">meiner Schwester</span></li>
+                <li>Das Kind _________ (der Mann)<span class="answer-inline">des Mannes</span></li>
+                <li>Die Tasche _________ (die Frau)<span class="answer-inline">der Frau</span></li>
+                <li>Das Spiel _________ (das Kind)<span class="answer-inline">des Kindes</span></li>
+                <li>Die Bücher _________ (die Kinder)<span class="answer-inline">der Kinder</span></li>
+                <li>Der Wagen _________ (mein Onkel)<span class="answer-inline">meines Onkels</span></li>
+                <li>Das Geschenk _________ (meine Tante)<span class="answer-inline">meiner Tante</span></li>
+                <li>Der Hund _________ (der Nachbar)<span class="answer-inline">des Nachbarn</span></li>
+                <li>Die Wohnung _________ (die Freundin)<span class="answer-inline">der Freundin</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-371')">Показать ответы</button>
+
+            <h3>Упражнение 37.2: Артикли Genitiv (12)</h3>
+            <p><em>Вставь правильный артикль Genitiv:</em></p>
+            <ol class="exercise-list" id="ex-372">
+                <li>Das Auto _________ Mannes. (der)<span class="answer-inline">des</span></li>
+                <li>Die Tür _________ Hauses. (das)<span class="answer-inline">des</span></li>
+                <li>Das Buch _________ Frau. (die)<span class="answer-inline">der</span></li>
+                <li>Die Tasche _________ Kindes. (das)<span class="answer-inline">des</span></li>
+                <li>Der Wagen _________ Nachbarn. (der)<span class="answer-inline">des</span></li>
+                <li>Die Wohnung _________ Lehrerin. (die)<span class="answer-inline">der</span></li>
+                <li>Das Spiel _________ Kinder. (die)<span class="answer-inline">der</span></li>
+                <li>Der Hund _________ Freundes. (der)<span class="answer-inline">des</span></li>
+                <li>Die Blume _________ Gartens. (der)<span class="answer-inline">des</span></li>
+                <li>Das Zimmer _________ Hotels. (das)<span class="answer-inline">des</span></li>
+                <li>Die Arbeit _________ Kollegen. (der)<span class="answer-inline">des</span></li>
+                <li>Das Essen _________ Mutter. (die)<span class="answer-inline">der</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-372')">Показать ответы</button>
+
+            <h3>Упражнение 37.3: Genitiv или von + Dativ (12)</h3>
+            <p><em>Выбери Genitiv или von + Dativ:</em></p>
+            <ol class="exercise-list" id="ex-373">
+                <li>Das Auto _________ meinem Vater. (Genitiv/von)<span class="answer-inline">von</span></li>
+                <li>Das Auto _________ meines Vaters. (Genitiv/von)<span class="answer-inline">Genitiv</span></li>
+                <li>Das Buch _________ meiner Schwester. (Genitiv/von)<span class="answer-inline">von</span></li>
+                <li>Das Buch _________ meiner Schwester. (Genitiv/von)<span class="answer-inline">Genitiv</span></li>
+                <li>Die Tür _________ dem Haus. (Genitiv/von)<span class="answer-inline">von</span></li>
+                <li>Die Tür _________ des Hauses. (Genitiv/von)<span class="answer-inline">Genitiv</span></li>
+                <li>Das Geschenk _________ meiner Mutter. (Genitiv/von)<span class="answer-inline">von</span></li>
+                <li>Das Geschenk _________ meiner Mutter. (Genitiv/von)<span class="answer-inline">Genitiv</span></li>
+                <li>Der Hund _________ dem Nachbarn. (Genitiv/von)<span class="answer-inline">von</span></li>
+                <li>Der Hund _________ des Nachbarn. (Genitiv/von)<span class="answer-inline">Genitiv</span></li>
+                <li>Die Wohnung _________ meinem Freund. (Genitiv/von)<span class="answer-inline">von</span></li>
+                <li>Die Wohnung _________ meines Freundes. (Genitiv/von)<span class="answer-inline">Genitiv</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-373')">Показать ответы</button>
+
+            <h3>Упражнение 37.4: Предлоги с Genitiv (12)</h3>
+            <p><em>Вставь правильную форму Genitiv:</em></p>
+            <ol class="exercise-list" id="ex-374">
+                <li>Wegen _________ schlechten Wetters bleiben wir zu Hause. (das)<span class="answer-inline">des</span></li>
+                <li>Während _________ Pause trinke ich Kaffee. (die)<span class="answer-inline">der</span></li>
+                <li>Trotz _________ Regens gehen wir spazieren. (der)<span class="answer-inline">des</span></li>
+                <li>Wegen _________ Krankheit fehlt er heute. (die)<span class="answer-inline">der</span></li>
+                <li>Während _________ Unterrichts schlafe ich ein. (der)<span class="answer-inline">des</span></li>
+                <li>Trotz _________ Schwierigkeiten schaffen wir es. (die)<span class="answer-inline">der</span></li>
+                <li>Wegen _________ Staus komme ich zu spät. (der)<span class="answer-inline">des</span></li>
+                <li>Während _________ Ferien reise ich. (die)<span class="answer-inline">der</span></li>
+                <li>Trotz _________ Regens spielen wir Fußball. (der)<span class="answer-inline">des</span></li>
+                <li>Wegen _________ Problems suche ich eine Lösung. (das)<span class="answer-inline">des</span></li>
+                <li>Während _________ Meetings trinke ich Kaffee. (das)<span class="answer-inline">des</span></li>
+                <li>Trotz _________ Alters ist er sehr aktiv. (das)<span class="answer-inline">des</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-374')">Показать ответы</button>
+
+            <h3>Упражнение 37.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения. Используй Genitiv!</em></p>
+            <ol class="exercise-list" id="ex-375">
+                <li>Это машина моего отца.<span class="answer-inline">Das ist das Auto meines Vaters.</span></li>
+                <li>Дверь дома красная.<span class="answer-inline">Die Tür des Hauses ist rot.</span></li>
+                <li>Это город моего детства.<span class="answer-inline">Das ist die Stadt meiner Kindheit.</span></li>
+                <li>Из-за плохой погоды мы остаёмся дома.<span class="answer-inline">Wegen des schlechten Wetters bleiben wir zu Hause.</span></li>
+                <li>Книга моей сестры.<span class="answer-inline">Das Buch meiner Schwester.</span></li>
+                <li>Дом моего дяди.<span class="answer-inline">Das Haus meines Onkels.</span></li>
+                <li>Во время урока я слушаю.<span class="answer-inline">Während des Unterrichts höre ich zu.</span></li>
+                <li>Несмотря на дождь, мы идём гулять.<span class="answer-inline">Trotz des Regens gehen wir spazieren.</span></li>
+                <li>Машина моего богатого дяди.<span class="answer-inline">Das Auto meines reichen Onkels.</span></li>
+                <li>Из-за головной боли я остаюсь дома.<span class="answer-inline">Wegen der Kopfschmerzen bleibe ich zu Hause.</span></li>
+                <li>Во время перерыва я пью кофе.<span class="answer-inline">Während der Pause trinke ich Kaffee.</span></li>
+                <li>Несмотря на трудности, мы успеваем.<span class="answer-inline">Trotz der Schwierigkeiten schaffen wir es.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-375')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-11.html" class="nav-link">&larr; Предыдущий урок (A2-11)</a>
+        <span class="nav-title">Конец урока A2-12</span>
+        <a href="a2-13.html" class="nav-link">Следующий урок (A2-13) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

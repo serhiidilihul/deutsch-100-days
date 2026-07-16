@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-15: Квартира, мебель. Предлоги двойного управления</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a1-14.html" class="nav-link">&larr; Урок А1-14</a>
+        <span class="nav-title">Урок А1-15</span>
+        <a href="a1-16.html" class="nav-link">Урок А1-16 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим возвратные глаголы и предлоги Dativ из уроков 13-14. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Возвратные глаголы (12)</h3>
+            <p><em>Вставь правильное возвратное местоимение <strong>mich, dich, sich, uns, euch</strong>:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich wasche _________.<span class="answer-inline">mich</span></li>
+                <li>Du ziehst _________ an.<span class="answer-inline">dich</span></li>
+                <li>Er setzt _________.<span class="answer-inline">sich</span></li>
+                <li>Wir beeilen _________.<span class="answer-inline">uns</span></li>
+                <li>Ihr freut _________ auf den Urlaub.<span class="answer-inline">euch</span></li>
+                <li>Sie (они) f&uuml;hlen _________ gut.<span class="answer-inline">sich</span></li>
+                <li>Ich f&uuml;hle _________ heute nicht gut.<span class="answer-inline">mich</span></li>
+                <li>Wie f&uuml;hlst du _________?<span class="answer-inline">dich</span></li>
+                <li>Mein Bruder w&auml;scht _________ kalt.<span class="answer-inline">sich</span></li>
+                <li>Wir setzen _________ an den Tisch.<span class="answer-inline">uns</span></li>
+                <li>Beeilt _________, Kinder!<span class="answer-inline">euch</span></li>
+                <li>Sie (она) freut _________ &uuml;ber das Geschenk.<span class="answer-inline">sich</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Предлоги Dativ (12)</h3>
+            <p><em>Вставь правильный предлог <strong>mit, nach, von, zu, aus, bei</strong>:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich fahre _________ dem Bus.<span class="answer-inline">mit</span></li>
+                <li>Wir fliegen _________ Spanien.<span class="answer-inline">nach</span></li>
+                <li>Sie kommt _________ der Arbeit.<span class="answer-inline">von</span></li>
+                <li>Ich gehe _________ dem Arzt.<span class="answer-inline">zu</span></li>
+                <li>Er kommt _________ der T&uuml;rkei.<span class="answer-inline">aus</span></li>
+                <li>Ich wohne _________ meinem Freund.<span class="answer-inline">bei</span></li>
+                <li>Ich fahre _________ dem Auto zur Arbeit.<span class="answer-inline">mit</span></li>
+                <li>Wir gehen _________ Hause.<span class="answer-inline">nach</span></li>
+                <li>Ich bin _________ der Arbeit.<span class="answer-inline">bei</span></li>
+                <li>Er kommt _________ dem Supermarkt.<span class="answer-inline">von / aus</span></li>
+                <li>Sie geht _________ der Post.<span class="answer-inline">zur</span></li>
+                <li>Ich fahre _________ dem Fahrrad.<span class="answer-inline">mit</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок А1-15: Квартира, мебель. Предлоги двойного управления</h1>
+            <p class="subtitle">Учимся описывать комнату и различать Wohin? (Akkusativ) vs Wo? (Dativ).</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Понимаю разницу: <strong>Wohin? + Akkusativ</strong> (куда ставить) vs <strong>Wo? + Dativ</strong> (где стоит).</li>
+                <li>Могу описать свою комнату, используя <strong>auf, in, unter, neben</strong>.</li>
+                <li>Знаю названия мебели и комнат.</li>
+            </ul>
+
+            <h2>1. Мебель и комнаты (M&ouml;bel und R&auml;ume)</h2>
+            <p>Сначала выучим базовую лексику:</p>
+
+            <table>
+                <thead><tr><th colspan="2">Комнаты (R&auml;ume)</th><th colspan="2">Мебель (M&ouml;bel)</th></tr></thead>
+                <tbody>
+                    <tr><td>das Wohnzimmer</td><td>гостиная</td><td>der Tisch, -e</td><td>стол</td></tr>
+                    <tr><td>das Schlafzimmer</td><td>спальня</td><td>der Stuhl, -&uuml;e</td><td>стул</td></tr>
+                    <tr><td>die K&uuml;che, -n</td><td>кухня</td><td>der Schrank, -&auml;e</td><td>шкаф</td></tr>
+                    <tr><td>das Badezimmer</td><td>ванная</td><td>das Bett, -en</td><td>кровать</td></tr>
+                    <tr><td>das Kinderzimmer</td><td>детская</td><td>das Sofa, -s</td><td>диван</td></tr>
+                    <tr><td>der Flur, -e</td><td>коридор</td><td>der Sessel, -</td><td>кресло</td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Предлоги двойного управления (Wechselpr&auml;positionen)</h2>
+            <p>В немецком есть 9 предлогов, которые могут требовать <strong>как Akkusativ, так и Dativ</strong> в зависимости от смысла:</p>
+
+            <table>
+                <thead><tr><th>Предлог</th><th>Перевод</th><th>Wohin? (Akkusativ)</th><th>Wo? (Dativ)</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>in</strong></td><td>в</td><td>in <strong>den</strong> Schrank (в шкаф)</td><td>in <strong>dem</strong> Schrank (в шкафу)</td></tr>
+                    <tr><td><strong>auf</strong></td><td>на</td><td>auf <strong>den</strong> Tisch (на стол)</td><td>auf <strong>dem</strong> Tisch (на столе)</td></tr>
+                    <tr><td><strong>unter</strong></td><td>под</td><td>unter <strong>den</strong> Tisch (под стол)</td><td>unter <strong>dem</strong> Tisch (под столом)</td></tr>
+                    <tr><td><strong>neben</strong></td><td>рядом</td><td>neben <strong>den</strong> Schrank (рядом со шкафом)</td><td>neben <strong>dem</strong> Schrank (рядом со шкафом)</td></tr>
+                    <tr><td><strong>hinter</strong></td><td>за</td><td>hinter <strong>den</strong> Schrank (за шкаф)</td><td>hinter <strong>dem</strong> Schrank (за шкафом)</td></tr>
+                    <tr><td><strong>vor</strong></td><td>перед</td><td>vor <strong>den</strong> Tisch (перед стол)</td><td>vor <strong>dem</strong> Tisch (перед столом)</td></tr>
+                    <tr><td><strong>zwischen</strong></td><td>между</td><td>zwischen <strong>die</strong> St&uuml;hle</td><td>zwischen <strong>den</strong> St&uuml;hlen</td></tr>
+                    <tr><td><strong>an</strong></td><td>на, у</td><td>an <strong>die</strong> Wand (на стену)</td><td>an <strong>der</strong> Wand (на стене)</td></tr>
+                    <tr><td><strong>&uuml;ber</strong></td><td>над</td><td>&uuml;ber <strong>den</strong> Tisch (над стол)</td><td>&uuml;ber <strong>dem</strong> Tisch (над столом)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Главное правило:</strong><br>
+                <strong>Wohin? (куда?)</strong> — движение, направление &rarr; <strong>Akkusativ</strong><br>
+                <strong>Wo? (где?)</strong> — место, положение &rarr; <strong>Dativ</strong><br><br>
+                <em>Ich lege das Buch <strong>auf den Tisch</strong>.</em> (Я кладу книгу на стол. — Куда? Akkusativ)<br>
+                <em>Das Buch liegt <strong>auf dem Tisch</strong>.</em> (Книга лежит на столе. — Где? Dativ)
+            </div>
+
+            <h2>3. Слияние предлогов с артиклем</h2>
+            <p>Некоторые предлоги сливаются с определённым артиклем:</p>
+            <table>
+                <thead><tr><th>Слияние</th><th>Полная форма</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>im</strong></td><td>in + dem</td><td><em>Das Buch ist <strong>im</strong> Regal.</em></td></tr>
+                    <tr><td><strong>ins</strong></td><td>in + das</td><td><em>Ich lege das Buch <strong>ins</strong> Regal.</em></td></tr>
+                    <tr><td><strong>ans</strong></td><td>an + das</td><td><em>Ich h&auml;nge das Bild <strong>ans</strong> Fenster.</em></td></tr>
+                    <tr><td><strong>am</strong></td><td>an + dem</td><td><em>Das Bild h&auml;ngt <strong>am</strong> Fenster.</em></td></tr>
+                    <tr><td><strong>aufs</strong></td><td>auf + das</td><td><em>Ich lege das Buch <strong>aufs</strong> Bett.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Описание комнаты</h2>
+            <p>Вот пример описания комнаты:</p>
+            <blockquote>
+                <em>Mein Wohnzimmer ist gro&szlig;. <strong>In der</strong> Mitte steht ein Tisch. <strong>Neben dem</strong> Tisch steht ein Sofa. <strong>An der</strong> Wand h&auml;ngt ein Bild. <strong>Unter dem</strong> Tisch liegt ein Teppich. <strong>Auf dem</strong> Sofa liegen Kissen.</em><br>
+                (Моя гостиная большая. В центре стоит стол. Рядом со столом стоит диван. На стене висит картина. Под столом лежит ковёр. На диване лежат подушки.)
+            </blockquote>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">28 слов по теме квартира и предлоги.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>das Wohnzimmer, -</strong> — гостиная</div>
+                <div class="vocabulary-item"><strong>das Schlafzimmer, -</strong> — спальня</div>
+                <div class="vocabulary-item"><strong>die K&uuml;che, -n</strong> — кухня</div>
+                <div class="vocabulary-item"><strong>das Badezimmer, -</strong> — ванная</div>
+                <div class="vocabulary-item"><strong>das Kinderzimmer, -</strong> — детская</div>
+                <div class="vocabulary-item"><strong>der Flur, -e</strong> — коридор</div>
+                <div class="vocabulary-item"><strong>der Tisch, -e</strong> — стол</div>
+                <div class="vocabulary-item"><strong>der Stuhl, -&uuml;e</strong> — стул</div>
+                <div class="vocabulary-item"><strong>der Schrank, -&auml;e</strong> — шкаф</div>
+                <div class="vocabulary-item"><strong>das Bett, -en</strong> — кровать</div>
+                <div class="vocabulary-item"><strong>das Sofa, -s</strong> — диван</div>
+                <div class="vocabulary-item"><strong>der Sessel, -</strong> — кресло</div>
+                <div class="vocabulary-item"><strong>der Teppich, -e</strong> — ковёр</div>
+                <div class="vocabulary-item"><strong>das Bild, -er</strong> — картина</div>
+                <div class="vocabulary-item"><strong>das Regal, -e</strong> — полка</div>
+                <div class="vocabulary-item"><strong>die Lampe, -n</strong> — лампа</div>
+                <div class="vocabulary-item"><strong>das Fenster, -</strong> — окно</div>
+                <div class="vocabulary-item"><strong>die Wand, -&auml;e</strong> — стена</div>
+                <div class="vocabulary-item"><strong>die T&uuml;r, -en</strong> — дверь</div>
+                <div class="vocabulary-item"><strong>in</strong> — в</div>
+                <div class="vocabulary-item"><strong>auf</strong> — на</div>
+                <div class="vocabulary-item"><strong>unter</strong> — под</div>
+                <div class="vocabulary-item"><strong>neben</strong> — рядом</div>
+                <div class="vocabulary-item"><strong>hinter</strong> — за</div>
+                <div class="vocabulary-item"><strong>vor</strong> — перед</div>
+                <div class="vocabulary-item"><strong>zwischen</strong> — между</div>
+                <div class="vocabulary-item"><strong>an</strong> — на, у</div>
+                <div class="vocabulary-item"><strong>&uuml;ber</strong> — над</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (&Uuml;bungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем Wechselpr&auml;positionen!</p>
+
+            <h3>Упражнение 15.1: Wohin? (Akkusativ) или Wo? (Dativ)? (12)</h3>
+            <p><em>Определи: движение (Akk.) или место (Dat.):</em></p>
+            <ol class="exercise-list" id="ex-151">
+                <li>Ich lege das Buch auf _________ (der) Tisch. (куда?)<span class="answer-inline">den (Akk.)</span></li>
+                <li>Das Buch liegt auf _________ (der) Tisch. (где?)<span class="answer-inline">dem (Dat.)</span></li>
+                <li>Ich stelle den Stuhl in _________ (das) Zimmer. (куда?)<span class="answer-inline">das (Akk.)</span></li>
+                <li>Der Stuhl steht in _________ (das) Zimmer. (где?)<span class="answer-inline">dem (Dat.)</span></li>
+                <li>Ich gehe in _________ (die) K&uuml;che. (куда?)<span class="answer-inline">die (Akk.)</span></li>
+                <li>Ich bin in _________ (die) K&uuml;che. (где?)<span class="answer-inline">der (Dat.)</span></li>
+                <li>Er h&auml;ngt das Bild an _________ (die) Wand. (куда?)<span class="answer-inline">die (Akk.)</span></li>
+                <li>Das Bild h&auml;ngt an _________ (die) Wand. (где?)<span class="answer-inline">der (Dat.)</span></li>
+                <li>Die Katze springt auf _________ (der) Stuhl. (куда?)<span class="answer-inline">den (Akk.)</span></li>
+                <li>Die Katze sitzt auf _________ (der) Stuhl. (где?)<span class="answer-inline">dem (Dat.)</span></li>
+                <li>Ich lege den Teppich unter _________ (der) Tisch. (куда?)<span class="answer-inline">den (Akk.)</span></li>
+                <li>Der Teppich liegt unter _________ (der) Tisch. (где?)<span class="answer-inline">dem (Dat.)</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-151')">Показать ответы</button>
+
+            <h3>Упражнение 15.2: Вставь правильный предлог (12)</h3>
+            <p><em>Вставь <strong>in, auf, unter, neben, hinter, vor, zwischen, an, &uuml;ber</strong>:</em></p>
+            <ol class="exercise-list" id="ex-152">
+                <li>Das Buch liegt _________ dem Tisch. (на)<span class="answer-inline">auf</span></li>
+                <li>Die Katze sitzt _________ dem Tisch. (под)<span class="answer-inline">unter</span></li>
+                <li>Der Schrank steht _________ der T&uuml;r. (рядом)<span class="answer-inline">neben</span></li>
+                <li>Das Bild h&auml;ngt _________ der Wand. (на)<span class="answer-inline">an</span></li>
+                <li>Der Stuhl steht _________ dem Tisch. (перед)<span class="answer-inline">vor</span></li>
+                <li>Die Lampe h&auml;ngt _________ dem Tisch. (над)<span class="answer-inline">&uuml;ber</span></li>
+                <li>Der Hund schl&auml;ft _________ dem Sofa. (под)<span class="answer-inline">unter</span></li>
+                <li>Das Sofa steht _________ dem Tisch und dem Schrank. (между)<span class="answer-inline">zwischen</span></li>
+                <li>Ich stelle den Stuhl _________ den Tisch. (рядом)<span class="answer-inline">neben</span></li>
+                <li>Die Kinder spielen _________ dem Haus. (за)<span class="answer-inline">hinter</span></li>
+                <li>Ich lege das Buch _________ das Regal. (в)<span class="answer-inline">in</span></li>
+                <li>Der Sessel steht _________ dem Fenster. (перед)<span class="answer-inline">vor</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-152')">Показать ответы</button>
+
+            <h3>Упражнение 15.3: Вставь предлог + правильный артикль (12)</h3>
+            <p><em>Вставь предлог + артикль в правильном падеже:</em></p>
+            <ol class="exercise-list" id="ex-153">
+                <li>Das Buch liegt _________ (der Tisch).<span class="answer-inline">auf dem Tisch</span></li>
+                <li>Ich lege das Buch _________ (der Tisch).<span class="answer-inline">auf den Tisch</span></li>
+                <li>Der Stuhl steht _________ (das Zimmer).<span class="answer-inline">in dem / im Zimmer</span></li>
+                <li>Ich stelle den Stuhl _________ (das Zimmer).<span class="answer-inline">in das / ins Zimmer</span></li>
+                <li>Die Katze sitzt _________ (der Stuhl).<span class="answer-inline">auf dem Stuhl</span></li>
+                <li>Die Katze springt _________ (der Stuhl).<span class="answer-inline">auf den Stuhl</span></li>
+                <li>Das Bild h&auml;ngt _________ (die Wand).<span class="answer-inline">an der Wand</span></li>
+                <li>Ich h&auml;nge das Bild _________ (die Wand).<span class="answer-inline">an die Wand</span></li>
+                <li>Der Teppich liegt _________ (der Tisch).<span class="answer-inline">unter dem Tisch</span></li>
+                <li>Ich lege den Teppich _________ (der Tisch).<span class="answer-inline">unter den Tisch</span></li>
+                <li>Das Sofa steht _________ (das Fenster).<span class="answer-inline">neben dem Fenster</span></li>
+                <li>Ich stelle das Sofa _________ (das Fenster).<span class="answer-inline">neben das Fenster</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-153')">Показать ответы</button>
+
+            <h3>Упражнение 15.4: Слияние предлогов (12)</h3>
+            <p><em>Напиши слитую форму: <strong>im, ins, am, ans, aufs</strong>:</em></p>
+            <ol class="exercise-list" id="ex-154">
+                <li>Das Buch ist in + dem Regal &rarr; _________ Regal.<span class="answer-inline">im</span></li>
+                <li>Ich lege das Buch in + das Regal &rarr; _________ Regal.<span class="answer-inline">ins</span></li>
+                <li>Das Bild h&auml;ngt an + der Wand &rarr; _________ Wand.<span class="answer-inline">an der</span></li>
+                <li>Ich h&auml;nge das Bild an + die Wand &rarr; _________ Wand.<span class="answer-inline">an die</span></li>
+                <li>Der Stuhl steht in + dem Zimmer &rarr; _________ Zimmer.<span class="answer-inline">im</span></li>
+                <li>Ich stelle den Stuhl in + das Zimmer &rarr; _________ Zimmer.<span class="answer-inline">ins</span></li>
+                <li>Die Lampe h&auml;ngt an + der Decke &rarr; _________ Decke.<span class="answer-inline">an der</span></li>
+                <li>Ich lege das Buch auf + das Bett &rarr; _________ Bett.<span class="answer-inline">aufs</span></li>
+                <li>Das Kind ist in + dem Kinderzimmer &rarr; _________ Kinderzimmer.<span class="answer-inline">im</span></li>
+                <li>Das Kind geht in + das Kinderzimmer &rarr; _________ Kinderzimmer.<span class="answer-inline">ins</span></li>
+                <li>Der Hund liegt an + dem Kamin &rarr; _________ Kamin.<span class="answer-inline">am</span></li>
+                <li>Ich setze mich an + den Tisch &rarr; _________ Tisch.<span class="answer-inline">an den</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-154')">Показать ответы</button>
+
+            <h3>Упражнение 15.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения. Используй правильные предлоги и падежи!</em></p>
+            <ol class="exercise-list" id="ex-155">
+                <li>Книга лежит на столе.<span class="answer-inline">Das Buch liegt auf dem Tisch.</span></li>
+                <li>Я кладу книгу на стол.<span class="answer-inline">Ich lege das Buch auf den Tisch.</span></li>
+                <li>Стул стоит в комнате.<span class="answer-inline">Der Stuhl steht im Zimmer.</span></li>
+                <li>Я ставлю стул в комнату.<span class="answer-inline">Ich stelle den Stuhl ins Zimmer.</span></li>
+                <li>Картина висит на стене.<span class="answer-inline">Das Bild h&auml;ngt an der Wand.</span></li>
+                <li>Я вешаю картину на стену.<span class="answer-inline">Ich h&auml;nge das Bild an die Wand.</span></li>
+                <li>Кошка сидит под столом.<span class="answer-inline">Die Katze sitzt unter dem Tisch.</span></li>
+                <li>Кошка прыгает под стол.<span class="answer-inline">Die Katze springt unter den Tisch.</span></li>
+                <li>Диван стоит рядом с окном.<span class="answer-inline">Das Sofa steht neben dem Fenster.</span></li>
+                <li>Я ставлю диван рядом с окном.<span class="answer-inline">Ich stelle das Sofa neben das Fenster.</span></li>
+                <li>Ковёр лежит между столом и диваном.<span class="answer-inline">Der Teppich liegt zwischen dem Tisch und dem Sofa.</span></li>
+                <li>Лампа висит над столом.<span class="answer-inline">Die Lampe h&auml;ngt &uuml;ber dem Tisch.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-155')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a1-14.html" class="nav-link">&larr; Предыдущий урок (А1-14)</a>
+        <span class="nav-title">Конец урока А1-15</span>
+        <a href="a1-16.html" class="nav-link">Следующий урок (А1-16) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

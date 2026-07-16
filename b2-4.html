@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок B2-4: Косвенная речь и Konjunktiv I</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="b2-3.html" class="nav-link">&larr; Урок B2-3</a>
+        <span class="nav-title">Урок B2-4</span>
+        <a href="b2-5.html" class="nav-link">Урок B2-5 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим Konjunktiv II прошедшего времени. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: hätte + Partizip II (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich _________ das Auto gekauft, wenn ich Geld gehabt hätte. (hätte/würde)<span class="answer-inline">hätte</span></li>
+                <li>Er _________ das geschafft, wenn er es versucht hätte. (hätte/würde)<span class="answer-inline">hätte</span></li>
+                <li>Sie _________ das Buch gelesen, wenn sie Zeit gehabt hätte. (hätte/würde)<span class="answer-inline">hätte</span></li>
+                <li>Wir _________ das gemacht, wenn wir gewusst hätten. (hätten/würden)<span class="answer-inline">hätten</span></li>
+                <li>Ihr _________ das gesehen, wenn ihr dagewesen wäret. (hättet/würdet)<span class="answer-inline">hättet</span></li>
+                <li>Sie _________ das erreicht, wenn sie mehr gearbeitet hätte. (hätte/würde)<span class="answer-inline">hätte</span></li>
+                <li>Ich _________ das verstanden, wenn du es erklärt hättest. (hätte/würde)<span class="answer-inline">hätte</span></li>
+                <li>Du _________ das geschafft, wenn du es versucht hättest. (hättest/würdest)<span class="answer-inline">hättest</span></li>
+                <li>Er _________ das gewusst, wenn er gefragt hätte. (hätte/würde)<span class="answer-inline">hätte</span></li>
+                <li>Sie _________ das erlebt, wenn sie dagewesen wäre. (hätte/würde)<span class="answer-inline">hätte</span></li>
+                <li>Wir _________ das gewonnen, wenn wir mehr trainiert hätten. (hätten/würden)<span class="answer-inline">hätten</span></li>
+                <li>Ich _________ das erreicht, wenn ich mehr gelernt hätte. (hätte/würde)<span class="answer-inline">hätte</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: wäre + Partizip II (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich _________ hier, wenn ich Zeit gehabt hätte. (wäre/würde)<span class="answer-inline">wäre</span></li>
+                <li>Er _________ Arzt geworden, wenn er studiert hätte. (wäre/würde)<span class="answer-inline">wäre</span></li>
+                <li>Sie _________ gekommen, wenn sie eingeladen worden wäre. (wäre/würde)<span class="answer-inline">wäre</span></li>
+                <li>Wir _________ erfolgreich gewesen, wenn wir mehr gearbeitet hätten. (wären/würden)<span class="answer-inline">wären</span></li>
+                <li>Ihr _________ zufrieden gewesen, wenn ihr das geschafft hättet. (wäret/würdet)<span class="answer-inline">wäret</span></li>
+                <li>Sie _________ reich geworden, wenn sie investiert hätte. (wäre/würde)<span class="answer-inline">wäre</span></li>
+                <li>Ich _________ glücklich gewesen, wenn ich geblieben wäre. (wäre/würde)<span class="answer-inline">wäre</span></li>
+                <li>Du _________ berühmt geworden, wenn du es versucht hättest. (wärst/würdest)<span class="answer-inline">wärst</span></li>
+                <li>Er _________ gesund geblieben, wenn er aufgehört hätte. (wäre/würde)<span class="answer-inline">wäre</span></li>
+                <li>Sie _________ es verstanden, wenn du es erklärt hättest. (hätte/wäre)<span class="answer-inline">hätte</span></li>
+                <li>Wir _________ gewonnen, wenn wir mehr trainiert hätten. (hätten/wären)<span class="answer-inline">hätten</span></li>
+                <li>Ich _________ bestanden, wenn ich mehr gelernt hätte. (hätte/wäre)<span class="answer-inline">hätte</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок B2-4: Косвенная речь и Konjunktiv I</h1>
+            <p class="subtitle">Передаю чужую речь без изменения смысла: Konjunktiv I — форма, форма, die sich nicht ändert.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Понимаю и применяю Konjunktiv I для косвенной речи.</li>
+                <li>Различаю Konjunktiv I и Indikativ.</li>
+                <li>Передаю чужую речь нейтрально, без искажения.</li>
+            </ul>
+
+            <h2>1. Что такое Konjunktiv I?</h2>
+            <p>Konjunktiv I используется в косвенной речи, чтобы показать, что это чужие слова, а не мнение автора:</p>
+
+            <table>
+                <thead><tr><th>Инфинитив</th><th>Konjunktiv I</th><th>Пример в косвенной речи</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>sein</strong></td><td>sei</td><td><em>Er sagt, er sei krank.</em></td></tr>
+                    <tr><td><strong>haben</strong></td><td>habe</td><td><em>Sie behauptet, sie habe das gemacht.</em></td></tr>
+                    <tr><td><strong>werden</strong></td><td>werde</td><td><em>Er verspricht, er werde das machen.</em></td></tr>
+                    <tr><td><strong>können</strong></td><td>könne</td><td><em>Sie meint, sie könne das machen.</em></td></tr>
+                    <tr><td><strong>müssen</strong></td><td>müsse</td><td><em>Er behauptet, er müsse das machen.</em></td></tr>
+                    <tr><td><strong>sollen</strong></td><td>solle</td><td><em>Sie erklärt, sie solle das machen.</em></td></tr>
+                    <tr><td><strong>wollen</strong></td><td>wolle</td><td><em>Sie sagt, sie wolle das machen.</em></td></tr>
+                    <tr><td><strong>dürfen</strong></td><td>dürfe</td><td><em>Er fragt, ob sie dürfe.</em></td></tr>
+                    <tr><td><strong>mögen</strong></td><td>möge</td><td><em>Er meint, er möge das.</em></td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Важно!</strong><br>
+                Konjunktiv I часто совпадает с Indikativ (например, <em>hat</em> vs <em>habe</em>).<br>
+                Если форма совпадает с Indikativ, используется Konjunktiv II:<br>
+                <em>Er sagt, er hätte das gemacht.</em> (Konjunktiv II, так как <em>habe</em> звучит как Indikativ <em>hat</em>)
+            </div>
+
+            <h2>2. Структура косвенной речи</h2>
+            <p>Косвенная речь передаёт слова другого человека:</p>
+
+            <table>
+                <thead><tr><th>Прямая речь</th><th>Косвенная речь</th></tr></thead>
+                <tbody>
+                    <tr><td><em>"Ich bin krank."</em></td><td><em>Er sagt, er sei krank.</em></td></tr>
+                    <tr><td><em>"Ich habe das gemacht."</em></td><td><em>Sie behauptet, sie habe das gemacht.</em></td></tr>
+                    <tr><td><em>"Ich werde das machen."</em></td><td><em>Er verspricht, er werde das machen.</em></td></tr>
+                    <tr><td><em>"Ich kann das machen."</em></td><td><em>Sie meint, sie könne das machen.</em></td></tr>
+                    <tr><td><em>"Ich muss das machen."</em></td><td><em>Er behauptet, er müsse das machen.</em></td></tr>
+                    <tr><td><em>"Ich soll das machen."</em></td><td><em>Sie erklärt, sie solle das machen.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Примеры использования</h2>
+            <ul>
+                <li><em>Er sagt, er sei krank.</em> — Он говорит, что он болен.</li>
+                <li><em>Sie behauptet, sie habe das gemacht.</em> — Она утверждает, что сделала это.</li>
+                <li><em>Er erklärt, er wisse das nicht.</em> — Он объясняет, что не знает этого.</li>
+                <li><em>Sie berichtet, sie habe das gesehen.</em> — Она сообщает, что видела это.</li>
+                <li><em>Er verspricht, er werde das machen.</em> — Он обещает, что сделает это.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для косвенной речи и передачи информации.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>die Aussage, -n</strong> — утверждение</div>
+                <div class="vocabulary-item"><strong>die Behauptung, -en</strong> — утверждение, претензия</div>
+                <div class="vocabulary-item"><strong>die Erklärung, -en</strong> — объяснение</div>
+                <div class="vocabulary-item"><strong>der Bericht, -e</strong> — отчёт, сообщение</div>
+                <div class="vocabulary-item"><strong>das Versprechen, -</strong> — обещание</div>
+                <div class="vocabulary-item"><strong>die Meinung, -en</strong> — мнение</div>
+                <div class="vocabulary-item"><strong>die Ansicht, -en</strong> — взгляд, мнение</div>
+                <div class="vocabulary-item"><strong>die Information, -en</strong> — информация</div>
+                <div class="vocabulary-item"><strong>die Nachricht, -en</strong> — новость, сообщение</div>
+                <div class="vocabulary-item"><strong>die Mitteilung, -en</strong> — сообщение</div>
+                <div class="vocabulary-item"><strong>die Meldung, -en</strong> — сообщение, сигнал</div>
+                <div class="vocabulary-item"><strong>die Botschaft, -en</strong> — послание</div>
+                <div class="vocabulary-item"><strong>die Quelle, -n</strong> — источник</div>
+                <div class="vocabulary-item"><strong>der Zeuge, -n</strong> — свидетель</div>
+                <div class="vocabulary-item"><strong>der Augenzeuge, -n</strong> — очевидец</div>
+                <div class="vocabulary-item"><strong>die Erfahrung, -en</strong> — опыт</div>
+                <div class="vocabulary-item"><strong>die Erlebnis, -se</strong> — переживание</div>
+                <div class="vocabulary-item"><strong>die Tatsache, -n</strong> — факт</div>
+                <div class="vocabulary-item"><strong>die Wahrheit, -en</strong> — правда</div>
+                <div class="vocabulary-item"><strong>die Lüge, -n</strong> — ложь</div>
+                <div class="vocabulary-item"><strong>der Irrtum, -irrtümer</strong> — ошибка, заблуждение</div>
+                <div class="vocabulary-item"><strong>die Zweifel (Sg./Pl.)</strong> — сомнение</div>
+                <div class="vocabulary-item"><strong>die Gewissheit (Sg.)</strong> — уверенность</div>
+                <div class="vocabulary-item"><strong>die Sicherheit (Sg.)</strong> — безопасность</div>
+                <div class="vocabulary-item"><strong>die Unsicherheit, -en</strong> — неуверенность</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем косвенную речь!</p>
+
+            <h3>Упражнение 4.1: Konjunktiv I — sein/haben/werden (12)</h3>
+            <p><em>Выбери правильную форму Konjunktiv I:</em></p>
+            <ol class="exercise-list" id="ex-441">
+                <li>Er sagt, er _________ krank. (ist/sei)<span class="answer-inline">sei</span></li>
+                <li>Sie behauptet, sie _________ das gemacht. (hat/habe)<span class="answer-inline">habe</span></li>
+                <li>Er erklärt, er _________ das wissen. (weiss/wisse)<span class="answer-inline">wisse</span></li>
+                <li>Sie berichtet, sie _________ das gesehen. (hat/habe)<span class="answer-inline">habe</span></li>
+                <li>Er verspricht, er _________ das machen. (wird/werde)<span class="answer-inline">werde</span></li>
+                <li>Sie meint, sie _________ das verstehen. (kann/könne)<span class="answer-inline">könne</span></li>
+                <li>Er fragt, ob sie _________ . (darf/dürfe)<span class="answer-inline">dürfe</span></li>
+                <li>Sie sagt, sie _________ das wollen. (will/wolle)<span class="answer-inline">wolle</span></li>
+                <li>Er behauptet, er _________ das müssen. (muss/müsse)<span class="answer-inline">müsse</span></li>
+                <li>Sie erklärt, sie _________ das sollen. (soll/solle)<span class="answer-inline">solle</span></li>
+                <li>Er meint, er _________ das mögen. (mag/möge)<span class="answer-inline">möge</span></li>
+                <li>Sie sagt, sie _________ das können. (kann/könne)<span class="answer-inline">könne</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-441')">Показать ответы</button>
+
+            <h3>Упражнение 4.2: Konjunktiv I — модальные глаголы (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-442">
+                <li>Er sagt, er _________ das machen können. (kann/könne)<span class="answer-inline">könne</span></li>
+                <li>Sie meint, sie _________ das machen müssen. (muss/müsse)<span class="answer-inline">müsse</span></li>
+                <li>Er erklärt, er _________ das machen sollen. (soll/solle)<span class="answer-inline">solle</span></li>
+                <li>Sie behauptet, sie _________ das machen wollen. (will/wolle)<span class="answer-inline">wolle</span></li>
+                <li>Er fragt, ob sie _________ das machen dürfen. (darf/dürfe)<span class="answer-inline">dürfe</span></li>
+                <li>Sie sagt, sie _________ das machen mögen. (mag/möge)<span class="answer-inline">möge</span></li>
+                <li>Er meint, er _________ das machen brauchen. (braucht/brauche)<span class="answer-inline">brauche</span></li>
+                <li>Sie erklärt, sie _________ das machen scheinen. (scheint/scheine)<span class="answer-inline">scheine</span></li>
+                <li>Er behauptet, er _________ das machen belieben. (beliebt/beliebe)<span class="answer-inline">beliebe</span></li>
+                <li>Sie sagt, sie _________ das machen werden. (wird/werde)<span class="answer-inline">werde</span></li>
+                <li>Er fragt, ob sie _________ das machen haben. (hat/habe)<span class="answer-inline">habe</span></li>
+                <li>Sie meint, sie _________ das machen sein. (ist/sei)<span class="answer-inline">sei</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-442')">Показать ответы</button>
+
+            <h3>Упражнение 4.3: Konjunktiv I vs Konjunktiv II (12)</h3>
+            <p><em>Выбери правильный вариант:</em></p>
+            <ol class="exercise-list" id="ex-443">
+                <li>Er sagt, er _________ krank. (ist/sei)<span class="answer-inline">sei</span></li>
+                <li>Sie behauptet, sie _________ das gemacht. (hat/habe)<span class="answer-inline">habe</span></li>
+                <li>Er erklärt, er _________ das wissen. (weiss/wisse)<span class="answer-inline">wisse</span></li>
+                <li>Sie sagt, sie _________ das gesehen. (hat/habe)<span class="answer-inline">habe</span></li>
+                <li>Er verspricht, er _________ das machen. (wird/werde)<span class="answer-inline">werde</span></li>
+                <li>Sie meint, sie _________ das verstehen. (kann/könne)<span class="answer-inline">könne</span></li>
+                <li>Er fragt, ob sie _________ . (darf/dürfe)<span class="answer-inline">dürfe</span></li>
+                <li>Sie sagt, sie _________ das wollen. (will/wolle)<span class="answer-inline">wolle</span></li>
+                <li>Er behauptet, er _________ das müssen. (muss/müsse)<span class="answer-inline">müsse</span></li>
+                <li>Sie erklärt, sie _________ das sollen. (soll/solle)<span class="answer-inline">solle</span></li>
+                <li>Er meint, er _________ das mögen. (mag/möge)<span class="answer-inline">möge</span></li>
+                <li>Sie sagt, sie _________ das können. (kann/könne)<span class="answer-inline">könne</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-443')">Показать ответы</button>
+
+            <h3>Упражнение 4.4: Смешанные предложения (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-444">
+                <li>Er sagt, er _________ morgen kommen. (kommt/komme)<span class="answer-inline">komme</span></li>
+                <li>Sie behauptet, sie _________ das Buch gelesen. (hat/habe)<span class="answer-inline">habe</span></li>
+                <li>Er erklärt, er _________ das Problem lösen. (kann/könne)<span class="answer-inline">könne</span></li>
+                <li>Sie meint, sie _________ das Auto kaufen. (will/wolle)<span class="answer-inline">wolle</span></li>
+                <li>Er fragt, ob sie _________ das machen. (darf/dürfe)<span class="answer-inline">dürfe</span></li>
+                <li>Sie sagt, sie _________ das verstehen. (versteht/verstehe)<span class="answer-inline">verstehe</span></li>
+                <li>Er behauptet, er _________ das wissen. (weiss/wisse)<span class="answer-inline">wisse</span></li>
+                <li>Sie erklärt, sie _________ das machen sollen. (soll/solle)<span class="answer-inline">solle</span></li>
+                <li>Er meint, er _________ das machen müssen. (muss/müsse)<span class="answer-inline">müsse</span></li>
+                <li>Sie sagt, sie _________ das machen mögen. (mag/möge)<span class="answer-inline">möge</span></li>
+                <li>Er fragt, ob sie _________ das machen können. (kann/könne)<span class="answer-inline">könne</span></li>
+                <li>Sie behauptet, sie _________ das gemacht haben. (hat/habe)<span class="answer-inline">habe</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-444')">Показать ответы</button>
+
+            <h3>Упражнение 4.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-445">
+                <li>Он говорит, что он болен.<span class="answer-inline">Er sagt, er sei krank.</span></li>
+                <li>Она утверждает, что сделала это.<span class="answer-inline">Sie behauptet, sie habe das gemacht.</span></li>
+                <li>Он объясняет, что не знает этого.<span class="answer-inline">Er erklärt, er wisse das nicht.</span></li>
+                <li>Она сообщает, что видела это.<span class="answer-inline">Sie berichtet, sie habe das gesehen.</span></li>
+                <li>Он обещает, что сделает это.<span class="answer-inline">Er verspricht, er werde das machen.</span></li>
+                <li>Она думает, что может это сделать.<span class="answer-inline">Sie meint, sie könne das machen.</span></li>
+                <li>Он спрашивает, может ли она это сделать.<span class="answer-inline">Er fragt, ob sie das machen dürfe.</span></li>
+                <li>Она говорит, что хочет это сделать.<span class="answer-inline">Sie sagt, sie wolle das machen.</span></li>
+                <li>Он утверждает, что должен это сделать.<span class="answer-inline">Er behauptet, er müsse das machen.</span></li>
+                <li>Она объясняет, что должна это сделать.<span class="answer-inline">Sie erklärt, sie solle das machen.</span></li>
+                <li>Он думает, что любит это делать.<span class="answer-inline">Er meint, er möge das machen.</span></li>
+                <li>Она говорит, что может это сделать.<span class="answer-inline">Sie sagt, sie könne das machen.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-445')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="b2-3.html" class="nav-link">&larr; Предыдущий урок (B2-3)</a>
+        <span class="nav-title">Конец урока B2-4</span>
+        <a href="b2-5.html" class="nav-link">Следующий урок (B2-5) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

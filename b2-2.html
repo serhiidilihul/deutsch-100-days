@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок B2-2: Глаголы, существительные и прилагательные с фиксированным управлением</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="b2-1.html" class="nav-link">&larr; Урок B2-1</a>
+        <span class="nav-title">Урок B2-2</span>
+        <a href="b2-3.html" class="nav-link">Урок B2-3 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим порядок слов в сложных предложениях. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Порядок слов — простое предложение (12)</h3>
+            <p><em>Расставь слова в правильном порядке:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>ich / gestern / ins Kino / gegangen / bin → Ich _________ gestern ins Kino gegangen.<span class="answer-inline">bin</span></li>
+                <li>er / ein Buch / gelesen / hat → Er _________ ein Buch gelesen.<span class="answer-inline">hat</span></li>
+                <li>sie / nach Berlin / gefahren / ist → Sie _________ nach Berlin gefahren.<span class="answer-inline">ist</span></li>
+                <li>wir / Deutsch / gelernt / haben → Wir _________ Deutsch gelernt.<span class="answer-inline">haben</span></li>
+                <li>ihr / Pizza / gegessen / habt → Ihr _________ Pizza gegessen.<span class="answer-inline">habt</span></li>
+                <li>sie / gekocht / hat / das Essen → Sie _________ das Essen gekocht.<span class="answer-inline">hat</span></li>
+                <li>ich / einen Brief / geschrieben / habe → Ich _________ einen Brief geschrieben.<span class="answer-inline">habe</span></li>
+                <li>du / Musik / gehört / hast → Du _________ Musik gehört.<span class="answer-inline">hast</span></li>
+                <li>er / geschlafen / hat / gut → Er _________ gut geschlafen.<span class="answer-inline">hat</span></li>
+                <li>sie / gearbeitet / hat / viel → Sie _________ viel gearbeitet.<span class="answer-inline">hat</span></li>
+                <li>wir / gesehen / haben / den Film → Wir _________ den Film gesehen.<span class="answer-inline">haben</span></li>
+                <li>ihr / getrunken / habt / Kaffee → Ihr _________ Kaffee getrunken.<span class="answer-inline">habt</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Придаточное с dass (12)</h3>
+            <p><em>Расставь слова в правильном порядке:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>ich / denke / dass / er / kommt → Ich _________ , dass er kommt.<span class="answer-inline">denke</span></li>
+                <li>sie / sagt / dass / sie / müde / ist → Sie _________ , dass sie müde ist.<span class="answer-inline">sagt</span></li>
+                <li>wir / hoffen / dass / das / gut / ist → Wir _________ , dass das gut ist.<span class="answer-inline">hoffen</span></li>
+                <li>er / glaubt / dass / ich / recht / habe → Er _________ , dass ich recht habe.<span class="answer-inline">glaubt</span></li>
+                <li>sie / weiss / dass / er / krank / ist → Sie _________ , dass er krank ist.<span class="answer-inline">weiss</span></li>
+                <li>ich / verstehe / dass / du / traurig / bist → Ich _________ , dass du traurig bist.<span class="answer-inline">verstehe</span></li>
+                <li>wir / wissen / dass / es / regnet → Wir _________ , dass es regnet.<span class="answer-inline">wissen</span></li>
+                <li>er / meint / dass / sie / recht / hat → Er _________ , dass sie recht hat.<span class="answer-inline">meint</span></li>
+                <li>sie / hofft / dass / wir / kommen → Sie _________ , dass wir kommen.<span class="answer-inline">hofft</span></li>
+                <li>ich / sage / dass / du / lügst → Ich _________ , dass du lügst.<span class="answer-inline">sage</span></li>
+                <li>wir / glauben / dass / er / gewinnt → Wir _________ , dass er gewinnt.<span class="answer-inline">glauben</span></li>
+                <li>er / versteht / dass / sie / hilft → Er _________ , dass sie hilft.<span class="answer-inline">versteht</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок B2-2: Глаголы, существительные и прилагательные с фиксированным управлением</h1>
+            <p class="subtitle">Расширяю список управления: betragen zu, abhängen von, stolz sein auf, управление существительных.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Расширяю список управления глаголов, существительных и прилагательных.</li>
+                <li>Знаю конструкции: betragen zu, abhängen von, stolz sein auf.</li>
+                <li>Управление существительных: Die Angst vor + D, die Freude an + D.</li>
+                <li>Использую их автоматически в речи и письме.</li>
+            </ul>
+
+            <h2>1. Управление глаголов (Verben mit Präpositionen)</h2>
+            <p>Многие глаголы требуют определённого предлога:</p>
+
+            <table>
+                <thead><tr><th>Глагол</th><th>Предлог + Падеж</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>warten</strong></td><td>auf + A</td><td><em>Ich warte auf den Bus.</em></td></tr>
+                    <tr><td><strong>denken</strong></td><td>an + A</td><td><em>Ich denke an dich.</em></td></tr>
+                    <tr><td><strong>sprechen</strong></td><td>mit + D</td><td><em>Ich spreche mit dem Lehrer.</em></td></tr>
+                    <tr><td><strong>helfen</strong></td><td>bei + D</td><td><em>Ich helfe bei der Arbeit.</em></td></tr>
+                    <tr><td><strong>fragen</strong></td><td>nach + D</td><td><em>Ich frage nach dem Weg.</em></td></tr>
+                    <tr><td><strong>danken</strong></td><td>für + A</td><td><em>Ich danke für die Hilfe.</em></td></tr>
+                    <tr><td><strong>entscheiden</strong></td><td>für + A</td><td><em>Ich entscheide für das Auto.</em></td></tr>
+                    <tr><td><strong>sorgen</strong></td><td>um + A</td><td><em>Ich sorge um mein Kind.</em></td></tr>
+                    <tr><td><strong>lachen</strong></td><td>über + A</td><td><em>Ich lache über den Witz.</em></td></tr>
+                    <tr><td><strong>hören</strong></td><td>von + D</td><td><em>Ich höre von dem Problem.</em></td></tr>
+                    <tr><td><strong>träumen</strong></td><td>von + D</td><td><em>Ich träume von der Reise.</em></td></tr>
+                    <tr><td><strong>kümmern</strong></td><td>um + A</td><td><em>Ich kümmere um das Kind.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Управление существительных (Nomen mit Präpositionen)</h2>
+            <p>Существительные тоже могут требовать определённый падеж:</p>
+
+            <table>
+                <thead><tr><th>Существительное</th><th>Предлог + Падеж</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>die Angst</strong></td><td>vor + D</td><td><em>Ich habe Angst vor dem Examen.</em></td></tr>
+                    <tr><td><strong>die Freude</strong></td><td>an + D</td><td><em>Ich habe Freude an der Musik.</em></td></tr>
+                    <tr><td><strong>die Arbeit</strong></td><td>an + D</td><td><em>Ich arbeite an dem Projekt.</em></td></tr>
+                    <tr><td><strong>die Meinung</strong></td><td>von + D</td><td><em>Ich bin von der Meinung.</em></td></tr>
+                    <tr><td><strong>der Traum</strong></td><td>von + D</td><td><em>Ich träume von der Reise.</em></td></tr>
+                    <tr><td><strong>die Überzeugung</strong></td><td>von + D</td><td><em>Ich überzeuge von dem Plan.</em></td></tr>
+                    <tr><td><strong>das Leiden</strong></td><td>unter + D</td><td><em>Ich leide unter dem Lärm.</em></td></tr>
+                    <tr><td><strong>der Zweifel</strong></td><td>an + D</td><td><em>Ich zweifle an der Aussage.</em></td></tr>
+                    <tr><td><strong>die Freude</strong></td><td>über + A</td><td><em>Ich freue mich über das Ergebnis.</em></td></tr>
+                    <tr><td><strong>der Ärger</strong></td><td>über + A</td><td><em>Ich ärgere mich über den Fehler.</em></td></tr>
+                    <tr><td><strong>das Wunder</strong></td><td>über + A</td><td><em>Ich wundere mich über das Ergebnis.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Управление прилагательных (Adjektive mit Präpositionen)</h2>
+            <p>Прилагательные тоже могут требовать предлоги:</p>
+
+            <table>
+                <thead><tr><th>Прилагательное</th><th>Предлог + Падеж</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>stolz</strong></td><td>auf + A</td><td><em>Ich bin stolz auf mein Kind.</em></td></tr>
+                    <tr><td><strong>neidisch</strong></td><td>auf + A</td><td><em>Ich bin neidisch auf dein Auto.</em></td></tr>
+                    <tr><td><strong>wütend</strong></td><td>auf + A</td><td><em>Ich bin wütend auf ihn.</em></td></tr>
+                    <tr><td><strong>schlecht</strong></td><td>in + D</td><td><em>Ich bin schlecht in Mathematik.</em></td></tr>
+                    <tr><td><strong>gut</strong></td><td>in + D</td><td><em>Ich bin gut in Deutsch.</em></td></tr>
+                    <tr><td><strong>interessiert</strong></td><td>an + D</td><td><em>Ich bin interessiert an Kunst.</em></td></tr>
+                    <tr><td><strong>erfahren</strong></td><td>in + D</td><td><em>Ich bin erfahren in diesem Bereich.</em></td></tr>
+                    <tr><td><strong>zufrieden</strong></td><td>mit + D</td><td><em>Ich bin zufrieden mit dem Ergebnis.</em></td></tr>
+                    <tr><td><strong>unzufrieden</strong></td><td>mit + D</td><td><em>Ich bin unzufrieden mit dem Service.</em></td></tr>
+                    <tr><td><strong>einverstanden</strong></td><td>mit + D</td><td><em>Ich bin einverstanden mit dem Plan.</em></td></tr>
+                    <tr><td><strong>verärgert</strong></td><td>über + A</td><td><em>Ich bin verärgert über die Nachricht.</em></td></tr>
+                    <tr><td><strong>enttäuscht</strong></td><td>von + D</td><td><em>Ich bin enttäuscht von ihm.</em></td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Важно!</strong><br>
+                Управление нужно запоминать целыми фразами, а не отдельными словами.<br>
+                Например: <strong>stolz sein auf + Akkusativ</strong>, <strong>Angst haben vor + Dativ</strong>.<br>
+                Это ключ к естественной речи на уровне B2!
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для управления и предлогов.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>die Angst, -äe</strong> — страх</div>
+                <div class="vocabulary-item"><strong>die Freude, -n</strong> — радость</div>
+                <div class="vocabulary-item"><strong>die Überzeugung, -en</strong> — убеждение</div>
+                <div class="vocabulary-item"><strong>der Zweifel, -</strong> — сомнение</div>
+                <div class="vocabulary-item"><strong>das Leiden, -</strong> — страдание</div>
+                <div class="vocabulary-item"><strong>der Ärger, -</strong> — раздражение</div>
+                <div class="vocabulary-item"><strong>das Wunder, -</strong> — удивление</div>
+                <div class="vocabulary-item"><strong>die Erfahrung, -en</strong> — опыт</div>
+                <div class="vocabulary-item"><strong>die Meinung, -en</strong> — мнение</div>
+                <div class="vocabulary-item"><strong>der Traum, -äe</strong> — мечта</div>
+                <div class="vocabulary-item"><strong>die Hoffnung, -en</strong> — надежда</div>
+                <div class="vocabulary-item"><strong>die Sorge, -n</strong> — забота</div>
+                <div class="vocabulary-item"><strong>die Neugier, -en</strong> — любопытство</div>
+                <div class="vocabulary-item"><strong>das Interesse, -n</strong> — интерес</div>
+                <div class="vocabulary-item"><strong>die Zufriedenheit (Sg.)</strong> — удовлетворение</div>
+                <div class="vocabulary-item"><strong>die Enttäuschung, -en</strong> — разочарование</div>
+                <div class="vocabulary-item"><strong>die Wut, -äe</strong> — гнев</div>
+                <div class="vocabulary-item"><strong>der Hass, -</strong> — ненависть</div>
+                <div class="vocabulary-item"><strong>die Liebe, -n</strong> — любовь</div>
+                <div class="vocabulary-item"><strong>das Vertrauen, -</strong> — доверие</div>
+                <div class="vocabulary-item"><strong>die Abhängigkeit, -en</strong> — зависимость</div>
+                <div class="vocabulary-item"><strong>die Unabhängigkeit (Sg.)</strong> — независимость</div>
+                <div class="vocabulary-item"><strong>die Fähigkeit, -en</strong> — способность</div>
+                <div class="vocabulary-item"><strong>die Möglichkeit, -en</strong> — возможность</div>
+                <div class="vocabulary-item"><strong>die Notwendigkeit, -en</strong> — необходимость</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем управление!</p>
+
+            <h3>Упражнение 2.1: Управление глаголов (12)</h3>
+            <p><em>Выбери правильный предлог:</em></p>
+            <ol class="exercise-list" id="ex-221">
+                <li>Ich _________ warte. (auf/über)<span class="answer-inline">warte auf</span></li>
+                <li>Ich _________ denke. (an/über)<span class="answer-inline">denke an</span></li>
+                <li>Ich _________ spreche. (mit/über)<span class="answer-inline">spreche mit</span></li>
+                <li>Ich _________ helfe. (bei/mit)<span class="answer-inline">helfe bei</span></li>
+                <li>Ich _________ frage. (nach/über)<span class="answer-inline">frage nach</span></li>
+                <li>Ich _________ danke. (für/über)<span class="answer-inline">danke für</span></li>
+                <li>Ich _________ entscheide. (für/über)<span class="answer-inline">entscheide für</span></li>
+                <li>Ich _________ sorge. (um/für)<span class="answer-inline">sorge um</span></li>
+                <li>Ich _________ lache. (über/auf)<span class="answer-inline">lache über</span></li>
+                <li>Ich _________ höre. (von/über)<span class="answer-inline">höre von</span></li>
+                <li>Ich _________ träume. (von/über)<span class="answer-inline">träume von</span></li>
+                <li>Ich _________ kümmere. (um/über)<span class="answer-inline">kümmere um</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-221')">Показать ответы</button>
+
+            <h3>Упражнение 2.2: Управление существительных (12)</h3>
+            <p><em>Выбери правильный предлог:</em></p>
+            <ol class="exercise-list" id="ex-222">
+                <li>Ich habe _________ vor dem Examen. (Angst/Freude)<span class="answer-inline">Angst vor</span></li>
+                <li>Ich habe _________ an der Musik. (Freude/Angst)<span class="answer-inline">Freude an</span></li>
+                <li>Ich arbeite _________ dem Projekt. (an/mit)<span class="answer-inline">arbeite an</span></li>
+                <li>Ich bin _________ der Meinung. (mit/von)<span class="answer-inline">bin von</span></li>
+                <li>Ich träume _________ der Reise. (von/über)<span class="answer-inline">träume von</span></li>
+                <li>Ich überzeuge _________ dem Plan. (von/mit)<span class="answer-inline">überzeuge von</span></li>
+                <li>Ich leide _________ dem Lärm. (unter/über)<span class="answer-inline">leide unter</span></li>
+                <li>Ich zweifle _________ der Aussage. (an/über)<span class="answer-inline">zweifle an</span></li>
+                <li>Ich denke _________ die Zukunft. (an/über)<span class="answer-inline">denke an</span></li>
+                <li>Ich freue _________ das Ergebnis. (mich über/mich an)<span class="answer-inline">freue mich über</span></li>
+                <li>Ich ärgere _________ den Fehler. (mich über/mich an)<span class="answer-inline">ärgere mich über</span></li>
+                <li>Ich wundere _________ das Ergebnis. (mich über/mich an)<span class="answer-inline">wundere mich über</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-222')">Показать ответы</button>
+
+            <h3>Упражнение 2.3: Управление прилагательных (12)</h3>
+            <p><em>Выбери правильный предлог:</em></p>
+            <ol class="exercise-list" id="ex-223">
+                <li>Ich bin _________ mein Kind. (stolz auf/wütend auf)<span class="answer-inline">stolz auf</span></li>
+                <li>Ich bin _________ den Fehler. (wütend auf/stolz auf)<span class="answer-inline">wütend auf</span></li>
+                <li>Ich bin _________ Mathematik. (schlecht in/gut in)<span class="answer-inline">schlecht in</span></li>
+                <li>Ich bin _________ Deutsch. (gut in/schlecht in)<span class="answer-inline">gut in</span></li>
+                <li>Ich bin _________ Kunst. (interessiert an/erfahren in)<span class="answer-inline">interessiert an</span></li>
+                <li>Ich bin _________ diesem Bereich. (erfahren in/interessiert an)<span class="answer-inline">erfahren in</span></li>
+                <li>Ich bin _________ das Ergebnis. (zufrieden mit/unzufrieden mit)<span class="answer-inline">zufrieden mit</span></li>
+                <li>Ich bin _________ der Service. (unzufrieden mit/zufrieden mit)<span class="answer-inline">unzufrieden mit</span></li>
+                <li>Ich bin _________ den Plan. (einverstanden mit/verärgert über)<span class="answer-inline">einverstanden mit</span></li>
+                <li>Ich bin _________ die Nachricht. (verärgert über/enttäuscht von)<span class="answer-inline">verärgert über</span></li>
+                <li>Ich bin _________ ihn. (enttäuscht von/wütend auf)<span class="answer-inline">enttäuscht von</span></li>
+                <li>Ich bin _________ die Situation. (sicher über/unsicher über)<span class="answer-inline">unsicher über</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-223')">Показать ответы</button>
+
+            <h3>Упражнение 2.4: Смешанные конструкции (12)</h3>
+            <p><em>Выбери правильный предлог:</em></p>
+            <ol class="exercise-list" id="ex-224">
+                <li>Ich warte _________ den Bus. (auf/über)<span class="answer-inline">auf</span></li>
+                <li>Ich denke _________ dich. (an/über)<span class="answer-inline">an</span></li>
+                <li>Ich spreche _________ den Lehrer. (mit/über)<span class="answer-inline">mit</span></li>
+                <li>Ich helfe _________ der Arbeit. (bei/mit)<span class="answer-inline">bei</span></li>
+                <li>Ich frage _________ den Weg. (nach/über)<span class="answer-inline">nach</span></li>
+                <li>Ich danke _________ die Hilfe. (für/über)<span class="answer-inline">für</span></li>
+                <li>Ich entscheide _________ das Auto. (für/über)<span class="answer-inline">für</span></li>
+                <li>Ich sorge _________ mein Kind. (um/für)<span class="answer-inline">um</span></li>
+                <li>Ich lache _________ den Witz. (über/auf)<span class="answer-inline">über</span></li>
+                <li>Ich höre _________ das Problem. (von/über)<span class="answer-inline">von</span></li>
+                <li>Ich träume _________ die Reise. (von/über)<span class="answer-inline">von</span></li>
+                <li>Ich kümmere _________ das Kind. (um/über)<span class="answer-inline">um</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-224')">Показать ответы</button>
+
+            <h3>Упражнение 2.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-225">
+                <li>Я жду автобус.<span class="answer-inline">Ich warte auf den Bus.</span></li>
+                <li>Я думаю о тебе.<span class="answer-inline">Ich denke an dich.</span></li>
+                <li>Я разговариваю с учителем.<span class="answer-inline">Ich spreche mit dem Lehrer.</span></li>
+                <li>Я помогаю с работой.<span class="answer-inline">Ich helfe bei der Arbeit.</span></li>
+                <li>Я спрашиваю о дороге.<span class="answer-inline">Ich frage nach dem Weg.</span></li>
+                <li>Я благодарен за помощь.<span class="answer-inline">Ich danke für die Hilfe.</span></li>
+                <li>Я решаю в пользу машины.<span class="answer-inline">Ich entscheide für das Auto.</span></li>
+                <li>Я забочусь о моём ребёнке.<span class="answer-inline">Ich sorge um mein Kind.</span></li>
+                <li>Я смеюсь над шуткой.<span class="answer-inline">Ich lache über den Witz.</span></li>
+                <li>Я слышал о проблеме.<span class="answer-inline">Ich habe von dem Problem gehört.</span></li>
+                <li>Я мечтаю о путешествии.<span class="answer-inline">Ich träume von der Reise.</span></li>
+                <li>Я забочусь о ребёнке.<span class="answer-inline">Ich kümmere mich um das Kind.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-225')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="b2-1.html" class="nav-link">&larr; Предыдущий урок (B2-1)</a>
+        <span class="nav-title">Конец урока B2-2</span>
+        <a href="b2-3.html" class="nav-link">Следующий урок (B2-3) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

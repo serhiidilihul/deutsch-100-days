@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-23: Сфера услуг, банк, почта</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-22.html" class="nav-link">&larr; Урок A2-22</a>
+        <span class="nav-title">Урок A2-23</span>
+        <a href="a2-24.html" class="nav-link">Урок A2-24 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим праздники и приглашения из урока A2-22. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Праздники (12)</h3>
+            <p><em>Сопоставь праздник с традицией:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Weihnachten — _________ (Geschenke/Pool)<span class="answer-inline">Geschenke</span></li>
+                <li>Ostern — _________ (Eier/Feuerwerk)<span class="answer-inline">Eier</span></li>
+                <li>Silvester — _________ (Feuerwerk/Kostüme)<span class="answer-inline">Feuerwerk</span></li>
+                <li>Karneval — _________ (Kostüme/Bier)<span class="answer-inline">Kostüme</span></li>
+                <li>Oktoberfest — _________ (Bier/Eier)<span class="answer-inline">Bier</span></li>
+                <li>Geburtstag — _________ (Kuchen/Geschenke)<span class="answer-inline">Geschenke</span></li>
+                <li>Weihnachten — _________ (Tannebaum/Feuerwerk)<span class="answer-inline">Tannebaum</span></li>
+                <li>Ostern — _________ (Osterhase/Weihnachten)<span class="answer-inline">Osterhase</span></li>
+                <li>Silvester — _________ (Champagner/Basteln)<span class="answer-inline">Champagner</span></li>
+                <li>Karneval — _________ (Umzug/Bescherung)<span class="answer-inline">Umzug</span></li>
+                <li>Oktoberfest — _________ (Lederhosen/Eier)<span class="answer-inline">Lederhosen</span></li>
+                <li>Geburtstag — _________ (Kuchen/Feuerwerk)<span class="answer-inline">Kuchen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Приглашение (12)</h3>
+            <p><em>Построй приглашение:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>ich / dich / zu meiner Party einladen &rarr; Ich ___________________.<span class="answer-inline">lade dich zu meiner Party ein</span></li>
+                <li>du / zu meinem Geburtstag kommen &rarr; Kannst du ___________________.<span class="answer-inline">zu meinem Geburtstag kommen</span></li>
+                <li>ich / dich / zum Abendessen einladen &rarr; Ich ___________________.<span class="answer-inline">lade dich zum Abendessen ein</span></li>
+                <li>wir / am Samstag / zusammen feiern &rarr; Wir ___________________.<span class="answer-inline">feiern am Samstag zusammen</span></li>
+                <li>du / um 19 Uhr / kommen &rarr; Kannst du ___________________.<span class="answer-inline">um 19 Uhr kommen</span></li>
+                <li>ich / dich / zum Essen einladen &rarr; Ich ___________________.<span class="answer-inline">lade dich zum Essen ein</span></li>
+                <li>wir / ins Kino / gehen &rarr; Wir ___________________.<span class="answer-inline">gehen ins Kino</span></li>
+                <li>du / am Wochenende / Zeit haben &rarr; Hast du ___________________.<span class="answer-inline">am Wochenende Zeit</span></li>
+                <li>ich / dich / zu meiner Hochzeit einladen &rarr; Ich ___________________.<span class="answer-inline">lade dich zu meiner Hochzeit ein</span></li>
+                <li>wir / ins Restaurant / gehen &rarr; Wir ___________________.<span class="answer-inline">gehen ins Restaurant</span></li>
+                <li>du / mitkommen / wollen &rarr; Willst du ___________________.<span class="answer-inline">mitkommen</span></li>
+                <li>wir / zusammen / kochen &rarr; Wir ___________________.<span class="answer-inline">kochen zusammen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-23: Сфера услуг, банк, почта</h1>
+            <p class="subtitle">Учимся общаться в госучреждениях и пользоваться услугами.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю лексику для открытия счета, отправки посылки.</li>
+                <li>Могу общаться в госучреждениях на базовом уровне.</li>
+                <li>Умею составлять официальные запросы.</li>
+            </ul>
+
+            <h2>1. Банк (die Bank)</h2>
+            <p>Основные операции в банке:</p>
+
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>ein Konto eröffnen</strong></td><td>открыть счёт</td><td><em>Ich möchte ein Konto eröffnen.</em></td></tr>
+                    <tr><td><strong>Geld abheben</strong></td><td>снять деньги</td><td><em>Ich möchte 100 Euro abheben.</em></td></tr>
+                    <tr><td><strong>Geld einzahlen</strong></td><td>положить деньги</td><td><em>Ich möchte Geld einzahlen.</em></td></tr>
+                    <tr><td><strong>überweisen</strong></td><td>перевести</td><td><em>Ich möchte Geld überweisen.</em></td></tr>
+                    <tr><td><strong>der Kredit</strong></td><td>кредит</td><td><em>Ich brauche einen Kredit.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Почта (die Post)</h2>
+            <p>Услуги почты:</p>
+
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>ein Paket schicken</strong></td><td>отправить посылку</td><td><em>Ich möchte ein Paket schicken.</em></td></tr>
+                    <tr><td><strong>einen Brief senden</strong></td><td>отправить письмо</td><td><em>Ich sende einen Brief nach Berlin.</em></td></tr>
+                    <tr><td><strong>die Briefmarke</strong></td><td>марка</td><td><em>Ich brauche eine Briefmarke.</em></td></tr>
+                    <tr><td><strong>das Postamt</strong></td><td>почтамт</td><td><em>Das Postamt ist geschlossen.</em></td></tr>
+                    <tr><td><strong>die Postleitzahl</strong></td><td>индекс</td><td><em>Die Postleitzahl ist 10115.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Госучреждения (das Amt)</h2>
+            <p>Общение в официальных учреждениях:</p>
+
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>das Bürgeramt</strong></td><td>гражданская служба</td><td><em>Ich muss zum Bürgeramt gehen.</em></td></tr>
+                    <tr><td><strong>der Pass</strong></td><td>паспорт</td><td><em>Ich brauche einen neuen Pass.</em></td></tr>
+                    <tr><td><strong>der Personalausweis</strong></td><td>удостоверение личности</td><td><em>Ich habe meinen Personalausweis verloren.</em></td></tr>
+                    <tr><td><strong>die Anmeldung</strong></td><td>регистрация</td><td><em>Ich brauche eine Anmeldung.</em></td></tr>
+                    <tr><td><strong>der Termin</strong></td><td>запись, встреча</td><td><em>Ich habe einen Termin um 10 Uhr.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Полезные фразы</h2>
+            <ul>
+                <li><em>Ich hätte gerne...</em> — Я бы хотел...</li>
+                <li><em>Wie viel kostet das?</em> — Сколько это стоит?</li>
+                <li><em>Können Sie mir helfen?</em> — Вы можете мне помочь?</li>
+                <li><em>Ich brauche...</em> — Мне нужно...</li>
+                <li><em>Wo ist...?</em> — Где находится...?</li>
+            </ul>
+
+            <h2>5. Пример диалога в банке</h2>
+            <ul>
+                <li><em>Kunde: Guten Tag! Ich möchte ein Konto eröffnen.</em></li>
+                <li><em>Berater: Natürlich. Haben Sie Ihren Pass dabei?</em></li>
+                <li><em>Kunde: Ja, hier ist er.</em></li>
+                <li><em>Berater: Gut. Möchten Sie auch eine Kreditkarte?</em></li>
+                <li><em>Kunde: Ja, gerne. Wie viel kostet das?</em></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">50 слов для сферы услуг, банка и почты.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>die Bank, -en</strong> — банк</div>
+                <div class="vocabulary-item"><strong>das Konto, -en</strong> — счёт</div>
+                <div class="vocabulary-item"><strong>eröffnen</strong> — открывать</div>
+                <div class="vocabulary-item"><strong>abheben</strong> — снимать (деньги)</div>
+                <div class="vocabulary-item"><strong>einzahlen</strong> — вносить (деньги)</div>
+                <div class="vocabulary-item"><strong>überweisen</strong> — переводить (деньги)</div>
+                <div class="vocabulary-item"><strong>der Kredit, -e</strong> — кредит</div>
+                <div class="vocabulary-item"><strong>die Kreditkarte (Sg.)</strong> — кредитная карта</div>
+                <div class="vocabulary-item"><strong>die EC-Karte (Sg.)</strong> — дебетовая карта</div>
+                <div class="vocabulary-item"><strong>das Geld, -er</strong> — деньги</div>
+                <div class="vocabulary-item"><strong>der Euro, -s</strong> — евро</div>
+                <div class="vocabulary-item"><strong>die Währung, -en</strong> — валюта</div>
+                <div class="vocabulary-item"><strong>die Post (Sg.)</strong> — почта</div>
+                <div class="vocabulary-item"><strong>das Postamt, -äe</strong> — почтамт</div>
+                <div class="vocabulary-item"><strong>das Paket, -e</strong> — посылка</div>
+                <div class="vocabulary-item"><strong>der Brief, -e</strong> — письмо</div>
+                <div class="vocabulary-item"><strong>schicken</strong> — отправлять</div>
+                <div class="vocabulary-item"><strong>senden</strong> — посылать</div>
+                <div class="vocabulary-item"><strong>die Briefmarke, -n</strong> — марка</div>
+                <div class="vocabulary-item"><strong>die Postleitzahl (Sg.)</strong> — индекс</div>
+                <div class="vocabulary-item"><strong>das Bürgeramt, -äe</strong> — гражданская служба</div>
+                <div class="vocabulary-item"><strong>der Pass, -äe</strong> — паспорт</div>
+                <div class="vocabulary-item"><strong>der Personalausweis, -e</strong> — удостоверение личности</div>
+                <div class="vocabulary-item"><strong>die Anmeldung, -en</strong> — регистрация</div>
+                <div class="vocabulary-item"><strong>der Termin, -s</strong> — запись, встреча</div>
+                <div class="vocabulary-item"><strong>der Antrag, -äe</strong> — заявление</div>
+                <div class="vocabulary-item"><strong>ausfüllen</strong> — заполнять</div>
+                <div class="vocabulary-item"><strong>der Beamte, -n</strong> — чиновник</div>
+                <div class="vocabulary-item"><strong>die Beamtin, -nen</strong> — чиновница</div>
+                <div class="vocabulary-item"><strong>die Warteschlange (Sg.)</strong> — очередь</div>
+                <div class="vocabulary-item"><strong>warten</strong> — ждать</div>
+                <div class="vocabulary-item"><strong>die Öffnungszeiten (Pl.)</strong> — часы работы</div>
+                <div class="vocabulary-item"><strong>geschlossen</strong> — закрыто</div>
+                <div class="vocabulary-item"><strong>öffnen</strong> — открывать</div>
+                <div class="vocabulary-item"><strong>der Schalter, -</strong> — окошко, касса</div>
+                <div class="vocabulary-item"><strong>die Nummer, -n</strong> — номер</div>
+                <div class="vocabulary-item"><strong>der Ausweis, -e</strong> — документ, удостоверение</div>
+                <div class="vocabulary-item"><strong>bestätigen</strong> — подтверждать</div>
+                <div class="vocabulary-item"><strong>die Bestätigung, -en</strong> — подтверждение</div>
+                <div class="vocabulary-item"><strong>die Gebühr, -en</strong> — сбор, пошлина</div>
+                <div class="vocabulary-item"><strong>kostenlos</strong> — бесплатно</div>
+                <div class="vocabulary-item"><strong>bar / mit Karte</strong> — наличные / картой</div>
+                <div class="vocabulary-item"><strong>die Quittung, -en</strong> — квитанция</div>
+                <div class="vocabulary-item"><strong>der Service (Sg.)</strong> — обслуживание</div>
+                <div class="vocabulary-item"><strong>die Beratung (Sg.)</strong> — консультация</div>
+                <div class="vocabulary-item"><strong>der Berater, -</strong> — консультант</div>
+                <div class="vocabulary-item"><strong>die Beraterin, -nen</strong> — консультантка</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем сферу услуг!</p>
+
+            <h3>Упражнение 48.1: Банк (12)</h3>
+            <p><em>Выбери правильное слово:</em></p>
+            <ol class="exercise-list" id="ex-481">
+                <li>Ich möchte ein _________ eröffnen. (Konto/Kredit)<span class="answer-inline">Konto</span></li>
+                <li>Ich möchte 100 Euro _________. (abheben/einzahlen)<span class="answer-inline">abheben</span></li>
+                <li>Ich möchte Geld _________. (überweisen/schicken)<span class="answer-inline">überweisen</span></li>
+                <li>Ich brauche einen _________. (Kredit/Brief)<span class="answer-inline">Kredit</span></li>
+                <li>Ich zahle bar oder mit _________. (Karte/Briefmarke)<span class="answer-inline">Karte</span></li>
+                <li>Ich möchte Geld _________. (einzahlen/abheben)<span class="answer-inline">einzahlen</span></li>
+                <li>Ich habe eine _________. (Kreditkarte/Postleitzahl)<span class="answer-inline">Kreditkarte</span></li>
+                <li>Ich möchte mein _________. (Konto/Pass) ändern.<span class="answer-inline">Konto</span></li>
+                <li>Ich brauche einen _________. (Kredit/Kuchen)<span class="answer-inline">Kredit</span></li>
+                <li>Ich möchte Geld nach Deutschland _________. (überweisen/schicken)<span class="answer-inline">überweisen</span></li>
+                <li>Ich zahle mit _________. (Karte/Bargeld)<span class="answer-inline">Karte</span></li>
+                <li>Ich möchte mein _________. (Konto/Amt) schliessen.<span class="answer-inline">Konto</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-481')">Показать ответы</button>
+
+            <h3>Упражнение 48.2: Почта (12)</h3>
+            <p><em>Выбери правильное слово:</em></p>
+            <ol class="exercise-list" id="ex-482">
+                <li>Ich möchte ein _________ schicken. (Paket/Brief)<span class="answer-inline">Paket</span></li>
+                <li>Ich sende einen _________ nach Berlin. (Brief/Pass)<span class="answer-inline">Brief</span></li>
+                <li>Ich brauche eine _________. (Briefmarke/Kreditkarte)<span class="answer-inline">Briefmarke</span></li>
+                <li>Das _________ ist geschlossen. (Postamt/Bank)<span class="answer-inline">Postamt</span></li>
+                <li>Die _________ ist 10115. (Postleitzahl/Nummer)<span class="answer-inline">Postleitzahl</span></li>
+                <li>Ich schicke ein _________ nach Deutschland. (Paket/Brief)<span class="answer-inline">Paket</span></li>
+                <li>Ich brauche eine _________ für den Brief. (Briefmarke/Karte)<span class="answer-inline">Briefmarke</span></li>
+                <li>Das _________ hat um 18 Uhr zu. (Postamt/Bürgeramt)<span class="answer-inline">Postamt</span></li>
+                <li>Ich sende einen _________ an meine Mutter. (Brief/Pass)<span class="answer-inline">Brief</span></li>
+                <li>Die _________ ist wichtig für die Post. (Postleitzahl/Nummer)<span class="answer-inline">Postleitzahl</span></li>
+                <li>Ich möchte ein _________ mit Geschenken schicken. (Paket/Brief)<span class="answer-inline">Paket</span></li>
+                <li>Ich kaufe _________ am Schalter. (Briefmarken/Kredite)<span class="answer-inline">Briefmarken</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-482')">Показать ответы</button>
+
+            <h3>Упражнение 48.3: Госучреждения (12)</h3>
+            <p><em>Выбери правильное слово:</em></p>
+            <ol class="exercise-list" id="ex-483">
+                <li>Ich muss zum _________ gehen. (Bürgeramt/Kino)<span class="answer-inline">Bürgeramt</span></li>
+                <li>Ich brauche einen neuen _________. (Pass/Film)<span class="answer-inline">Pass</span></li>
+                <li>Ich habe meinen _________ verloren. (Personalausweis/Regenschirm)<span class="answer-inline">Personalausweis</span></li>
+                <li>Ich brauche eine _________. (Anmeldung/Einladung)<span class="answer-inline">Anmeldung</span></li>
+                <li>Ich habe einen _________ um 10 Uhr. (Termin/Urlaub)<span class="answer-inline">Termin</span></li>
+                <li>Ich muss einen _________ ausfüllen. (Antrag/Film)<span class="answer-inline">Antrag</span></li>
+                <li>Der _________ arbeitet im Amt. (Beamte/Gast)<span class="answer-inline">Beamte</span></li>
+                <li>Ich warte in der _________. (Warteschlange/Post)<span class="answer-inline">Warteschlange</span></li>
+                <li>Die _________ sind von 8 bis 12 Uhr. (Öffnungszeiten/Feiern)<span class="answer-inline">Öffnungszeiten</span></li>
+                <li>Das Amt ist _________. (geschlossen/geöffnet) am Wochenende.<span class="answer-inline">geschlossen</span></li>
+                <li>Ich brauche eine _________. (Bestätigung/Party)<span class="answer-inline">Bestätigung</span></li>
+                <li>Die _________ kostet 10 Euro. (Gebühr/Post)<span class="answer-inline">Gebühr</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-483')">Показать ответы</button>
+
+            <h3>Упражнение 48.4: Диалог в банке (12)</h3>
+            <p><em>Построй диалог:</em></p>
+            <ol class="exercise-list" id="ex-484">
+                <li>Guten Tag! / ich / ein Konto eröffnen &rarr; Guten Tag! Ich möchte ___________________.<span class="answer-inline">ein Konto eröffnen</span></li>
+                <li>Haben Sie / Ihren Pass / dabei? &rarr; Haben Sie ___________________.<span class="answer-inline">Ihren Pass dabei</span></li>
+                <li>Ich / 100 Euro / abheben &rarr; Ich möchte ___________________.<span class="answer-inline">100 Euro abheben</span></li>
+                <li>Ich / Geld / überweisen &rarr; Ich möchte ___________________.<span class="answer-inline">Geld überweisen</span></li>
+                <li>Wie viel / kostet / das? &rarr; Wie viel ___________________.<span class="answer-inline">kostet das</span></li>
+                <li>Ich / brauche / einen Kredit &rarr; Ich ___________________.<span class="answer-inline">brauche einen Kredit</span></li>
+                <li>Können Sie / mir / helfen? &rarr; Können Sie ___________________.<span class="answer-inline">mir helfen</span></li>
+                <li>Ich / zahle / mit Karte &rarr; Ich ___________________.<span class="answer-inline">zahle mit Karte</span></li>
+                <li>Ich / möchte / Geld einzahlen &rarr; Ich ___________________.<span class="answer-inline">möchte Geld einzahlen</span></li>
+                <li>Wo / ist / der Schalter? &rarr; Wo ___________________.<span class="answer-inline">ist der Schalter</span></li>
+                <li>Ich / habe / einen Termin &rarr; Ich ___________________.<span class="answer-inline">habe einen Termin</span></li>
+                <li>Danke / für / die Beratung &rarr; Danke ___________________.<span class="answer-inline">für die Beratung</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-484')">Показать ответы</button>
+
+            <h3>Упражнение 48.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-485">
+                <li>Я хочу открыть счёт.<span class="answer-inline">Ich möchte ein Konto eröffnen.</span></li>
+                <li>Я хочу снять 100 евро.<span class="answer-inline">Ich möchte 100 Euro abheben.</span></li>
+                <li>Я хочу отправить посылку.<span class="answer-inline">Ich möchte ein Paket schicken.</span></li>
+                <li>Я хочу отправить письмо.<span class="answer-inline">Ich möchte einen Brief senden.</span></li>
+                <li>Мне нужна марка.<span class="answer-inline">Ich brauche eine Briefmarke.</span></li>
+                <li>Я должен пойти в Bürgeramt.<span class="answer-inline">Ich muss zum Bürgeramt gehen.</span></li>
+                <li>Мне нужен новый паспорт.<span class="answer-inline">Ich brauche einen neuen Pass.</span></li>
+                <li>Я потерял удостоверение личности.<span class="answer-inline">Ich habe meinen Personalausweis verloren.</span></li>
+                <li>Мне нужна регистрация.<span class="answer-inline">Ich brauche eine Anmeldung.</span></li>
+                <li>У меня запись в 10 часов.<span class="answer-inline">Ich habe einen Termin um 10 Uhr.</span></li>
+                <li>Я хочу перевести деньги.<span class="answer-inline">Ich möchte Geld überweisen.</span></li>
+                <li>Почтамт закрыт.<span class="answer-inline">Das Postamt ist geschlossen.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-485')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-22.html" class="nav-link">&larr; Предыдущий урок (A2-22)</a>
+        <span class="nav-title">Конец урока A2-23</span>
+        <a href="a2-24.html" class="nav-link">Следующий урок (A2-24) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

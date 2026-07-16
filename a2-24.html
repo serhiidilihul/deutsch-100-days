@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-24: Чтение и анализ новостей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-23.html" class="nav-link">&larr; Урок A2-23</a>
+        <span class="nav-title">Урок A2-24</span>
+        <a href="a2-25.html" class="nav-link">Урок A2-25 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка und Wiederholung</h2>
+            <p class="subtitle">Повторим сферу услуг из урока A2-23. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Банк (12)</h3>
+            <p><em>Выбери правильное слово:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich möchte ein _________ eröffnen. (Konto/Kredit)<span class="answer-inline">Konto</span></li>
+                <li>Ich möchte 100 Euro _________. (abheben/einzahlen)<span class="answer-inline">abheben</span></li>
+                <li>Ich möchte Geld _________. (überweisen/schicken)<span class="answer-inline">überweisen</span></li>
+                <li>Ich brauche einen _________. (Kredit/Brief)<span class="answer-inline">Kredit</span></li>
+                <li>Ich zahle bar oder mit _________. (Karte/Briefmarke)<span class="answer-inline">Karte</span></li>
+                <li>Ich möchte Geld _________. (einzahlen/abheben)<span class="answer-inline">einzahlen</span></li>
+                <li>Ich habe eine _________. (Kreditkarte/Postleitzahl)<span class="answer-inline">Kreditkarte</span></li>
+                <li>Ich möchte mein _________ ändern. (Konto/Pass)<span class="answer-inline">Konto</span></li>
+                <li>Ich brauche einen _________. (Kredit/Kuchen)<span class="answer-inline">Kredit</span></li>
+                <li>Ich möchte Geld nach Deutschland _________. (überweisen/schicken)<span class="answer-inline">überweisen</span></li>
+                <li>Ich zahle mit _________. (Karte/Bargeld)<span class="answer-inline">Karte</span></li>
+                <li>Ich möchte mein _________ schliessen. (Konto/Amt)<span class="answer-inline">Konto</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Почта (12)</h3>
+            <p><em>Выбери правильное слово:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich möchte ein _________ schicken. (Paket/Brief)<span class="answer-inline">Paket</span></li>
+                <li>Ich sende einen _________ nach Berlin. (Brief/Pass)<span class="answer-inline">Brief</span></li>
+                <li>Ich brauche eine _________. (Briefmarke/Kreditkarte)<span class="answer-inline">Briefmarke</span></li>
+                <li>Das _________ ist geschlossen. (Postamt/Bank)<span class="answer-inline">Postamt</span></li>
+                <li>Die _________ ist 10115. (Postleitzahl/Nummer)<span class="answer-inline">Postleitzahl</span></li>
+                <li>Ich schicke ein _________ nach Deutschland. (Paket/Brief)<span class="answer-inline">Paket</span></li>
+                <li>Ich brauche eine _________ für den Brief. (Briefmarke/Karte)<span class="answer-inline">Briefmarke</span></li>
+                <li>Das _________ hat um 18 Uhr zu. (Postamt/Bürgeramt)<span class="answer-inline">Postamt</span></li>
+                <li>Ich sende einen _________ an meine Mutter. (Brief/Pass)<span class="answer-inline">Brief</span></li>
+                <li>Die _________ ist wichtig für die Post. (Postleitzahl/Nummer)<span class="answer-inline">Postleitzahl</span></li>
+                <li>Ich möchte ein _________ mit Geschenken schicken. (Paket/Brief)<span class="answer-inline">Paket</span></li>
+                <li>Ich kaufe _________ am Schalter. (Briefmarken/Kredite)<span class="answer-inline">Briefmarken</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-24: Чтение и анализ новостей</h1>
+            <p class="subtitle">Учимся читать и понимать простые новостные тексты.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Умею вычленять главную мысль из текста, игнорируя незнакомые сложные слова.</li>
+                <li>Могу составить краткий план прочитанного текста.</li>
+                <li>Понимаю основные новостные заголовки и формулировки.</li>
+            </ul>
+
+            <h2>1. Структура новостного текста</h2>
+            <p>Новостная статья обычно состоит из:</p>
+            <ul>
+                <li><strong>Überschrift</strong> — заголовок</li>
+                <li><strong>Lead</strong> — вводная часть (самая важная информация)</li>
+                <li><strong>Hauptteil</strong> — основная часть (детали)</li>
+                <li><strong>Schluss</strong> — заключение</li>
+            </ul>
+
+            <h2>2. Типичные слова в новостях</h2>
+            <table>
+                <thead><tr><th>Немецкий</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>heute</strong></td><td>сегодня</td><td><em>Heute ist das Wetter schön.</em></td></tr>
+                    <tr><td><strong>gestern</strong></td><td>вчера</td><td><em>Gestern hat es geregnet.</em></td></tr>
+                    <tr><td><strong>morgen</strong></td><td>завтра</td><td><em>Morgen wird es warm.</em></td></tr>
+                    <tr><td><strong>laut</strong></td><td>согласно</td><td><em>Laut Nachrichten...</em></td></tr>
+                    <tr><td><strong>berichten</strong></td><td>сообщать</td><td><em>Die Zeitung berichtet...</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Как читать новости на уровне A2</h2>
+            <p>Советы для понимания текста:</p>
+            <ul>
+                <li><strong>Сначала прочитай заголовок</strong> — там основная идея</li>
+                <li><strong>Ищи ключевые слова</strong> — даты, имена, места</li>
+                <li><strong>Не переводи каждое слово</strong> — понимай общий смысл</li>
+                <li><strong>Обращай внимание на первое предложение</strong> — там ответы на вопросы Wer? Was? Wann? Wo?</li>
+            </ul>
+
+            <h2>4. Пример новостного текста (A2)</h2>
+            <div class="note">
+                <strong>Beispieltext:</strong><br><br>
+                <strong>Überschrift:</strong> Sommerfest im Park<br><br>
+                <strong>Lead:</strong> Gestern fand ein grosses Sommerfest im Stadtpark statt. Tausende Menschen kamen, um die Sonne zu geniessen.<br><br>
+                <strong>Hauptteil:</strong> Es gab Musik, Essen und Spiele für Kinder. Viele Familien brachten Picknick-Decken mit. Das Wetter war perfekt.<br><br>
+                <strong>Schluss:</strong> Alle Besucher waren zufrieden. Das nächste Fest ist im nächsten Jahr.
+            </div>
+
+            <h2>5. Вопросы к тексту</h2>
+            <p>После чтения ответь на вопросы:</p>
+            <ul>
+                <li><strong>Was?</strong> — Что произошло?</li>
+                <li><strong>Wann?</strong> — Когда?</li>
+                <li><strong>Wo?</strong> — Где?</li>
+                <li><strong>Wer?</strong> — Кто участвовал?</li>
+                <li><strong>Warum?</strong> — Почему?</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">30 слов для чтения новостей.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>die Nachricht, -en</strong> — новость</div>
+                <div class="vocabulary-item"><strong>die Zeitung, -en</strong> — газета</div>
+                <div class="vocabulary-item"><strong>der Artikel, -</strong> — статья</div>
+                <div class="vocabulary-item"><strong>die Überschrift, -en</strong> — заголовок</div>
+                <div class="vocabulary-item"><strong>der Lead, -s</strong> — вводная часть</div>
+                <div class="vocabulary-item"><strong>der Hauptteil, -e</strong> — основная часть</div>
+                <div class="vocabulary-item"><strong>der Schluss, -äe</strong> — заключение</div>
+                <div class="vocabulary-item"><strong>lesen</strong> — читать</div>
+                <div class="vocabulary-item"><strong>verstehen</strong> — понимать</div>
+                <div class="vocabulary-item"><strong>zusammenfassen</strong> — суммировать</div>
+                <div class="vocabulary-item"><strong>der Inhalt, -e</strong> — содержание</div>
+                <div class="vocabulary-item"><strong>die Hauptidee (Sg.)</strong> — главная идея</div>
+                <div class="vocabulary-item"><strong>der Titel, -</strong> — заголовок</div>
+                <div class="vocabulary-item"><strong>berichten</strong> — сообщать</div>
+                <div class="vocabulary-item"><strong>melden</strong> — сообщать, заявлять</div>
+                <div class="vocabulary-item"><strong>heute</strong> — сегодня</div>
+                <div class="vocabulary-item"><strong>gestern</strong> — вчера</div>
+                <div class="vocabulary-item"><strong>morgen</strong> — завтра</div>
+                <div class="vocabulary-item"><strong>laut</strong> — согласно</div>
+                <div class="vocabulary-item"><strong>der Reporter, -</strong> — репортёр</div>
+                <div class="vocabulary-item"><strong>die Reporterin, -nen</strong> — репортёрша</div>
+                <div class="vocabulary-item"><strong>die Sendung, -en</strong> — передача</div>
+                <div class="vocabulary-item"><strong>das Fernsehen, -</strong> — телевидение</div>
+                <div class="vocabulary-item"><strong>das Radio, -s</strong> — радио</div>
+                <div class="vocabulary-item"><strong>das Internet, -s</strong> — интернет</div>
+                <div class="vocabulary-item"><strong>die Website, -s</strong> — сайт</div>
+                <div class="vocabulary-item"><strong>der Link, -s</strong> — ссылка</div>
+                <div class="vocabulary-item"><strong>die Information, -en</strong> — информация</div>
+                <div class="vocabulary-item"><strong>der Text, -e</strong> — текст</div>
+                <div class="vocabulary-item"><strong>die Wörterbuch, -äer</strong> — словарь</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем чтение новостей!</p>
+
+            <h3>Упражнение 49.1: Заголовки (12)</h3>
+            <p><em>Подбери заголовок к тексту:</em></p>
+            <ol class="exercise-list" id="ex-491">
+                <li>Text: Ein Mann findet 100 Euro. — _________<span class="answer-inline">Mann findet Geld</span></li>
+                <li>Text: Das Wetter ist heute warm. — _________<span class="answer-inline">Schönes Wetter heute</span></li>
+                <li>Text: Ein neues Restaurant öffnet. — _________<span class="answer-inline">Neues Restaurant eröffnet</span></li>
+                <li>Text: Kinder spielen im Park. — _________<span class="answer-inline">Kinder spielen im Park</span></li>
+                <li>Text: Der Zug hat Verspätung. — _________<span class="answer-inline">Zug hat Verspätung</span></li>
+                <li>Text: Ein Fest findet statt. — _________<span class="answer-inline">Grosses Fest in der Stadt</span></li>
+                <li>Text: Die Schule beginnt. — _________<span class="answer-inline">Schulbeginn nach Ferien</span></li>
+                <li>Text: Ein Buch wird verkauft. — _________<span class="answer-inline">Buchverkauf im Laden</span></li>
+                <li>Text: Das Konzert ist toll. — _________<span class="answer-inline">Tolles Konzert gestern</span></li>
+                <li>Text: Ein Hund läuft weg. — _________<span class="answer-inline">Hund läuft davon</span></li>
+                <li>Text: Die Blumen blühen. — _________<span class="answer-inline">Frühling: Blumen blühen</span></li>
+                <li>Text: Ein Auto fährt schnell. — _________<span class="answer-inline">Schnelles Auto auf Autobahn</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-491')">Показать ответы</button>
+
+            <h3>Упражнение 49.2: Главная идея (12)</h3>
+            <p><em>Найди главную идею текста:</em></p>
+            <ol class="exercise-list" id="ex-492">
+                <li>Text: Gestern regnete es. Alle blieben zu Hause. — Hauptidee: _________<span class="answer-inline">Schlechtes Wetter gestern</span></li>
+                <li>Text: Maria kocht heute. Sie lädt Freunde ein. — Hauptidee: _________<span class="answer-inline">Maria kocht für Freunde</span></li>
+                <li>Text: Der Bus kommt nicht. Ich bin spät. — Hauptidee: _________<span class="answer-inline">Busverspätung und Verspätung</span></li>
+                <li>Text: Ich lerne Deutsch. Es ist wichtig. — Hauptidee: _________<span class="answer-inline">Deutschlernen ist wichtig</span></li>
+                <li>Text: Das Kind schläft. Es ist müde. — Hauptidee: _________<span class="answer-inline">Kind ist müde und schläft</span></li>
+                <li>Text: Wir fahren nach Berlin. Mit dem Zug. — Hauptidee: _________<span class="answer-inline">Reise nach Berlin mit Zug</span></li>
+                <li>Text: Das Essen war lecker. Alle waren zufrieden. — Hauptidee: _________<span class="answer-inline">Gutes Essen und zufriedene Gäste</span></li>
+                <li>Text: Ich kaufe ein Buch. Im Buchladen. — Hauptidee: _________<span class="answer-inline">Buchkauf im Buchladen</span></li>
+                <li>Text: Der Film beginnt um 20 Uhr. — Hauptidee: _________<span class="answer-inline">Filmbeginn um 20 Uhr</span></li>
+                <li>Text: Die Katze schläft. Auf dem Sofa. — Hauptidee: _________<span class="answer-inline">Katze schläft auf Sofa</span></li>
+                <li>Text: Ich arbeite heute. Im Büro. — Hauptidee: _________<span class="answer-inline">Arbeit im Büro heute</span></li>
+                <li>Text: Das Wetter ist schön. Wir gehen spazieren. — Hauptidee: _________<span class="answer-inline">Schönes Wetter für Spaziergang</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-492')">Показать ответы</button>
+
+            <h3>Упражнение 49.3: Ответы на вопросы (12)</h3>
+            <p><em>Ответь на вопросы по тексту:</em></p>
+            <ol class="exercise-list" id="ex-493">
+                <li>Text: Gestern fand ein Fest statt. Viele Menschen kamen. Es gab Musik und Essen. — Wann? _________<span class="answer-inline">Gestern</span></li>
+                <li>Text: Gestern fand ein Fest statt. Viele Menschen kamen. Es gab Musik und Essen. — Was? _________<span class="answer-inline">Ein Fest</span></li>
+                <li>Text: Gestern fand ein Fest statt. Viele Menschen kamen. Es gab Musik und Essen. — Wer? _________<span class="answer-inline">Viele Menschen</span></li>
+                <li>Text: Gestern fand ein Fest statt. Viele Menschen kamen. Es gab Musik und Essen. — Wo? _________<span class="answer-inline">nicht genannt</span></li>
+                <li>Text: Maria kocht heute. Sie lädt Freunde ein. Das Essen ist um 19 Uhr fertig. — Wer? _________<span class="answer-inline">Maria</span></li>
+                <li>Text: Maria kocht heute. Sie lädt Freunde ein. Das Essen ist um 19 Uhr fertig. — Was? _________<span class="answer-inline">Sie kocht und lädt Freunde ein</span></li>
+                <li>Text: Maria kocht heute. Sie lädt Freunde ein. Das Essen ist um 19 Uhr fertig. — Wann? _________<span class="answer-inline">heute</span></li>
+                <li>Text: Maria kocht heute. Sie lädt Freunde ein. Das Essen ist um 19 Uhr fertig. — Wann Essen? _________<span class="answer-inline">um 19 Uhr</span></li>
+                <li>Text: Der Bus hat Verspätung. Er kommt 10 Minuten später. — Was? _________<span class="answer-inline">Verspätung</span></li>
+                <li>Text: Der Bus hat Verspätung. Er kommt 10 Minuten später. — Wie viel? _________<span class="answer-inline">10 Minuten</span></li>
+                <li>Text: Der Bus hat Verspätung. Er kommt 10 Minuten später. — Warum? _________<span class="answer-inline">nicht genannt</span></li>
+                <li>Text: Der Bus hat Verspätung. Er kommt 10 Minuten später. — Wann? _________<span class="answer-inline">später</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-493')">Показать ответы</button>
+
+            <h3>Упражнение 49.4: Составь план (12)</h3>
+            <p><em>Составь план текста:</em></p>
+            <ol class="exercise-list" id="ex-494">
+                <li>Text: Gestern regnete es. Alle blieben zu Hause. Sie sahen fern. — 1. _________ 2. _________<span class="answer-inline">1. Regen gestern 2. Alle zu Hause</span></li>
+                <li>Text: Heute ist Sonntag. Ich gehe spazieren. Im Park. — 1. _________ 2. _________<span class="answer-inline">1. Sonntag heute 2. Spaziergang im Park</span></li>
+                <li>Text: Morgen beginnt die Schule. Ich muss früh aufstehen. — 1. _________ 2. _________<span class="answer-inline">1. Schulbeginn morgen 2. Früh aufstehen</span></li>
+                <li>Text: Das Wetter ist warm. Wir gehen schwimmen. — 1. _________ 2. _________<span class="answer-inline">1. Warmes Wetter 2. Schwimmen gehen</span></li>
+                <li>Text: Ich kaufe Brot. Im Bäcker. — 1. _________ 2. _________<span class="answer-inline">1. Brotkauf 2. Im Bäcker</span></li>
+                <li>Text: Der Zug fährt um 8 Uhr. Ich bin pünktlich da. — 1. _________ 2. _________<span class="answer-inline">1. Zug um 8 Uhr 2. Pünktlich da</span></li>
+                <li>Text: Das Kind lernt Deutsch. Es ist fleissig. — 1. _________ 2. _________<span class="answer-inline">1. Deutschlernen 2. Kind ist fleissig</span></li>
+                <li>Text: Wir essen Pizza. Im Restaurant. — 1. _________ 2. _________<span class="answer-inline">1. Pizza essen 2. Im Restaurant</span></li>
+                <li>Text: Der Hund bellt. Er sieht einen Fremden. — 1. _________ 2. _________<span class="answer-inline">1. Hund bellt 2. Sieht Fremden</span></li>
+                <li>Text: Ich lese ein Buch. Es ist interessant. — 1. _________ 2. _________<span class="answer-inline">1. Buch lesen 2. Buch ist interessant</span></li>
+                <li>Text: Die Blumen sind rot. Im Garten. — 1. _________ 2. _________<span class="answer-inline">1. Rote Blumen 2. Im Garten</span></li>
+                <li>Text: Wir feiern Geburtstag. Mit Kuchen und Geschenken. — 1. _________ 2. _________<span class="answer-inline">1. Geburtstagsfeier 2. Mit Kuchen und Geschenken</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-494')">Показать ответы</button>
+
+            <h3>Упражнение 49.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи новостные заголовки:</em></p>
+            <ol class="exercise-list" id="ex-495">
+                <li>Мужчина находит 100 евро.<span class="answer-inline">Mann findet 100 Euro.</span></li>
+                <li>Сегодня хорошая погода.<span class="answer-inline">Heute ist das Wetter schön.</span></li>
+                <li>Новый ресторан открывается.<span class="answer-inline">Neues Restaurant öffnet.</span></li>
+                <li>Дети играют в парке.<span class="answer-inline">Kinder spielen im Park.</span></li>
+                <li>Поезд опаздывает.<span class="answer-inline">Zug hat Verspätung.</span></li>
+                <li>Большой праздник в городе.<span class="answer-inline">Grosses Fest in der Stadt.</span></li>
+                <li>Школа начинается после каникул.<span class="answer-inline">Schule beginnt nach Ferien.</span></li>
+                <li>Книга продаётся в магазине.<span class="answer-inline">Buch wird im Laden verkauft.</span></li>
+                <li>Вчера был отличный концерт.<span class="answer-inline">Gestern war tolles Konzert.</span></li>
+                <li>Собака убегает от хозяина.<span class="answer-inline">Hund läuft davon.</span></li>
+                <li>Весна: цветы цветут.<span class="answer-inline">Frühling: Blumen blühen.</span></li>
+                <li>Машина едет быстро по автобану.<span class="answer-inline">Auto fährt schnell auf Autobahn.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-495')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-23.html" class="nav-link">&larr; Предыдущий урок (A2-23)</a>
+        <span class="nav-title">Конец урока A2-24</span>
+        <a href="a2-25.html" class="nav-link">Следующий урок (A2-25) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

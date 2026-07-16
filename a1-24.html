@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-24: Повелительное наклонение (Imperativ)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a1-23.html" class="nav-link">&larr; Урок А1-23</a>
+        <span class="nav-title">Урок А1-24</span>
+        <a href="a1-25.html" class="nav-link">Урок А1-25 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим здоровье, части тела и визит к врачу из урока 23. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Части тела (12)</h3>
+            <p><em>Переведи на немецкий:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>голова<span class="answer-inline">der Kopf</span></li>
+                <li>глаз<span class="answer-inline">das Auge</span></li>
+                <li>ухо<span class="answer-inline">das Ohr</span></li>
+                <li>нос<span class="answer-inline">die Nase</span></li>
+                <li>рот<span class="answer-inline">der Mund</span></li>
+                <li>горло<span class="answer-inline">der Hals</span></li>
+                <li>зуб<span class="answer-inline">der Zahn</span></li>
+                <li>спина<span class="answer-inline">der Rücken</span></li>
+                <li>живот<span class="answer-inline">der Bauch</span></li>
+                <li>рука (кисть)<span class="answer-inline">die Hand</span></li>
+                <li>нога<span class="answer-inline">das Bein</span></li>
+                <li>колено<span class="answer-inline">das Knie</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Боли и симптомы (12)</h3>
+            <p><em>Вставь правильное слово:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich habe _________ (Kopf).<span class="answer-inline">Kopfschmerzen</span></li>
+                <li>Ich habe _________ (Hals).<span class="answer-inline">Halsschmerzen</span></li>
+                <li>Ich habe _________ (Zahn).<span class="answer-inline">Zahnschmerzen</span></li>
+                <li>Ich habe _________ (Bauch).<span class="answer-inline">Bauchschmerzen</span></li>
+                <li>Ich habe _________ (Rücken).<span class="answer-inline">Rückenschmerzen</span></li>
+                <li>Mein Kopf _________. (tun weh)<span class="answer-inline">tut weh</span></li>
+                <li>Meine Nase ist _________. (verstopft)<span class="answer-inline">verstopft</span></li>
+                <li>Ich habe _________. (Fieber)<span class="answer-inline">Fieber</span></li>
+                <li>Ich _________. (husten)<span class="answer-inline">huste</span></li>
+                <li>Mein Auge _________. (tun weh)<span class="answer-inline">tut weh</span></li>
+                <li>Ich habe _________ (Ohr).<span class="answer-inline">Ohrenschmerzen</span></li>
+                <li>Mein Bein _________. (tun weh)<span class="answer-inline">tut weh</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок А1-24: Повелительное наклонение (Imperativ)</h1>
+            <p class="subtitle">Учимся вежливо просить, давать советы и приказывать.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Умею вежливо просить (<strong>Machen Sie bitte...</strong>).</li>
+                <li>Могу давать дружеские советы (<strong>Lern fleißig!</strong>).</li>
+                <li>Знаю формы Imperativ для du, ihr, Sie и для глаголов с отделяемыми приставками.</li>
+            </ul>
+
+            <h2>1. Что такое Imperativ?</h2>
+            <p><strong>Imperativ</strong> — это повелительное наклонение, которое используется для просьб, советов, приказов и указаний. В немецком есть три формы Imperativ:</p>
+            <ul>
+                <li><strong>du</strong> — для одного близкого человека (друг, ребёнок)</li>
+                <li><strong>ihr</strong> — для нескольких близких людей</li>
+                <li><strong>Sie</strong> — для вежливого обращения (официально или к незнакомым)</li>
+            </ul>
+
+            <h2>2. Формы Imperativ</h2>
+            <table>
+                <thead><tr><th>Лицо</th><th>Форма</th><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>du</strong></td><td>глагол без окончания + e</td><td><strong>Komm</strong> hier!</td><td>Иди сюда!</td></tr>
+                    <tr><td><strong>ihr</strong></td><td>глагол в форме ihr (без -t)</td><td><strong>Kommt</strong> hier!</td><td>Идите сюда!</td></tr>
+                    <tr><td><strong>Sie</strong></td><td>глагол + Sie</td><td><strong>Kommen Sie</strong> hier!</td><td>Идите сюда! (вежливо)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Запомни!</strong><br>
+                Для <strong>du</strong>: глагол без окончания + <strong>e</strong> (kommen → <strong>komm</strong>)<br>
+                Для <strong>ihr</strong>: обычная форма ihr без -t (kommen → <strong>kommt</strong>)<br>
+                Для <strong>Sie</strong>: инфинитив + Sie (<strong>Kommen Sie</strong>)<br><br>
+                Исключения (без -e): geh, sieh, bleib, lauf, nimm, gib, sieh
+            </div>
+
+            <h2>3. Вежливые формы (bitte, mal)</h2>
+            <p>Чтобы сделать Imperativ вежливее, добавь <strong>bitte</strong> (пожалуйста) или <strong>mal</strong> (давай/ну):</p>
+            <ul>
+                <li><em><strong>Kommen Sie bitte</strong> herein.</em> — Войдите, пожалуйста.</li>
+                <li><em><strong>Gib mir mal</strong> das Buch.</em> — Дай-ка мне книгу.</li>
+                <li><em><strong>Hör mal</strong> zu!</em> — Послушай!</li>
+            </ul>
+
+            <h2>4. Глаголы с отделяемыми приставками</h2>
+            <p>У глаголов с отделяемыми приставкой (auf-, ein-, mit-, vor-, zu-) приставка уходит в конец:</p>
+            <ul>
+                <li><em><strong>Mach</strong> die Tür <strong>auf</strong>!</em> — Открой дверь!</li>
+                <li><em><strong>Steh</strong> bitte <strong>auf</strong>!</em> — Встаньте, пожалуйста!</li>
+                <li><em><strong>Komm</strong> <strong>mit</strong>!</em> — Иди с нами!</li>
+                <li><em><strong>Setz</strong> dich <strong>hin</strong>!</em> — Садись!</li>
+            </ul>
+
+            <h2>5. Примеры Imperativ</h2>
+            <ul>
+                <li><em><strong>Komm</strong> hier!</em> — Иди сюда!</li>
+                <li><em><strong>Geh</strong> nach Hause!</em> — Иди домой!</li>
+                <li><em><strong>Hör</strong> mir zu!</em> — Слушай меня!</li>
+                <li><em><strong>Nimm</strong> das Buch!</em> — Возьми книгу!</li>
+                <li><em><strong>Sei</strong> still!</em> — Будь тихим!</li>
+                <li><em><strong>Ess</strong> dein Gemüse!</em> — Ешь овощи!</li>
+                <li><em><strong>Trink</strong> Wasser!</em> — Пей воду!</li>
+                <li><em><strong>Schreib</strong> eine E-Mail!</em> — Напиши письмо!</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для Imperativ и повелительных предложений.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>kommen</strong> — приходить</div>
+                <div class="vocabulary-item"><strong>gehen</strong> — идти</div>
+                <div class="vocabulary-item"><strong>machen</strong> — делать</div>
+                <div class="vocabulary-item"><strong>nehmen</strong> — брать</div>
+                <div class="vocabulary-item"><strong>geben</strong> — давать</div>
+                <div class="vocabulary-item"><strong>sprechen</strong> — говорить</div>
+                <div class="vocabulary-item"><strong>schreiben</strong> — писать</div>
+                <div class="vocabulary-item"><strong>lesen</strong> — читать</div>
+                <div class="vocabulary-item"><strong>essen</strong> — есть</div>
+                <div class="vocabulary-item"><strong>trinken</strong> — пить</div>
+                <div class="vocabulary-item"><strong>sehen</strong> — видеть</div>
+                <div class="vocabulary-item"><strong>hören</strong> — слышать</div>
+                <div class="vocabulary-item"><strong>bleiben</strong> — оставаться</div>
+                <div class="vocabulary-item"><strong>laufen</strong> — бежать</div>
+                <div class="vocabulary-item"><strong>setzen</strong> — сажать</div>
+                <div class="vocabulary-item"><strong>aufstehen</strong> — вставать</div>
+                <div class="vocabulary-item"><strong>einladen</strong> — приглашать</div>
+                <div class="vocabulary-item"><strong>mitbringen</strong> — приносить с собой</div>
+                <div class="vocabulary-item"><strong>bitte</strong> — пожалуйста</div>
+                <div class="vocabulary-item"><strong>mal</strong> — давай, ну</div>
+                <div class="vocabulary-item"><strong>hier</strong> — здесь</div>
+                <div class="vocabulary-item"><strong>da</strong> — там</div>
+                <div class="vocabulary-item"><strong>herein</strong> — внутрь</div>
+                <div class="vocabulary-item"><strong>heraus</strong> — наружу</div>
+                <div class="vocabulary-item"><strong>hin</strong> — туда</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем Imperativ!</p>
+
+            <h3>Упражнение 24.1: Imperativ du (12)</h3>
+            <p><em>Поставь глагол в Imperativ du (без -e):</em></p>
+            <ol class="exercise-list" id="ex-241">
+                <li>(kommen) _________ hier!<span class="answer-inline">Komm</span></li>
+                <li>(gehen) _________ nach Hause!<span class="answer-inline">Geh</span></li>
+                <li>(machen) _________ das Fenster zu!<span class="answer-inline">Mach</span></li>
+                <li>(nehmen) _________ das Buch!<span class="answer-inline">Nimm</span></li>
+                <li>(geben) _________ mir das!<span class="answer-inline">Gib</span></li>
+                <li>(sprechen) _________ Deutsch!<span class="answer-inline">Sprich</span></li>
+                <li>(schreiben) _________ eine E-Mail!<span class="answer-inline">Schreib</span></li>
+                <li>(lesen) _________ das Buch!<span class="answer-inline">Lies</span></li>
+                <li>(sehen) _________ mich an!<span class="answer-inline">Sieh</span></li>
+                <li>(hören) _________ zu!<span class="answer-inline">Hör</span></li>
+                <li>(bleiben) _________ hier!<span class="answer-inline">Bleib</span></li>
+                <li>(laufen) _________ schnell!<span class="answer-inline">Lauf</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-241')">Показать ответы</button>
+
+            <h3>Упражнение 24.2: Imperativ ihr (12)</h3>
+            <p><em>Поставь глагол в Imperativ ihr:</em></p>
+            <ol class="exercise-list" id="ex-242">
+                <li>(kommen) _________ hier!<span class="answer-inline">Kommt</span></li>
+                <li>(gehen) _________ nach Hause!<span class="answer-inline">Geht</span></li>
+                <li>(machen) _________ die Hausaufgaben!<span class="answer-inline">Macht</span></li>
+                <li>(nehmen) _________ das Buch!<span class="answer-inline">Nehmt</span></li>
+                <li>(geben) _________ mir das!<span class="answer-inline">Gebt</span></li>
+                <li>(sprechen) _________ Deutsch!<span class="answer-inline">Sprecht</span></li>
+                <li>(schreiben) _________ eine E-Mail!<span class="answer-inline">Schreibt</span></li>
+                <li>(lesen) _________ das Buch!<span class="answer-inline">Lest</span></li>
+                <li>(sehen) _________ mich an!<span class="answer-inline">Seht</span></li>
+                <li>(hören) _________ zu!<span class="answer-inline">Hört</span></li>
+                <li>(bleiben) _________ hier!<span class="answer-inline">Bleibt</span></li>
+                <li>(laufen) _________ schnell!<span class="answer-inline">Lauft</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-242')">Показать ответы</button>
+
+            <h3>Упражнение 24.3: Imperativ Sie (вежливо) (12)</h3>
+            <p><em>Поставь глагол в Imperativ Sie (глагол + Sie):</em></p>
+            <ol class="exercise-list" id="ex-243">
+                <li>(kommen) _________ bitte hier!<span class="answer-inline">Kommen Sie</span></li>
+                <li>(gehen) _________ bitte nach Hause!<span class="answer-inline">Gehen Sie</span></li>
+                <li>(machen) _________ bitte die Hausaufgaben!<span class="answer-inline">Machen Sie</span></li>
+                <li>(nehmen) _________ bitte das Buch!<span class="answer-inline">Nehmen Sie</span></li>
+                <li>(geben) _________ mir bitte das!<span class="answer-inline">Geben Sie</span></li>
+                <li>(sprechen) _________ bitte Deutsch!<span class="answer-inline">Sprechen Sie</span></li>
+                <li>(schreiben) _________ bitte eine E-Mail!<span class="answer-inline">Schreiben Sie</span></li>
+                <li>(lesen) _________ bitte das Buch!<span class="answer-inline">Lesen Sie</span></li>
+                <li>(sehen) _________ mich bitte an!<span class="answer-inline">Sehen Sie</span></li>
+                <li>(hören) _________ bitte zu!<span class="answer-inline">Hören Sie</span></li>
+                <li>(bleiben) _________ bitte hier!<span class="answer-inline">Bleiben Sie</span></li>
+                <li>(laufen) _________ bitte schnell!<span class="answer-inline">Laufen Sie</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-243')">Показать ответы</button>
+
+            <h3>Упражнение 24.4: Глаголы с отделяемыми приставками (12)</h3>
+            <p><em>Поставь глагол в Imperativ. Приставка уходит в конец:</em></p>
+            <ol class="exercise-list" id="ex-244">
+                <li>(aufstehen) _________ bitte auf!<span class="answer-inline">Stehen Sie</span></li>
+                <li>(einschlafen) _________ schnell ein!<span class="answer-inline">Schlaf</span></li>
+                <li>(mitkommen) _________ mit!<span class="answer-inline">Komm</span></li>
+                <li>(aufräumen) _________ bitte auf!<span class="answer-inline">Räumen Sie</span></li>
+                <li>(einkaufen) _________ bitte ein!<span class="answer-inline">Kaufen Sie</span></li>
+                <li>(anrufen) _________ mich an!<span class="answer-inline">Ruf</span></li>
+                <li>(ausgehen) _________ heute aus!<span class="answer-inline">Geh</span></li>
+                <li>(zurückkommen) _________ bitte zurück!<span class="answer-inline">Kommen Sie</span></li>
+                <li>(einladen) _________ mich ein!<span class="answer-inline">Lade</span></li>
+                <li>(mitbringen) _________ Kuchen mit!<span class="answer-inline">Bring</span></li>
+                <li>(aufmachen) _________ die Tür auf!<span class="answer-inline">Mach</span></li>
+                <li>(fernsehen) _________ nicht so viel!<span class="answer-inline">Sieh</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-244')">Показать ответы</button>
+
+            <h3>Упражнение 24.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения. Используй Imperativ!</em></p>
+            <ol class="exercise-list" id="ex-245">
+                <li>Иди сюда!<span class="answer-inline">Komm hier!</span></li>
+                <li>Идите домой!<span class="answer-inline">Geht nach Hause!</span></li>
+                <li>Войдите, пожалуйста!<span class="answer-inline">Kommen Sie bitte herein!</span></li>
+                <li>Слушай меня!<span class="answer-inline">Hör mir zu!</span></li>
+                <li>Возьми книгу!<span class="answer-inline">Nimm das Buch!</span></li>
+                <li>Ешь овощи!<span class="answer-inline">Iss dein Gemüse!</span></li>
+                <li>Пей воду!<span class="answer-inline">Trink Wasser!</span></li>
+                <li>Напиши письмо!<span class="answer-inline">Schreib einen Brief!</span></li>
+                <li>Открой дверь!<span class="answer-inline">Mach die Tür auf!</span></li>
+                <li>Встаньте, пожалуйста!<span class="answer-inline">Stehen Sie bitte auf!</span></li>
+                <li>Иди с нами!<span class="answer-inline">Komm mit!</span></li>
+                <li>Будь тихим!<span class="answer-inline">Sei still!</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-245')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a1-23.html" class="nav-link">&larr; Предыдущий урок (А1-23)</a>
+        <span class="nav-title">Конец урока А1-24</span>
+        <a href="a1-25.html" class="nav-link">Следующий урок (А1-25) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

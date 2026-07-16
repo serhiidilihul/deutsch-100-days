@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок B2-8: Распространенное определение (Erweitertes Attribut)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="b2-7.html" class="nav-link">&larr; Урок B2-7</a>
+        <span class="nav-title">Урок B2-8</span>
+        <a href="b2-9.html" class="nav-link">Урок B2-9 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим субстантивацию глаголов и прилагательных. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Субстантивация глаголов (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Das _________ ist wichtig. (lesen/das Lesen)<span class="answer-inline">Lesen</span></li>
+                <li>Das _________ macht Spass. (schwimmen/das Schwimmen)<span class="answer-inline">Schwimmen</span></li>
+                <li>Das _________ ist schwer. (arbeiten/das Arbeiten)<span class="answer-inline">Arbeiten</span></li>
+                <li>Das _________ ist mein Hobby. (reisen/das Reisen)<span class="answer-inline">Reisen</span></li>
+                <li>Das _________ ist verboten. (rauchen/das Rauchen)<span class="answer-inline">Rauchen</span></li>
+                <li>Ich mag das _________ . (grün/das Grüne)<span class="answer-inline">Grüne</span></li>
+                <li>Das _________ ist gesund. (frisch/das Frische)<span class="answer-inline">Frische</span></li>
+                <li>Das _________ ist interessant. (neu/das Neue)<span class="answer-inline">Neue</span></li>
+                <li>Das _________ ist alt. (alt/das Alte)<span class="answer-inline">Alte</span></li>
+                <li>Das _________ ist schön. (schön/das Schöne)<span class="answer-inline">Schöne</span></li>
+                <li>Das _________ ist gut. (gut/das Gute)<span class="answer-inline">Gute</span></li>
+                <li>Das _________ ist schlecht. (schlecht/das Schlechte)<span class="answer-inline">Schlechte</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Субстантивация прилагательных (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich mag das _________ . (blau/das Blaue)<span class="answer-inline">Blaue</span></li>
+                <li>Das _________ ist teuer. (teuer/das Teure)<span class="answer-inline">Teure</span></li>
+                <li>Das _________ ist billig. (billig/das Billige)<span class="answer-inline">Billige</span></li>
+                <li>Das _________ ist schnell. (schnell/das Schnelle)<span class="answer-inline">Schnelle</span></li>
+                <li>Das _________ ist langsam. (langsam/das Langsame)<span class="answer-inline">Langsame</span></li>
+                <li>Das _________ ist gross. (gross/das Grosse)<span class="answer-inline">Grosse</span></li>
+                <li>Das _________ ist klein. (klein/das Kleine)<span class="answer-inline">Kleine</span></li>
+                <li>Das _________ ist hell. (hell/das Helle)<span class="answer-inline">Helle</span></li>
+                <li>Das _________ ist dunkel. (dunkel/das Dunkle)<span class="answer-inline">Dunkle</span></li>
+                <li>Das _________ ist warm. (warm/das Warme)<span class="answer-inline">Warme</span></li>
+                <li>Das _________ ist kalt. (kalt/das Kalte)<span class="answer-inline">Kalte</span></li>
+                <li>Das _________ ist weich. (weich/das Weiche)<span class="answer-inline">Weiche</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок B2-8: Распространенное определение (Erweitertes Attribut)</h1>
+            <p class="subtitle">Der von dem Professor geschriebene Brief — сложные определения с причастиями.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Строю сложные определения с помощью причастий.</li>
+                <li>Использую erweitertes Attribut для точного описания.</li>
+                <li>Различаю Partizip I и Partizip II в определениях.</li>
+            </ul>
+
+            <h2>1. Что такое Erweitertes Attribut?</h2>
+            <p>Erweitertes Attribut — это распространённое определение, которое состоит из нескольких слов:</p>
+
+            <table>
+                <thead><tr><th>Тип</th><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Partizip I</strong></td><td><em>Der lesende Mann</em></td><td>Читающий мужчина</td></tr>
+                    <tr><td><strong>Partizip II</strong></td><td><em>Der gelesene Brief</em></td><td>Прочитанное письмо</td></tr>
+                    <tr><td><strong>С предлогом</strong></td><td><em>Der von dem Professor geschriebene Brief</em></td><td>Письмо, написанное профессором</td></tr>
+                    <tr><td><strong>С союзом</strong></td><td><em>Der Mann, der das Buch liest</em></td><td>Мужчина, который читает книгу</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Важно!</strong><br>
+                <strong>Partizip I</strong> (lesend) = активное значение (читающий)<br>
+                <strong>Partizip II</strong> (gelesen) = пассивное значение (прочитанный)<br>
+                Причастия согласуются с существительным в роде, числе и падеже.
+            </div>
+
+            <h2>2. Partizip I als Attribut</h2>
+            <p>Partizip I описывает активное действие:</p>
+
+            <table>
+                <thead><tr><th>Глагол</th><th>Partizip I</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>lesen</strong></td><td>lesend</td><td><em>Der lesende Mann</em> — читающий мужчина</td></tr>
+                    <tr><td><strong>arbeiten</strong></td><td>arbeitend</td><td><em>Die arbeitende Frau</em> — работающая женщина</td></tr>
+                    <tr><td><strong>sprechen</strong></td><td>sprechend</td><td><em>Der sprechende Schüler</em> — говорящий ученик</td></tr>
+                    <tr><td><strong>laufen</strong></td><td>laufend</td><td><em>Der laufende Mann</em> — бегущий мужчина</td></tr>
+                    <tr><td><strong>schwimmen</strong></td><td>schwimmend</td><td><em>Das schwimmende Kind</em> — плавающий ребёнок</td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Partizip II als Attribut</h2>
+            <p>Partizip II описывает завершённое действие или состояние:</p>
+
+            <table>
+                <thead><tr><th>Глагол</th><th>Partizip II</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>lesen</strong></td><td>gelesen</td><td><em>Das gelesene Buch</em> — прочитанная книга</td></tr>
+                    <tr><td><strong>schreiben</strong></td><td>geschrieben</td><td><em>Der geschriebene Brief</em> — написанное письмо</td></tr>
+                    <tr><td><strong>arbeiten</strong></td><td>gearbeitet</td><td><em>Die gearbeitete Aufgabe</em> — выполненное задание</td></tr>
+                    <tr><td><strong>laufen</strong></td><td>gelaufen</td><td><em>Der gelaufene Weg</em> — пройденный путь</td></tr>
+                    <tr><td><strong>sehen</strong></td><td>gesehen</td><td><em>Das gesehene Bild</em> — увиденная картина</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Erweitertes Attribut с предлогами</h2>
+            <p>Сложные определения могут содержать предлоги:</p>
+
+            <table>
+                <thead><tr><th>Структура</th><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>von + D + Partizip II</strong></td><td><em>Der von dem Professor geschriebene Brief</em></td><td>Письмо, написанное профессором</td></tr>
+                    <tr><td><strong>mit + D + Partizip II</strong></td><td><em>Das mit dem Stift geschriebene Wort</em></td><td>Слово, написанное ручкой</td></tr>
+                    <tr><td><strong>in + D + Partizip II</strong></td><td><em>Das in dem Buch beschriebene Problem</em></td><td>Проблема, описанная в книге</td></tr>
+                    <tr><td><strong>zu + D + Partizip II</strong></td><td><em>Der zu lösende Aufgabe</em></td><td>Задача, которую нужно решить</td></tr>
+                </tbody>
+            </table>
+
+            <h2>5. Примеры использования</h2>
+            <ul>
+                <li><em>Der von dem Professor geschriebene Brief ist interessant.</em> — Письмо, написанное профессором, интересное.</li>
+                <li><em>Das in dem Buch beschriebene Problem ist schwer.</em> — Проблема, описанная в книге, сложная.</li>
+                <li><em>Der lesende Mann liest ein Buch.</em> — Читающий мужчина читает книгу.</li>
+                <li><em>Die gearbeitete Aufgabe ist fertig.</em> — Выполненное задание готово.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для расширенных определений.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>der Brief, -e</strong> — письмо</div>
+                <div class="vocabulary-item"><strong>das Buch, -äe</strong> — книга</div>
+                <div class="vocabulary-item"><strong>der Mann, -äe</strong> — мужчина</div>
+                <div class="vocabulary-item"><strong>die Frau, -en</strong> — женщина</div>
+                <div class="vocabulary-item"><strong>der Schüler, -</strong> — ученик</div>
+                <div class="vocabulary-item"><strong>die Aufgabe, -n</strong> — задача</div>
+                <div class="vocabulary-item"><strong>das Problem, -e</strong> — проблема</div>
+                <div class="vocabulary-item"><strong>der Weg, -e</strong> — путь</div>
+                <div class="vocabulary-item"><strong>das Bild, -er</strong> — картина</div>
+                <div class="vocabulary-item"><strong>das Wort, -e</strong> — слово</div>
+                <div class="vocabulary-item"><strong>der Satz, -äe</strong> — предложение</div>
+                <div class="vocabulary-item"><strong>die Geschichte, -n</strong> — история</div>
+                <div class="vocabulary-item"><strong>der Artikel, -</strong> — статья</div>
+                <div class="vocabulary-item"><strong>der Bericht, -e</strong> — отчёт</div>
+                <div class="vocabulary-item"><strong>die Beschreibung, -en</strong> — описание</div>
+                <div class="vocabulary-item"><strong>die Erklärung, -en</strong> — объяснение</div>
+                <div class="vocabulary-item"><strong>die Analyse, -n</strong> — анализ</div>
+                <div class="vocabulary-item"><strong>die Untersuchung, -en</strong> — исследование</div>
+                <div class="vocabulary-item"><strong>der Professor, -en</strong> — профессор</div>
+                <div class="vocabulary-item"><strong>der Student, -en</strong> — студент</div>
+                <div class="vocabulary-item"><strong>der Lehrer, -</strong> — учитель</div>
+                <div class="vocabulary-item"><strong>der Autor, -en</strong> — автор</div>
+                <div class="vocabulary-item"><strong>der Schriftsteller, -</strong> — писатель</div>
+                <div class="vocabulary-item"><strong>der Journalist, -en</strong> — журналист</div>
+                <div class="vocabulary-item"><strong>der Forscher, -</strong> — исследователь</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем erweitertes Attribut!</p>
+
+            <h3>Упражнение 8.1: Partizip I (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-881">
+                <li>Der _________ Mann liest ein Buch. (lesend/gelesen)<span class="answer-inline">lesende</span></li>
+                <li>Die _________ Frau arbeitet. (arbeitend/gearbeitet)<span class="answer-inline">arbeitende</span></li>
+                <li>Das _________ Kind spielt. (spielend/gespielt)<span class="answer-inline">spielende</span></li>
+                <li>Der _________ Schüler lernt. (lernend/gelernt)<span class="answer-inline">lernende</span></li>
+                <li>Die _________ Lehrerin unterrichtet. (unterrichtend/unterrichtet)<span class="answer-inline">unterrichtende</span></li>
+                <li>Der _________ Hund bellt. (bellend/gebellt)<span class="answer-inline">bellende</span></li>
+                <li>Die _________ Katze schläft. (schlafend/geschlafen)<span class="answer-inline">schlafende</span></li>
+                <li>Der _________ Vogel singt. (singend/gesungen)<span class="answer-inline">singende</span></li>
+                <li>Die _________ Blume blüht. (blühend/geblüht)<span class="answer-inline">blühende</span></li>
+                <li>Der _________ Baum wächst. (wachsend/gewachsen)<span class="answer-inline">wachsende</span></li>
+                <li>Die _________ Sonne scheint. (scheinend/geschienen)<span class="answer-inline">scheinende</span></li>
+                <li>Der _________ Wind weht. (wehend/geweht)<span class="answer-inline">wehende</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-881')">Показать ответы</button>
+
+            <h3>Упражнение 8.2: Partizip II (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-882">
+                <li>Das _________ Buch ist interessant. (lesend/gelesen)<span class="answer-inline">gelesene</span></li>
+                <li>Der _________ Brief ist wichtig. (schreibend/geschrieben)<span class="answer-inline">geschriebene</span></li>
+                <li>Die _________ Aufgabe ist fertig. (machend/gemacht)<span class="answer-inline">gemachte</span></li>
+                <li>Der _________ Film war toll. (laufend/gelaufen)<span class="answer-inline">gelaufene</span></li>
+                <li>Die _________ Tür ist offen. (stehend/gestanden)<span class="answer-inline">stehende</span></li>
+                <li>Das _________ Auto ist neu. (fahrend/gefahren)<span class="answer-inline">gefahrene</span></li>
+                <li>Der _________ Kaffee ist heiss. (trinkend/getrunken)<span class="answer-inline">getrunkene</span></li>
+                <li>Die _________ Blumen sind schön. (blühend/geblüht)<span class="answer-inline">blühenden</span></li>
+                <li>Das _________ Haus ist alt. (bauend/gebaut)<span class="answer-inline">gebaute</span></li>
+                <li>Der _________ Schüler lernt. (lernend/gelernt)<span class="answer-inline">lernende</span></li>
+                <li>Die _________ Musik ist schön. (klingend/geklungen)<span class="answer-inline">klingende</span></li>
+                <li>Der _________ Weg ist lang. (gehend/gegangen)<span class="answer-inline">gegangene</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-882')">Показать ответы</button>
+
+            <h3>Упражнение 8.3: Erweitertes Attribut с предлогами (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-883">
+                <li>Der _________ Brief ist wichtig. (von dem Professor geschriebene/vom Professor geschriebene)<span class="answer-inline">vom Professor geschriebene</span></li>
+                <li>Das _________ Buch ist interessant. (in der Bibliothek gefundene/in der Bibliothek gefundene)<span class="answer-inline">in der Bibliothek gefundene</span></li>
+                <li>Die _________ Aufgabe ist schwer. (von dem Lehrer gestellte/vom Lehrer gestellte)<span class="answer-inline">vom Lehrer gestellte</span></li>
+                <li>Der _________ Film war gut. (von dem Regisseur gedrehte/vom Regisseur gedrehte)<span class="answer-inline">vom Regisseur gedrehte</span></li>
+                <li>Das _________ Problem ist gelöst. (von dem Team gelöste/vom Team gelöste)<span class="answer-inline">vom Team gelöste</span></li>
+                <li>Die _________ Geschichte ist wahr. (von dem Zeugen erzählte/vom Zeugen erzählte)<span class="answer-inline">vom Zeugen erzählte</span></li>
+                <li>Der _________ Artikel ist wichtig. (in der Zeitung veröffentlichte/in der Zeitung veröffentlichte)<span class="answer-inline">in der Zeitung veröffentlichte</span></li>
+                <li>Das _________ Gemälde ist teuer. (von dem Künstler gemalte/vom Künstler gemalte)<span class="answer-inline">vom Künstler gemalte</span></li>
+                <li>Die _________ Entscheidung ist richtig. (von dem Chef getroffene/vom Chef getroffene)<span class="answer-inline">vom Chef getroffene</span></li>
+                <li>Der _________ Vertrag ist unterschrieben. (von beiden Parteien unterzeichnete/von beiden Parteien unterzeichnete)<span class="answer-inline">von beiden Parteien unterzeichnete</span></li>
+                <li>Das _________ Gesetz ist neu. (von dem Parlament beschlossene/vom Parlament beschlossene)<span class="answer-inline">vom Parlament beschlossene</span></li>
+                <li>Die _________ Entdeckung ist wichtig. (von dem Wissenschaftler gemachte/vom Wissenschaftler gemachte)<span class="answer-inline">vom Wissenschaftler gemachte</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-883')">Показать ответы</button>
+
+            <h3>Упражнение 8.4: Смешанные формы (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-884">
+                <li>Der _________ Mann liest. (lesend/gelesen)<span class="answer-inline">lesende</span></li>
+                <li>Das _________ Buch ist alt. (lesend/gelesen)<span class="answer-inline">gelesene</span></li>
+                <li>Die _________ Frau arbeitet. (arbeitend/gearbeitet)<span class="answer-inline">arbeitende</span></li>
+                <li>Der _________ Film war gut. (laufend/gelaufen)<span class="answer-inline">gelaufene</span></li>
+                <li>Die _________ Kinder spielen. (spielend/gespielt)<span class="answer-inline">spielenden</span></li>
+                <li>Das _________ Auto ist schnell. (fahrend/gefahren)<span class="answer-inline">gefahrene</span></li>
+                <li>Der _________ Brief ist lang. (schreibend/geschrieben)<span class="answer-inline">geschriebene</span></li>
+                <li>Die _________ Tür ist offen. (stehend/gestanden)<span class="answer-inline">stehende</span></li>
+                <li>Der _________ Kaffee ist heiss. (trinkend/getrunken)<span class="answer-inline">getrunkene</span></li>
+                <li>Die _________ Blumen sind schön. (blühend/geblüht)<span class="answer-inline">blühenden</span></li>
+                <li>Das _________ Haus ist alt. (bauend/gebaut)<span class="answer-inline">gebaute</span></li>
+                <li>Der _________ Schüler lernt. (lernend/gelernt)<span class="answer-inline">lernende</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-884')">Показать ответы</button>
+
+            <h3>Упражнение 8.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-885">
+                <li>Читающий мужчина читает книгу.<span class="answer-inline">Der lesende Mann liest ein Buch.</span></li>
+                <li>Прочитанная книга интересная.<span class="answer-inline">Das gelesene Buch ist interessant.</span></li>
+                <li>Письмо, написанное профессором, ist wichtig.<span class="answer-inline">Der vom Professor geschriebene Brief ist wichtig.</span></li>
+                <li>Работающая женщина ist müde.<span class="answer-inline">Die arbeitende Frau ist müde.</span></li>
+                <li>Выполненное задание ist fertig.<span class="answer-inline">Die gemachte Aufgabe ist fertig.</span></li>
+                <li>Проблема, описанная в книге, ist schwer.<span class="answer-inline">Das in dem Buch beschriebene Problem ist schwer.</span></li>
+                <li>Фильм, снятый режиссёром, war gut.<span class="answer-inline">Der vom Regisseur gedrehte Film war gut.</span></li>
+                <li>Плавающий ребёнок ist schnell.<span class="answer-inline">Das schwimmende Kind ist schnell.</span></li>
+                <li>Слово, написанное ручкой, ist lesbar.<span class="answer-inline">Das mit dem Stift geschriebene Wort ist lesbar.</span></li>
+                <li>Путь, пройденный пешком, war lang.<span class="answer-inline">Der zu Fuss gegangene Weg war lang.</span></li>
+                <li>Результат, достигнутый командой, ist gut.<span class="answer-inline">Das von dem Team erreichte Ergebnis ist gut.</span></li>
+                <li>Решение, принятое руководством, ist richtig.<span class="answer-inline">Die von der Leitung getroffene Entscheidung ist richtig.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-885')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="b2-7.html" class="nav-link">&larr; Предыдущий урок (B2-7)</a>
+        <span class="nav-title">Конец урока B2-8</span>
+        <a href="b2-9.html" class="nav-link">Следующий урок (B2-9) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

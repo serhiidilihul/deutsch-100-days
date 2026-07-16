@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок A2-4: Склонение прилагательных — Сильное и смешанное склонение</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a2-3.html" class="nav-link">&larr; Урок A2-3</a>
+        <span class="nav-title">Урок A2-4</span>
+        <a href="a2-5.html" class="nav-link">Урок A2-5 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим слабое склонение прилагательных из урока A2-3. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Окончания прилагательных (12)</h3>
+            <p><em>Вставь правильное окончание:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich sehe _________ schön Mann. (der)<span class="answer-inline">den schönen</span></li>
+                <li>Ich sehe _________ schön Frau. (die)<span class="answer-inline">die schöne</span></li>
+                <li>Ich sehe _________ schön Kind. (das)<span class="answer-inline">das schöne</span></li>
+                <li>Ich sehe _________ schön Kinder. (die)<span class="answer-inline">die schönen</span></li>
+                <li>Ich helfe _________ alt Mann. (der)<span class="answer-inline">dem alten</span></li>
+                <li>Ich helfe _________ alt Frau. (die)<span class="answer-inline">der alten</span></li>
+                <li>Ich helfe _________ alt Kind. (das)<span class="answer-inline">dem alten</span></li>
+                <li>Ich helfe _________ alt Leute. (die)<span class="answer-inline">den alten</span></li>
+                <li>Ich gebe _________ gut Buch. (das)<span class="answer-inline">das gute</span></li>
+                <li>Ich gebe _________ gut Kaffee. (der)<span class="answer-inline">den guten</span></li>
+                <li>Ich gebe _________ gut Wasser. (das)<span class="answer-inline">das gute</span></li>
+                <li>Ich gebe _________ gut Geschenk. (das)<span class="answer-inline">das gute</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Выбери окончание -e или -en (12)</h3>
+            <p><em>Вставь -e или -en:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>der schön_________ Mann<span class="answer-inline">e</span></li>
+                <li>die schön_________ Frau<span class="answer-inline">e</span></li>
+                <li>das schön_________ Kind<span class="answer-inline">e</span></li>
+                <li>die schön_________ Kinder<span class="answer-inline">en</span></li>
+                <li>den schön_________ Mann<span class="answer-inline">en</span></li>
+                <li>die schön_________ Frau<span class="answer-inline">e</span></li>
+                <li>das schön_________ Kind<span class="answer-inline">e</span></li>
+                <li>die schön_________ Kinder<span class="answer-inline">en</span></li>
+                <li>dem schön_________ Mann<span class="answer-inline">en</span></li>
+                <li>der schön_________ Frau<span class="answer-inline">en</span></li>
+                <li>dem schön_________ Kind<span class="answer-inline">en</span></li>
+                <li>den schön_________ Kindern<span class="answer-inline">en</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок A2-4: Склонение прилагательных — Сильное и смешанное склонение</h1>
+            <p class="subtitle">Учимся склонять прилагательные после ein/eine и без артикля.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Умею склонять прилагательные после <strong>ein/eine</strong> (смешанное склонение).</li>
+                <li>Умею склонять прилагательные <strong>без артикля</strong> (сильное склонение).</li>
+                <li>Могу подробно описать предметы интерьера или одежду с цветами и свойствами.</li>
+            </ul>
+
+            <h2>1. Сильное склонение (starke Deklination)</h2>
+            <p>Сильное склонение используется <strong>без артикля</strong>. Прилагательное получает <strong>полные окончания</strong> как у определённого артикля:</p>
+
+            <table>
+                <thead><tr><th>Падеж</th><th>Maskulin</th><th>Femininum</th><th>Neutrum</th><th>Plural</th></tr></thead>
+                <tbody>
+                    <tr><td>Nominativ</td><td>schöner Mann</td><td>schöne Frau</td><td>schönes Kind</td><td>schöne Kinder</td></tr>
+                    <tr><td>Akkusativ</td><td>schönen Mann</td><td>schöne Frau</td><td>schönes Kind</td><td>schöne Kinder</td></tr>
+                    <tr><td>Dativ</td><td>schönem Mann</td><td>schöner Frau</td><td>schönem Kind</td><td>schönen Kindern</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Запомни окончания сильного склонения:</strong><br>
+                <strong>-er</strong> (Nominativ maskulin: schöner Mann)<br>
+                <strong>-e</strong> (Nominativ feminin/plural: schöne Frau, schöne Kinder)<br>
+                <strong>-es</strong> (Nominativ neutrum: schönes Kind)<br>
+                <strong>-en</strong> (Akkusativ maskulin, Dativ maskulin/plural: schönen Mann, schönem Mann, schönen Kindern)<br>
+                <strong>-em</strong> (Dativ maskulin/neutrum: schönem Mann, schönem Kind)<br>
+                <strong>-er</strong> (Dativ feminin: schöner Frau)
+            </div>
+
+            <h2>2. Смешанное склонение (gemischte Deklination)</h2>
+            <p>Смешанное склонение используется <strong>после неопределённого артикля</strong> (ein, eine). Прилагательное получает <strong>окончания -en</strong> (кроме Nominativ):</p>
+
+            <table>
+                <thead><tr><th>Падеж</th><th>Maskulin</th><th>Femininum</th><th>Neutrum</th><th>Plural</th></tr></thead>
+                <tbody>
+                    <tr><td>Nominativ</td><td>ein schöner Mann</td><td>eine schöne Frau</td><td>ein schönes Kind</td><td>keine schönen Kinder</td></tr>
+                    <tr><td>Akkusativ</td><td>einen schönen Mann</td><td>eine schöne Frau</td><td>ein schönes Kind</td><td>keine schönen Kinder</td></tr>
+                    <tr><td>Dativ</td><td>einem schönen Mann</td><td>einer schönen Frau</td><td>einem schönen Kind</td><td>keinen schönen Kindern</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Запомни окончания смешанного склонения:</strong><br>
+                После ein/eine прилагательное почти всегда получает <strong>-en</strong>, кроме Nominativ maskulin (-er), feminin (-e) и neutrum (-es).
+            </div>
+
+            <h2>3. Сравнение трёх типов склонения</h2>
+            <table>
+                <thead><tr><th>Тип</th><th>Артикль</th><th>Пример (Nominativ)</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Слабое</strong></td><td>der/die/das</td><td>der schöne Mann, die schöne Frau</td></tr>
+                    <tr><td><strong>Смешанное</strong></td><td>ein/eine</td><td>ein schöner Mann, eine schöne Frau</td></tr>
+                    <tr><td><strong>Сильное</strong></td><td>без артикля</td><td>schöner Mann, schöne Frau</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Примеры всех трёх типов</h2>
+            <ul>
+                <li><em><strong>Слабое:</strong> Ich sehe <strong>den schönen</strong> Mann.</em> — Я вижу красивого мужчину.</li>
+                <li><em><strong>Смешанное:</strong> Ich sehe <strong>einen schönen</strong> Mann.</em> — Я вижу красивого мужчину.</li>
+                <li><em><strong>Сильное:</strong> Ich sehe <strong>schönen</strong> Mann.</em> — Я вижу красивого мужчину.</li>
+            </ul>
+
+            <h2>5. Практическое применение</h2>
+            <p>Теперь ты можешь описывать предметы подробно:</p>
+            <ul>
+                <li><em>Ich sehe <strong>einen großen, roten</strong> Apfel.</em> — Я вижу большой красный яблоко.</li>
+                <li><em>Die <strong>schöne, alte</strong> Frau liest ein <strong>interessantes</strong> Buch.</em> — Красивая старая женщина читает интересную книгу.</li>
+                <li><em>Ein <strong>kleiner, weißer</strong> Hund läuft.</em> — Бежит маленький белый пёс.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для описания предметов и людей.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>schön</strong> — красивый</div>
+                <div class="vocabulary-item"><strong>groß</strong> — большой</div>
+                <div class="vocabulary-item"><strong>klein</strong> — маленький</div>
+                <div class="vocabulary-item"><strong>jung</strong> — молодой</div>
+                <div class="vocabulary-item"><strong>alt</strong> — старый</div>
+                <div class="vocabulary-item"><strong>gut</strong> — хороший</div>
+                <div class="vocabulary-item"><strong>schlecht</strong> — плохой</div>
+                <div class="vocabulary-item"><strong>neu</strong> — новый</div>
+                <div class="vocabulary-item"><strong>teuer</strong> — дорогой</div>
+                <div class="vocabulary-item"><strong>billig</strong> — дешёвый</div>
+                <div class="vocabulary-item"><strong>interessant</strong> — интересный</div>
+                <div class="vocabulary-item"><strong>langweilig</strong> — скучный</div>
+                <div class="vocabulary-item"><strong>wichtig</strong> — важный</div>
+                <div class="vocabulary-item"><strong>einfach</strong> — простой</div>
+                <div class="vocabulary-item"><strong>schwer</strong> — тяжёлый, сложный</div>
+                <div class="vocabulary-item"><strong>schnell</strong> — быстрый</div>
+                <div class="vocabulary-item"><strong>langsam</strong> — медленный</div>
+                <div class="vocabulary-item"><strong>hell</strong> — светлый</div>
+                <div class="vocabulary-item"><strong>dunkel</strong> — тёмный</div>
+                <div class="vocabulary-item"><strong>warm</strong> — тёплый</div>
+                <div class="vocabulary-item"><strong>kalt</strong> — холодный</div>
+                <div class="vocabulary-item"><strong>freundlich</strong> — дружелюбный</div>
+                <div class="vocabulary-item"><strong>nett</strong> — милый</div>
+                <div class="vocabulary-item"><strong>klug</strong> — умный</div>
+                <div class="vocabulary-item"><strong>reich</strong> — богатый</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем сильное и смешанное склонение!</p>
+
+            <h3>Упражнение 29.1: Сильное склонение (12)</h3>
+            <p><em>Вставь правильное окончание прилагательного (без артикля):</em></p>
+            <ol class="exercise-list" id="ex-291">
+                <li>Ich sehe _________ schön Mann. (Nominativ)<span class="answer-inline">schönen</span></li>
+                <li>Ich sehe _________ schön Frau. (Nominativ)<span class="answer-inline">schöne</span></li>
+                <li>Ich sehe _________ schön Kind. (Nominativ)<span class="answer-inline">schönes</span></li>
+                <li>Ich sehe _________ schön Kinder. (Nominativ)<span class="answer-inline">schöne</span></li>
+                <li>Ich sehe _________ groß Mann. (Akkusativ)<span class="answer-inline">großen</span></li>
+                <li>Ich sehe _________ klein Frau. (Akkusativ)<span class="answer-inline">kleine</span></li>
+                <li>Ich sehe _________ jung Kind. (Akkusativ)<span class="answer-inline">junges</span></li>
+                <li>Ich sehe _________ alt Leute. (Akkusativ)<span class="answer-inline">alte</span></li>
+                <li>Ich helfe _________ alt Mann. (Dativ)<span class="answer-inline">altem</span></li>
+                <li>Ich helfe _________ jung Frau. (Dativ)<span class="answer-inline">junger</span></li>
+                <li>Ich helfe _________ klein Kind. (Dativ)<span class="answer-inline">kleinem</span></li>
+                <li>Ich helfe _________ gut Leute. (Dativ)<span class="answer-inline">guten</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-291')">Показать ответы</button>
+
+            <h3>Упражнение 29.2: Смешанное склонение (12)</h3>
+            <p><em>Вставь правильное окончание после ein/eine:</em></p>
+            <ol class="exercise-list" id="ex-292">
+                <li>Ich sehe _________ schön Mann. (ein)<span class="answer-inline">einen schönen</span></li>
+                <li>Ich sehe _________ schön Frau. (eine)<span class="answer-inline">eine schöne</span></li>
+                <li>Ich sehe _________ schön Kind. (ein)<span class="answer-inline">ein schönes</span></li>
+                <li>Ich sehe _________ schön Kinder. (keine)<span class="answer-inline">keine schönen</span></li>
+                <li>Ich habe _________ groß Haus. (ein)<span class="answer-inline">ein großes</span></li>
+                <li>Ich habe _________ klein Wohnung. (eine)<span class="answer-inline">eine kleine</span></li>
+                <li>Ich habe _________ neu Auto. (ein)<span class="answer-inline">ein neues</span></li>
+                <li>Ich habe _________ teuer Kleid. (ein)<span class="answer-inline">ein teures</span></li>
+                <li>Ich kaufe _________ billig Buch. (ein)<span class="answer-inline">ein billiges</span></li>
+                <li>Ich kaufe _________ interessant Zeitung. (eine)<span class="answer-inline">eine interessante</span></li>
+                <li>Ich trinke _________ heiß Kaffee. (einen)<span class="answer-inline">einen heißen</span></li>
+                <li>Ich trinke _________ kalt Wasser. (ein)<span class="answer-inline">ein kaltes</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-292')">Показать ответы</button>
+
+            <h3>Упражнение 29.3: Сравнение трёх типов (12)</h3>
+            <p><em>Выбери правильный артикль или оставь без артикля:</em></p>
+            <ol class="exercise-list" id="ex-293">
+                <li>Ich sehe _________ schönen Mann. (der/ein/—)<span class="answer-inline">den</span></li>
+                <li>Ich sehe _________ schönen Mann. (der/ein/—)<span class="answer-inline">einen</span></li>
+                <li>Ich sehe _________ schönen Mann. (der/ein/—)<span class="answer-inline">schönen</span></li>
+                <li>Ich sehe _________ schöne Frau. (die/eine/—)<span class="answer-inline">die</span></li>
+                <li>Ich sehe _________ schöne Frau. (die/eine/—)<span class="answer-inline">eine</span></li>
+                <li>Ich sehe _________ schöne Frau. (die/eine/—)<span class="answer-inline">schöne</span></li>
+                <li>Ich sehe _________ schönes Kind. (das/ein/—)<span class="answer-inline">das</span></li>
+                <li>Ich sehe _________ schönes Kind. (das/ein/—)<span class="answer-inline">ein</span></li>
+                <li>Ich sehe _________ schönes Kind. (das/ein/—)<span class="answer-inline">schönes</span></li>
+                <li>Ich sehe _________ schönen Kinder. (die/keine/—)<span class="answer-inline">die</span></li>
+                <li>Ich sehe _________ schönen Kinder. (die/keine/—)<span class="answer-inline">keine</span></li>
+                <li>Ich sehe _________ schönen Kinder. (die/keine/—)<span class="answer-inline">schönen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-293')">Показать ответы</button>
+
+            <h3>Упражнение 29.4: Описание предметов (12)</h3>
+            <p><em>Построй предложения с прилагательными:</em></p>
+            <ol class="exercise-list" id="ex-294">
+                <li>ich / ein rot Auto / haben &rarr; Ich ___________________.<span class="answer-inline">habe ein rotes Auto</span></li>
+                <li>ich / eine blau Jacke / tragen &rarr; Ich ___________________.<span class="answer-inline">trage eine blaue Jacke</span></li>
+                <li>ich / ein groß Haus / haben &rarr; Ich ___________________.<span class="answer-inline">habe ein großes Haus</span></li>
+                <li>ich / eine klein Wohnung / haben &rarr; Ich ___________________.<span class="answer-inline">habe eine kleine Wohnung</span></li>
+                <li>ich / ein neu Buch / kaufen &rarr; Ich ___________________.<span class="answer-inline">kaufe ein neues Buch</span></li>
+                <li>ich / eine teuer Uhr / kaufen &rarr; Ich ___________________.<span class="answer-inline">kaufe eine teure Uhr</span></li>
+                <li>ich / ein schnell Zug / sehen &rarr; Ich ___________________.<span class="answer-inline">sehe einen schnellen Zug</span></li>
+                <li>ich / eine langsam Schnecke / sehen &rarr; Ich ___________________.<span class="answer-inline">sehe eine langsame Schnecke</span></li>
+                <li>ich / ein hell Zimmer / haben &rarr; Ich ___________________.<span class="answer-inline">habe ein helles Zimmer</span></li>
+                <li>ich / eine dunkel Nacht / haben &rarr; Ich ___________________.<span class="answer-inline">habe eine dunkle Nacht</span></li>
+                <li>ich / ein warm Kissen / haben &rarr; Ich ___________________.<span class="answer-inline">habe ein warmes Kissen</span></li>
+                <li>ich / eine kalt Suppe / essen &rarr; Ich ___________________.<span class="answer-inline">esse eine kalte Suppe</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-294')">Показать ответы</button>
+
+            <h3>Упражнение 29.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-295">
+                <li>Я вижу красивого мужчину.<span class="answer-inline">Ich sehe einen schönen Mann.</span></li>
+                <li>Я вижу красивую женщину.<span class="answer-inline">Ich sehe eine schöne Frau.</span></li>
+                <li>Я вижу красивого ребёнка.<span class="answer-inline">Ich sehe ein schönes Kind.</span></li>
+                <li>Я вижу красивых детей.<span class="answer-inline">Ich sehe keine schönen Kinder.</span></li>
+                <li>У меня есть большой дом.<span class="answer-inline">Ich habe ein großes Haus.</span></li>
+                <li>У меня есть маленькая квартира.<span class="answer-inline">Ich habe eine kleine Wohnung.</span></li>
+                <li>Я покупаю новую книгу.<span class="answer-inline">Ich kaufe ein neues Buch.</span></li>
+                <li>Я покупаю дорогие часы.<span class="answer-inline">Ich kaufe eine teure Uhr.</span></li>
+                <li>Я вижу быстрый поезд.<span class="answer-inline">Ich sehe einen schnellen Zug.</span></li>
+                <li>Я вижу медленную улитку.<span class="answer-inline">Ich sehe eine langsame Schnecke.</span></li>
+                <li>У меня есть светлая комната.<span class="answer-inline">Ich habe ein helles Zimmer.</span></li>
+                <li>У меня есть тёмная ночь.<span class="answer-inline">Ich habe eine dunkle Nacht.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-295')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a2-3.html" class="nav-link">&larr; Предыдущий урок (A2-3)</a>
+        <span class="nav-title">Конец урока A2-4</span>
+        <a href="a2-5.html" class="nav-link">Следующий урок (A2-5) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-12: Падеж Dativ (Дательный) — Часть 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="a1-11.html" class="nav-link">&larr; Урок А1-11</a>
+        <span class="nav-title">Урок А1-12</span>
+        <a href="a1-13.html" class="nav-link">Урок А1-13 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторение (Wiederholung)</h2>
+            <p class="subtitle">Повторим модальные глаголы и Akkusativ из уроков 10-11. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Модальные глаголы (12)</h3>
+            <p><em>Вставь k&ouml;nnen, m&uuml;ssen или wollen в правильной форме:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich _________ Deutsch sprechen.<span class="answer-inline">kann</span></li>
+                <li>_________ du mir helfen?<span class="answer-inline">Kannst</span></li>
+                <li>Er _________ heute arbeiten.<span class="answer-inline">muss</span></li>
+                <li>Wir _________ nach Berlin fahren.<span class="answer-inline">wollen</span></li>
+                <li>_________ ihr mitkommen?<span class="answer-inline">Wollt</span></li>
+                <li>Sie (она) _________ gut kochen.<span class="answer-inline">kann</span></li>
+                <li>Ich _________ fr&uuml;h aufstehen.<span class="answer-inline">muss</span></li>
+                <li>Was _________ du essen?<span class="answer-inline">willst</span></li>
+                <li>Mein Bruder _________ Arzt werden.<span class="answer-inline">will</span></li>
+                <li>_________ Sie mir helfen?<span class="answer-inline">K&ouml;nnen</span></li>
+                <li>Wir _________ einkaufen gehen.<span class="answer-inline">m&uuml;ssen</span></li>
+                <li>Ihr _________ leise sein.<span class="answer-inline">m&uuml;sst</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Akkusativ — артикли и притяжательные (12)</h3>
+            <p><em>Вставь правильную форму артикля или притяжательного местоимения в Akkusativ:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>Ich sehe _________ (der) Mann.<span class="answer-inline">den</span></li>
+                <li>Sie hat _________ (ein) Schwester.<span class="answer-inline">eine</span></li>
+                <li>Er sucht _________ (sein) Schl&uuml;ssel.<span class="answer-inline">seinen</span></li>
+                <li>Ich liebe _________ (mein) Familie.<span class="answer-inline">meine</span></li>
+                <li>Wir brauchen _________ (ein) Auto.<span class="answer-inline">ein</span></li>
+                <li>Ich kaufe _________ (der) Apfel.<span class="answer-inline">den</span></li>
+                <li>Sie liebt _________ (ihr) Bruder.<span class="answer-inline">ihren</span></li>
+                <li>Er trinkt _________ (der) Tee.<span class="answer-inline">den</span></li>
+                <li>Ich besuche _________ (mein) Mutter.<span class="answer-inline">meine</span></li>
+                <li>Wir treffen _________ (unser) Freunde.<span class="answer-inline">unsere</span></li>
+                <li>Ich habe _________ (ein) Hund.<span class="answer-inline">einen</span></li>
+                <li>Er nimmt _________ (der) Stuhl.<span class="answer-inline">den</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок А1-12: Падеж Dativ (Дательный) — Часть 1</h1>
+            <p class="subtitle">Учимся отвечать на вопрос "Где?" и "Кому?" — меняем артикли в Dativ.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Знаю, как меняются артикли в Dativ (dem, der, dem, den + n).</li>
+                <li>Умею отвечать на вопрос <strong>Wo?</strong> (Где?) и использовать базовые глаголы (helfen, gefallen).</li>
+                <li>Понимаю разницу между Akkusativ и Dativ.</li>
+            </ul>
+
+            <h2>1. Что такое Dativ?</h2>
+            <p><strong>Dativ</strong> (дательный падеж) отвечает на вопросы <strong>wem?</strong> (кому?) и <strong>wo?</strong> (где?). Он показывает, кому что-то дают, помогают или где что-то находится.</p>
+
+            <table>
+                <thead><tr><th>Русский</th><th>Вопрос</th><th>Немецкий (Dativ)</th></tr></thead>
+                <tbody>
+                    <tr><td>Я помогаю <em>другу</em>.</td><td>кому?</td><td>Ich helfe <strong>dem Freund</strong>.</td></tr>
+                    <tr><td>Книга принадлежит <em>женщине</em>.</td><td>кому?</td><td>Das Buch geh&ouml;rt <strong>der Frau</strong>.</td></tr>
+                    <tr><td>Он живёт <em>в городе</em>.</td><td>где?</td><td>Er wohnt in <strong>der Stadt</strong>.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>2. Изменение артиклей в Dativ</h2>
+            <p>В Dativ меняются артикли <strong>всех родов</strong>. Посмотри на таблицу:</p>
+
+            <table>
+                <thead><tr><th>Род / Число</th><th>Nominativ</th><th>Akkusativ</th><th><strong>Dativ</strong></th><th>Пример в Dativ</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Мужской (der)</strong></td><td>der / ein</td><td>den / einen</td><td><strong>dem / einem</strong></td><td>Ich helfe <strong>dem</strong> Mann.</td></tr>
+                    <tr><td><strong>Женский (die)</strong></td><td>die / eine</td><td>die / eine</td><td><strong>der / einer</strong></td><td>Ich helfe <strong>der</strong> Frau.</td></tr>
+                    <tr><td><strong>Средний (das)</strong></td><td>das / ein</td><td>das / ein</td><td><strong>dem / einem</strong></td><td>Ich helfe <strong>dem</strong> Kind.</td></tr>
+                    <tr><td><strong>Множественное (die)</strong></td><td>die / -</td><td>die / -</td><td><strong>den + -n</strong></td><td>Ich helfe <strong>den</strong> Kinder<strong>n</strong>.</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Главные изменения в Dativ:</strong><br>
+                der &rarr; <strong>dem</strong>, ein &rarr; <strong>einem</strong> (мужской и средний род)<br>
+                die &rarr; <strong>der</strong>, eine &rarr; <strong>einer</strong> (женский род)<br>
+                das &rarr; <strong>dem</strong>, ein &rarr; <strong>einem</strong> (средний род)<br>
+                <strong>Множественное число:</strong> die &rarr; <strong>den</strong>, и к существительному добавляется <strong>-n</strong>!
+            </div>
+
+            <h3>Примеры в Dativ:</h3>
+            <ul>
+                <li><em>Ich helfe <strong>dem</strong> Lehrer.</em> — Я помогаю учителю. (мужской род)</li>
+                <li><em>Die Antwort gef&auml;llt <strong>der</strong> Mutter.</em> — Ответ нравится маме. (женский род)</li>
+                <li><em>Das Buch geh&ouml;rt <strong>dem</strong> Kind.</em> — Книга принадлежит ребёнку. (средний род)</li>
+                <li><em>Er hilft <strong>den</strong> Freund<strong>en</strong>.</em> — Он помогает друзьям. (множественное число + n)</li>
+            </ul>
+
+            <h2>3. Глаголы, которые требуют Dativ</h2>
+            <p>Некоторые глаголы в немецком всегда используются с дополнением в Dativ. Вот самые важные:</p>
+
+            <table>
+                <thead><tr><th>Глагол</th><th>Перевод</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>helfen</strong></td><td>помогать</td><td><em>Ich helfe <strong>dem</strong> Freund.</em> (Я помогаю другу.)</td></tr>
+                    <tr><td><strong>gefallen</strong></td><td>нравиться</td><td><em>Das gef&auml;llt <strong>der</strong> Frau.</em> (Это нравится женщине.)</td></tr>
+                    <tr><td><strong>geh&ouml;ren</strong></td><td>принадлежать</td><td><em>Das Buch geh&ouml;rt <strong>dem</strong> Kind.</em> (Книга принадлежит ребёнку.)</td></tr>
+                    <tr><td><strong>danken</strong></td><td>благодарить</td><td><em>Ich danke <strong>dem</strong> Arzt.</em> (Я благодарю врача.)</td></tr>
+                    <tr><td><strong>antworten</strong></td><td>отвечать</td><td><em>Er antwortet <strong>der</strong> Lehrerin.</em> (Он отвечает учительнице.)</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Вопрос Wo? (Где?) с Dativ</h2>
+            <p>Предлоги места <strong>in</strong> (в), <strong>auf</strong> (на), <strong>bei</strong> (у), <strong>mit</strong> (с) требуют Dativ, когда мы отвечаем на вопрос <strong>Wo?</strong> (Где?):</p>
+            <ul>
+                <li><em>Ich bin <strong>in der</strong> Schule.</em> — Я в школе.</li>
+                <li><em>Das Buch liegt <strong>auf dem</strong> Tisch.</em> — Книга лежит на столе.</li>
+                <li><em>Er wohnt <strong>bei dem</strong> Freund.</em> — Он живёт у друга.</li>
+                <li><em>Sie f&auml;hrt <strong>mit dem</strong> Auto.</em> — Она едет на машине.</li>
+            </ul>
+
+            <blockquote>
+                <strong>Сравни:</strong><br>
+                <strong>Akkusativ (Wohin? — Куда?):</strong> Ich gehe <strong>in die</strong> Schule. (Я иду в школу.)<br>
+                <strong>Dativ (Wo? — Где?):</strong> Ich bin <strong>in der</strong> Schule. (Я в школе.)
+            </blockquote>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для работы с Dativ.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>helfen (hilft)</strong> — помогать</div>
+                <div class="vocabulary-item"><strong>gefallen (gef&auml;llt)</strong> — нравиться</div>
+                <div class="vocabulary-item"><strong>geh&ouml;ren</strong> — принадлежать</div>
+                <div class="vocabulary-item"><strong>danken</strong> — благодарить</div>
+                <div class="vocabulary-item"><strong>antworten</strong> — отвечать</div>
+                <div class="vocabulary-item"><strong>der Freund, -e</strong> — друг</div>
+                <div class="vocabulary-item"><strong>die Freundin, -nen</strong> — подруга</div>
+                <div class="vocabulary-item"><strong>der Lehrer, -</strong> — учитель</div>
+                <div class="vocabulary-item"><strong>die Lehrerin, -nen</strong> — учительница</div>
+                <div class="vocabulary-item"><strong>der Arzt, -&auml;e</strong> — врач</div>
+                <div class="vocabulary-item"><strong>die &Auml;rztin, -nen</strong> — женщина-врач</div>
+                <div class="vocabulary-item"><strong>der Mann, -&auml;er</strong> — мужчина</div>
+                <div class="vocabulary-item"><strong>die Frau, -en</strong> — женщина</div>
+                <div class="vocabulary-item"><strong>das Kind, -er</strong> — ребёнок</div>
+                <div class="vocabulary-item"><strong>der Tisch, -e</strong> — стол</div>
+                <div class="vocabulary-item"><strong>die Schule, -n</strong> — школа</div>
+                <div class="vocabulary-item"><strong>die Stadt, -&auml;e</strong> — город</div>
+                <div class="vocabulary-item"><strong>das Haus, -&auml;er</strong> — дом</div>
+                <div class="vocabulary-item"><strong>das Auto, -s</strong> — машина</div>
+                <div class="vocabulary-item"><strong>in</strong> — в</div>
+                <div class="vocabulary-item"><strong>auf</strong> — на</div>
+                <div class="vocabulary-item"><strong>bei</strong> — у, при</div>
+                <div class="vocabulary-item"><strong>mit</strong> — с</div>
+                <div class="vocabulary-item"><strong>wo</strong> — где</div>
+                <div class="vocabulary-item"><strong>wem</strong> — кому</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (&Uuml;bungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Отрабатываем Dativ!</p>
+
+            <h3>Упражнение 12.1: Вставь артикль в Dativ (12)</h3>
+            <p><em>Вставь правильную форму <strong>dem, der, dem, den</strong> или <strong>einem, einer, einem</strong>:</em></p>
+            <ol class="exercise-list" id="ex-121">
+                <li>Ich helfe _________ (der) Mann.<span class="answer-inline">dem</span></li>
+                <li>Er hilft _________ (die) Frau.<span class="answer-inline">der</span></li>
+                <li>Wir helfen _________ (das) Kind.<span class="answer-inline">dem</span></li>
+                <li>Sie hilft _________ (die) Kinder (Plural).<span class="answer-inline">den Kindern</span></li>
+                <li>Das gef&auml;llt _________ (ein) Freund.<span class="answer-inline">einem</span></li>
+                <li>Die Antwort gef&auml;llt _________ (eine) Mutter.<span class="answer-inline">einer</span></li>
+                <li>Das Buch geh&ouml;rt _________ (ein) Kind.<span class="answer-inline">einem</span></li>
+                <li>Ich danke _________ (der) Lehrer.<span class="answer-inline">dem</span></li>
+                <li>Er antwortet _________ (die) Lehrerin.<span class="answer-inline">der</span></li>
+                <li>Das gef&auml;llt _________ (der) Arzt.<span class="answer-inline">dem</span></li>
+                <li>Wir helfen _________ (die) Studenten (Pl.).<span class="answer-inline">den Studenten</span></li>
+                <li>Sie dankt _________ (ein) Freund.<span class="answer-inline">einem</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-121')">Показать ответы</button>
+
+            <h3>Упражнение 12.2: Вставь правильный предлог + Dativ (12)</h3>
+            <p><em>Вставь <strong>in, auf, bei, mit</strong> + правильную форму Dativ:</em></p>
+            <ol class="exercise-list" id="ex-122">
+                <li>Ich bin _________ (die) Schule.<span class="answer-inline">in der</span></li>
+                <li>Das Buch liegt _________ (der) Tisch.<span class="answer-inline">auf dem</span></li>
+                <li>Er wohnt _________ (der) Freund.<span class="answer-inline">bei dem</span></li>
+                <li>Sie f&auml;hrt _________ (das) Auto.<span class="answer-inline">mit dem</span></li>
+                <li>Wir sind _________ (die) Stadt.<span class="answer-inline">in der</span></li>
+                <li>Das Kind ist _________ (die) Mutter.<span class="answer-inline">bei der</span></li>
+                <li>Ich bin _________ (das) Haus.<span class="answer-inline">in dem / im</span></li>
+                <li>Er kommt _________ (der) Bus.<span class="answer-inline">mit dem</span></li>
+                <li>Die Katze ist _________ (der) Stuhl.<span class="answer-inline">auf dem</span></li>
+                <li>Wir lernen _________ (der) Lehrer.<span class="answer-inline">bei dem</span></li>
+                <li>Sie wohnt _________ (die) Stadt.<span class="answer-inline">in der</span></li>
+                <li>Ich fahre _________ (das) Fahrrad.<span class="answer-inline">mit dem</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-122')">Показать ответы</button>
+
+            <h3>Упражнение 12.3: Выбери Akkusativ или Dativ (12)</h3>
+            <p><em>Вставь правильную форму (Akkusativ для направления, Dativ для места):</em></p>
+            <ol class="exercise-list" id="ex-123">
+                <li>Ich gehe in _________ (die) Schule. (куда?)<span class="answer-inline">die</span></li>
+                <li>Ich bin in _________ (die) Schule. (где?)<span class="answer-inline">der</span></li>
+                <li>Er legt das Buch auf _________ (der) Tisch. (куда?)<span class="answer-inline">den</span></li>
+                <li>Das Buch liegt auf _________ (der) Tisch. (где?)<span class="answer-inline">dem</span></li>
+                <li>Wir fahren in _________ (die) Stadt. (куда?)<span class="answer-inline">die</span></li>
+                <li>Wir sind in _________ (die) Stadt. (где?)<span class="answer-inline">der</span></li>
+                <li>Sie stellt den Stuhl in _________ (das) Zimmer. (куда?)<span class="answer-inline">das</span></li>
+                <li>Der Stuhl steht in _________ (das) Zimmer. (где?)<span class="answer-inline">dem</span></li>
+                <li>Ich bringe das Kind in _________ (die) Schule. (куда?)<span class="answer-inline">die</span></li>
+                <li>Das Kind ist in _________ (die) Schule. (где?)<span class="answer-inline">der</span></li>
+                <li>Er h&auml;ngt das Bild an _________ (die) Wand. (куда?)<span class="answer-inline">die</span></li>
+                <li>Das Bild h&auml;ngt an _________ (die) Wand. (где?)<span class="answer-inline">der</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-123')">Показать ответы</button>
+
+            <h3>Упражнение 12.4: Глаголы с Dativ (12)</h3>
+            <p><em>Вставь правильную форму существительного в Dativ:</em></p>
+            <ol class="exercise-list" id="ex-124">
+                <li>Ich helfe (der Bruder).<span class="answer-inline">dem Bruder</span></li>
+                <li>Das gef&auml;llt (die Frau).<span class="answer-inline">der Frau</span></li>
+                <li>Er dankt (der Arzt).<span class="answer-inline">dem Arzt</span></li>
+                <li>Wir helfen (die Lehrerin).<span class="answer-inline">der Lehrerin</span></li>
+                <li>Das Buch geh&ouml;rt (das Kind).<span class="answer-inline">dem Kind</span></li>
+                <li>Sie antwortet (der Freund).<span class="answer-inline">dem Freund</span></li>
+                <li>Ich helfe (mein Bruder).<span class="answer-inline">meinem Bruder</span></li>
+                <li>Das gef&auml;llt (sein Vater).<span class="answer-inline">seinem Vater</span></li>
+                <li>Er dankt (seine Mutter).<span class="answer-inline">seiner Mutter</span></li>
+                <li>Wir helfen (unsere Freunde).<span class="answer-inline">unseren Freunden</span></li>
+                <li>Das geh&ouml;rt (deine Schwester).<span class="answer-inline">deiner Schwester</span></li>
+                <li>Sie antwortet (ihr Lehrer).<span class="answer-inline">ihrem Lehrer</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-124')">Показать ответы</button>
+
+            <h3>Упражнение 12.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи предложения. Используй Dativ!</em></p>
+            <ol class="exercise-list" id="ex-125">
+                <li>Я помогаю учителю.<span class="answer-inline">Ich helfe dem Lehrer.</span></li>
+                <li>Это нравится женщине.<span class="answer-inline">Das gef&auml;llt der Frau.</span></li>
+                <li>Книга принадлежит ребёнку.<span class="answer-inline">Das Buch geh&ouml;rt dem Kind.</span></li>
+                <li>Я благодарю врача.<span class="answer-inline">Ich danke dem Arzt.</span></li>
+                <li>Он отвечает учительнице.<span class="answer-inline">Er antwortet der Lehrerin.</span></li>
+                <li>Я помогаю своим друзьям.<span class="answer-inline">Ich helfe meinen Freunden.</span></li>
+                <li>Книга лежит на столе.<span class="answer-inline">Das Buch liegt auf dem Tisch.</span></li>
+                <li>Я в школе.<span class="answer-inline">Ich bin in der Schule.</span></li>
+                <li>Она едет на машине.<span class="answer-inline">Sie f&auml;hrt mit dem Auto.</span></li>
+                <li>Он живёт у друга.<span class="answer-inline">Er wohnt bei dem Freund.</span></li>
+                <li>Это нравится моей маме.<span class="answer-inline">Das gef&auml;llt meiner Mutter.</span></li>
+                <li>Мы помогаем детям.<span class="answer-inline">Wir helfen den Kindern.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-125')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="a1-11.html" class="nav-link">&larr; Предыдущий урок (А1-11)</a>
+        <span class="nav-title">Конец урока А1-12</span>
+        <a href="a1-13.html" class="nav-link">Следующий урок (А1-13) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

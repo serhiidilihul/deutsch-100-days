@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок А1-5: Числа, время и дни недели</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Верхняя навигация -->
+        <nav class="nav">
+            <a href="a1-4.html" class="nav-link">&larr; Урок А1-4</a>
+            <span class="nav-title">Урок А1-5</span>
+            <a href="a1-6.html" class="nav-link">Урок А1-6 &rarr;</a>
+        </nav>
+
+        <main>
+            <!-- БЛОК ПОВТОРЕНИЯ -->
+            <div class="card">
+                <h2>Разминка и повторение</h2>
+                <p>Давай вспомним спряжение сильных глаголов с прошлого урока, прежде чем перейдем к цифрам и часам.</p>
+                
+                <h3>Упражнение П5.1: Тест на сильные глаголы</h3>
+                <p><em>Вставь правильную форму сильного глагола, указанного в скобках:</em></p>
+                <ol class="exercise-list" id="ex-5p1">
+                    <li>Mein Vater ________ (fahren) ins B&uuml;ro.<span class="answer-inline">f&auml;hrt</span></li>
+                    <li>Was ________ (sehen) du dort?<span class="answer-inline">siehst</span></li>
+                    <li>Sie ________ (sprechen) sehr leise.<span class="answer-inline">spricht</span></li>
+                    <li>Wir ________ (fahren) mit dem Zug.<span class="answer-inline">fahren</span></li>
+                    <li>________ (sehen) ihr das Bild?<span class="answer-inline">seht</span></li>
+                    <li>Welche Sprache ________ (sprechen) du?<span class="answer-inline">sprichst</span></li>
+                    <li>Mein Freund ________ (sehen) fern.<span class="answer-inline">sieht</span></li>
+                    <li>Ich ________ (fahren) nach M&uuml;nchen.<span class="answer-inline">fahre</span></li>
+                    <li>Sie ________ (sprechen) Deutsch. (Они)<span class="answer-inline">sprechen</span></li>
+                    <li>Du ________ (fahren) zu schnell!<span class="answer-inline">f&auml;hrst</span></li>
+                </ol>
+                <button class="btn-toggle" onclick="toggleExercise('ex-5p1')">Показать ответы</button>
+
+                <h3>Упражнение П5.2: Переведи мини-рассказ</h3>
+                <p><em>Попробуй перевести этот текст без словаря. В нем собрано всё, что мы учили:</em></p>
+                <p>«Привет! Меня зовут Алекс. В свободное время я учу немецкий. Мое хобби — спорт. Я с удовольствием катаюсь на велосипеде и плаваю. Также я часто читаю книги. Мой друг Макс тоже любит спорт».</p>
+            </div>
+
+            <!-- ПОДРОБНАЯ ТЕОРИЯ -->
+            <div class="card">
+                <h2>Понятная теория</h2>
+                
+                <h3>1. Немецкие числа от 0 до 100: Задом наперед!</h3>
+                <p>Немецкие числа логичны до 20, а потом начинается самое интересное. Немцы произносят двузначные числа <strong>задом наперед: сначала единицы, а потом десятки</strong>, соединяя их союзом <strong>und</strong> (и).</p>
+                
+                <p>Давай посмотрим на логику построения:</p>
+                <ul>
+                    <li>15 &rarr; <strong>fünfzehn</strong> (пять-надцать) — тут все как в русском.</li>
+                    <li>21 &rarr; <strong>einundzwanzig</strong> (буквально: "один-и-двадцать"). Обрати внимание: не *eins*, а именно <strong>ein</strong>.</li>
+                    <li>35 &rarr; <strong>fünfunddreißig</strong> ("пять-и-тридцать").</li>
+                    <li>67 &rarr; <strong>siebenundsechzig</strong> ("семь-и-шестьдесят").</li>
+                </ul>
+
+                <div class="note">
+                    <strong>Особые случаи:</strong>
+                    <ul>
+                        <li>В числах 16 (sechzehn) и 60 (sechzig) буква <strong>-s-</strong> из слова "sechs" выпадает!</li>
+                        <li>В числах 17 (siebzehn) и 70 (siebzig) окончание <strong>-en-</strong> из слова "sieben" выпадает!</li>
+                        <li>Число 30 пишется через <strong>ß</strong> (dreißig), в то время как все остальные десятки пишутся через <strong>z</strong> (vierzig, fünfzig и т.д.).</li>
+                    </ul>
+                </div>
+
+                <h3>2. Дни недели (Wochentage)</h3>
+                <p>С днями недели в немецком языке все очень просто:</p>
+                <ol>
+                    <li><strong>Montag</strong> (понедельник)</li>
+                    <li><strong>Dienstag</strong> (вторник)</li>
+                    <li><strong>Mittwoch</strong> (среда — буквально "середина недели")</li>
+                    <li><strong>Donnerstag</strong> (четверг)</li>
+                    <li><strong>Freitag</strong> (пятница)</li>
+                    <li><strong>Samstag</strong> (суббота)</li>
+                    <li><strong>Sonntag</strong> (воскресенье)</li>
+                </ol>
+                <p>Все дни недели в немецком языке — <strong>мужского рода (der)</strong>. Чтобы сказать «в понедельник», «в пятницу», мы используем предлог <strong>am</strong> (слияние <em>an + dem</em>): <strong>am Montag</strong>, <strong>am Freitag</strong>. Для выходных говорим: <strong>am Wochenende</strong>.</p>
+
+                <h3>3. Как назвать время (Uhrzeit)</h3>
+                <p>В немецком есть два способа сказать, сколько времени: официальный (как на вокзале или радио) и разговорный (в беседе с друзьями).</p>
+
+                <h4>Официальный способ (Очень легкий, 24-часовой формат)</h4>
+                <p>Мы просто называем цифру часов, слово <strong>Uhr</strong> (часов) и цифру минут.</p>
+                <ul>
+                    <li>14:30 &rarr; Es ist <strong>vierzehn Uhr dreißig</strong>.</li>
+                    <li>09:15 &rarr; Es ist <strong>neun Uhr fünfzehn</strong>.</li>
+                </ul>
+
+                <h4>Разговорный способ (Запутанный, но живой, 12-часовой формат)</h4>
+                <p>Здесь мы используем слова <strong>vor</strong> (до / без), <strong>nach</strong> (после), <strong>halb</strong> (половина) и <strong>Viertel</strong> (четверть, то есть 15 минут).</p>
+                <ul>
+                    <li><strong>nach (после):</strong> 10:05 &rarr; Es ist <em>fünf nach zehn</em> (5 минут после 10).</li>
+                    <li><strong>vor (до):</strong> 09:50 &rarr; Es ist <em>zehn vor zehn</em> (10 минут до 10).</li>
+                    <li><strong>Viertel (четверть):</strong> 
+                        <br>08:15 &rarr; Es ist <em>Viertel nach acht</em> (четверть после 8).
+                        <br>08:45 &rarr; Es ist <em>Viertel vor neun</em> (четверть до 9).
+                    </li>
+                    <li style="background-color: #fff9e6; padding: 0.5rem; border-radius: 6px;">
+                        <strong>Внимание на "halb" (половина)!</strong> Немцы всегда называют половину <strong>следующего</strong> часа (так же, как и мы в русском языке!). 
+                        <br>Например, 08:30 — это «половина девятого». По-немецки: <strong>halb neun</strong>. Не перепутай с восемью!
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ЛЕКСИКА -->
+            <div class="card">
+                <h2>Твои новые слова</h2>
+                <div class="vocabulary-list">
+                    <div class="vocabulary-item"><strong>Wie spät ist es? / Wie viel Uhr ist es?</strong> — Который час?</div>
+                    <div class="vocabulary-item"><strong>die Uhrzeit / die Minute</strong> — время / минута</div>
+                    <div class="vocabulary-item"><strong>heute / morgen</strong> — сегодня / завтра</div>
+                    <div class="vocabulary-item"><strong>der Termin</strong> — встреча / запись (к врачу, в ведомство)</div>
+                </div>
+            </div>
+
+            <!-- УПРАЖНЕНИЯ -->
+            <div class="card">
+                <h2>Практика (Упражнения)</h2>
+
+                <h3>Упражнение 5.1: Напиши числа буквами</h3>
+                <p><em>Напиши немецкие числительные прописью:</em></p>
+                <ol>
+                    <li>5 — ___________________</li>
+                    <li>12 — ___________________</li>
+                    <li>16 — ___________________</li>
+                    <li>23 — ___________________</li>
+                    <li>37 — ___________________</li>
+                    <li>44 — ___________________</li>
+                    <li>61 — ___________________</li>
+                    <li>79 — ___________________</li>
+                    <li>88 — ___________________</li>
+                    <li>100 — ___________________</li>
+                </ol>
+
+                <h3>Упражнение 5.2: Официальное время (24h)</h3>
+                <p><em>Напиши время так, как его объявили бы на вокзале:</em></p>
+                <ol>
+                    <li>09:10 &rarr; _________________________________________________</li>
+                    <li>13:15 &rarr; _________________________________________________</li>
+                    <li>16:30 &rarr; _________________________________________________</li>
+                    <li>21:45 &rarr; _________________________________________________</li>
+                    <li>11:05 &rarr; _________________________________________________</li>
+                    <li>18:25 &rarr; _________________________________________________</li>
+                    <li>23:50 &rarr; _________________________________________________</li>
+                    <li>08:40 &rarr; _________________________________________________</li>
+                    <li>15:12 &rarr; _________________________________________________</li>
+                    <li>02:00 &rarr; _________________________________________________</li>
+                </ol>
+
+                <h3>Упражнение 5.3: Разговорное время (12h)</h3>
+                <p><em>А теперь переведи те же часы в формат живого общения:</em></p>
+                <ol>
+                    <li>08:05 &rarr; Es ist ___________________________________________</li>
+                    <li>12:15 &rarr; Es ist ___________________________________________</li>
+                    <li>06:30 &rarr; Es ist ___________________________________________</li>
+                    <li>09:45 &rarr; Es ist ___________________________________________</li>
+                    <li>02:50 &rarr; Es ist ___________________________________________</li>
+                    <li>11:55 &rarr; Es ist ___________________________________________</li>
+                    <li>04:20 &rarr; Es ist ___________________________________________</li>
+                    <li>07:35 &rarr; Es ist ___________________________________________</li>
+                    <li>01:15 &rarr; Es ist ___________________________________________</li>
+                    <li>10:30 &rarr; Es ist ___________________________________________</li>
+                </ol>
+
+                <h3>Упражнение 5.4: Дни недели и даты</h3>
+                <p><em>Переведи предложения на немецкий:</em></p>
+                <ol>
+                    <li>В понедельник я работаю.</li>
+                    <li>В среду мы учим немецкий.</li>
+                    <li>Сегодня суббота.</li>
+                    <li>В свободное время на выходных я катаюсь на велосипеде.</li>
+                    <li>Сегодня четырнадцатое июля. (der vierzehnte Juli)</li>
+                    <li>В пятницу он не работает.</li>
+                    <li>Завтра воскресенье.</li>
+                    <li>Сегодня первое мая. (der erste Mai)</li>
+                    <li>Во вторник ты учишь английский.</li>
+                    <li>В четверг она едет в Берлин.</li>
+                </ol>
+
+                <h3>Упражнение 5.5: Симулятор аудирования</h3>
+                <p><em>Прочитай фразы и быстро выпиши из них все цифры и даты:</em></p>
+                <ol>
+                    <li>"Achtung, Gleis 4! Der Zug aus München kommt heute um 15 Uhr 42 an." &rarr; Путь ____, время ____.</li>
+                    <li>"Meine Telefonnummer ist: null, eins, sieben, zwei, vier, acht, drei, neum." &rarr; Номер: _________________.</li>
+                    <li>"Der Termin beim Arzt ist am Dienstag, den zwanzigsten September, um 10 Uhr 15." &rarr; Дата: ______, время: ______.</li>
+                    <li>"Mein Handy hat die Nummer: null, sechs, fünf, null, drei, zwei, eins, acht." &rarr; Номер: _________________.</li>
+                    <li>"Der Bus fährt am Freitag um acht Uhr fünfunddreißig ab." &rarr; Время отправления: _________.</li>
+                    <li>"Heute ist der einunddreißigste Dezember." &rarr; Дата: _________________.</li>
+                    <li>"Wir treffen uns um Viertel nach sieben am Bahnhof." &rarr; Время: _________.</li>
+                    <li>"Mein Geburtstag ist am dreiundzwanzigsten Juni." &rarr; Дата: _________________.</li>
+                    <li>"Es ist jetzt genau zehn vor halb drei." &rarr; Время: _________.</li>
+                    <li>"Rufen Sie mich an unter: null, eins, fünf, neun, sieben, drei, null, vier." &rarr; Номер: _________________.</li>
+                </ol>
+
+                <!-- КНОПКА С ПРОВЕРКОЙ -->
+                <button class="btn-toggle" id="btn-answers" onclick="toggleAnswers('answers')">Показать ответы</button>
+                
+                <div class="answers-block" id="answers">
+                    <p><strong>П5.1 (Сильные глаголы):</strong> 1. fährt, 2. siehst, 3. spricht, 4. fahren, 5. seht, 6. sprichst, 7. sieht, 8. fahre, 9. sprechen, 10. fährst.</p>
+                    <p><strong>П5.2 (Перевод текста):</strong> Hallo! Ich heiße Alex. In meiner Freizeit lerne ich Deutsch. Mein Hobby ist Sport. Ich fahre gerne Fahrrad und schwimme. Auch lese ich oft Bücher. Mein Freund Max mag Sport auch.</p>
+                    <p><strong>5.1 (Числа):</strong> 1. fünf, 2. zwölf, 3. sechzehn, 4. dreiundzwanzig, 5. siebenunddreißig, 6. vierundvierzig, 7. einundsechzig, 8. neunundsiebzig, 9. achtundachtzig, 10. hundert.</p>
+                    <p><strong>5.2 (Официальное время):</strong> 1. neun Uhr zehn, 2. dreizehn Uhr fünfzehn, 3. sechzehn Uhr dreißig, 4. einundzwanzig Uhr fünfundvierzig, 5. elf Uhr fünf, 6. achtzehn Uhr fünfundвыanzig, 7. dreiundzwanzig Uhr fünfzig, 8. acht Uhr vierzig, 9. fünfzehn Uhr zwölf, 10. zwei Uhr.</p>
+                    <p><strong>5.3 (Разговорное время):</strong> 1. fünf nach acht, 2. Viertel nach zwölf, 3. halb sieben, 4. Viertel vor zehn, 5. zehn vor drei, 6. fünf vor zwölf, 7. zwanzig nach vier, 8. fünf nach halb acht (букв. пять минут после половины восьмого, то есть 7:35), 9. Viertel nach eins, 10. halb elf.</p>
+                    <p><strong>5.4 (Даты/дни недели):</strong> 1. Am Montag arbeite ich. 2. Am Mittwoch lernen wir Deutsch. 3. Heute ist Samstag. 4. In meiner Freizeit am Wochenende fahre ich Fahrrad. 5. Heute ist der vierzehnte Juli. 6. Am Freitag arbeitet er nicht. 7. Morgen ist Sonntag. 8. Heute ist der erste Mai. 9. Am Dienstag lernst du Englisch. 10. Am Donnerstag fährt sie nach Berlin.</p>
+                    <p><strong>5.5 (Аудирование):</strong> 1. Путь 4, 15:42. 2. 01724839. 3. Вторник, 20 сентября, 10:15. 4. 06503218. 5. Пятница, 08:35. 6. 31 декабря. 7. 19:15 (или 07:15). 8. 23 июня. 9. 14:20 (без 10 минут половина третьего). 10. 01597304.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Нижняя навигация -->
+        <nav class="nav nav-bottom">
+            <a href="a1-4.html" class="nav-link">&larr; Предыдущий урок (А1-4)</a>
+            <span class="nav-title">Конец урока А1-5</span>
+            <a href="a1-6.html" class="nav-link">Следующий урок (А1-6) &rarr;</a>
+        </nav>
+    </div>
+
+    <script>
+        function toggleExercise(id) {
+            const list = document.getElementById(id);
+            const btn = list.nextElementSibling;
+            if (list.classList.contains('show-answers')) {
+                list.classList.remove('show-answers');
+                btn.textContent = 'Показать ответы';
+                btn.classList.remove('active');
+            } else {
+                list.classList.add('show-answers');
+                btn.textContent = 'Скрыть ответы';
+                btn.classList.add('active');
+            }
+        }
+        function toggleAnswers(id) {
+            const block = document.getElementById(id);
+            const btn = document.getElementById('btn-' + id);
+            if (block.style.display === "none" || !block.style.display) {
+                block.style.display = "block";
+                btn.textContent = "Скрыть ответы";
+                btn.classList.add("active");
+            } else {
+                block.style.display = "none";
+                btn.textContent = "Показать ответы";
+                btn.classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
