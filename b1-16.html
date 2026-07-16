@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок B1-16: Пассив состояния (Zustandspassiv)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="b1-15.html" class="nav-link">&larr; Урок B1-15</a>
+        <span class="nav-title">Урок B1-16</span>
+        <a href="b1-17.html" class="nav-link">Урок B1-17 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка und Wiederholung (Wiederholung)</h2>
+            <p class="subtitle">Повторяем тему медиа из урока B1-15. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Лексика медиа (12)</h3>
+            <p><em>Вставь правильное слово:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>Ich _________ im Internet. (surfe / chatte)<span class="answer-inline">surfe</span></li>
+                <li>Er _________ ein Foto. (postet / löscht)<span class="answer-inline">postet</span></li>
+                <li>Sie _________ den Artikel. (teilt / löscht)<span class="answer-inline">teilt</span></li>
+                <li>Ich _________ den Beitrag. (kommentiere / surfe)<span class="answer-inline">kommentiere</span></li>
+                <li>Wir _________ mit Freunden. (chatten / posten)<span class="answer-inline">chatten</span></li>
+                <li>Er _________ das Konto. (löscht / teilt)<span class="answer-inline">löscht</span></li>
+                <li>Ich _________ ein Video. (herunterlade / poste)<span class="answer-inline">herunterlade</span></li>
+                <li>Sie _________ eine Nachricht. (schreibt / surft)<span class="answer-inline">schreibt</span></li>
+                <li>Wir _________ soziale Netzwerke. (nutzen / löschen)<span class="answer-inline">nutzen</span></li>
+                <li>Er _________ ein Spiel. (spielt / postet)<span class="answer-inline">spielt</span></li>
+                <li>Ich _________ die Webseite. (besuche / lösche)<span class="answer-inline">besuche</span></li>
+                <li>Sie _________ ein Handy. (kauft / surft)<span class="answer-inline">kauft</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Плюсы и минусы (12)</h3>
+            <p><em>Определи, плюс или минус:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>schnelle Kommunikation (Vorteil / Nachteil)<span class="answer-inline">Vorteil</span></li>
+                <li>Datenmissbrauch (Vorteil / Nachteil)<span class="answer-inline">Nachteil</span></li>
+                <li>Zugang zu Informationen (Vorteil / Nachteil)<span class="answer-inline">Vorteil</span></li>
+                <li>Fake News (Vorteil / Nachteil)<span class="answer-inline">Nachteil</span></li>
+                <li>Online-Shopping (Vorteil / Nachteil)<span class="answer-inline">Vorteil</span></li>
+                <li>Internetsucht (Vorteil / Nachteil)<span class="answer-inline">Nachteil</span></li>
+                <li>kostenlose Bildung (Vorteil / Nachteil)<span class="answer-inline">Vorteil</span></li>
+                <li>keine Privatsphäre (Vorteil / Nachteil)<span class="answer-inline">Nachteil</span></li>
+                <li>schnelle Suche (Vorteil / Nachteil)<span class="answer-inline">Vorteil</span></li>
+                <li>Cybermobbing (Vorteil / Nachteil)<span class="answer-inline">Nachteil</span></li>
+                <li>weltweite Kommunikation (Vorteil / Nachteil)<span class="answer-inline">Vorteil</span></li>
+                <li>Zeitverschwendung (Vorteil / Nachteil)<span class="answer-inline">Nachteil</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок B1-16: Пассив состояния (Zustandspassiv)</h1>
+            <p class="subtitle">sein + Partizip II — результат действия.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Понимаю разницу между процессом (Die Tür wird geschlossen) и результатом (Die Tür ist geschlossen).</li>
+                <li>Знаю формулу: sein + Partizip II.</li>
+                <li>Умею строить предложения в Zustandspassiv.</li>
+            </ul>
+
+            <h2>1. Vorgangspassiv vs Zustandspassiv</h2>
+            <table>
+                <thead><tr><th>Тип</th><th>Формула</th><th>Пример</th><th>Значение</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Vorgangspassiv</strong></td><td>werden + Partizip II</td><td>Die Tür wird geschlossen.</td><td>Дверь закрывается (процесс)</td></tr>
+                    <tr><td><strong>Zustandspassiv</strong></td><td>sein + Partizip II</td><td>Die Tür ist geschlossen.</td><td>Дверь закрыта (результат)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Важно!</strong><br>
+                Vorgangspassiv = <strong>процесс</strong> (что происходит)<br>
+                Zustandspassiv = <strong>результат</strong> (какое состояние)<br>
+                <em>Das Fenster <strong>wird geöffnet</strong>. (Окно открывается.)</em><br>
+                <em>Das Fenster <strong>ist geöffnet</strong>. (Окно открыто.)</em>
+            </div>
+
+            <h2>2. Спряжение sein в Zustandspassiv</h2>
+            <table>
+                <thead><tr><th>Лицо</th><th>sein</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td>ich</td><td>bin</td><td><em>Ich bin eingeladen.</em></td></tr>
+                    <tr><td>du</td><td>bist</td><td><em>Du bist eingeladen.</em></td></tr>
+                    <tr><td>er/sie/es</td><td>ist</td><td><em>Die Tür ist geschlossen.</em></td></tr>
+                    <tr><td>wir</td><td>sind</td><td><em>Wir sind eingeladen.</em></td></tr>
+                    <tr><td>ihr</td><td>seid</td><td><em>Ihr seid eingeladen.</em></td></tr>
+                    <tr><td>sie/Sie</td><td>sind</td><td><em>Sie sind eingeladen.</em></td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Примеры Zustandspassiv</h2>
+            <table>
+                <thead><tr><th>Vorgangspassiv (процесс)</th><th>Zustandspassiv (результат)</th></tr></thead>
+                <tbody>
+                    <tr><td>Die Tür wird geschlossen.</td><td>Die Tür ist geschlossen.</td></tr>
+                    <tr><td>Das Fenster wird geöffnet.</td><td>Das Fenster ist geöffnet.</td></tr>
+                    <tr><td>Der Brief wird geschrieben.</td><td>Der Brief ist geschrieben.</td></tr>
+                    <tr><td>Das Haus wird gebaut.</td><td>Das Haus ist gebaut.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Времена в Zustandspassiv</h2>
+            <table>
+                <thead><tr><th>Время</th><th>Формула</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Präsens</strong></td><td>sein + Partizip II</td><td>Die Tür ist geschlossen.</td></tr>
+                    <tr><td><strong>Präteritum</strong></td><td>war + Partizip II</td><td>Die Tür war geschlossen.</td></tr>
+                    <tr><td><strong>Perfekt</strong></td><td>ist + Partizip II + gewesen</td><td>Die Tür ist geschlossen gewesen.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для описания состояний.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>der Zustand, -äe</strong> — состояние</div>
+                <div class="vocabulary-item"><strong>der Vorgang, -äe</strong> — процесс</div>
+                <div class="vocabulary-item"><strong>das Ergebnis, -se</strong> — результат</div>
+                <div class="vocabulary-item"><strong>schließen</strong> — закрывать</div>
+                <div class="vocabulary-item"><strong>öffnen</strong> — открывать</div>
+                <div class="vocabulary-item"><strong>bauen</strong> — строить</div>
+                <div class="vocabulary-item"><strong>reparieren</strong> — чинить</div>
+                <div class="vocabulary-item"><strong>machen</strong> — делать</div>
+                <div class="vocabulary-item"><strong>schreiben</strong> — писать</div>
+                <div class="vocabulary-item"><strong>lesen</strong> — читать</div>
+                <div class="vocabulary-item"><strong>kochen</strong> — готовить</div>
+                <div class="vocabulary-item"><strong>backen</strong> — печь</div>
+                <div class="vocabulary-item"><strong>die Tür, -en</strong> — дверь</div>
+                <div class="vocabulary-item"><strong>das Fenster, -</strong> — окно</div>
+                <div class="vocabulary-item"><strong>das Haus, -äer</strong> — дом</div>
+                <div class="vocabulary-item"><strong>das Auto, -s</strong> — машина</div>
+                <div class="vocabulary-item"><strong>der Brief, -e</strong> — письмо</div>
+                <div class="vocabulary-item"><strong>das Buch, -äer</strong> — книга</div>
+                <div class="vocabulary-item"><strong>das Essen, -</strong> — еда</div>
+                <div class="vocabulary-item"><strong>das Brot, -e</strong> — хлеб</div>
+                <div class="vocabulary-item"><strong>die Arbeit, -en</strong> — работа</div>
+                <div class="vocabulary-item"><strong>der Kaffee, -s</strong> — кофе</div>
+                <div class="vocabulary-item"><strong>der Tisch, -e</strong> — стол</div>
+                <div class="vocabulary-item"><strong>der Stuhl, -äe</strong> — стул</div>
+                <div class="vocabulary-item"><strong>das Licht, -er</strong> — свет</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Zustandspassiv!</p>
+
+            <h3>Упражнение 66.1: Vorgangspassiv или Zustandspassiv? (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-661">
+                <li>Die Tür _________ geschlossen. (wird / ist)<span class="answer-inline">wird</span></li>
+                <li>Die Tür _________ geschlossen. (wird / ist)<span class="answer-inline">ist</span></li>
+                <li>Das Fenster _________ geöffnet. (wird / ist)<span class="answer-inline">wird</span></li>
+                <li>Das Fenster _________ geöffnet. (wird / ist)<span class="answer-inline">ist</span></li>
+                <li>Der Brief _________ geschrieben. (wird / ist)<span class="answer-inline">wird</span></li>
+                <li>Der Brief _________ geschrieben. (wird / ist)<span class="answer-inline">ist</span></li>
+                <li>Das Haus _________ gebaut. (wird / ist)<span class="answer-inline">wird</span></li>
+                <li>Das Haus _________ gebaut. (wird / ist)<span class="answer-inline">ist</span></li>
+                <li>Das Auto _________ repariert. (wird / ist)<span class="answer-inline">wird</span></li>
+                <li>Das Auto _________ repariert. (wird / ist)<span class="answer-inline">ist</span></li>
+                <li>Das Essen _________ gekocht. (wird / ist)<span class="answer-inline">wird</span></li>
+                <li>Das Essen _________ gekocht. (wird / ist)<span class="answer-inline">ist</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-661')">Показать ответы</button>
+
+            <h3>Упражнение 66.2: Zustandspassiv Präsens (12)</h3>
+            <p><em>Поставь в Zustandspassiv (sein + Partizip II):</em></p>
+            <ol class="exercise-list" id="ex-662">
+                <li>Die Tür / schließen &rarr; Die Tür _________ .<span class="answer-inline">ist geschlossen</span></li>
+                <li>Das Fenster / öffnen &rarr; Das Fenster _________ .<span class="answer-inline">ist geöffnet</span></li>
+                <li>Der Brief / schreiben &rarr; Der Brief _________ .<span class="answer-inline">ist geschrieben</span></li>
+                <li>Das Haus / bauen &rarr; Das Haus _________ .<span class="answer-inline">ist gebaut</span></li>
+                <li>Das Auto / reparieren &rarr; Das Auto _________ .<span class="answer-inline">ist repariert</span></li>
+                <li>Das Essen / kochen &rarr; Das Essen _________ .<span class="answer-inline">ist gekocht</span></li>
+                <li>Das Brot / backen &rarr; Das Brot _________ .<span class="answer-inline">ist gebacken</span></li>
+                <li>Die Arbeit / machen &rarr; Die Arbeit _________ .<span class="answer-inline">ist gemacht</span></li>
+                <li>Der Kaffee / trinken &rarr; Der Kaffee _________ .<span class="answer-inline">ist getrunken</span></li>
+                <li>Das Buch / lesen &rarr; Das Buch _________ .<span class="answer-inline">ist gelesen</span></li>
+                <li>Das Licht / ausschalten &rarr; Das Licht _________ .<span class="answer-inline">ist ausgeschaltet</span></li>
+                <li>Die Tür / zumachen &rarr; Die Tür _________ .<span class="answer-inline">ist zugemacht</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-662')">Показать ответы</button>
+
+            <h3>Упражнение 66.3: Zustandspassiv Präteritum (12)</h3>
+            <p><em>Поставь в Zustandspassiv Präteritum (war + Partizip II):</em></p>
+            <ol class="exercise-list" id="ex-663">
+                <li>Die Tür / schließen &rarr; Die Tür _________ .<span class="answer-inline">war geschlossen</span></li>
+                <li>Das Fenster / öffnen &rarr; Das Fenster _________ .<span class="answer-inline">war geöffnet</span></li>
+                <li>Der Brief / schreiben &rarr; Der Brief _________ .<span class="answer-inline">war geschrieben</span></li>
+                <li>Das Haus / bauen &rarr; Das Haus _________ .<span class="answer-inline">war gebaut</span></li>
+                <li>Das Auto / reparieren &rarr; Das Auto _________ .<span class="answer-inline">war repariert</span></li>
+                <li>Das Essen / kochen &rarr; Das Essen _________ .<span class="answer-inline">war gekocht</span></li>
+                <li>Das Brot / backen &rarr; Das Brot _________ .<span class="answer-inline">war gebacken</span></li>
+                <li>Die Arbeit / machen &rarr; Die Arbeit _________ .<span class="answer-inline">war gemacht</span></li>
+                <li>Der Kaffee / trinken &rarr; Der Kaffee _________ .<span class="answer-inline">war getrunken</span></li>
+                <li>Das Buch / lesen &rarr; Das Buch _________ .<span class="answer-inline">war gelesen</span></li>
+                <li>Das Licht / ausschalten &rarr; Das Licht _________ .<span class="answer-inline">war ausgeschaltet</span></li>
+                <li>Die Tür / zumachen &rarr; Die Tür _________ .<span class="answer-inline">war zugemacht</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-663')">Показать ответы</button>
+
+            <h3>Упражнение 66.4: Переведи в Zustandspassiv (12)</h3>
+            <p><em>Переведи предложения:</em></p>
+            <ol class="exercise-list" id="ex-664">
+                <li>Дверь закрыта. &rarr; Die Tür _________ .<span class="answer-inline">ist geschlossen</span></li>
+                <li>Окно открыто. &rarr; Das Fenster _________ .<span class="answer-inline">ist geöffnet</span></li>
+                <li>Письмо написано. &rarr; Der Brief _________ .<span class="answer-inline">ist geschrieben</span></li>
+                <li>Дом построен. &rarr; Das Haus _________ .<span class="answer-inline">ist gebaut</span></li>
+                <li>Машина отремонтирована. &rarr; Das Auto _________ .<span class="answer-inline">ist repariert</span></li>
+                <li>Еда приготовлена. &rarr; Das Essen _________ .<span class="answer-inline">ist gekocht</span></li>
+                <li>Хлеб испечён. &rarr; Das Brot _________ .<span class="answer-inline">ist gebacken</span></li>
+                <li>Работа сделана. &rarr; Die Arbeit _________ .<span class="answer-inline">ist gemacht</span></li>
+                <li>Кофе выпит. &rarr; Der Kaffee _________ .<span class="answer-inline">ist getrunken</span></li>
+                <li>Книга прочитана. &rarr; Das Buch _________ .<span class="answer-inline">ist gelesen</span></li>
+                <li>Свет выключен. &rarr; Das Licht _________ .<span class="answer-inline">ist ausgeschaltet</span></li>
+                <li>Дверь закрыта (в прошлом). &rarr; Die Tür _________ .<span class="answer-inline">war geschlossen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-664')">Показать ответы</button>
+
+            <h3>Упражнение 66.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи на немецкий:</em></p>
+            <ol class="exercise-list" id="ex-665">
+                <li>Дверь закрывается. (процесс)<span class="answer-inline">Die Tür wird geschlossen.</span></li>
+                <li>Дверь закрыта. (результат)<span class="answer-inline">Die Tür ist geschlossen.</span></li>
+                <li>Окно открывается. (процесс)<span class="answer-inline">Das Fenster wird geöffnet.</span></li>
+                <li>Окно открыто. (результат)<span class="answer-inline">Das Fenster ist geöffnet.</span></li>
+                <li>Письмо пишется. (процесс)<span class="answer-inline">Der Brief wird geschrieben.</span></li>
+                <li>Письмо написано. (результат)<span class="answer-inline">Der Brief ist geschrieben.</span></li>
+                <li>Дом строится. (процесс)<span class="answer-inline">Das Haus wird gebaut.</span></li>
+                <li>Дом построен. (результат)<span class="answer-inline">Das Haus ist gebaut.</span></li>
+                <li>Машина чинится. (процесс)<span class="answer-inline">Das Auto wird repariert.</span></li>
+                <li>Машина отремонтирована. (результат)<span class="answer-inline">Das Auto ist repariert.</span></li>
+                <li>Еда готовится. (процесс)<span class="answer-inline">Das Essen wird gekocht.</span></li>
+                <li>Еда приготовлена. (результат)<span class="answer-inline">Das Essen ist gekocht.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-665')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="b1-15.html" class="nav-link">&larr; Предыдущий урок (B1-15)</a>
+        <span class="nav-title">Конец урока B1-16</span>
+        <a href="b1-17.html" class="nav-link">Следующий урок (B1-17) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

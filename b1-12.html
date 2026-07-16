@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок B1-12: Причастия Partizip I und II в роли прилагательных</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="b1-11.html" class="nav-link">&larr; Урок B1-11</a>
+        <span class="nav-title">Урок B1-12</span>
+        <a href="b1-13.html" class="nav-link">Урок B1-13 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка und Wiederholung (Wiederholung)</h2>
+            <p class="subtitle">Повторяем глаголы с Dativ/Akkusativ из урока B1-11. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Akkusativ + Dativ (местоимения) (12)</h3>
+            <p><em>Расставь местоимения в правильном порядке:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>ich / ihm / das Buch / geben &rarr; Ich _________ .<span class="answer-inline">gebe es ihm</span></li>
+                <li>ich / es / ihm / geben &rarr; Ich _________ .<span class="answer-inline">gebe es ihm</span></li>
+                <li>ich / dir / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es dir</span></li>
+                <li>ich / dich / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es dich</span></li>
+                <li>ich / ihr / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es ihr</span></li>
+                <li>ich / sie / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es sie</span></li>
+                <li>ich / uns / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es uns</span></li>
+                <li>ich / euch / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es euch</span></li>
+                <li>ich / ihnen / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es ihnen</span></li>
+                <li>ich / Sie / es / geben &rarr; Ich _________ .<span class="answer-inline">gebe es Sie</span></li>
+                <li>du / mir / das / geben &rarr; Du _________ .<span class="answer-inline">gibst es mir</span></li>
+                <li>er / ihr / das / geben &rarr; Er _________ .<span class="answer-inline">gibt es ihr</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Dativ + Akkusativ (существительные) (12)</h3>
+            <p><em>Расставь существительные в правильном порядке:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>ich / dem Mann / das Buch / geben &rarr; Ich _________ .<span class="answer-inline">gebe dem Mann das Buch</span></li>
+                <li>ich / der Frau / den Brief / schicken &rarr; Ich _________ .<span class="answer-inline">schicke der Frau den Brief</span></li>
+                <li>ich / dem Kind / das Geschenk / bringen &rarr; Ich _________ .<span class="answer-inline">bringe dem Kind das Geschenk</span></li>
+                <li>ich / dem Freund / die Information / geben &rarr; Ich _________ .<span class="answer-inline">gebe dem Freund die Information</span></li>
+                <li>ich / der Kollegin / das Buch / zeigen &rarr; Ich _________ .<span class="answer-inline">zeige der Kollegin das Buch</span></li>
+                <li>du / dem Lehrer / die Antwort / geben &rarr; Du _________ .<span class="answer-inline">gibst dem Lehrer die Antwort</span></li>
+                <li>er / der Mutter / das Essen / bringen &rarr; Er _________ .<span class="answer-inline">bringt der Mutter das Essen</span></li>
+                <li>sie / dem Vater / den Brief / schicken &rarr; Sie _________ .<span class="answer-inline">schickt dem Vater den Brief</span></li>
+                <li>wir / den Gästen / die Geschenke / geben &rarr; Wir _________ .<span class="answer-inline">geben den Gästen die Geschenke</span></li>
+                <li>ihr / dem Nachbarn / das Buch / leihen &rarr; Ihr _________ .<span class="answer-inline">leiht dem Nachbarn das Buch</span></li>
+                <li>sie / dem Chef / den Bericht / zeigen &rarr; Sie _________ .<span class="answer-inline">zeigen dem Chef den Bericht</span></li>
+                <li>ich / dem Arzt / die Informationen / geben &rarr; Ich _________ .<span class="answer-inline">gebe dem Arzt die Informationen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок B1-12: Причастия Partizip I und II в роли прилагательных</h1>
+            <p class="subtitle">der lesende Student, das gelesene Buch — причастия как прилагательные.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Понимаю конструкции вроде der lesende Student (читающий студент) и das gelesene Buch (прочитанная книга).</li>
+                <li>Умею их склонять.</li>
+                <li>Знаю разницу между Partizip I и Partizip II.</li>
+            </ul>
+
+            <h2>1. Partizip I — настоящее действие</h2>
+            <p><strong>Partizip I</strong> образуется с суффиксом <strong>-d</strong> или <strong>-nd</strong> и обозначает <strong>действие в процессе</strong>:</p>
+            <ul>
+                <li><strong>machen</strong> → <strong>machend</strong> (делающий)</li>
+                <li><strong>arbeiten</strong> → <strong>arbeitend</strong> (работающий)</li>
+                <li><strong>lernen</strong> → <strong>lernend</strong> (учащийся)</li>
+            </ul>
+
+            <h2>2. Partizip II — завершённое действие</h2>
+            <p><strong>Partizip II</strong> образуется с приставкой <strong>ge-</strong> и обозначает <strong>завершённое действие</strong>:</p>
+            <ul>
+                <li><strong>machen</strong> → <strong>gemacht</strong> (сделанный)</li>
+                <li><strong>lesen</strong> → <strong>gelesen</strong> (прочитанный)</li>
+                <li><strong>schreiben</strong> → <strong>geschrieben</strong> (написанный)</li>
+            </ul>
+
+            <h2>3. Сравнение Partizip I и Partizip II</h2>
+            <table>
+                <thead><tr><th>Инфинитив</th><th>Partizip I</th><th>Partizip II</th><th>Значение</th></tr></thead>
+                <tbody>
+                    <tr><td>arbeiten</td><td>arbeitend</td><td>gearbeitet</td><td>работающий / работавший</td></tr>
+                    <tr><td>lernen</td><td>lernend</td><td>gelernt</td><td>учащийся / учившийся</td></tr>
+                    <tr><td>lesen</td><td>lesend</td><td>gelesen</td><td>читающий / прочитанный</td></tr>
+                    <tr><td>sprechen</td><td>sprechend</td><td>gesprochen</td><td>говорящий / сказанный</td></tr>
+                </tbody>
+            </table>
+
+            <h2>4. Склонение причастий как прилагательных</h2>
+            <p>Причастия склоняются как прилагательные и согласуются с существительным в роде, числе и падеже:</p>
+
+            <table>
+                <thead><tr><th>Падеж</th><th>der lesende Student</th><th>das gelesene Buch</th></tr></thead>
+                <tbody>
+                    <tr><td>Nominativ sg. m.</td><td>der lesende Student</td><td>das gelesene Buch</td></tr>
+                    <tr><td>Akkusativ sg. m.</td><td>den lesenden Studenten</td><td>das gelesene Buch</td></tr>
+                    <tr><td>Dativ sg. m.</td><td>dem lesenden Studenten</td><td>dem gelesenen Buch</td></tr>
+                    <tr><td>Genitiv sg. m.</td><td>des lesenden Studenten</td><td>des gelesenen Buches</td></tr>
+                </tbody>
+            </table>
+
+            <h2>5. Примеры с Partizip I</h2>
+            <table>
+                <thead><tr><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>Der <strong>arbeitende</strong> Mann ist müde.</td><td>Работающий мужчина устал.</td></tr>
+                    <tr><td>Die <strong>lernende</strong> Studentin ist fleißig.</td><td>Учащаяся студентка трудолюбива.</td></tr>
+                    <tr><td>Das <strong>sprechende</strong> Kind ist laut.</td><td>Говорящий ребёнок громкий.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>6. Примеры с Partizip II</h2>
+            <table>
+                <thead><tr><th>Пример</th><th>Перевод</th></tr></thead>
+                <tbody>
+                    <tr><td>Das <strong>gelesene</strong> Buch ist interessant.</td><td>Прочитанная книга интересная.</td></tr>
+                    <tr><td>Der <strong>geschriebene</strong> Brief ist lang.</td><td>Написанное письмо длинное.</td></tr>
+                    <tr><td>Die <strong>gemachte</strong> Arbeit ist gut.</td><td>Сделанная работа хорошая.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для описания действий и состояний.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>das Partizip I</strong> — причастие настоящего</div>
+                <div class="vocabulary-item"><strong>das Partizip II</strong> — причастие прошедшего</div>
+                <div class="vocabulary-item"><strong>lesen</strong> — читать</div>
+                <div class="vocabulary-item"><strong>schreiben</strong> — писать</div>
+                <div class="vocabulary-item"><strong>arbeiten</strong> — работать</div>
+                <div class="vocabulary-item"><strong>lernen</strong> — учить(ся)</div>
+                <div class="vocabulary-item"><strong>sprechen</strong> — говорить</div>
+                <div class="vocabulary-item"><strong>machen</strong> — делать</div>
+                <div class="vocabulary-item"><strong>sehen</strong> — видеть</div>
+                <div class="vocabulary-item"><strong>hören</strong> — слышать</div>
+                <div class="vocabulary-item"><strong>der Student, -en</strong> — студент</div>
+                <div class="vocabulary-item"><strong>die Studentin, -nen</strong> — студентка</div>
+                <div class="vocabulary-item"><strong>der Arbeiter, -</strong> — рабочий</div>
+                <div class="vocabulary-item"><strong>der Lehrer, -</strong> — учитель</div>
+                <div class="vocabulary-item"><strong>das Buch, -äer</strong> — книга</div>
+                <div class="vocabulary-item"><strong>der Brief, -e</strong> — письмо</div>
+                <div class="vocabulary-item"><strong>die Arbeit, -en</strong> — работа</div>
+                <div class="vocabulary-item"><strong>die Geschichte, -n</strong> — история</div>
+                <div class="vocabulary-item"><strong>der Mann, -äer</strong> — мужчина</div>
+                <div class="vocabulary-item"><strong>die Frau, -en</strong> — женщина</div>
+                <div class="vocabulary-item"><strong>das Kind, -er</strong> — ребёнок</div>
+                <div class="vocabulary-item"><strong>der Prozess, -e</strong> — процесс</div>
+                <div class="vocabulary-item"><strong>die Tätigkeit, -en</strong> — деятельность</div>
+                <div class="vocabulary-item"><strong>der Zustand, -äe</strong> — состояние</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Осваиваем причастия!</p>
+
+            <h3>Упражнение 62.1: Partizip I или Partizip II? (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-621">
+                <li>Der _________ Mann arbeitet. (arbeitend / gearbeitet)<span class="answer-inline">arbeitend</span></li>
+                <li>Das _________ Buch ist interessant. (lesend / gelesen)<span class="answer-inline">gelesen</span></li>
+                <li>Die _________ Studentin lernt. (lernend / gelernt)<span class="answer-inline">lernend</span></li>
+                <li>Der _________ Brief ist lang. (schreibend / geschrieben)<span class="answer-inline">geschrieben</span></li>
+                <li>Das _________ Kind spricht. (sprechend / gesprochen)<span class="answer-inline">sprechend</span></li>
+                <li>Die _________ Arbeit ist gut. (machend / gemacht)<span class="answer-inline">gemacht</span></li>
+                <li>Der _________ Mann sieht. (sehend / gesehen)<span class="answer-inline">sehend</span></li>
+                <li>Das _________ Lied ist schön. (singend / gesungen)<span class="answer-inline">gesungen</span></li>
+                <li>Die _________ Geschichte ist wahr. (erzählend / erzählt)<span class="answer-inline">erzählt</span></li>
+                <li>Der _________ Film ist interessant. (zeigend / gezeigt)<span class="answer-inline">gezeigt</span></li>
+                <li>Die _________ Tür ist offen. (öffnend / geöffnet)<span class="answer-inline">geöffnet</span></li>
+                <li>Das _________ Haus ist groß. (bauend / gebaut)<span class="answer-inline">gebaut</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-621')">Показать ответы</button>
+
+            <h3>Упражнение 62.2: Образуй Partizip I (12)</h3>
+            <p><em>Образуй Partizip I от глаголов:</em></p>
+            <ol class="exercise-list" id="ex-622">
+                <li>arbeiten &rarr; _________<span class="answer-inline">arbeitend</span></li>
+                <li>lernen &rarr; _________<span class="answer-inline">lernend</span></li>
+                <li>sprechen &rarr; _________<span class="answer-inline">sprechend</span></li>
+                <li>lesen &rarr; _________<span class="answer-inline">lesend</span></li>
+                <li>schreiben &rarr; _________<span class="answer-inline">schreibend</span></li>
+                <li>sehen &rarr; _________<span class="answer-inline">sehend</span></li>
+                <li>hören &rarr; _________<span class="answer-inline">hörend</span></li>
+                <li>machen &rarr; _________<span class="answer-inline">machend</span></li>
+                <li>singen &rarr; _________<span class="answer-inline">singend</span></li>
+                <li>tanzen &rarr; _________<span class="answer-inline">tanzend</span></li>
+                <li>wohnen &rarr; _________<span class="answer-inline">wohnend</span></li>
+                <li>arbeiten &rarr; _________<span class="answer-inline">arbeitend</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-622')">Показать ответы</button>
+
+            <h3>Упражнение 62.3: Образуй Partizip II (12)</h3>
+            <p><em>Образуй Partizip II от глаголов:</em></p>
+            <ol class="exercise-list" id="ex-623">
+                <li>arbeiten &rarr; _________<span class="answer-inline">gearbeitet</span></li>
+                <li>lernen &rarr; _________<span class="answer-inline">gelernt</span></li>
+                <li>sprechen &rarr; _________<span class="answer-inline">gesprochen</span></li>
+                <li>lesen &rarr; _________<span class="answer-inline">gelesen</span></li>
+                <li>schreiben &rarr; _________<span class="answer-inline">geschrieben</span></li>
+                <li>sehen &rarr; _________<span class="answer-inline">gesehen</span></li>
+                <li>hören &rarr; _________<span class="answer-inline">gehört</span></li>
+                <li>machen &rarr; _________<span class="answer-inline">gemacht</span></li>
+                <li>singen &rarr; _________<span class="answer-inline">gesungen</span></li>
+                <li>tanzen &rarr; _________<span class="answer-inline">getanzt</span></li>
+                <li>wohnen &rarr; _________<span class="answer-inline">gewohnt</span></li>
+                <li>arbeiten &rarr; _________<span class="answer-inline">gearbeitet</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-623')">Показать ответы</button>
+
+            <h3>Упражнение 62.4: Склонение причастий (12)</h3>
+            <p><em>Согласуй причастие с существительным:</em></p>
+            <ol class="exercise-list" id="ex-624">
+                <li>der / lesend / Student (Nom. sg. m.) &rarr; _________<span class="answer-inline">der lesende Student</span></li>
+                <li>den / lesend / Student (Akk. sg. m.) &rarr; _________<span class="answer-inline">den lesenden Studenten</span></li>
+                <li>dem / lesend / Student (Dat. sg. m.) &rarr; _________<span class="answer-inline">dem lesenden Studenten</span></li>
+                <li>des / lesend / Student (Gen. sg. m.) &rarr; _________<span class="answer-inline">des lesenden Studenten</span></li>
+                <li>die / lesend / Studentin (Nom. sg. f.) &rarr; _________<span class="answer-inline">die lesende Studentin</span></li>
+                <li>die / lesend / Studentin (Akk. sg. f.) &rarr; _________<span class="answer-inline">die lesende Studentin</span></li>
+                <li>der / lesend / Studentin (Dat. sg. f.) &rarr; _________<span class="answer-inline">der lesenden Studentin</span></li>
+                <li>der / lesend / Studentin (Gen. sg. f.) &rarr; _________<span class="answer-inline">der lesenden Studentin</span></li>
+                <li>das / gelesen / Buch (Nom. sg. n.) &rarr; _________<span class="answer-inline">das gelesene Buch</span></li>
+                <li>das / gelesen / Buch (Akk. sg. n.) &rarr; _________<span class="answer-inline">das gelesene Buch</span></li>
+                <li>dem / gelesen / Buch (Dat. sg. n.) &rarr; _________<span class="answer-inline">dem gelesenen Buch</span></li>
+                <li>des / gelesen / Buch (Gen. sg. n.) &rarr; _________<span class="answer-inline">des gelesenen Buches</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-624')">Показать ответы</button>
+
+            <h3>Упражнение 62.5: Перевод на немецкий (12)</h3>
+            <p><em>Используй причастия как прилагательные:</em></p>
+            <ol class="exercise-list" id="ex-625">
+                <li>Читающий студент умный. &rarr; Der _________ Student ist intelligent.<span class="answer-inline">lesende</span></li>
+                <li>Работающий мужчина устал. &rarr; Der _________ Mann ist müde.<span class="answer-inline">arbeitende</span></li>
+                <li>Учащаяся студентка трудолюбива. &rarr; Die _________ Studentin ist fleißig.<span class="answer-inline">lernende</span></li>
+                <li>Прочитанная книга интересная. &rarr; Das _________ Buch ist interessant.<span class="answer-inline">gelesene</span></li>
+                <li>Написанное письмо длинное. &rarr; Der _________ Brief ist lang.<span class="answer-inline">geschriebene</span></li>
+                <li>Сделанная работа хорошая. &rarr; Die _________ Arbeit ist gut.<span class="answer-inline">gemachte</span></li>
+                <li>Говорящий ребёнок громкий. &rarr; Das _________ Kind ist laut.<span class="answer-inline">sprechende</span></li>
+                <li>Показанный фильм интересный. &rarr; Der _________ Film ist interessant.<span class="answer-inline">gezeigte</span></li>
+                <li>Открытая дверь большая. &rarr; Die _________ Tür ist groß.<span class="answer-inline">geöffnete</span></li>
+                <li>Построенный дом красивый. &rarr; Das _________ Haus ist schön.<span class="answer-inline">gebaute</span></li>
+                <li>Петый песня красивая. &rarr; Das _________ Lied ist schön.<span class="answer-inline">gesungene</span></li>
+                <li>Рассказанная история интересная. &rarr; Die _________ Geschichte ist interessant.<span class="answer-inline">erzählte</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-625')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="b1-11.html" class="nav-link">&larr; Предыдущий урок (B1-11)</a>
+        <span class="nav-title">Конец урока B1-12</span>
+        <a href="b1-13.html" class="nav-link">Следующий урок (B1-13) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>

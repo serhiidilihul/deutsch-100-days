@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок B1-8: Konjunktiv II — hätte и wäre, нереальное условие</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <nav class="nav">
+        <a href="b1-7.html" class="nav-link">&larr; Урок B1-7</a>
+        <span class="nav-title">Урок B1-8</span>
+        <a href="b1-9.html" class="nav-link">Урок B1-9 &rarr;</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>Разминка и повторung (Wiederholung)</h2>
+            <p class="subtitle">Повторяем Konjunktiv II (würde + Infinitiv) из урока B1-7. 24 вопроса!</p>
+
+            <h3>Упражнение Р1: Формула würde + Infinitiv (12)</h3>
+            <p><em>Построй Konjunktiv II с würde:</em></p>
+            <ol class="exercise-list" id="ex-r1">
+                <li>ich / kaufen &rarr; Ich _________ ein Auto.<span class="answer-inline">würde kaufen</span></li>
+                <li>du / arbeiten &rarr; Du _________ in Berlin.<span class="answer-inline">würdest arbeiten</span></li>
+                <li>er / reisen &rarr; Er _________ nach Deutschland.<span class="answer-inline">würde reisen</span></li>
+                <li>sie / helfen &rarr; Sie _________ mir.<span class="answer-inline">würde helfen</span></li>
+                <li>wir / lernen &rarr; Wir _________ Deutsch.<span class="answer-inline">würden lernen</span></li>
+                <li>ihr / studieren &rarr; Ihr _________ Medizin.<span class="answer-inline">würdet studieren</span></li>
+                <li>sie / wohnen &rarr; Sie _________ in München.<span class="answer-inline">würden wohnen</span></li>
+                <li>ich / machen &rarr; Ich _________ das.<span class="answer-inline">würde machen</span></li>
+                <li>du / sein &rarr; Du _________ reich.<span class="answer-inline">würdest sein</span></li>
+                <li>er / haben &rarr; Er _________ ein Haus.<span class="answer-inline">würde haben</span></li>
+                <li>sie / essen &rarr; Sie _________ Pizza.<span class="answer-inline">würde essen</span></li>
+                <li>wir / trinken &rarr; Wir _________ Kaffee.<span class="answer-inline">würden trinken</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+
+            <h3>Упражнение Р2: Вежливые просьбы (12)</h3>
+            <p><em>Построй вежливые просьбы:</em></p>
+            <ol class="exercise-list" id="ex-r2">
+                <li>können / Sie / mir helfen &rarr; _________ Sie mir helfen?<span class="answer-inline">Könnten</span></li>
+                <li>dürfen / ich / hereinkommen &rarr; _________ ich hereinkommen?<span class="answer-inline">Dürfte</span></li>
+                <li>wollen / Sie / das machen &rarr; _________ Sie das bitte machen?<span class="answer-inline">Wollten</span></li>
+                <li>können / Sie / das wiederholen &rarr; _________ Sie das wiederholen?<span class="answer-inline">Könnten</span></li>
+                <li>dürfen / ich / fragen &rarr; _________ ich etwas fragen?<span class="answer-inline">Dürfte</span></li>
+                <li>wollen / Sie / mir sagen &rarr; _________ Sie mir das sagen?<span class="answer-inline">Wollten</span></li>
+                <li>können / Sie / mir helfen / verstehen &rarr; _________ Sie mir helfen, das zu verstehen?<span class="answer-inline">Könnten</span></li>
+                <li>dürfen / ich / telefonieren &rarr; _________ ich hier telefonieren?<span class="answer-inline">Dürfte</span></li>
+                <li>wollen / Sie / das bestellen &rarr; _________ Sie das bestellen?<span class="answer-inline">Wollten</span></li>
+                <li>können / Sie / warten &rarr; _________ Sie einen Moment warten?<span class="answer-inline">Könnten</span></li>
+                <li>dürfen / ich / sitzen &rarr; _________ ich hier sitzen?<span class="answer-inline">Dürfte</span></li>
+                <li>wollen / Sie / das prüfen &rarr; _________ Sie das bitte prüfen?<span class="answer-inline">Wollten</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+        </div>
+
+        <div class="card">
+            <h1>Урок B1-8: Konjunktiv II — hätte и wäre, нереальное условие</h1>
+            <p class="subtitle">«Если бы у меня было время, я бы...» — гипотетические ситуации.</p>
+
+            <h2>Lernziele (Цели обучения)</h2>
+            <ul>
+                <li>Свободно строю предложения типа «Если бы у меня было время, я бы...» (Wenn ich Zeit hätte, würde ich...).</li>
+                <li>Понимаю структуру гипотетических ситуаций.</li>
+                <li>Знаю формы hätte и wäre в Konjunktiv II.</li>
+            </ul>
+
+            <h2>1. Формы hätte и wäre</h2>
+            <p>У глаголов <strong>haben</strong> и <strong>sein</strong> в Konjunktiv II есть особые формы:</p>
+            <table>
+                <thead><tr><th>Лицо</th><th>haben → hätte</th><th>sein → wäre</th><th>Пример</th></tr></thead>
+                <tbody>
+                    <tr><td>ich</td><td>hätte</td><td>wäre</td><td><em>Ich hätte Zeit. / Ich wäre reich.</em></td></tr>
+                    <tr><td>du</td><td>hättest</td><td>wärst</td><td><em>Du hättest Zeit. / Du wärst reich.</em></td></tr>
+                    <tr><td>er/sie/es</td><td>hätte</td><td>wäre</td><td><em>Er hätte Zeit. / Er wäre reich.</em></td></tr>
+                    <tr><td>wir</td><td>hätten</td><td>wären</td><td><em>Wir hätten Zeit. / Wir wären reich.</em></td></tr>
+                    <tr><td>ihr</td><td>hättet</td><td>wäret</td><td><em>Ihr hättet Zeit. / Ihr wäret reich.</em></td></tr>
+                    <tr><td>sie/Sie</td><td>hätten</td><td>wären</td><td><em>Sie hätten Zeit. / Sie wären reich.</em></td></tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Важно!</strong><br>
+                <strong>hätte</strong> = если бы у меня было (иметь)<br>
+                <strong>wäre</strong> = если бы я был (быть)<br>
+                Это <strong>не прошедшее время</strong>, а <strong>сослагательное наклонение</strong>!
+            </div>
+
+            <h2>2. Нереальное условие (Wenn-Satz)</h2>
+            <p>Для выражения нереальных условий используем <strong>wenn</strong> + Konjunktiv II:</p>
+            <table>
+                <thead><tr><th>Главное предложение</th><th>Придаточное (wenn)</th></tr></thead>
+                <tbody>
+                    <tr><td>Ich würde reisen.</td><td>Wenn ich Zeit <strong>hätte</strong>...</td></tr>
+                    <tr><td>Ich wäre glücklich.</td><td>Wenn ich reich <strong>wäre</strong>...</td></tr>
+                    <tr><td>Ich würde helfen.</td><td>Wenn ich Zeit <strong>hätte</strong>...</td></tr>
+                </tbody>
+            </table>
+
+            <h2>3. Полная конструкция: wenn + würde</h2>
+            <p>Можно использовать полную конструкцию в обоих частях:</p>
+            <ul>
+                <li><em><strong>Wenn</strong> ich Zeit <strong>hätte</strong>, <strong>würde</strong> ich reisen.</em> — Если бы у меня было время, я бы поехал.</li>
+                <li><em><strong>Wenn</strong> ich reich <strong>wäre</strong>, <strong>würde</strong> ich ein Haus kaufen.</em> — Если бы я был богат, я бы купил дом.</li>
+                <li><em><strong>Wenn</strong> ich Deutsch <strong>könnte</strong>, <strong>würde</strong> ich in Deutschland arbeiten.</em> — Если бы я мог немецкий, я бы работал в Германии.</li>
+            </ul>
+
+            <div class="note">
+                <strong>Порядок слов:</strong><br>
+                1. <strong>Wenn</strong> (если)<br>
+                2. Подлежащее<br>
+                3. hätte/wäre/könnte<br>
+                4. Остальные слова<br>
+                5. <strong>Глагол в конце</strong> (würde + Infinitiv)<br>
+                <em>Wenn ich Zeit <strong>hätte</strong>, <strong>würde</strong> ich reisen.</em>
+            </div>
+
+            <h2>4. Сокращённая форма (только hätte/wäre)</h2>
+            <p>Можно опустить würde и использовать только hätte/wäre:</p>
+            <ul>
+                <li><em>Wenn ich Zeit <strong>hätte</strong>, <strong>reiste</strong> ich.</em> — Если бы у меня было время, я бы поехал.</li>
+                <li><em>Wenn ich reich <strong>wäre</strong>, <strong>kaufte</strong> ich ein Haus.</em> — Если бы я был богат, я бы купил дом.</li>
+            </ul>
+
+            <h2>5. Без wenn (инверсия)</h2>
+            <p>В разговорной речи wenn часто опускается, и глагол стоит на первом месте:</p>
+            <ul>
+                <li><em><strong>Hätte</strong> ich Zeit, <strong>würde</strong> ich reisen.</em> — Если бы у меня было время...</li>
+                <li><em><strong>Wäre</strong> ich reich, <strong>würde</strong> ich ein Haus kaufen.</em> — Если бы я был богат...</li>
+            </ul>
+
+            <h2>6. Различие: реальное vs нереальное</h2>
+            <table>
+                <thead><tr><th>Тип</th><th>Пример</th><th>Значение</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Реальное</strong></td><td>Wenn ich Zeit habe, reise ich.</td><td>Если у меня будет время, я поеду. (реально)</td></tr>
+                    <tr><td><strong>Нереальное</strong></td><td>Wenn ich Zeit hätte, würde ich reisen.</td><td>Если бы у меня было время, я бы поехал. (не реально)</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Wortschatz (Словарь урока)</h2>
+            <p class="subtitle">25 слов для гипотетических ситуаций.</p>
+            <div class="vocabulary-list">
+                <div class="vocabulary-item"><strong>hätte</strong> — если бы у меня было (от haben)</div>
+                <div class="vocabulary-item"><strong>wäre</strong> — если бы я был (от sein)</div>
+                <div class="vocabulary-item"><strong>die Bedingung, -en</strong> — условие</div>
+                <div class="vocabulary-item"><strong>die Wirklichkeit (Sg.)</strong> — реальность</div>
+                <div class="vocabulary-item"><strong>die Möglichkeit, -en</strong> — возможность</div>
+                <div class="vocabulary-item"><strong>der Traum, -äe</strong> — мечта</div>
+                <div class="vocabulary-item"><strong>der Wunsch, -äe</strong> — желание</div>
+                <div class="vocabulary-item"><strong>das Glück, -e</strong> — счастье</div>
+                <div class="vocabulary-item"><strong>reich</strong> — богатый</div>
+                <div class="vocabulary-item"><strong>arm</strong> — бедный</div>
+                <div class="vocabulary-item"><strong>glücklich</strong> — счастливый</div>
+                <div class="vocabulary-item"><strong>unglücklich</strong> — несчастный</div>
+                <div class="vocabulary-item"><strong>die Zeit (Sg.)</strong> — время</div>
+                <div class="vocabulary-item"><strong>das Geld, -er</strong> — деньги</div>
+                <div class="vocabulary-item"><strong>das Haus, -äer</strong> — дом</div>
+                <div class="vocabulary-item"><strong>das Auto, -s</strong> — машина</div>
+                <div class="vocabulary-item"><strong>die Arbeit, -en</strong> — работа</div>
+                <div class="vocabulary-item"><strong>der Job, -s</strong> — работа (рабочее место)</div>
+                <div class="vocabulary-item"><strong>die Chance, -n</strong> — шанс</div>
+                <div class="vocabulary-item"><strong>die Möglichkeit, -en</strong> — возможность</div>
+                <div class="vocabulary-item"><strong>der Grund, -äe</strong> — причина</div>
+                <div class="vocabulary-item"><strong>das Problem, -e</strong> — проблема</div>
+                <div class="vocabulary-item"><strong>die Lösung, -en</strong> — решение</div>
+                <div class="vocabulary-item"><strong>der Fehler, -</strong> — ошибка</div>
+                <div class="vocabulary-item"><strong>die Erfahrung, -en</strong> — опыт</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Практика (Übungen)</h2>
+            <p class="subtitle">5 упражнений по 12 примеров. Осваиваем hätte и wäre!</p>
+
+            <h3>Упражнение 58.1: hätte oder wäre? (12)</h3>
+            <p><em>Выбери правильную форму:</em></p>
+            <ol class="exercise-list" id="ex-581">
+                <li>Wenn ich Zeit _________, würde ich reisen. (hätte / wäre)<span class="answer-inline">hätte</span></li>
+                <li>Wenn ich reich _________, würde ich ein Haus kaufen. (hätte / wäre)<span class="answer-inline">wäre</span></li>
+                <li>Wenn ich ein Auto _________, würde ich fahren. (hätte / wäre)<span class="answer-inline">hätte</span></li>
+                <li>Wenn ich gesund _________, würde ich arbeiten. (hätte / wäre)<span class="answer-inline">wäre</span></li>
+                <li>Wenn ich Geld _________, würde ich helfen. (hätte / wäre)<span class="answer-inline">hätte</span></li>
+                <li>Wenn ich Student _________, würde ich lernen. (hätte / wäre)<span class="answer-inline">wäre</span></li>
+                <li>Wenn ich eine Wohnung _________, würde ich wohnen. (hätte / wäre)<span class="answer-inline">hätte</span></li>
+                <li>Wenn ich glücklich _________, würde ich lächeln. (hätte / wäre)<span class="answer-inline">wäre</span></li>
+                <li>Wenn ich Freunde _________, würde ich treffen. (hätte / wäre)<span class="answer-inline">hätte</span></li>
+                <li>Wenn ich hier _________, würde ich bleiben. (hätte / wäre)<span class="answer-inline">wäre</span></li>
+                <li>Wenn ich Zeit _________, würde ich lesen. (hätte / wäre)<span class="answer-inline">hätte</span></li>
+                <li>Wenn ich Arzt _________, würde ich helfen. (hätte / wäre)<span class="answer-inline">wäre</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-581')">Показать ответы</button>
+
+            <h3>Упражнение 58.2: Спряжение hätte (12)</h3>
+            <p><em>Поставь hätte в нужной форме:</em></p>
+            <ol class="exercise-list" id="ex-582">
+                <li>ich / Zeit &rarr; Wenn ich Zeit _________, reiste ich.<span class="answer-inline">hätte</span></li>
+                <li>du / Geld &rarr; Wenn du Geld _________, kaufst du ein Auto.<span class="answer-inline">hättest</span></li>
+                <li>er / ein Haus &rarr; Wenn er ein Haus _________, wäre er glücklich.<span class="answer-inline">hätte</span></li>
+                <li>sie / eine Wohnung &rarr; Wenn sie eine Wohnung _________, wohnte sie hier.<span class="answer-inline">hätte</span></li>
+                <li>wir / Zeit &rarr; Wenn wir Zeit _________, würden wir reisen.<span class="answer-inline">hätten</span></li>
+                <li>ihr / Geld &rarr; Wenn ihr Geld _________, würdet ihr kaufen.<span class="answer-inline">hättet</span></li>
+                <li>sie / ein Auto &rarr; Wenn sie ein Auto _________, führe sie.<span class="answer-inline">hätten</span></li>
+                <li>ich / Freunde &rarr; Wenn ich Freunde _________, würde ich treffen.<span class="answer-inline">hätte</span></li>
+                <li>du / eine Wohnung &rarr; Wenn du eine Wohnung _________, wohntest du hier.<span class="answer-inline">hättest</span></li>
+                <li>er / Geld &rarr; Wenn er Geld _________, würde er helfen.<span class="answer-inline">hätte</span></li>
+                <li>sie / Zeit &rarr; Wenn sie Zeit _________, würde sie lesen.<span class="answer-inline">hätte</span></li>
+                <li>wir / ein Haus &rarr; Wenn wir ein Haus _________, wären wir glücklich.<span class="answer-inline">hätten</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-582')">Показать ответы</button>
+
+            <h3>Упражнение 58.3: Спряжение wäre (12)</h3>
+            <p><em>Поставь wäre в нужной форме:</em></p>
+            <ol class="exercise-list" id="ex-583">
+                <li>ich / reich &rarr; Wenn ich reich _________, würde ich reisen.<span class="answer-inline">wäre</span></li>
+                <li>du / gesund &rarr; Wenn du gesund _________, würdest du arbeiten.<span class="answer-inline">wärst</span></li>
+                <li>er / Student &rarr; Wenn er Student _________, würde er lernen.<span class="answer-inline">wäre</span></li>
+                <li>sie / hier &rarr; Wenn sie hier _________, würde sie bleiben.<span class="answer-inline">wäre</span></li>
+                <li>wir / glücklich &rarr; Wenn wir glücklich _________, würden wir lächeln.<span class="answer-inline">wären</span></li>
+                <li>ihr / in Berlin &rarr; Wenn ihr in Berlin _________, würdet ihr wohnen.<span class="answer-inline">wäret</span></li>
+                <li>sie / Ärzte &rarr; Wenn sie Ärzte _________, würden sie helfen.<span class="answer-inline">wären</span></li>
+                <li>ich / Arzt &rarr; Wenn ich Arzt _________, würde ich helfen.<span class="answer-inline">wäre</span></li>
+                <li>du / Lehrer &rarr; Wenn du Lehrer _________, würdest du unterrichten.<span class="answer-inline">wärst</span></li>
+                <li>er / in Deutschland &rarr; Wenn er in Deutschland _________, würde er arbeiten.<span class="answer-inline">wäre</span></li>
+                <li>sie / reich &rarr; Wenn sie reich _________, würde sie kaufen.<span class="answer-inline">wäre</span></li>
+                <li>wir / Studenten &rarr; Wenn wir Studenten _________, würden wir lernen.<span class="answer-inline">wären</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-583')">Показать ответы</button>
+
+            <h3>Упражнение 58.4: Построй нереальные условия (12)</h3>
+            <p><em>Построй предложения с wenn + Konjunktiv II:</em></p>
+            <ol class="exercise-list" id="ex-584">
+                <li>ich / Zeit haben / reisen &rarr; Wenn ich Zeit _________ , _________ ich _________ .<span class="answer-inline">hätte ... würde ... reisen</span></li>
+                <li>du / reich sein / ein Haus kaufen &rarr; Wenn du reich _________ , _________ du _________ .<span class="answer-inline">wärst ... würdest ... kaufen</span></li>
+                <li>er / Deutsch können / arbeiten &rarr; Wenn er Deutsch _________ , _________ er _________ .<span class="answer-inline">könnte ... würde ... arbeiten</span></li>
+                <li>sie / gesund sein / helfen &rarr; Wenn sie gesund _________ , _________ sie _________ .<span class="answer-inline">wäre ... würde ... helfen</span></li>
+                <li>wir / Geld haben / reisen &rarr; Wenn wir Geld _________ , _________ wir _________ .<span class="answer-inline">hätten ... würden ... reisen</span></li>
+                <li>ihr / Studenten sein / lernen &rarr; Wenn ihr Studenten _________ , _________ ihr _________ .<span class="answer-inline">wäret ... würdet ... lernen</span></li>
+                <li>sie / eine Wohnung haben / wohnen &rarr; Wenn sie eine Wohnung _________ , _________ sie _________ .<span class="answer-inline">hätten ... würden ... wohnen</span></li>
+                <li>ich / ein Auto haben / fahren &rarr; Wenn ich ein Auto _________ , _________ ich _________ .<span class="answer-inline">hätte ... würde ... fahren</span></li>
+                <li>du / hier sein / bleiben &rarr; Wenn du hier _________ , _________ du _________ .<span class="answer-inline">wärst ... würdest ... bleiben</span></li>
+                <li>er / Zeit haben / lesen &rarr; Wenn er Zeit _________ , _________ er _________ .<span class="answer-inline">hätte ... würde ... lesen</span></li>
+                <li>sie / glücklich sein / lächeln &rarr; Wenn sie glücklich _________ , _________ sie _________ .<span class="answer-inline">wäre ... würde ... lächeln</span></li>
+                <li>wir / reich sein / helfen &rarr; Wenn wir reich _________ , _________ wir _________ .<span class="answer-inline">wären ... würden ... helfen</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-584')">Показать ответы</button>
+
+            <h3>Упражнение 58.5: Перевод на немецкий (12)</h3>
+            <p><em>Переведи с использованием нереального условия:</em></p>
+            <ol class="exercise-list" id="ex-585">
+                <li>Если бы у меня было время, я бы поехал.<span class="answer-inline">Wenn ich Zeit hätte, würde ich reisen.</span></li>
+                <li>Если бы я был богат, я бы купил дом.<span class="answer-inline">Wenn ich reich wäre, würde ich ein Haus kaufen.</span></li>
+                <li>Если бы у тебя было машина, ты бы ездил.<span class="answer-inline">Wenn du ein Auto hättest, würdest du fahren.</span></li>
+                <li>Если бы он был здоров, он бы работал.<span class="answer-inline">Wenn er gesund wäre, würde er arbeiten.</span></li>
+                <li>Если бы у нас были деньги, мы бы помогли.<span class="answer-inline">Wenn wir Geld hätten, würden wir helfen.</span></li>
+                <li>Если бы вы были студентами, вы бы учились.<span class="answer-inline">Wenn Sie Studenten wären, würden Sie lernen.</span></li>
+                <li>Если бы у них была квартира, они бы жили здесь.<span class="answer-inline">Wenn sie eine Wohnung hätten, würden sie hier wohnen.</span></li>
+                <li>Если бы я был врачом, я бы помогал.<span class="answer-inline">Wenn ich Arzt wäre, würde ich helfen.</span></li>
+                <li>Если бы ты был в Берлине, ты бы учился.<span class="answer-inline">Wenn du in Berlin wärst, würdest du lernen.</span></li>
+                <li>Если бы он умел немецкий, он бы работал.<span class="answer-inline">Wenn er Deutsch könnte, würde er arbeiten.</span></li>
+                <li>Если бы она была счастлива, она бы улыбалась.<span class="answer-inline">Wenn sie glücklich wäre, würde sie lächeln.</span></li>
+                <li>Если бы мы были богаты, мы бы путешествовали.<span class="answer-inline">Wenn wir reich wären, würden wir reisen.</span></li>
+            </ol>
+            <button class="btn-toggle" onclick="toggleExercise('ex-585')">Показать ответы</button>
+        </div>
+    </main>
+
+    <nav class="nav nav-bottom">
+        <a href="b1-7.html" class="nav-link">&larr; Предыдущий урок (B1-7)</a>
+        <span class="nav-title">Конец урока B1-8</span>
+        <a href="b1-9.html" class="nav-link">Следующий урок (B1-9) &rarr;</a>
+    </nav>
+</div>
+
+<script>
+    function toggleExercise(id) {
+        const list = document.getElementById(id);
+        const btn = list.nextElementSibling;
+        if (list.classList.contains('show-answers')) {
+            list.classList.remove('show-answers');
+            btn.textContent = 'Показать ответы';
+            btn.classList.remove('active');
+        } else {
+            list.classList.add('show-answers');
+            btn.textContent = 'Скрыть ответы';
+            btn.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>
