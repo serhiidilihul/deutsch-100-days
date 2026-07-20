@@ -276,6 +276,10 @@
 
 
 
+
+
+
+
 <script>
     function toggleAnswers(id) {
         const block = document.getElementById(id);
@@ -308,9 +312,9 @@
         const list = document.getElementById(id);
         if (!list) return;
         const inputs = list.querySelectorAll('.exercise-input');
-        let correct = 0, total = 0;
+        let correct = 0, total = inputs.length;
+        
         inputs.forEach(function(input) {
-            total++;
             input.classList.remove('correct', 'incorrect');
             input.disabled = true;
             const li = input.closest('li');
@@ -318,17 +322,37 @@
             const answerSpan = li ? li.querySelector('.answer-inline') : null;
             if (answerSpan) answer = answerSpan.textContent.trim();
             if (!answer) answer = input.getAttribute('data-answer') || '';
+            
             const userAnswer = input.value.trim().toLowerCase();
             const expected = answer.toLowerCase();
+            
+            // Remove old feedback icon
+            const oldFeedback = li ? li.querySelector('.exercise-feedback') : null;
+            if (oldFeedback) oldFeedback.remove();
+            
             if (userAnswer === expected) {
                 input.classList.add('correct');
-                if (li) li.classList.add('correct');
+                if (li) {
+                    li.classList.add('correct');
+                    const icon = document.createElement('span');
+                    icon.className = 'exercise-feedback correct';
+                    icon.textContent = '✓';
+                    li.appendChild(icon);
+                }
                 correct++;
             } else if (userAnswer !== '') {
                 input.classList.add('incorrect');
-                if (li) li.classList.add('incorrect');
+                if (li) {
+                    li.classList.add('incorrect');
+                    const icon = document.createElement('span');
+                    icon.className = 'exercise-feedback incorrect';
+                    icon.textContent = '✗';
+                    li.appendChild(icon);
+                }
             }
         });
+        
+        // Update score
         let score = list.parentElement.querySelector('.score-display');
         if (!score) {
             score = document.createElement('span');
@@ -352,13 +376,16 @@
                 li.closest('ol') && li.closest('ol').classList.add('exercise-list');
             }
         });
+        
         document.querySelectorAll('.exercise-list').forEach(function(list) {
             if (list.querySelectorAll('.exercise-input').length === 0) return;
             if (list.parentElement.querySelector('.btn-check')) return;
+            
             const checkBtn = document.createElement('button');
             checkBtn.className = 'btn-check';
             checkBtn.textContent = '✅ Проверить';
             checkBtn.onclick = function() { checkExercise(list.id); };
+            
             const toggleBtn = list.nextElementSibling;
             if (toggleBtn && toggleBtn.classList.contains('btn-toggle')) {
                 toggleBtn.parentNode.insertBefore(checkBtn, toggleBtn.nextSibling);
