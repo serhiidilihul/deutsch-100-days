@@ -265,6 +265,8 @@
 
 
 
+
+
 <script>
     function toggleAnswers(id) {
         const block = document.getElementById(id);
@@ -301,6 +303,7 @@
         inputs.forEach(function(input) {
             total++;
             input.classList.remove('correct', 'incorrect');
+            input.disabled = true;
             const li = input.closest('li');
             let answer = '';
             const answerSpan = li ? li.querySelector('.answer-inline') : null;

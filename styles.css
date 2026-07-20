@@ -424,14 +424,14 @@ blockquote strong {
 }
 
 .btn-check {
-    background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+    background: linear-gradient(135deg, #19a37d 0%, #2dd4bf 100%);
     color: #ffffff;
-    box-shadow: 0 6px 14px rgba(15, 118, 110, 0.2);
+    box-shadow: var(--shadow-btn);
 }
 
 .btn-check:hover {
     transform: translateY(-1px);
-    box-shadow: 0 10px 20px rgba(15, 118, 110, 0.3);
+    box-shadow: 0 10px 20px rgba(20, 184, 166, 0.25);
 }
 
 .btn-check:active {
