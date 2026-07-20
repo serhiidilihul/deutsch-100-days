@@ -6,6 +6,7 @@
     <title>Урок B1-18: Отношения между людьми, конфликты и их решение</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="new_icon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <div class="container">
@@ -13,7 +14,7 @@
         <a href="b1-17.html" class="nav-link">&larr; Урок B1-17</a>
         <span class="nav-title">Урок B1-18</span>
         <a href="b1-19.html" class="nav-link">Урок B1-19 &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 
     <main>
@@ -38,7 +39,7 @@
                 <li>Das / gut / sein &rarr; Das _________ gut _________ .<span class="answer-inline">muss ... sein</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r1')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r1')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение Р2: Выбери степень вероятности (12)</h3>
             <p><em>Выбери правильный модальный глагол:</em></p>
@@ -57,7 +58,7 @@
                 <li>Er _________ viel Geld haben. (30% — soll)<span class="answer-inline">soll</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r2')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r2')"><i data-lucide="check"></i> Проверить</button>
         </div>
 
         <div class="card">
@@ -169,7 +170,7 @@
                 <li>Sie ist immer nett. Sie ist _________ . (freundlich / streng)<span class="answer-inline">freundlich</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-681')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-681')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-681')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 68.2: Причины конфликтов (12)</h3>
             <p><em>Заверши предложения:</em></p>
@@ -188,7 +189,7 @@
                 <li>Das _________ ist kompliziert. (Problem / Lösung)<span class="answer-inline">Problem</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-682')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-682')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-682')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 68.3: Решение конфликтов (12)</h3>
             <p><em>Вставь правильное слово:</em></p>
@@ -207,7 +208,7 @@
                 <li>Wir müssen eine _________ finden. (Lösung / Problem)<span class="answer-inline">Lösung</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-683')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-683')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-683')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 68.4: Диалог (12)</h3>
             <p><em>Расставь реплики в правильном порядке:</em></p>
@@ -226,7 +227,7 @@
                 <li>_________ Alles ist wieder gut.<span class="answer-inline">7</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-684')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-684')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-684')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 68.5: Перевод на немецкий (12)</h3>
             <p><em>Переведи на немецкий:</em></p>
@@ -245,7 +246,7 @@
                 <li>Мы должны оставаться спокойными.<span class="answer-inline">Wir müssen ruhig bleiben.</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-685')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-685')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-685')"><i data-lucide="check"></i> Проверить</button>
         </div>
     </main>
 
@@ -253,9 +254,11 @@
         <a href="b1-17.html" class="nav-link">&larr; Предыдущий урок (B1-17)</a>
         <span class="nav-title">Конец урока B1-18</span>
         <a href="b1-19.html" class="nav-link">Следующий урок (B1-19) &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 </div>
+
+
 
 
 
@@ -317,7 +320,6 @@
             const userAnswer = input.value.trim().toLowerCase();
             const expected = answer.toLowerCase();
             
-            // Remove old feedback icon
             const oldFeedback = li ? li.querySelector('.exercise-feedback') : null;
             if (oldFeedback) oldFeedback.remove();
             
@@ -327,7 +329,7 @@
                     li.classList.add('correct');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback correct';
-                    icon.textContent = '✓';
+                    icon.textContent = '<i data-lucide="check"></i>';
                     li.appendChild(icon);
                 }
                 correct++;
@@ -337,33 +339,60 @@
                     li.classList.add('incorrect');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback incorrect';
-                    icon.textContent = '✗';
+                    icon.textContent = '<i data-lucide="x"></i>';
                     li.appendChild(icon);
                 }
             }
         });
         
-        // Update score
         let score = list.parentElement.querySelector('.score-display');
         if (!score) {
             score = document.createElement('span');
             score.className = 'score-display';
             list.parentNode.insertBefore(score, list.nextSibling.nextSibling || list.nextSibling);
         }
-        score.innerHTML = '✅ <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
+        score.innerHTML = '<i data-lucide="check"></i> <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
     }
 
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('ol li').forEach(function(li) {
             if (li.querySelector('.exercise-input')) return;
             const html = li.innerHTML;
+            const hasBlank = html.includes('____') || html.includes('___') || html.includes('______');
+            const hasArrow = html.includes('→');
+            
+            let answer = '';
             const answerSpan = li.querySelector('.answer-inline');
             if (!answerSpan) return;
-            const answer = answerSpan.textContent.trim();
+            answer = answerSpan.textContent.trim();
             if (!answer) return;
             const safe = answer.replace(/"/g, '"');
-            if (html.includes('____') || html.includes('___')) {
-                li.innerHTML = html.replace(/_{3,}/g, '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">');
+            
+            const inputHtml = '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">';
+            let newHtml = html;
+            
+            if (hasBlank) {
+                newHtml = html.replace(/_{3,}/g, inputHtml);
+            } else if (hasArrow) {
+                const parts = html.split('→');
+                if (parts.length >= 2) {
+                    const after = parts[parts.length - 1].trim();
+                    if (after.match(/^_{3,}/) || after === '___________________' || after.match(/^_{10,}/)) {
+                        newHtml = parts.slice(0, -1).join('→') + '→ ' + inputHtml;
+                    } else {
+                        // Arrow without blank — append input at end
+                        newHtml = html + ' ' + inputHtml;
+                    }
+                } else {
+                    newHtml = html + ' ' + inputHtml;
+                }
+            } else {
+                // No blank, no arrow — append input at end (translation exercises)
+                newHtml = html + ' ' + inputHtml;
+            }
+            
+            if (newHtml !== html) {
+                li.innerHTML = newHtml;
                 li.closest('ol') && li.closest('ol').classList.add('exercise-list');
             }
         });
@@ -374,7 +403,7 @@
             
             const checkBtn = document.createElement('button');
             checkBtn.className = 'btn-check';
-            checkBtn.textContent = '✅ Проверить';
+            checkBtn.textContent = '<i data-lucide="check"></i> Проверить';
             checkBtn.onclick = function() { checkExercise(list.id); };
             
             const toggleBtn = list.nextElementSibling;
@@ -386,5 +415,6 @@
         });
     });
 </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

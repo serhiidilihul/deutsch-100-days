@@ -6,6 +6,7 @@
     <title>Урок А1-4: Сильные глаголы и хобби</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="new_icon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <div class="container">
@@ -14,7 +15,7 @@
             <a href="a1-3.html" class="nav-link">&larr; Урок А1-3</a>
             <span class="nav-title">Урок А1-4</span>
             <a href="a1-5.html" class="nav-link">Урок А1-5 &rarr;</a>
-                    <a href="index.html" class="nav-link">🏠 На главную</a>
+                    <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 
         <main>
@@ -87,15 +88,15 @@
                         </tr>
                         <tr style="background-color: #fff9e6;">
                             <td><strong>du</strong></td>
-                            <td>spr<strong>i</strong>ch<strong>st</strong> 💡</td>
-                            <td>s<strong>ie</strong>h<strong>st</strong> 💡</td>
-                            <td>f<strong>äh</strong>r<strong>st</strong> 💡</td>
+                            <td>spr<strong>i</strong>ch<strong>st</strong> <i data-lucide="lightbulb"></i></td>
+                            <td>s<strong>ie</strong>h<strong>st</strong> <i data-lucide="lightbulb"></i></td>
+                            <td>f<strong>äh</strong>r<strong>st</strong> <i data-lucide="lightbulb"></i></td>
                         </tr>
                         <tr style="background-color: #fff9e6;">
                             <td><strong>er / sie / es</strong></td>
-                            <td>spr<strong>i</strong>ch<strong>t</strong> 💡</td>
-                            <td>s<strong>ie</strong>h<strong>t</strong> 💡</td>
-                            <td>f<strong>äh</strong>r<strong>t</strong> 💡</td>
+                            <td>spr<strong>i</strong>ch<strong>t</strong> <i data-lucide="lightbulb"></i></td>
+                            <td>s<strong>ie</strong>h<strong>t</strong> <i data-lucide="lightbulb"></i></td>
+                            <td>f<strong>äh</strong>r<strong>t</strong> <i data-lucide="lightbulb"></i></td>
                         </tr>
                         <tr>
                             <td>wir</td>
@@ -253,11 +254,13 @@
             <a href="a1-3.html" class="nav-link">&larr; Предыдущий урок (А1-3)</a>
             <span class="nav-title">Конец урока А1-4</span>
             <a href="a1-5.html" class="nav-link">Следующий урок (А1-5) &rarr;</a>
-                    <a href="index.html" class="nav-link">🏠 На главную</a>
+                    <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
     </div>
 
     
+
+
 
 
 
@@ -317,7 +320,6 @@
             const userAnswer = input.value.trim().toLowerCase();
             const expected = answer.toLowerCase();
             
-            // Remove old feedback icon
             const oldFeedback = li ? li.querySelector('.exercise-feedback') : null;
             if (oldFeedback) oldFeedback.remove();
             
@@ -327,7 +329,7 @@
                     li.classList.add('correct');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback correct';
-                    icon.textContent = '✓';
+                    icon.textContent = '<i data-lucide="check"></i>';
                     li.appendChild(icon);
                 }
                 correct++;
@@ -337,33 +339,60 @@
                     li.classList.add('incorrect');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback incorrect';
-                    icon.textContent = '✗';
+                    icon.textContent = '<i data-lucide="x"></i>';
                     li.appendChild(icon);
                 }
             }
         });
         
-        // Update score
         let score = list.parentElement.querySelector('.score-display');
         if (!score) {
             score = document.createElement('span');
             score.className = 'score-display';
             list.parentNode.insertBefore(score, list.nextSibling.nextSibling || list.nextSibling);
         }
-        score.innerHTML = '✅ <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
+        score.innerHTML = '<i data-lucide="check"></i> <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
     }
 
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('ol li').forEach(function(li) {
             if (li.querySelector('.exercise-input')) return;
             const html = li.innerHTML;
+            const hasBlank = html.includes('____') || html.includes('___') || html.includes('______');
+            const hasArrow = html.includes('→');
+            
+            let answer = '';
             const answerSpan = li.querySelector('.answer-inline');
             if (!answerSpan) return;
-            const answer = answerSpan.textContent.trim();
+            answer = answerSpan.textContent.trim();
             if (!answer) return;
             const safe = answer.replace(/"/g, '"');
-            if (html.includes('____') || html.includes('___')) {
-                li.innerHTML = html.replace(/_{3,}/g, '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">');
+            
+            const inputHtml = '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">';
+            let newHtml = html;
+            
+            if (hasBlank) {
+                newHtml = html.replace(/_{3,}/g, inputHtml);
+            } else if (hasArrow) {
+                const parts = html.split('→');
+                if (parts.length >= 2) {
+                    const after = parts[parts.length - 1].trim();
+                    if (after.match(/^_{3,}/) || after === '___________________' || after.match(/^_{10,}/)) {
+                        newHtml = parts.slice(0, -1).join('→') + '→ ' + inputHtml;
+                    } else {
+                        // Arrow without blank — append input at end
+                        newHtml = html + ' ' + inputHtml;
+                    }
+                } else {
+                    newHtml = html + ' ' + inputHtml;
+                }
+            } else {
+                // No blank, no arrow — append input at end (translation exercises)
+                newHtml = html + ' ' + inputHtml;
+            }
+            
+            if (newHtml !== html) {
+                li.innerHTML = newHtml;
                 li.closest('ol') && li.closest('ol').classList.add('exercise-list');
             }
         });
@@ -374,7 +403,7 @@
             
             const checkBtn = document.createElement('button');
             checkBtn.className = 'btn-check';
-            checkBtn.textContent = '✅ Проверить';
+            checkBtn.textContent = '<i data-lucide="check"></i> Проверить';
             checkBtn.onclick = function() { checkExercise(list.id); };
             
             const toggleBtn = list.nextElementSibling;
@@ -386,5 +415,6 @@
         });
     });
 </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

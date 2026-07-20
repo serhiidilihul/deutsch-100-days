@@ -6,6 +6,7 @@
     <title>Урок A2-16: Придаточные условия и цели (wenn, damit)</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="new_icon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <div class="container">
@@ -13,7 +14,7 @@
         <a href="a2-15.html" class="nav-link">&larr; Урок A2-15</a>
         <span class="nav-title">Урок A2-16</span>
         <a href="a2-17.html" class="nav-link">Урок A2-17 &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 
     <main>
@@ -38,7 +39,7 @@
                 <li>keine Probleme / hier &rarr; Es ___________________.<span class="answer-inline">gibt keine Probleme hier</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r1')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r1')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение Р2: Es ist + прилагательное (12)</h3>
             <p><em>Опиши состояние:</em></p>
@@ -57,7 +58,7 @@
                 <li>Es _________ neblig. (sein)<span class="answer-inline">ist</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r2')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r2')"><i data-lucide="check"></i> Проверить</button>
         </div>
 
         <div class="card">
@@ -193,7 +194,7 @@
                 <li>sie / kochen / sie / Hunger haben &rarr; Sie ___________________.<span class="answer-inline">kocht, wenn sie Hunger hat</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-411')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-411')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-411')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 41.2: damit — цель (12)</h3>
             <p><em>Построй предложения с damit:</em></p>
@@ -212,7 +213,7 @@
                 <li>sie / üben / sie / das schaffen können &rarr; Sie ___________________.<span class="answer-inline">übt, damit sie das schaffen kann</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-412')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-412')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-412')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 41.3: wenn или damit (12)</h3>
             <p><em>Выбери wenn (если) или damit (чтобы):</em></p>
@@ -231,7 +232,7 @@
                 <li>Ich schlafe, _________ ich müde bin.<span class="answer-inline">wenn</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-413')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-413')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-413')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 41.4: Перевод на немецкий (12)</h3>
             <p><em>Переведи предложения, используя wenn или damit:</em></p>
@@ -250,7 +251,7 @@
                 <li>Я готовлю, чтобы удивить гостей.<span class="answer-inline">Ich koche, damit ich die Gäste überraschen kann.</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-414')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-414')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-414')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 41.5: Создай истории (12)</h3>
             <p><em>Расскажи историю, используя wenn и damit:</em></p>
@@ -269,7 +270,7 @@
                 <li>ich / üben / damit / ich / besser werden &rarr; Ich ___________________.<span class="answer-inline">übe, damit ich besser werde</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-415')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-415')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-415')"><i data-lucide="check"></i> Проверить</button>
         </div>
     </main>
 
@@ -277,9 +278,11 @@
         <a href="a2-15.html" class="nav-link">&larr; Предыдущий урок (A2-15)</a>
         <span class="nav-title">Конец урока A2-16</span>
         <a href="a2-17.html" class="nav-link">Следующий урок (A2-17) &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 </div>
+
+
 
 
 
@@ -341,7 +344,6 @@
             const userAnswer = input.value.trim().toLowerCase();
             const expected = answer.toLowerCase();
             
-            // Remove old feedback icon
             const oldFeedback = li ? li.querySelector('.exercise-feedback') : null;
             if (oldFeedback) oldFeedback.remove();
             
@@ -351,7 +353,7 @@
                     li.classList.add('correct');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback correct';
-                    icon.textContent = '✓';
+                    icon.textContent = '<i data-lucide="check"></i>';
                     li.appendChild(icon);
                 }
                 correct++;
@@ -361,33 +363,60 @@
                     li.classList.add('incorrect');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback incorrect';
-                    icon.textContent = '✗';
+                    icon.textContent = '<i data-lucide="x"></i>';
                     li.appendChild(icon);
                 }
             }
         });
         
-        // Update score
         let score = list.parentElement.querySelector('.score-display');
         if (!score) {
             score = document.createElement('span');
             score.className = 'score-display';
             list.parentNode.insertBefore(score, list.nextSibling.nextSibling || list.nextSibling);
         }
-        score.innerHTML = '✅ <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
+        score.innerHTML = '<i data-lucide="check"></i> <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
     }
 
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('ol li').forEach(function(li) {
             if (li.querySelector('.exercise-input')) return;
             const html = li.innerHTML;
+            const hasBlank = html.includes('____') || html.includes('___') || html.includes('______');
+            const hasArrow = html.includes('→');
+            
+            let answer = '';
             const answerSpan = li.querySelector('.answer-inline');
             if (!answerSpan) return;
-            const answer = answerSpan.textContent.trim();
+            answer = answerSpan.textContent.trim();
             if (!answer) return;
             const safe = answer.replace(/"/g, '"');
-            if (html.includes('____') || html.includes('___')) {
-                li.innerHTML = html.replace(/_{3,}/g, '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">');
+            
+            const inputHtml = '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">';
+            let newHtml = html;
+            
+            if (hasBlank) {
+                newHtml = html.replace(/_{3,}/g, inputHtml);
+            } else if (hasArrow) {
+                const parts = html.split('→');
+                if (parts.length >= 2) {
+                    const after = parts[parts.length - 1].trim();
+                    if (after.match(/^_{3,}/) || after === '___________________' || after.match(/^_{10,}/)) {
+                        newHtml = parts.slice(0, -1).join('→') + '→ ' + inputHtml;
+                    } else {
+                        // Arrow without blank — append input at end
+                        newHtml = html + ' ' + inputHtml;
+                    }
+                } else {
+                    newHtml = html + ' ' + inputHtml;
+                }
+            } else {
+                // No blank, no arrow — append input at end (translation exercises)
+                newHtml = html + ' ' + inputHtml;
+            }
+            
+            if (newHtml !== html) {
+                li.innerHTML = newHtml;
                 li.closest('ol') && li.closest('ol').classList.add('exercise-list');
             }
         });
@@ -398,7 +427,7 @@
             
             const checkBtn = document.createElement('button');
             checkBtn.className = 'btn-check';
-            checkBtn.textContent = '✅ Проверить';
+            checkBtn.textContent = '<i data-lucide="check"></i> Проверить';
             checkBtn.onclick = function() { checkExercise(list.id); };
             
             const toggleBtn = list.nextElementSibling;
@@ -410,5 +439,6 @@
         });
     });
 </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

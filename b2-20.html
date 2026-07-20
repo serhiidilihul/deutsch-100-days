@@ -6,6 +6,7 @@
     <title>Урок B2-20: Правосудие, преступность, законы</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="new_icon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <div class="container">
@@ -13,7 +14,7 @@
         <a href="b2-19.html" class="nav-link">&larr; Урок B2-19</a>
         <span class="nav-title">Урок B2-20</span>
         <a href="b2-21.html" class="nav-link">Урок B2-21 &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 
     <main>
@@ -38,7 +39,7 @@
                 <li>Sie _________ uns geholfen. (haben/sind)<span class="answer-inline">haben</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r1')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r1')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение Р2: Лексика (12)</h3>
             <p><em>Вставь пропущенное слово:</em></p>
@@ -57,7 +58,7 @@
                 <li>Er hat eine _________ Chance bekommen. (gute/guter)<span class="answer-inline">gute</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r2')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r2')"><i data-lucide="check"></i> Проверить</button>
         </div>
 
         <div class="card">
@@ -165,7 +166,7 @@
                 <li>_________ ist die Übersetzung von "преступник". (der Täter/преступник)<span class="answer-inline">der Täter</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-201')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-201')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-201')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 20.2: Составь предложение (12)</h3>
             <p><em>Вставь пропущенное слово:</em></p>
@@ -184,7 +185,7 @@
                 <li>Das ist ein wichtiges _________ . (Thema/Problem)<span class="answer-inline">Thema</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-202')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-202')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-202')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 20.3: Перевод (12)</h3>
             <p><em>Переведи на немецкий:</em></p>
@@ -203,7 +204,7 @@
                 <li>"прокурор" auf Deutsch — _________ .<span class="answer-inline">der Staatsanwalt</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-203')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-203')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-203')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 20.4: Дискуссия (12)</h3>
             <p><em>Выбери правильный вариант:</em></p>
@@ -222,7 +223,7 @@
                 <li>Das _________ ist sehr wichtig. (ist/wird)<span class="answer-inline">ist</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-204')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-204')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-204')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 20.5: Свободная практика (12)</h3>
             <p><em>Дополни предложение:</em></p>
@@ -241,7 +242,7 @@
                 <li>Ich denke, dass _________ . (es wichtig ist/es ist wichtig)<span class="answer-inline">es wichtig ist</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-205')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-205')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-205')"><i data-lucide="check"></i> Проверить</button>
 
         </div>
     </main>
@@ -250,9 +251,11 @@
         <a href="b2-19.html" class="nav-link">&larr; Предыдущий урок (B2-19)</a>
         <span class="nav-title">Конец урока B2-20</span>
         <a href="b2-21.html" class="nav-link">Следующий урок (B2-21) &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 </div>
+
+
 
 
 
@@ -314,7 +317,6 @@
             const userAnswer = input.value.trim().toLowerCase();
             const expected = answer.toLowerCase();
             
-            // Remove old feedback icon
             const oldFeedback = li ? li.querySelector('.exercise-feedback') : null;
             if (oldFeedback) oldFeedback.remove();
             
@@ -324,7 +326,7 @@
                     li.classList.add('correct');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback correct';
-                    icon.textContent = '✓';
+                    icon.textContent = '<i data-lucide="check"></i>';
                     li.appendChild(icon);
                 }
                 correct++;
@@ -334,33 +336,60 @@
                     li.classList.add('incorrect');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback incorrect';
-                    icon.textContent = '✗';
+                    icon.textContent = '<i data-lucide="x"></i>';
                     li.appendChild(icon);
                 }
             }
         });
         
-        // Update score
         let score = list.parentElement.querySelector('.score-display');
         if (!score) {
             score = document.createElement('span');
             score.className = 'score-display';
             list.parentNode.insertBefore(score, list.nextSibling.nextSibling || list.nextSibling);
         }
-        score.innerHTML = '✅ <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
+        score.innerHTML = '<i data-lucide="check"></i> <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
     }
 
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('ol li').forEach(function(li) {
             if (li.querySelector('.exercise-input')) return;
             const html = li.innerHTML;
+            const hasBlank = html.includes('____') || html.includes('___') || html.includes('______');
+            const hasArrow = html.includes('→');
+            
+            let answer = '';
             const answerSpan = li.querySelector('.answer-inline');
             if (!answerSpan) return;
-            const answer = answerSpan.textContent.trim();
+            answer = answerSpan.textContent.trim();
             if (!answer) return;
             const safe = answer.replace(/"/g, '"');
-            if (html.includes('____') || html.includes('___')) {
-                li.innerHTML = html.replace(/_{3,}/g, '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">');
+            
+            const inputHtml = '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">';
+            let newHtml = html;
+            
+            if (hasBlank) {
+                newHtml = html.replace(/_{3,}/g, inputHtml);
+            } else if (hasArrow) {
+                const parts = html.split('→');
+                if (parts.length >= 2) {
+                    const after = parts[parts.length - 1].trim();
+                    if (after.match(/^_{3,}/) || after === '___________________' || after.match(/^_{10,}/)) {
+                        newHtml = parts.slice(0, -1).join('→') + '→ ' + inputHtml;
+                    } else {
+                        // Arrow without blank — append input at end
+                        newHtml = html + ' ' + inputHtml;
+                    }
+                } else {
+                    newHtml = html + ' ' + inputHtml;
+                }
+            } else {
+                // No blank, no arrow — append input at end (translation exercises)
+                newHtml = html + ' ' + inputHtml;
+            }
+            
+            if (newHtml !== html) {
+                li.innerHTML = newHtml;
                 li.closest('ol') && li.closest('ol').classList.add('exercise-list');
             }
         });
@@ -371,7 +400,7 @@
             
             const checkBtn = document.createElement('button');
             checkBtn.className = 'btn-check';
-            checkBtn.textContent = '✅ Проверить';
+            checkBtn.textContent = '<i data-lucide="check"></i> Проверить';
             checkBtn.onclick = function() { checkExercise(list.id); };
             
             const toggleBtn = list.nextElementSibling;
@@ -383,5 +412,6 @@
         });
     });
 </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Урок B1-12: Причастия Partizip I und II в роли прилагательных</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="new_icon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 <div class="container">
@@ -13,7 +14,7 @@
         <a href="b1-11.html" class="nav-link">&larr; Урок B1-11</a>
         <span class="nav-title">Урок B1-12</span>
         <a href="b1-13.html" class="nav-link">Урок B1-13 &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 
     <main>
@@ -38,7 +39,7 @@
                 <li>er / ihr / das / geben &rarr; Er _________ .<span class="answer-inline">gibt es ihr</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r1')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r1')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение Р2: Dativ + Akkusativ (существительные) (12)</h3>
             <p><em>Расставь существительные в правильном порядке:</em></p>
@@ -57,7 +58,7 @@
                 <li>ich / dem Arzt / die Informationen / geben &rarr; Ich _________ .<span class="answer-inline">gebe dem Arzt die Informationen</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-r2')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-r2')"><i data-lucide="check"></i> Проверить</button>
         </div>
 
         <div class="card">
@@ -184,7 +185,7 @@
                 <li>Das _________ Haus ist groß. (bauend / gebaut)<span class="answer-inline">gebaut</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-621')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-621')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-621')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 62.2: Образуй Partizip I (12)</h3>
             <p><em>Образуй Partizip I от глаголов:</em></p>
@@ -203,7 +204,7 @@
                 <li>arbeiten &rarr; _________<span class="answer-inline">arbeitend</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-622')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-622')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-622')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 62.3: Образуй Partizip II (12)</h3>
             <p><em>Образуй Partizip II от глаголов:</em></p>
@@ -222,7 +223,7 @@
                 <li>arbeiten &rarr; _________<span class="answer-inline">gearbeitet</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-623')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-623')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-623')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 62.4: Склонение причастий (12)</h3>
             <p><em>Согласуй причастие с существительным:</em></p>
@@ -241,7 +242,7 @@
                 <li>des / gelesen / Buch (Gen. sg. n.) &rarr; _________<span class="answer-inline">des gelesenen Buches</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-624')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-624')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-624')"><i data-lucide="check"></i> Проверить</button>
 
             <h3>Упражнение 62.5: Перевод на немецкий (12)</h3>
             <p><em>Используй причастия как прилагательные:</em></p>
@@ -260,7 +261,7 @@
                 <li>Рассказанная история интересная. &rarr; Die _________ Geschichte ist interessant.<span class="answer-inline">erzählte</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-625')">Показать ответы</button>
-            <button class="btn-check" onclick="checkExercise('ex-625')">✅ Проверить</button>
+            <button class="btn-check" onclick="checkExercise('ex-625')"><i data-lucide="check"></i> Проверить</button>
         </div>
     </main>
 
@@ -268,9 +269,11 @@
         <a href="b1-11.html" class="nav-link">&larr; Предыдущий урок (B1-11)</a>
         <span class="nav-title">Конец урока B1-12</span>
         <a href="b1-13.html" class="nav-link">Следующий урок (B1-13) &rarr;</a>
-                <a href="index.html" class="nav-link">🏠 На главную</a>
+                <a href="index.html" class="nav-link"><i data-lucide="home"></i> На главную</a>
         </nav>
 </div>
+
+
 
 
 
@@ -332,7 +335,6 @@
             const userAnswer = input.value.trim().toLowerCase();
             const expected = answer.toLowerCase();
             
-            // Remove old feedback icon
             const oldFeedback = li ? li.querySelector('.exercise-feedback') : null;
             if (oldFeedback) oldFeedback.remove();
             
@@ -342,7 +344,7 @@
                     li.classList.add('correct');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback correct';
-                    icon.textContent = '✓';
+                    icon.textContent = '<i data-lucide="check"></i>';
                     li.appendChild(icon);
                 }
                 correct++;
@@ -352,33 +354,60 @@
                     li.classList.add('incorrect');
                     const icon = document.createElement('span');
                     icon.className = 'exercise-feedback incorrect';
-                    icon.textContent = '✗';
+                    icon.textContent = '<i data-lucide="x"></i>';
                     li.appendChild(icon);
                 }
             }
         });
         
-        // Update score
         let score = list.parentElement.querySelector('.score-display');
         if (!score) {
             score = document.createElement('span');
             score.className = 'score-display';
             list.parentNode.insertBefore(score, list.nextSibling.nextSibling || list.nextSibling);
         }
-        score.innerHTML = '✅ <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
+        score.innerHTML = '<i data-lucide="check"></i> <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
     }
 
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('ol li').forEach(function(li) {
             if (li.querySelector('.exercise-input')) return;
             const html = li.innerHTML;
+            const hasBlank = html.includes('____') || html.includes('___') || html.includes('______');
+            const hasArrow = html.includes('→');
+            
+            let answer = '';
             const answerSpan = li.querySelector('.answer-inline');
             if (!answerSpan) return;
-            const answer = answerSpan.textContent.trim();
+            answer = answerSpan.textContent.trim();
             if (!answer) return;
             const safe = answer.replace(/"/g, '"');
-            if (html.includes('____') || html.includes('___')) {
-                li.innerHTML = html.replace(/_{3,}/g, '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">');
+            
+            const inputHtml = '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">';
+            let newHtml = html;
+            
+            if (hasBlank) {
+                newHtml = html.replace(/_{3,}/g, inputHtml);
+            } else if (hasArrow) {
+                const parts = html.split('→');
+                if (parts.length >= 2) {
+                    const after = parts[parts.length - 1].trim();
+                    if (after.match(/^_{3,}/) || after === '___________________' || after.match(/^_{10,}/)) {
+                        newHtml = parts.slice(0, -1).join('→') + '→ ' + inputHtml;
+                    } else {
+                        // Arrow without blank — append input at end
+                        newHtml = html + ' ' + inputHtml;
+                    }
+                } else {
+                    newHtml = html + ' ' + inputHtml;
+                }
+            } else {
+                // No blank, no arrow — append input at end (translation exercises)
+                newHtml = html + ' ' + inputHtml;
+            }
+            
+            if (newHtml !== html) {
+                li.innerHTML = newHtml;
                 li.closest('ol') && li.closest('ol').classList.add('exercise-list');
             }
         });
@@ -389,7 +418,7 @@
             
             const checkBtn = document.createElement('button');
             checkBtn.className = 'btn-check';
-            checkBtn.textContent = '✅ Проверить';
+            checkBtn.textContent = '<i data-lucide="check"></i> Проверить';
             checkBtn.onclick = function() { checkExercise(list.id); };
             
             const toggleBtn = list.nextElementSibling;
@@ -401,5 +430,6 @@
         });
     });
 </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
