@@ -38,6 +38,7 @@
                 <li>Ihr _________ flei&szlig;ig lernen. (sollen)<span class="answer-inline">sollt</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r1')">Показать ответы</button>
+            <button class="btn-check" onclick="checkExercise('ex-r1')">✅ Проверить</button>
 
             <h3>Упражнение Р2: Предлоги и падежи (12)</h3>
             <p><em>Вставь правильный предлог + артикль:</em></p>
@@ -56,6 +57,7 @@
                 <li>Der Sessel steht _________ dem Fenster. (перед)<span class="answer-inline">vor</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-r2')">Показать ответы</button>
+            <button class="btn-check" onclick="checkExercise('ex-r2')">✅ Проверить</button>
         </div>
 
         <div class="card">
@@ -199,6 +201,7 @@
                 <li>stellen &rarr; ___________________<span class="answer-inline">gestellt</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-171')">Показать ответы</button>
+            <button class="btn-check" onclick="checkExercise('ex-171')">✅ Проверить</button>
 
             <h3>Упражнение 17.2: Образуй Partizip II сильных глаголов (12)</h3>
             <p><em>Напиши Partizip II:</em></p>
@@ -217,6 +220,7 @@
                 <li>kommen &rarr; ___________________<span class="answer-inline">gekommen</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-172')">Показать ответы</button>
+            <button class="btn-check" onclick="checkExercise('ex-172')">✅ Проверить</button>
 
             <h3>Упражнение 17.3: Поставь предложение в Perfekt (12)</h3>
             <p><em>Перепиши предложения в прошедшем времени (Perfekt):</em></p>
@@ -235,6 +239,7 @@
                 <li>Ihr h&ouml;rt Musik. &rarr; Ihr ___________________.<span class="answer-inline">habt Musik geh&ouml;rt</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-173')">Показать ответы</button>
+            <button class="btn-check" onclick="checkExercise('ex-173')">✅ Проверить</button>
 
             <h3>Упражнение 17.4: Вставь правильную форму haben + Partizip II (12)</h3>
             <p><em>Раскрой скобки, поставь в Perfekt:</em></p>
@@ -253,6 +258,7 @@
                 <li>Ihr (haben) mich gut (verstehen).<span class="answer-inline">habt verstanden</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-174')">Показать ответы</button>
+            <button class="btn-check" onclick="checkExercise('ex-174')">✅ Проверить</button>
 
             <h3>Упражнение 17.5: Перевод на немецкий (12)</h3>
             <p><em>Переведи предложения в Perfekt:</em></p>
@@ -271,6 +277,7 @@
                 <li>Я тебя понял.<span class="answer-inline">Ich habe dich verstanden.</span></li>
             </ol>
             <button class="btn-toggle" onclick="toggleExercise('ex-175')">Показать ответы</button>
+            <button class="btn-check" onclick="checkExercise('ex-175')">✅ Проверить</button>
         </div>
     </main>
 
@@ -282,20 +289,104 @@
         </nav>
 </div>
 
+
+
+
+
+
+
+
+
 <script>
+    function toggleAnswers(id) {
+        const block = document.getElementById(id);
+        const btn = document.getElementById('btn-' + id);
+        if (block.style.display === "none" || !block.style.display) {
+            block.style.display = "block";
+            btn.textContent = "Скрыть ответы";
+            btn.classList.add("active");
+        } else {
+            block.style.display = "none";
+            btn.textContent = "Показать ответы";
+            btn.classList.remove("active");
+        }
+    }
+
     function toggleExercise(id) {
         const list = document.getElementById(id);
+        if (!list) return;
         const btn = list.nextElementSibling;
         if (list.classList.contains('show-answers')) {
             list.classList.remove('show-answers');
-            btn.textContent = 'Показать ответы';
-            btn.classList.remove('active');
+            if (btn) { btn.textContent = 'Показать ответы'; btn.classList.remove('active'); }
         } else {
             list.classList.add('show-answers');
-            btn.textContent = 'Скрыть ответы';
-            btn.classList.add('active');
+            if (btn) { btn.textContent = 'Скрыть ответы'; btn.classList.add('active'); }
         }
     }
+
+    function checkExercise(id) {
+        const list = document.getElementById(id);
+        if (!list) return;
+        const inputs = list.querySelectorAll('.exercise-input');
+        let correct = 0, total = 0;
+        inputs.forEach(function(input) {
+            total++;
+            input.classList.remove('correct', 'incorrect');
+            const li = input.closest('li');
+            let answer = '';
+            const answerSpan = li ? li.querySelector('.answer-inline') : null;
+            if (answerSpan) answer = answerSpan.textContent.trim();
+            if (!answer) answer = input.getAttribute('data-answer') || '';
+            const userAnswer = input.value.trim().toLowerCase();
+            const expected = answer.toLowerCase();
+            if (userAnswer === expected) {
+                input.classList.add('correct');
+                if (li) li.classList.add('correct');
+                correct++;
+            } else if (userAnswer !== '') {
+                input.classList.add('incorrect');
+                if (li) li.classList.add('incorrect');
+            }
+        });
+        let score = list.parentElement.querySelector('.score-display');
+        if (!score) {
+            score = document.createElement('span');
+            score.className = 'score-display';
+            list.parentNode.insertBefore(score, list.nextSibling.nextSibling || list.nextSibling);
+        }
+        score.innerHTML = '✅ <span class="score-correct">' + correct + '</span> / <span class="score-incorrect">' + total + '</span>';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('ol li').forEach(function(li) {
+            if (li.querySelector('.exercise-input')) return;
+            const html = li.innerHTML;
+            const answerSpan = li.querySelector('.answer-inline');
+            if (!answerSpan) return;
+            const answer = answerSpan.textContent.trim();
+            if (!answer) return;
+            const safe = answer.replace(/"/g, '"');
+            if (html.includes('____') || html.includes('___')) {
+                li.innerHTML = html.replace(/_{3,}/g, '<input type="text" class="exercise-input" data-answer="' + safe + '" placeholder="..." autocomplete="off">');
+                li.closest('ol') && li.closest('ol').classList.add('exercise-list');
+            }
+        });
+        document.querySelectorAll('.exercise-list').forEach(function(list) {
+            if (list.querySelectorAll('.exercise-input').length === 0) return;
+            if (list.parentElement.querySelector('.btn-check')) return;
+            const checkBtn = document.createElement('button');
+            checkBtn.className = 'btn-check';
+            checkBtn.textContent = '✅ Проверить';
+            checkBtn.onclick = function() { checkExercise(list.id); };
+            const toggleBtn = list.nextElementSibling;
+            if (toggleBtn && toggleBtn.classList.contains('btn-toggle')) {
+                toggleBtn.parentNode.insertBefore(checkBtn, toggleBtn.nextSibling);
+            } else {
+                list.parentNode.insertBefore(checkBtn, list.nextSibling);
+            }
+        });
+    });
 </script>
 </body>
 </html>
